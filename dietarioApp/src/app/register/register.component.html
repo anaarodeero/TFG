@@ -1,0 +1,112 @@
+<mat-toolbar class="toolbar">
+    <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+            <mat-icon>menu</mat-icon>
+          </button> -->
+    <span>Logo</span>
+    <span class="example-spacer"></span>
+    <button mat-button class="botonInicio">Iniciar sesión</button>
+    <!-- <button mat-raised-button class="botonRegistro">Registro</button> -->
+</mat-toolbar>
+<div class="container" fxLayout="column" fxFlex="100" fxLayoutAlign="center center">
+  <h1 class="titulo">Registro</h1>
+  <mat-horizontal-stepper class="stepper mat-elevation-z8" ngClass.lt-md="stepper-sm" labelPosition="bottom" #stepper>
+    <mat-step [stepControl]="firstFormGroup" >
+      <form [formGroup]="firstFormGroup">
+        <ng-template matStepLabel>Tu cuenta</ng-template>
+        <p class="texto">Escribe tu nombre y apellidos</p>
+        <div fxLayout="row" fxFill fxLayoutAlign="center center"> 
+          <div fxLayout="column" fxLayoutAlign="center center" class="input-doble-col"> 
+            <mat-form-field class="input-doble">
+              <input matInput placeholder="Nombre" formControlName="nombre" required>
+              <mat-error *ngIf="this.firstFormGroup.get('nombre').invalid">{{getErrorMessage()}}</mat-error>
+            </mat-form-field>
+          </div>
+          <div fxLayout="column" fxLayoutAlign="center center" class="input-doble-col"> 
+            <mat-form-field class="input-doble">
+              <input matInput placeholder="Apellidos" formControlName="apellidos" required>
+              <mat-error *ngIf="this.firstFormGroup.get('apellidos').invalid">{{getErrorMessage()}}</mat-error>
+            </mat-form-field>
+          </div>
+        </div>
+        <p class="texto" >Escribe tu correo electronico</p>
+        <mat-form-field class="input">
+          <input matInput placeholder="Email" formControlName="email" required>
+          <mat-error *ngIf="this.firstFormGroup.get('email').invalid">{{getErrorMessageEmail()}}</mat-error>
+        </mat-form-field>
+        <p class="texto">Escribe una contraseña</p>
+        <mat-form-field class="input">
+          <mat-label>Password</mat-label>
+          <input matInput [type]="hide ? 'password' : 'text'" formControlName="password" required>
+          <mat-error *ngIf="this.firstFormGroup.get('password').invalid">{{getErrorMessage()}}</mat-error>
+          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </button>
+        </mat-form-field>
+        <div>
+          <button mat-button matStepperNext [disabled]="firstFormGroup.invalid" class="boton">Siguiente</button>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step [stepControl]="secondFormGroup">
+      <form [formGroup]="secondFormGroup">
+        <ng-template matStepLabel>Tus datos fisicos</ng-template>
+        <div>
+          <mat-radio-group aria-label="Select an option" formControlName="sexo" required>
+            <mat-radio-button value="1">Mujer</mat-radio-button>
+            <mat-radio-button value="2">Hombre</mat-radio-button>
+          </mat-radio-group>
+          <!-- <mat-error *ngIf="this.secondFormGroup.get('sexo').invalid">{{getErrorMessage()}}</mat-error> -->
+        </div>
+        
+        <p class="texto">¿Cuando es tu cumpleaños?</p>
+        <mat-form-field class="input">
+          <mat-label>Elige una fecha</mat-label>
+          <input matInput [matDatepicker]="picker" formControlName="fechaNacimiento">
+          <mat-error *ngIf="this.secondFormGroup.get('fechaNacimiento').invalid">{{getErrorMessage()}}</mat-error>
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        <p class="texto">¿Cuanto mides?</p>
+        <mat-form-field class="input">
+          <input matInput placeholder="cm" formControlName="altura">
+          <mat-error *ngIf="this.secondFormGroup.get('altura').invalid">{{getErrorMessage()}}</mat-error>
+        </mat-form-field>
+        <p class="texto">¿Cuanto pesas?</p>
+        <mat-form-field class="input">
+          <input matInput placeholder="kg" formControlName="peso">
+          <mat-error *ngIf="this.secondFormGroup.get('peso').invalid">{{getErrorMessage()}}</mat-error>
+        </mat-form-field>
+        <div>
+          <button mat-button matStepperPrevious class="boton">Anterior</button>
+          <button mat-button matStepperNext class="boton" [disabled]="secondFormGroup.invalid">Siguiente</button>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step [stepControl]="thirdFormGroup">
+      <form [formGroup]="thirdFormGroup">
+        <ng-template matStepLabel>Objetivo</ng-template>
+        <p>¿Cual es tu objetivo?</p>
+        <mat-radio-group formControlName="objetivo">
+          <mat-radio-button disableRipple="true" class="objetivo mat-elevation-z3" value="perder">Perder peso</mat-radio-button>
+          <mat-radio-button disableRipple="true" class="objetivo mat-elevation-z3" value="mantener">Mantener tu peso</mat-radio-button>
+          <mat-radio-button disableRipple="true" class="objetivo mat-elevation-z3" value="ganar">Ganar peso</mat-radio-button>
+        </mat-radio-group>
+        <!-- <mat-error *ngIf="this.thirdFormGroup.get('objetivo').invalid">{{getErrorMessage()}}</mat-error> -->
+        <div>
+          <button mat-button matStepperPrevious class="boton">Anterior</button>
+          <button mat-button matStepperNext class="boton" [disabled]="thirdFormGroup.invalid">Siguiente</button>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>Fin.</ng-template>
+      <p>¡Ya estas registrado!</p>
+      <div>
+        <button mat-button matStepperPrevious class="boton">Anterior</button>
+        <button mat-button (click)="stepper.reset()" class="boton">Resetear</button>
+      </div>
+    </mat-step>
+  </mat-horizontal-stepper>
+  
+    
+</div>
