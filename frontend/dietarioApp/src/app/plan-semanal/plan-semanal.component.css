@@ -1,0 +1,87 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  .toolbar {
+    color: black;
+    background-color: transparent;
+  }
+  .botonRegistro {
+    background-color: #37b97d;
+    border-radius: 1rem;
+    color: white;
+  }
+  .perfil {
+    /* background-color: #37b97d;
+    border-radius: 1rem; */
+    color: #37b97d;
+    font-size: 30px;
+  }
+  .botonInicio {
+    color: white;
+    color: #37b97d;
+    border-radius: 1rem;
+    text-decoration: underline;
+  }
+  
+  .container {
+    /* background-image: url(../../assets/image12.png); */
+    align-content: center;
+    background-size: cover;
+    background-position: center;
+    position: contain;
+    /* min-height: %; */
+    width: 100%;
+  }
+  
+  
+  .titulo {
+    margin-top: 3rem;
+    color: #37b97d;
+    font-weight: bold;
+    font-size: xx-large;
+    margin-bottom: 2rem;
+  }
+
+  .card {
+    /* width: 80%; */
+    padding: 1rem;
+    text-align: center;
+    border-radius: 1rem;
+    margin:0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .card-lg {
+    width: 40%;
+  }
+  
+  .card-md {
+    width: 60%;
+  }
+  
+  .card-sm {
+    width: 80%;
+  }
+
+.horario{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    margin: 0.5rem !important;
+}
+
+.sm{
+  /* text-align: start; */
+  color:gray;
+  font-size: smaller;
+}
+
+.diaSemana{
+    text-transform: uppercase;
+    font-size: larger;
+    font-weight: bold;
+}
+

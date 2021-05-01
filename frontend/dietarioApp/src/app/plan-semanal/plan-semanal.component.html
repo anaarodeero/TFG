@@ -1,0 +1,46 @@
+<mat-toolbar class="toolbar">
+    <span>Logo</span>
+    <span class="example-spacer"></span>
+    <button mat-button class="botonInicio">Hola Ana</button>
+    <!-- <button mat-raised-button class="botonRegistro">Registro</button> -->
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon class="perfil">account_circle</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <mat-icon>manage_accounts</mat-icon>
+          <span>Editar perfil</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>person_off</mat-icon>
+          <span>Cerrar sesión</span>
+        </button>
+      </mat-menu>
+</mat-toolbar>
+<div class="container" fxLayout="column" fxLayoutAlign="start center">
+    <h1 class="titulo">Tu plan semanal</h1>
+    <div class="horario" fxLayout="row" fxLayoutAlign="space-evenly center">
+        <mat-card class="card mat-elevation-z8" *ngFor="let dia of semana">
+            <mat-list fxLayout="column" >
+                <mat-list-item class="item diaSemana">{{dia.diaSemana}}</mat-list-item>
+                <mat-divider [inset]="true"></mat-divider>
+                <mat-list-item class="item sm">Desayuno</mat-list-item>
+                <mat-list-item class="item" *ngFor="let desayuno of dia.desayuno">{{desayuno}}</mat-list-item>
+                <mat-divider [inset]="true"></mat-divider>
+                <mat-list-item class="item sm">Almuerzo</mat-list-item>
+                <mat-list-item class="item">{{dia.almuerzo}}</mat-list-item>
+                <mat-divider [inset]="true"></mat-divider>
+                <mat-list-item class="item sm">Comida</mat-list-item>
+                <mat-list-item class="item" *ngFor="let comida of dia.comida">{{comida}}</mat-list-item>
+                <mat-divider [inset]="true"></mat-divider>
+                <mat-list-item class="item sm">Merienda</mat-list-item>
+                <mat-list-item class="item">{{dia.merienda}}</mat-list-item>
+                <mat-divider [inset]="true"></mat-divider>
+                <mat-list-item class="item sm">Cena</mat-list-item>
+                <mat-list-item class="item" *ngFor="let cena of dia.cena">{{cena}}</mat-list-item>
+            </mat-list>
+
+        </mat-card>
+        
+    </div>
+</div>
