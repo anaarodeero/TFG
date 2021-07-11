@@ -1,10 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
-import { PlanDiarioComponent } from './plan-diario/plan-diario.component';
-import { PlanSemanalComponent } from './plan-semanal/plan-semanal.component';
+import { HomeComponent } from './components/home/home.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
+import { WeeklyPlanComponent } from './components/weekly-plan/weekly-plan.component';
+import { DailyPlanComponent } from './components/dialy-plan/dialy-plan.component';
+import { FoodComponent } from './components/food/food.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { FoodPyramidComponent } from './components/food-pyramid/food-pyramid.component';
+import { EditProfileComponent } from './components/edit-profile/edit-profile.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
@@ -26,6 +30,13 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatTableModule } from '@angular/material/table'; 
 import { MatDividerModule } from '@angular/material/divider'; 
 import { MatMenuModule } from '@angular/material/menu'; 
+import { MatPaginatorModule } from '@angular/material/paginator'; 
+import { MatSortModule } from '@angular/material/sort';
+import { MatSidenavModule } from '@angular/material/sidenav'; 
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatSelectModule } from '@angular/material/select';
+import { CdkStepperModule } from '@angular/cdk/stepper'; 
+import { GlobalGuard } from './guards/global.guard';
 
 
 
@@ -34,8 +45,12 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
-  { path: 'plan-diario', component: PlanDiarioComponent },
-  { path: 'plan-semanal', component: PlanSemanalComponent }
+  { path: 'daily-plan', component: DailyPlanComponent, canActivate: [GlobalGuard] },
+  { path: 'weekly-plan', component:  WeeklyPlanComponent, canActivate: [GlobalGuard]},
+  { path: 'food', component:  FoodComponent, canActivate: [GlobalGuard]},
+  { path: 'dashboard', component:  DashboardComponent, canActivate: [GlobalGuard]},
+  { path: 'pyramid', component:  FoodPyramidComponent, canActivate: [GlobalGuard]},
+  { path: 'edit', component:  EditProfileComponent, canActivate: [GlobalGuard]},
 ];
 
 @NgModule({
@@ -60,6 +75,12 @@ const routes: Routes = [
     MatExpansionModule,
     MatTableModule,
     MatDividerModule,
-    MatMenuModule]
+    MatMenuModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatSidenavModule,
+    MatDialogModule,
+    MatSelectModule,
+    CdkStepperModule]
 })
 export class AppRoutingModule { }

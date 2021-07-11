@@ -5,6 +5,7 @@ body {
   height: 100%;
   width: 100%;
   background-color: #FBFFF0;
+  box-sizing: border-box;
 }
 body {
   margin: 0;

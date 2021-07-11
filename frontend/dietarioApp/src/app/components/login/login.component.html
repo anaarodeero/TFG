@@ -1,0 +1,26 @@
+<div class="container" fxLayout="column" fxFlex="100" fxLayoutAlign="center center">
+  <h1 class="mat-display-2 titulo">Iniciar sesión</h1>
+  <mat-card class="card mat-elevation-z8">
+    <div fxLayout="column" fxLayoutAlign="center center">
+      <form [formGroup]="firstFormGroup">
+        <p class="texto" >Escribe tu correo electronico</p>
+        <mat-form-field class="input">
+            <input matInput placeholder="Email" formControlName="email" [(ngModel)]="email" required>
+            <mat-error *ngIf="this.firstFormGroup.get('email').invalid">{{getErrorMessageEmail()}}</mat-error>
+        </mat-form-field>
+        <p class="texto">Escribe una contraseña</p>
+        <mat-form-field class="input">
+            <mat-label>Password</mat-label>
+            <input matInput [type]="hide ? 'password' : 'text'" formControlName="password" [(ngModel)]="password" required>
+            <mat-error *ngIf="this.firstFormGroup.get('password').invalid">{{getErrorMessage()}}</mat-error>
+        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+        </mat-form-field>
+        <button mat-raised-button class="boton" (click)="login()">Iniciar sesion</button>
+      </form>
+      </div>
+  </mat-card>
+
+    
+</div>

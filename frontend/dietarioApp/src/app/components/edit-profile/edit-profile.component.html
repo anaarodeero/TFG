@@ -1,0 +1,50 @@
+<div class="container" fxLayout="column" fxFlex="100" fxLayoutAlign="center center">
+    <h1 class="mat-display-2 titulo">Registro</h1>
+    <mat-card class="card-progress mat-elevation-z8">
+        <mat-accordion>
+            <mat-expansion-panel class="mat-elevation-z0" (opened)="panelOpenState = true"
+                        (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Tu datos personales
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <form [formGroup]="firstFormGroup">
+                    <p class="texto">Escribe tu nombre y apellidos</p>
+                    <div fxLayout="row" fxLayout.lt-md="column" fxFill fxLayoutAlign="center center"> 
+                      <div fxLayout="column" fxLayoutAlign="center center" ngClass.gt-sm="input-doble-col" ngClass.lt-md="input"> 
+                        <mat-form-field ngClass.gt-sm="input-doble" ngClass.lt-md="input-full">
+                          <input matInput placeholder="Nombre" formControlName="nombre" required [(ngModel)]="usuario.nombre">
+                          <mat-error *ngIf="this.firstFormGroup.get('nombre').invalid">{{getErrorMessage()}}</mat-error>
+                        </mat-form-field>
+                      </div>
+                      <div fxLayout="column" fxLayoutAlign="center center" ngClass.gt-sm="input-doble-col" ngClass.lt-md="input"> 
+                        <mat-form-field ngClass.gt-sm="input-doble" ngClass.lt-md="input-full">
+                          <input matInput placeholder="Apellidos" formControlName="apellidos" required [(ngModel)]="usuario.apellidos">
+                          <mat-error *ngIf="this.firstFormGroup.get('apellidos').invalid">{{getErrorMessage()}}</mat-error>
+                        </mat-form-field>
+                      </div>
+                    </div>
+                    <p class="texto" >Escribe tu correo electronico</p>
+                    <mat-form-field class="input">
+                      <input matInput placeholder="Email" formControlName="email" required [(ngModel)]="usuario.email">
+                      <mat-error *ngIf="this.firstFormGroup.get('email').invalid">{{getErrorMessageEmail()}}</mat-error>
+                    </mat-form-field>
+                    <p class="texto">Escribe una contraseña</p>
+                    <mat-form-field class="input">
+                      <mat-label>Password</mat-label>
+                      <input matInput [type]="hide ? 'password' : 'text'" formControlName="password" required [(ngModel)]="usuario.password">
+                      <mat-error *ngIf="this.firstFormGroup.get('password').invalid">{{getErrorMessage()}}</mat-error>
+                      <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                      </button>
+                    </mat-form-field>
+                </form>
+            </mat-expansion-panel>
+            <mat-expansion-panel class="mat-elevation-z0" (opened)="panelOpenState = true"
+                        (closed)="panelOpenState = false">
+                        
+            </mat-expansion-panel>
+        </mat-accordion>
+    </mat-card>
+</div>

@@ -1,0 +1,21 @@
+.input {
+  width: 60%;
+  font-size: smaller;
+}
+
+.input-doble {
+  width: 100%;
+  font-size: smaller;
+}
+
+.input-doble-col {
+  width: 30%;
+}
+
+.texto {
+  margin-top: 1rem;
+}
+
+.titulo {
+  align-self: center;
+}

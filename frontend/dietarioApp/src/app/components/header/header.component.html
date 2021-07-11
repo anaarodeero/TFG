@@ -1,0 +1,29 @@
+<mat-toolbar class="toolbar">
+  <span>Logo</span>
+  <span class="example-spacer"></span>
+  <div>
+    <button mat-button class="botonInicio">Hola Ana</button>
+    <!-- <button mat-raised-button class="botonRegistro">Registro</button> -->
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon class="perfil">account_circle</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <mat-icon>manage_accounts</mat-icon>
+          <span>Editar perfil</span>
+        </button>
+        <button mat-menu-item (click)="cerrarSesion()">
+          <mat-icon>person_off</mat-icon>
+          <span>Cerrar sesión</span>
+        </button>
+      </mat-menu>
+  </div>
+  <div *ngIf=!userLogIn>
+    <button mat-button class="botonInicio" (click)="iniciarSesion()">
+      Iniciar sesión
+    </button>
+    <button mat-raised-button class="botonRegistro" (click)="registrar()">
+      Registro
+    </button>
+  </div>
+</mat-toolbar>
