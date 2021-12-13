@@ -10,6 +10,7 @@ import { map } from 'rxjs/operators';
 import { Usuario } from 'src/app/models/usuario';
 import { UsuarioService } from 'src/app/services/usuario.service';
 import { CookieService } from 'ngx-cookie-service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -55,7 +56,7 @@ export class RegisterComponent implements OnInit {
     this.dataSource.filter = filterValue.trim().toLowerCase();
   }
   
-  constructor(private _formBuilder: FormBuilder, private usuarioService: UsuarioService, private cookieService: CookieService) {
+  constructor(private _formBuilder: FormBuilder, private usuarioService: UsuarioService, private cookieService: CookieService, private router: Router) {
   }
 
   getAlergia(alergia: String){
@@ -64,6 +65,10 @@ export class RegisterComponent implements OnInit {
   }
 
   ngOnInit() {
+    if(this.usuarioService.isLoggedIn()){
+      this.router.navigateByUrl('/dashboard');
+    }
+
     this.firstFormGroup = this._formBuilder.group({
       email: ['', Validators.required],
       apellidos: ['', Validators.required],

@@ -10,8 +10,8 @@ const UserSchema = new Schema({
     altura: {type: Number, required: true},
     peso: {type: Number, required: true},
     //objetivo: {type: String, enum: ['Ganar', 'Perder', "Mantener"], required: true},
-    alergias: {type: [String]},
-    alergias: {type: [String], required: true}
+    alergias: {type: [String], required: true},
+    dieta: {type: String, required: true}
 }, {
     timestamps: true,
     versionKey: false

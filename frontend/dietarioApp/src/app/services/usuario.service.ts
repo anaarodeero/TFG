@@ -74,21 +74,8 @@ export class UsuarioService {
     //return this.http.get<Usuario>(`http://localhost:4000/getUser`, requestOptions);
   }
 
-  update(id, params) {
-    return this.http.put(`http://localhost:4000/usuarios/${id}`, params).pipe(
-      map((x) => {
-        // update stored usuario if the logged in usuario updated their own record
-        if (id == this.usuarioValue._id) {
-          // update local storage
-          const usuario = { ...this.usuarioValue, ...params };
-          localStorage.setItem('usuario', JSON.stringify(usuario));
-
-          // publish updated usuario to subscribers
-          this.usuarioSubject.next(usuario);
-        }
-        return x;
-      })
-    );
+  update(params) {
+    return this.http.put(`http://localhost:4000/api/update`, params);
   }
 
   delete(id: string) {

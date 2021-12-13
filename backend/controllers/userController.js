@@ -85,15 +85,16 @@ userCtrl.authenticate = async (req, res, next) => {
 
 
 userCtrl.getUser = async (req, res, next) => {
-  let cookie = req.headers.cookie;
-  let id = jwt.decode(cookie.split("=")[1]);
+  let cookie = req.headers.authorization;
+  let id = jwt.decode(cookie.split(" ")[1]);
   const user = await User.findById(id);
   if(user) res.json(user);
   else res.json({user: false});
 };
 
 userCtrl.editUser = async (req, res, next) => {
-  const { id } = req.params;
+  let cookie = req.headers.authorization;
+  let id = jwt.decode(cookie.split(" ")[1]);
   await User.findByIdAndUpdate(id, {$set: req.body}, {new: true});
   res.json({ status: "User Updated" });
 };

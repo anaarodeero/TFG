@@ -9,6 +9,7 @@ import { FoodComponent } from './components/food/food.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { FoodPyramidComponent } from './components/food-pyramid/food-pyramid.component';
 import { EditProfileComponent } from './components/edit-profile/edit-profile.component';
+import { AuthInterceptorService } from './interceptors/auth-interceptor.service';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
@@ -37,6 +38,8 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatSelectModule } from '@angular/material/select';
 import { CdkStepperModule } from '@angular/cdk/stepper'; 
 import { GlobalGuard } from './guards/global.guard';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { MatListModule } from '@angular/material/list';
 
 
 
@@ -81,6 +84,14 @@ const routes: Routes = [
     MatSidenavModule,
     MatDialogModule,
     MatSelectModule,
-    CdkStepperModule]
+    CdkStepperModule,
+    MatListModule],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AuthInterceptorService,
+      multi: true
+    }
+  ]
 })
 export class AppRoutingModule { }

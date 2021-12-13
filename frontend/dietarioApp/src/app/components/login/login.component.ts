@@ -31,6 +31,10 @@ export class LoginComponent implements OnInit {
   constructor(private _formBuilder: FormBuilder, private usuarioService: UsuarioService, private cookieService: CookieService, private router: Router) { }
 
   ngOnInit(): void {
+    if(this.usuarioService.isLoggedIn()){
+      this.router.navigateByUrl('/dashboard');
+    }
+    
     this.firstFormGroup = this._formBuilder.group({
       email: ['', [Validators.required, Validators.email]],
       password: ['', Validators.required]

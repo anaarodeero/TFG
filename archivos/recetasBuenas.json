@@ -1,0 +1,1116 @@
+{
+	"id": 1,
+	"categoria": "Arroces",
+	"nombre": "Arroz seco de puerros, alubias y coliflor",
+	"ingredientes": [{
+			"alimento": 1,
+			"ingrediente": "180 g de arroz Senia"
+		},{
+			"alimento": 554,
+			"ingrediente": "540 ml de caldo de verduras + 500 ml más"
+		},{
+			"alimento": 64,
+			"ingrediente": "20 ml de salsa de soja"
+		},{
+			"alimento": 101,
+			"ingrediente": "½ coliflor"
+		},{
+			"alimento": 131,
+			"ingrediente": "1 puerro"
+		},{
+			"alimento": 112,
+			"ingrediente": "8 judías verdes"
+		},{
+			"alimento": 555,
+			"ingrediente": "200 g de alubia blanca cocida"
+		},{
+			"alimento": 140,
+			"ingrediente": "1 tomate rallado"
+		},{
+			"alimento": 72,
+			"ingrediente": "2 dientes de ajo"
+		},{
+			"alimento": 550,
+			"ingrediente": "1 cucharadita de pimentón"
+		},{
+			"alimento": 547,
+			"ingrediente": "Sal"
+		},{
+			"alimento": 556,
+			"ingrediente": "Aceite de oliva virgen extra"
+		}],
+	"dieta": "",
+	"preparacion":[
+		"En una paella sofreímos en aceite de oliva la coliflor troceada, las judías verdes y el puerro bien picado. Debe coger color.",
+		"Hacemos un hueco e incorporamos el tomate rallado, el diente de ajo troceado y el pimentón.",
+		"Sofreímos bien.",
+		"Incorporamos los 540 ml de caldo que necesitaremos para cocinar el arroz. Haremos una marca en una brocheta y ponemos otros 500 ml más. Añadimos la salsa de soja y dejamos cocinar a fuego medio hasta que de nuevo el nivel de caldo llegue a la marca inicial. Sazonamos.",
+		"Incorporamos el arroz y cocinamos 8 minutos a fuego fuerte, añadimos las alubias y cocinamos 7 minutos más a fuego suave."
+	]
+},
+{
+	"id": 2,
+	"categoria": "Arroces",
+	"nombre": "Arroz caldoso de matanza",
+	"ingredientes": [{
+			"alimento": 1,
+			"ingrediente": "180 g de arroz bomba"
+		},{
+			"alimento": 557,
+			"ingrediente": "900 ml de caldo de carne"
+		},{
+			"alimento": 397,
+			"ingrediente": "100 g de costilla troceada"
+		},{
+			"alimento": 558,
+			"ingrediente": "50 g de panceta troceada"
+		},{
+			"alimento": 488,
+			"ingrediente": "50 g de chorizo"
+		},{
+			"alimento": 490,
+			"ingrediente": "50 g de morcilla"
+		},{
+			"alimento": 559,
+			"ingrediente": "100 g de secreto"
+		},{
+			"alimento": 140,
+			"ingrediente": "1 tomate rallado"
+		},{
+			"alimento": 72,
+			"ingrediente": "2 dientes de ajo"
+		},{
+			"alimento": 550,
+			"ingrediente": "2 cucharaditas de pimentón"
+		},{
+			"alimento": 551,
+			"ingrediente": "4 hebras de azafrán"
+		},{
+			"alimento": 547,
+			"ingrediente": "Sal"
+		},{
+			"alimento": 556,
+			"ingrediente": "Aceite de oliva virgen extra"
+		}],
+	"dieta": "",
+	"preparacion":[
+		"En una olla doramos poco a poco la panceta, el secreto y la costilla troceada, Sazonamos bien.",
+		"Incorporamos el tomate, el ajo picado, el pimentón, el azafrán y hacemos un sofrito.",
+		"Añadimos el arroz y nacaramos bien.",
+		"Cubrimos con el caldo y comenzamos a cocinar. Cuando llevemos 12 minutos, introducimos el chorizo y la morcilla troceados y cocinamos 5 minutos más."
+	]
+},
+{
+	"id": 3,
+	"categoria": "Arroces",
+	"nombre": "Arroz a la cubana",
+	"ingredientes": [{
+			"alimento": 246,
+			"ingrediente": "4 huevos"
+		},{
+			"alimento": 1,
+			"ingrediente": "350 g de arroz largo"
+		},{
+			"alimento": 560,
+			"ingrediente": "500 ml de caldo de pollo"
+		},{
+			"alimento": 140,
+			"ingrediente": "500 g de tomate triturado"
+		},{
+			"alimento": 561,
+			"ingrediente": "4 plátanos verdes"
+		},{
+			"alimento": 92,
+			"ingrediente": "1 cebolla"
+		},{
+			"alimento": 72,
+			"ingrediente": "4 dientes de ajo"
+		},{
+			"alimento": 548,
+			"ingrediente": "1 hoja de laurel"
+		},{
+			"alimento": 562,
+			"ingrediente": "1 cucharadita de comino"
+		},{
+			"alimento": 563,
+			"ingrediente": "1 bouquet garni"
+		},{
+			"alimento": 20,
+			"ingrediente": "100 g de harina"
+		},{
+			"alimento": 257,
+			"ingrediente": "1 cucharadita de azúcar"
+		},{
+			"alimento": 556,
+			"ingrediente": "Aceite de oliva virgen extra"
+		},{
+			"alimento": 547,
+			"ingrediente": "Sal"
+		},{
+			"alimento": 128,
+			"ingrediente": "Pimienta negra"
+		}],
+	"dieta": "",
+	"preparacion":[
+		"En un recipiente que sea apto para horno sofreímos un diente de ajo, cuando esté dorado incorporamos la cebolla picada en brunoise. Cuando ésta esté rehogada añadimos el bouquet garni.",
+		"Añadimos una parte de arroz por dos de caldo y lo metemos al horno a 180º 12 minutos.",
+		"En otra sartén doramos 2 dientes de ajo enteros y cuando lo esté añadimos laurel y tomate triturado.",
+		"Tapamos y dejamos cocer 15 minutos a fuego medio.",
+		"Rectificamos de sal, azúcar y comino.",
+		"Por otro lado, freímos el plátano cortado a la mitad longitudinalmente enharinado y reservamos.",
+		"Freímos un huevo en aceite muy aliente y servimos."
+	]
+},
+{
+	"id": 4,
+	"categoria": "Arroces",
+	"nombre": "Curry de langostinos con pastel de arroz",
+	"ingredientes": [{
+			"alimento": 564,
+			"ingrediente": "1 taza de arroz basmati (300 g)"
+		},{
+			"alimento": 72,
+			"ingrediente": "4 dientes de ajo"
+		},{
+			"alimento": 565,
+			"ingrediente": "1 chile rojo fresco"
+		},{
+			"alimento": 566,
+			"ingrediente": "1 trozo de jengibre de 4 cm"
+		},{
+			"alimento": 92,
+			"ingrediente": "1 manojo de cebolletas"
+		},{
+			"alimento": 170,
+			"ingrediente": "2 cdas. de chutney de mango"
+		},{
+			"alimento": 332,
+			"ingrediente": "320 g de langostinos crudos y pelados"
+		},{
+			"alimento": 245,
+			"ingrediente": "150 g de yogur natural"
+		}],
+	"dieta": "",
+	"preparacion":[
+		"Poner 1 taza de arroz y 2 tazas de agua hirviendo (600 ml) en una cazuela antiadherente mediana con una pizca de sal marina. Dejar que borbotee 10 minutos y luego cocinar a fuego suave 5 minutos. Pasado este tiempo, podrá convertirse en un pastel de arroz.",
+		"Mientras tanto, pelar el ajo y cortarlo en rodajas finas junto con el chile. Pelar el jengibre y cortarlo en tiras finas. Limpiar las cebolletas y cortarlas en trozos de 2 cm.",
+		"Poner todo a fuego fuerte en una sartén grande antiadherente con 1 cucharada de aceite de oliva y saltear 3 minutos; luego, agregar el chutney de mango.",
+		"Con cuidado, verter la mitad de la mezcla en una batidora y volver a colocar la sartén en el fuego para saltear los langostinos. Agregar ½ taza de agua (150 ml) a la batidora, triturar hasta conseguir una mezcla homogénea y verter en la sartén de los langostinos.",
+		"Dejar que la salsa hierva y se espese un poco durante 3 minutos. Luego, fuera del fuego, añadir el yogur sin apenas mezclarlo.",
+		"Servir el curry sobre el pastel de arroz."
+	]
+},
+{
+	"id": 5,
+	"categoria": "Arroces",
+	"nombre": "Risotto con ajetes y albahaca en burrata",
+	"ingredientes": [{
+			"alimento": 1,
+			"ingrediente": "300 g de arroz arborio"
+		},{
+			"alimento": 92,
+			"ingrediente": "1 cebolleta"
+		},{
+			"alimento": 567,
+			"ingrediente": "100 g de ajetes"
+		},{
+			"alimento": 230,
+			"ingrediente": "30 g de mantequilla"
+		},{
+			"alimento": 543,
+			"ingrediente": "70 ml de vino blanco"
+		},{
+			"alimento": 560,
+			"ingrediente": "650 ml de caldo de pollo"
+		},{
+			"alimento": 568,
+			"ingrediente": "80 g de parmesano rallado"
+		},{
+			"alimento": 569,
+			"ingrediente": "4 burratas"
+		},{
+			"alimento": 570,
+			"ingrediente": "4 ramas de albahaca fresca"
+		},{
+			"alimento": 547,
+			"ingrediente": "Sal"
+		},{
+			"alimento": 128,
+			"ingrediente": "Pimienta"
+		},{
+			"alimento": 556,
+			"ingrediente": "Aceite de oliva virgen extra"
+		}],
+	"dieta": "regular",
+	"preparacion":[
+		"En una olla doramos la cebolla picada en aceite de oliva. Incorporamos los ajetes troceados y cocinamos a fuego medio hasta que todo coja color.",
+		"Incorporamos el arroz, nacaramos y mojamos con el vino. Removemos hasta que evapore por completo y sazonamos.",
+		"Vamos incorporando el caldo caliente poco a poco hasta cocinar el arroz, que estará hecho en aproximadamente 17 minutos.",
+		"Añadimos la mantequilla y el parmesano, mezclamos bien y si es necesario rectificamos de sal.",
+		"Retiramos del fuego.",
+		"Picamos la albahaca.",
+		"Partimos las burratas en un plato hondo, hacemos que pierdan parte de su relleno y rellenamos con el risotto. Decoramos con la albahaca picada."
+	]
+},
+{
+	"id": 6,
+	"categoria": "Arroces",
+	"nombre": "Arroz de espárragos y panceta ibérica con salsa de yema",
+	"ingredientes": [{
+			"alimento": 1,
+			"ingrediente": "360 g de arroz bomba"
+		},{
+			"alimento": 554,
+			"ingrediente": "1 ½ l de caldo de verduras"
+		},{
+			"alimento": 72,
+			"ingrediente": "2 ajos"
+		},{
+			"alimento": 140,
+			"ingrediente": "1 tomate"
+		},{
+			"alimento": 92,
+			"ingrediente": "1 cebolleta"
+		},{
+			"alimento": 550,
+			"ingrediente": "1 cucharadita de pimentón"
+		},{
+			"alimento": 551,
+			"ingrediente": "4 hebras de azafrán"
+		},{
+			"alimento": 108,
+			"ingrediente": "1 manojo de espárragos verdes"
+		},{
+			"alimento": 558,
+			"ingrediente": "200 g de panceta ibérica curada"
+		},{
+			"alimento": 248,
+			"ingrediente": "4 yemas de huevo"
+		},{
+			"alimento": 556,
+			"ingrediente": "Aceite de oliva virgen extra"
+		},{
+			"alimento": 128,
+			"ingrediente": "Pimienta"
+		},{
+			"alimento": 547,
+			"ingrediente": "Sal"
+		}],
+	"dieta": "regular",
+	"preparacion":[
+		"Comenzamos calentando una paellera y poniendo dos cucharadas de aceite de oliva virgen extra por cada comensal.",
+		"Cortamos finamente los ajos y la cebolleta y los añadimos. Doramos ligeramente y hacemos lo mismo con el tomate y el pimentón hasta que evapore toda su agua. A continuación, añadimos unas hebras de azafrán y lo tostamos un poquito.",
+		"Cortamos los espárragos en cuatro partes y los añadimos reservando la parte de las yemas para más tarde.",
+		"Incorporamos el arroz y lo nacaramos hasta que esté bien impregnado del sofrito. Poco a poco incorporamos el caldo de verduras caliente. Podemos hacer el caldo casero utilizando las verduras que más nos gusten, así el arroz quedará más bueno. Si el caldo lleva sal, no será necesario incorporárselo al arroz.",
+		"Cocinamos sin mover unos 17 minutos. El caldo debe evaporare por completo, por lo que subiremos el fuego si vemos que el arroz se está terminando de cocinar y aún queda líquido. A mirad de cocción añadiremos las yemas de los espárragos que habíamos reservado. Mientras, en un bol al baño María montamos las yemas de huevo hasta que se conviertan en una crema. Salpimentamos y metemos en un biberón, manga pastelera o cornete de papel.",
+		"Colocamos la panceta ibérica en lonchas encima del arroz aún caliente para que se termine de cocinar. Ponemos unos puntos de la crema de yema y listo para servir."
+	]
+},
+{
+	"id": 7,
+	"categoria": "Arroces",
+	"nombre": "Ensalada de arroz prohibido con aguacate y mango",
+	"ingredientes": [{
+			"alimento": 1,
+			"ingrediente": "150 g arroz prohibido"
+		},{
+			"alimento": 92,
+			"ingrediente": "8 cebolletas chinas"
+		},{
+			"alimento": 92,
+			"ingrediente": "1 cebolla morada"
+		},{
+			"alimento": 171,
+			"ingrediente": "1 manzana"
+		},{
+			"alimento": 571,
+			"ingrediente": "1 aguacate"
+		},{
+			"alimento": 170,
+			"ingrediente": "1 mango"
+		},{
+			"alimento": 572,
+			"ingrediente": "5 cucharadas de chutney de mango y manzana"
+		},{
+			"alimento": 556,
+			"ingrediente": "Aceite de oliva virgen extra"
+		},{
+			"alimento": 573,
+			"ingrediente": "2 cucharadas de pasta de sésamo"
+		},{
+			"alimento": 128,
+			"ingrediente": "Pimienta negra"
+		},{
+			"alimento": 574,
+			"ingrediente": "Hierbabuena"
+		},{
+			"alimento": 575,
+			"ingrediente": "Cilantro"
+		},{
+			"alimento": 576,
+			"ingrediente": "Menta"
+		},{
+			"alimento": 577,
+			"ingrediente": "1 lima"
+		},{
+			"alimento": 547,
+			"ingrediente": "Sal"
+		}],
+	"dieta": "regular",
+	"preparacion":[
+		"Para esta receta utilizaremos arroz prohibido y será necesario lavarlo un par de veces con agua abundante. Después de esto, lo ponemos a cocer durante 35 minutos.",
+		"Mientras tanto aprovechamos para cortar todos los ingredientes de la receta. Cortamos el aguacate en brunoise y añadimos unas gotas de limón para que no se oxide mientras preparamos el resto.",
+		"Cortamos el mango en pequeños cuadrados y la cebolla morada. Reservamos.",
+		"A continuación, preparamos el aliño mezclando el zumo de una lima, el aceite de oliva, la pimienta negra, una cucharada de pasta de sésamo y el chutney de mango y manzana. Añadimos las hierbas cortadas, salamos y reservamos.",
+		"Cuando el arroz esté cocido lo colamos, secamos y mezclamos en un bol junto con los ingredientes que habíamos cortado y el aliño. Mezclamos bien y servimos en cuencos.",
+		"Terminamos decorando con las cebolletas chinas, pequeños gajos de manzana y flores comestibles."
+		]
+},
+{
+	"id": 8,
+	"categoria": "Arroces",
+	"nombre": "Risotto de langostinos con curry y leche de coco",
+	"ingredientes": [{
+			"alimento": 1,
+			"ingrediente": "200 g de arroz arborio"
+		},{
+			"alimento": 91,
+			"ingrediente": "1/2 cebolleta"
+		},{
+			"alimento": 72,
+			"ingrediente": "1 diente de ajo"
+		},{
+			"alimento": 543,
+			"ingrediente": "1 chorro de vino blanco"
+		},{
+			"alimento": 578,
+			"ingrediente": "800 ml de caldo de marisco"
+		},{
+			"alimento": 579,
+			"ingrediente": "Curry en polvo"
+		},{
+			"alimento": 210,
+			"ingrediente": "60 g de leche de coco"
+		},{
+			"alimento": 332,
+			"ingrediente": "200 g de langostinos pelados"
+		},{
+			"alimento": 556,
+			"ingrediente": "Aceite de oliva Virgen extra"
+		},{
+			"alimento": 547,
+			"ingrediente": "Sal"
+		}],
+	"dieta": "regular",
+	"preparacion":[
+		"Picamos la cebolleta y el ajo.",
+		"Las pochamos en una sartén con un poco de aceite de oliva virgen extra. Incorporamos el arroz y nacaramos. Vertemos el vino blanco, cuando se evapore introducimos la sal y el curry.",
+		"Vamos incorporando poco a poco el caldo de marisco caliente. Removemos bien y continuamos incorporando caldo hasta que al arroz le falten 4 o 5 minutos.",
+		"Introducimos los langostinos y cocinamos 3 minutos. Añadimos la leche de coco, cocinamos un par de minutos y rectificamos de sal si fuera necesario.",
+		"Emplatamos poniendo los langostinos arriba."
+    ]
+},
+{
+	"id": 9,
+	"categoria": "Arroces",
+	"nombre": "Arroz salteado con espinacas",
+	"ingredientes": [{
+			"alimento": 1,
+			"ingrediente": "1 vasito arroz blanco"
+		},{
+			"alimento": 580,
+			"ingrediente": "150 g de carne picada de cerdo"
+		},{
+			"alimento": 140,
+			"ingrediente": "1 tomate"
+		},{
+			"alimento": 110,
+			"ingrediente": "100 g de espinacas"
+		},{
+			"alimento": 581,
+			"ingrediente": "1 pan árabe"
+		},{
+			"alimento": 246,
+			"ingrediente": "1 huevo"
+		},{
+			"alimento": 92,
+			"ingrediente": "1 cebolla"
+		},{
+			"alimento": 562,
+			"ingrediente": "Comino"
+		},{
+			"alimento": 582,
+			"ingrediente": "Canela"
+		},{
+			"alimento": 127,
+			"ingrediente": "Perejil"
+		},{
+			"alimento": 576,
+			"ingrediente": "Menta"
+		},{
+			"alimento": 128,
+			"ingrediente": "Pimienta"
+		},{
+			"alimento": 556,
+			"ingrediente": "Aceite de oliva virgen extra"
+		}],
+	"dieta": "regular",
+	"preparacion":[
+		"En una sartén con aceite pochamos la cebolla en dados.",
+		"Añadimos la carne picada, dejamos que se dore, y a continuación introducimos el tomate en dados.",
+		"Sazonamos con el zumo de limón y las especias y las hierbas picadas.",
+		"Añadimos las espinacas y el arroz.",
+		"Salteamos y servimos con un huevo poché y el pan árabe."
+	]
+},
+{
+	"id": 10,
+	"categoria": "Arroces",
+	"nombre": "Arroz con frijoles y cebolla morada",
+	"ingredientes": [{
+			"alimento": 1,
+			"ingrediente": "1 vasito de arroz"
+		},{
+			"alimento": 92,
+			"ingrediente": "1 cebolla morada"
+		},{
+			"alimento": 583,
+			"ingrediente": "1 bote de frijoles"
+		},{
+			"alimento": 558,
+			"ingrediente": "3 lonchas de panceta fresca"
+		},{
+			"alimento": 72,
+			"ingrediente": "Ajo"
+		},{
+			"alimento": 562,
+			"ingrediente": "Comino"
+		},{
+			"alimento": 556,
+			"ingrediente": "Aceite de oliva virgen extra"
+		},{
+			"alimento": 575,
+			"ingrediente": "Ramita de cilantro"
+		}],
+	"dieta": "regular",
+	"preparacion":[
+		"Sofreímos el ajo. Reservamos. Sofreímos la cebolla y reservamos. Pasamos la panceta por la sartén también, en tiritas. Reservamos.",
+		"Abrimos el vasito de arroz y añadimos ambas cosas a la sartén. Volvemos a añadir la cebolla y el ajo. Escurrimos los frijoles y los añadimos también. Echamos comino en polvo y servimos con cilantro.",
+	]
+},
+{
+	"id": 11,
+	"categoria": "Arroces",
+	"nombre": "Risotto de peras y queso gorgonzola",
+	"ingredientes": [{
+			"alimento": 185,
+			"ingrediente": "1 pera"
+		},{
+			"alimento": 92,
+			"ingrediente": "1 cebolla"
+		},{
+			"alimento": 1,
+			"ingrediente": "240 g de arroz arborio"
+		},{
+			"alimento": 260,
+			"ingrediente": "1,5 l de caldo"
+		},{
+			"alimento": 236,
+			"ingrediente": "80 g de queso gorgonzola"
+		},{
+			"alimento": 230,
+			"ingrediente": "70 g de mantequilla"
+		},{
+			"alimento": 127,
+			"ingrediente": "1 manojo de perejil"
+		},{
+			"alimento": 72,
+			"ingrediente": "1 diente de ajo"
+		},{
+			"alimento": 216,
+			"ingrediente": "20 g de piñones"
+		},{
+			"alimento": 568,
+			"ingrediente": "20 g de queso parmesano"
+		},{
+			"alimento": 547,
+			"ingrediente": "Sal"
+		},{
+			"alimento": 556,
+			"ingrediente": "Aceite de oliva virgen extra"
+		}],
+	"dieta": "regular",
+	"preparacion":[
+		"Eduardo Ruano propone esta receta al cocinero Sergio Fernández desde Zaragoza.",
+		"Picamos una cebolla y la incorporamos a una cazuela con aceite para que se dore. Añadimos el arroz y sofreímos.",
+		"Vamos añadiendo el caldo poco a poco, y a medida que se vaya consumiendo añadimos más.",
+		"Pelamos la pera, la troceamos y la rehogamos en una sartén hasta que se caramelice.",
+		"Elaboramos una mantequilla verde triturando el perejil, un diente de ajo y mantequilla.",
+		"Cuando el arroz esté casi en su punto le incorporamos la pera, los piñones y mantecamos con el queso gorgonzola y la mantequilla verde. Mezclamos los ingredientes.",
+		"Elaboramos una teja de queso parmesano en una sartén.",
+		"Servimos el risotto y decoramos con la teja de queso."
+	]
+},
+{
+	"id": 12,
+	"categoria": "Arroces",
+	"nombre": "Arroz con verduras y pollo",
+	"ingredientes": [{
+			"alimento": 525,
+			"ingrediente": "4 muslos de pollo"
+		},{
+			"alimento": 547,
+			"ingrediente": "Sal"
+		},{
+			"alimento": 128,
+			"ingrediente": "Pimienta blanca"
+		},{
+			"alimento": 556,
+			"ingrediente": "Aceite de oliva virgen extra"
+		},{
+			"alimento": 92,
+			"ingrediente": "1 Cebolla"
+		},{
+			"alimento": 129,
+			"ingrediente": "1 Pimiento rojo"
+		},{
+			"alimento": 546,
+			"ingrediente": "1 Pimiento verde"
+		},{
+			"alimento": 147,
+			"ingrediente": "1 Zanahoria"
+		},{
+			"alimento": 131,
+			"ingrediente": "1 Puerro"
+		},{
+			"alimento": 72,
+			"ingrediente": "2 dientes de ajo"
+		},{
+			"alimento": 543,
+			"ingrediente": "1 vaso de vino blanco"
+		},{
+			"alimento": 129,
+			"ingrediente": "Pulpa de pimiento choricero"
+		},{
+			"alimento": 1,
+			"ingrediente": "350 g de arroz"
+		},{
+			"alimento": 554,
+			"ingrediente": "1 l de caldo de verduras"
+		}],
+	"dieta": "regular",
+	"preparacion":[
+		"Lo primero que tenemos que hacer es salpimentar 4 muslos de pollo.",
+		"Seguidamente, ponemos una cazuela al fuego con 3 cucharadas de aceite de oliva virgen extra. Cuando esté el aceite caliente doramos los muslos de pollo y reservamos.",
+		"Picamos en trozos medianos una cebolla, un pimiento rojo y otro verde, una zanahoria, un puerro y dos dientes de ajo.",
+		"En el mismo aceite del pollo vamos a rehogar las verduras. Primero la cebolla, luego la zanahoria, el ajo y el puerro, y por último añadimos los pimientos.",
+		"Cuando todas las verduras estén bien pochadas volvemos a echar los muslos de pollo.",
+		"Añadimos un vaso de vino blanco y dejamos que se evapore el alcohol.",
+		"Incorporamos la pulpa de un pimiento choricero.",
+		"A continuación echamos 350 g de arroz y vertemos un litro de caldo de verduras. Dejamos cocer a fuego medio durante unos 20 minutos para que se quede caldoso.",
+		"Retiramos del fuego y servimos en caliente."
+	]
+},
+{
+	"id": 13,
+	"categoria": "Arroces",
+	"nombre": "Arroz con pato",
+	"ingredientes": [{
+			"alimento": 517,
+			"ingrediente": "½ Pato fresco"
+		},{
+			"alimento": 271,
+			"ingrediente": "1 taza de aceite de oliva"
+		},{
+			"alimento": 72,
+			"ingrediente": "2 dientes de ajo"
+		},{
+			"alimento": 51,
+			"ingrediente": "100 g de guisantes"
+		},{
+			"alimento": 575,
+			"ingrediente": "1 manojo de cilantro fresco"
+		},{
+			"alimento": 584,
+			"ingrediente": "1 botellín de cerveza negra"
+		},{
+			"alimento": 84,
+			"ingrediente": "½ taza de calabaza picada"
+		},{
+			"alimento": 84,
+			"ingrediente": "½ taza de calabaza rallada"
+		},{
+			"alimento": 574,
+			"ingrediente": "Sal"
+		},{
+			"alimento": 128,
+			"ingrediente": "Pimienta"
+		},{
+			"alimento": 1,
+			"ingrediente": "½ kg de arroz"
+		},{
+			"alimento": 130,
+			"ingrediente": "1 Pimiento rojo"
+		},{
+			"alimento": 92,
+			"ingrediente": "½ Cebolla morada"
+		},{
+			"alimento": 577,
+			"ingrediente": "1 Lima en zumo"
+		},{
+			"alimento": 575,
+			"ingrediente": "Hojas de cilantro fresco"
+		}],
+	"dieta": "regular",
+	"preparacion":[
+		"Lo primero que tenemos que hacer es cortar en cuartos medio pato. En una sartén echamos una taza de aceite de oliva. Mientras se calienta, salpimentamos al gusto el pato.",
+		"Cuando el aceite esté bien caliente doramos las porciones de pato por todos sus lados. Una vez las tengamos listas, las reservamos en una bandeja.",
+		"Vertemos el aceite que hemos utilizado para dorar el pato en una olla y lo calentamos a fuego medio. Pelamos y cortamos en láminas finas dos dientes de ajo. Cuando esté el aceite caliente, doramos el ajo. A continuación, agregamos 100 g de guisantes.",
+		"Licuamos un manojo de cilantro fresco y un botellín de cerveza negra. Seguidamente incorporamos esta mezcla a la olla.",
+		"Echamos en la olla media taza de calabaza picada y media taza de calabaza rallada.",
+		"Agregamos dos tazas de agua y sazonamos con sal y pimienta al gusto.",
+		"Pasados unos minutos agregamos el pato a la olla y lo terminamos de cocer. Cuando esté listo, lo retiramos. Debe quedar tierno.",
+		"Seguidamente vertemos medio kilo de arroz. Bajamos el fuego y cocemos durante unos 20 minutos o hasta que el arroz esté en su punto. Si es necesario agregamos un poco más de agua.",
+		"Mientras tanto, lavamos y cortamos en tiras finas un pimiento rojo. Reservamos.",
+		"Cuando el arroz esté en su punto, volvemos a colocar la carne de pato y el pimiento rojo en tiras que hemos reservado. Apagamos el fuego, tapamos la olla y dejamos reposar durante unos minutos.",
+		"A continuación vamos a preparar una salsa con cebolla. Para ello, pelamos y picamos en juliana una cebolla morada y la lavamos con agua bien fría.",
+		"Escurrimos bien y la colocamos en un cuenco. Añadimos el zumo de una lima, sal al gusto y hojas de cilantro fresco picadas.",
+		"Para finalizar, servimos el arroz con pato acompañado con la salsa de cebolla y lima."
+	]
+},
+{
+	"id": 14,
+	"categoria": "Arroces",
+	"nombre": "Risotto de zanahorias, miel y queso roquefort",
+	"ingredientes": [{
+			"alimento": 174,
+			"ingrediente": "2 Zanahorias"
+		},{
+			"alimento": 92,
+			"ingrediente": "1 cebolla"
+		},{
+			"alimento": 72,
+			"ingrediente": "1 diente de ajo"
+		},{
+			"alimento": 556,
+			"ingrediente": "Aceite de oliva virgen extra"
+		},{
+			"alimento": 1,
+			"ingrediente": "160 g de arroz arborio"
+		},{
+			"alimento": 589,
+			"ingrediente": "1 cucharadita de cúrcuma"
+		},{
+			"alimento": 270,
+			"ingrediente": "1 cucharada de miel"
+		},{
+			"alimento": 543,
+			"ingrediente": "20 ml de vino blanco"
+		},{
+			"alimento": 554,
+			"ingrediente": "500 ml de caldo de verduras claro"
+		},{
+			"alimento": 574,
+			"ingrediente": "Sal"
+		},{
+			"alimento": 128,
+			"ingrediente": "Pimienta"
+		},{
+			"alimento": 241,
+			"ingrediente": "80 g de queso roquefort"
+		},{
+			"alimento": 75,
+			"ingrediente": "1 rama de apio"
+		},{
+			"alimento": 230,
+			"ingrediente": "60 g de mantequilla"
+		}],
+	"dieta": "regular",
+	"preparacion":[
+		"Lo primero que tenemos que hacer es cortar en lavar y cortar en brunoise dos zanahorias, una cebolla pelada y un diente de ajo pelado.",
+		"Calentamos una cacerola o una sartén con un chorrito de aceite de oliva y doramos la zanahoria, la cebolla y el ajo.",
+		"A continuación agregamos 160 g de arroz arborio y calentamos bien. Después añadimos una cucharadita de cúrcuma y una cucharada de miel. Desglasamos con 20 ml de vino blanco.",
+		"Cuando el alcohol se haya evaporado, agregamos 500 ml de caldo de verduras claro y salpimentamos. Es importante no agregar todo el caldo de una sola vez, sino poco a poco durante la cocción.",
+		"Cocinamos a fuego medio – bajo durante unos 17 minutos removiendo constantemente y añadiendo caldo según se vaya absorbiendo.",
+		"Mientras se cuece el arroz, cortamos en brunoise una rama de apio y 80 g de queso roquefort en cubos.",
+		"Cuando haya pasado el tiempo de cocción del arroz, agregamos 60 g de mantequilla y movemos bien para que se funda y se integre.",
+		"Para finalizar, servimos el risotto en un plato y sobre él añadimos el apio y el queso roquefort."
+	]
+},
+{
+	"id": 15,
+	"categoria": "Arroces",
+	"nombre": "Arroz basmati al limón (Lemon basmati)",
+	"ingredientes": [{
+			"alimento": 589,
+			"ingrediente": "0,5 g cúrcuma"
+		},{
+			"alimento": 564,
+			"ingrediente": "100 g arroz basmati"
+		},{
+			"alimento": 590,
+			"ingrediente": "0,3 g cardamomo verde"
+		},{
+			"alimento": 590,
+			"ingrediente": "0,5 g cardamomo negro"
+		},{
+			"alimento": 591,
+			"ingrediente": "0,2 g macis / mace"
+		},{
+			"alimento": 582,
+			"ingrediente": "0,5 g canela"
+		},{
+			"alimento": 552,
+			"ingrediente": "0,2 g clavos"
+		},{
+			"alimento": 548,
+			"ingrediente": "0,2 g laurel"
+		},{
+			"alimento": 547,
+			"ingrediente": "Sal"
+		},{
+			"alimento": 556,
+			"ingrediente": "10 g aceite de oliva virgen"
+		},{
+			"alimento": 166,
+			"ingrediente": "10 g zumo de limón"
+		},{
+			"alimento": 166,
+			"ingrediente": "10 g limón cortado"
+		},{
+			"alimento": 117,
+			"ingrediente": "10 g semilla de mostaza"
+		}],
+	"dieta": "regular",
+	"preparacion":[
+		"En primer lugar, dejamos el arroz en remojo en un bol con agua fría durante 2 horas.",
+		"Transcurrido ese tiempo, lavamos el arroz pasándolo por agua y ponemos una olla al fuego con agua fría.",
+		"Cuando el agua haya cogido una temperatura de unos 90-95ºC, añadimos el arroz y cocinamos durante unos 7 minutos aproximadamente.",
+		"Una vez el arroz esté listo, lo recuperamos de la olla y escurrimos el agua de la cocción con ayuda de un colador para pasta. Reservamos.",
+		"Por otra parte, ponemos una sartén al fuego con el zumo de limón y la semilla de mostaza. Añadimos cardamomo verde, cardamomo negro, macis, canela salvaje, clavos, laurel y sal. Dejamos que el zumo de limón reduzca e incorporamos el arroz.",
+		"Salteamos el arroz durante unos minutos, lo recuperamos de la sartén y emplatamos decorando con unas rodajas de limón cortado.",
+		"Servimos."
+	]
+},
+{
+	"id": 16,
+	"categoria": "Carne y aves",
+	"nombre": "Perdices con manzana",
+	"ingredientes": [{
+			"alimento": 521,
+			"ingrediente": "4 perdices"
+		},{
+			"alimento": 92,
+			"ingrediente": "1 cebolla"
+		},{
+			"alimento": 72,
+			"ingrediente": "2 dientes de ajo"
+		},{
+			"alimento": 129,
+			"ingrediente": "1 pimiento rojo"
+		},{
+			"alimento": 147,
+			"ingrediente": "1 zanahoria"
+		},{
+			"alimento": 140,
+			"ingrediente": "2 tomates"
+		},{
+			"alimento": 118,
+			"ingrediente": "1 nabo"
+		},{
+			"alimento": 592,
+			"ingrediente": "50 g de sobrasada"
+		},{
+			"alimento": 418,
+			"ingrediente": "50 g de tocino"
+		},{
+			"alimento": 549,
+			"ingrediente": "3 ramas de tomillo"
+		},{
+			"alimento": 593,
+			"ingrediente": "200 ml de vino tinto"
+		},{
+			"alimento": 521,
+			"ingrediente": "1,5 l de caldo de perdiz"
+		},{
+			"alimento": 171,
+			"ingrediente": "500 g de manzanas"
+		},{
+			"alimento": 556,
+			"ingrediente": "Aceite de oliva virgen extra"
+		},{
+			"alimento": 547,
+			"ingrediente": "Sal"
+		}],
+	"dieta": "regular",
+	"preparacion":[
+		"Separamos las patas de las pechugas y reservamos. Pelamos y cortamos las manzanas reservando las pieles y los corazones.",
+		"Colocamos una olla al fuego y añadimos aceite de oliva. Comenzamos a dorar la cebolla en juliana, el tocino y la sobrasada.",
+		"Cuando la sobrasada comience a sacar toda su grasa añadimos el pimiento rojo picado, la zanahoria picada, el ajo picado y el nabo en trozos. Salamos, rehogamos un minuto más y añadimos las pieles de las manzanas y sus corazones.",
+		"Desglasamos con el vino y esperamos a que reduzca.",
+		"Salamos al gusto, añadimos el tomate y un poco de tomillo. Incorporamos las patas de perdiz al guiso y cubrimos con el caldo. Ponemos a fuego medio y dejamos cocinar durante 15 o 20 minutos, dependiendo del tamaño de la perdiz.",
+		"Picamos la manzana en cubos de medio centímetro aproximadamente y los doramos en una sartén con sal y aceite. Salteamos a fuego fuerte unos tres minutos. Reservamos y doramos muy bien las pechugas bien sazonadas. Dos minutos por cada lado.",
+		"Emplatamos una base del guiso con perdices y las pechugas escalopadas con manzana por encima."
+	]
+},
+{
+	"id": 17,
+	"categoria": "Carne y aves",
+	"nombre": "Estofado de lengua de ternera con hortalizas",
+	"ingredientes": [{
+			"alimento": 452,
+			"ingrediente": "1 lengua de ternera"
+		},{
+			"alimento": 92,
+			"ingrediente": "2 cebolla"
+		},{
+			"alimento": 147,
+			"ingrediente": "4 zanahorias"
+		},{
+			"alimento": 548,
+			"ingrediente": "2 hojas de laurel"
+		},{
+			"alimento": 72,
+			"ingrediente": "2 dientes de ajo"
+		},{
+			"alimento": 140,
+			"ingrediente": "1 tomate rallado"
+		},{
+			"alimento": 149,
+			"ingrediente": "8 aceitunas verdes sin hueso"
+		},{
+			"alimento": 594,
+			"ingrediente": "10 alcaparras"
+		},{
+			"alimento": 128,
+			"ingrediente": "½ cucharadita de pimienta"
+		},{
+			"alimento": 547,
+			"ingrediente": "Sal"
+		},{
+			"alimento": 556,
+			"ingrediente": "Aceite de oliva virgen extra"
+		}],
+	"dieta": "regular",
+	"preparacion":[
+		"En una olla a presión ponemos la lengua, una cebolla, dos de las zanahorias, el laurel, sal y cubrimos de agua.",
+		"Cocinamos 50 minutos desde que salga el vapor.",
+		"Para la salsa, cortamos el resto de zanahorias en rodajas, el ajo en láminas y la cebolla en juliana y pochamos en una sartén con aceite.",
+		"Incorporamos el tomate rallado y sofreímos dos minutos más. Añadimos un poco de pimienta.",
+		"Añadimos las alcaparras y las aceitunas picadas. Añadimos 200 ml de agua y cocinamos 15 minutos. Trituramos y sazonamos.",
+		"Pelamos la lengua y la cortamos en filetes.",
+		"Los introducimos en la salsa y cocinamos 5 minutos todo junto."
+	]
+},
+{
+	"id": 18,
+	"categoria": "Carne y aves",
+	"nombre": "Terrina de ternera, vino dulce y espárragos",
+	"ingredientes": [{
+			"alimento": 492,
+			"ingrediente": "800 g de morcillo anterior"
+		},{
+			"alimento": 117,
+			"ingrediente": "1 cucharada de mostaza"
+		},{
+			"alimento": 595,
+			"ingrediente": "150 ml de Oporto"
+		},{
+			"alimento": 128,
+			"ingrediente": "Pimienta"
+		},{
+			"alimento": 108,
+			"ingrediente": "6 espárragos verdes"
+		},{
+			"alimento": 547,
+			"ingrediente": "Sal"
+		},{
+			"alimento": 556,
+			"ingrediente": "Aceite de oliva virgen extra"
+		},{
+			"alimento": 117,
+			"ingrediente": "Mostaza"
+		}],
+	"dieta": "regular",
+	"preparacion":[
+		"Ponemos a cocer el morcillo en agua, vino, sal y pimienta. En una olla exprés tardará 40 minutos. Cocinamos los espárragos a la plancha.",
+		"Desmenuzamos la carne, la sazonamos bien con mostaza, sal y pimienta, la cubrimos con su caldo de cocción y la metemos en una tarrina forrada con film colocando los espárragos en la zona central del molde.",
+		"Dejamos enfriar aproximadamente 3 horas, desmoldamos y servimos con un poco de mostaza."
+	]
+},
+{
+	"id": 19,
+	"categoria": "Carne y aves",
+	"nombre": "Ensalada de pechugas jugosas",
+	"ingredientes": [{
+			"alimento": 525,
+			"ingrediente": "4 pechugas de pollo"
+		},{
+			"alimento": 596,
+			"ingrediente": "400 g de pasta cocida"
+		},{
+			"alimento": 597,
+			"ingrediente": "Tomates Cherry"
+		},{
+			"alimento": 133,
+			"ingrediente": "8 rabanitos"
+		},{
+			"alimento": 598,
+			"ingrediente": "1 bolsa de rúcula"
+		},{
+			"alimento": 599,
+			"ingrediente": "Germinados"
+		},{
+			"alimento": 556,
+			"ingrediente": "Aceite de oliva virgen extra"
+		},{
+			"alimento": 573,
+			"ingrediente": "Semillas de sésamo"
+		},{
+			"alimento": 553,
+			"ingrediente": "Vinagre"
+		},{
+			"alimento": 547,
+			"ingrediente": "Sal"
+		}],
+	"dieta": "regular",
+	"preparacion":[
+		"Lo primero que vamos a hacer es preparar la pechuga para después servirla fría.",
+		"Colocamos un poco de papel film sobre la mesa y espolvoreamos semillas de sésamo. Ponemos la pechuga y enrollamos con el papel hasta que quede bien sellada. Repetimos este proceso con todas las pechugas.",
+		"Cocinamos al vapor las pechugas durante 5 minutos. Podemos hacerlo en una vaporera o en una olla con agua y un escurridor.",
+		"Pasados esos 5 minutos, retiramos el papel film y tostamos la pechuga de pollo en una sartén con un poco de aceite de oliva. De esta manera quedará jugosa por dentro y tostada por fuera. Dejamos enfriar antes de montar la ensalada.",
+		"Cortamos los tomates Cherry por la mitad y laminamos los rabanitos.",
+		"En un bol añadimos los tomates cortados por la mitad, unas láminas de rabanitos, la pasta cocina, la rúcula y los germinados. Mezclamos y aliñamos al gusto.",
+		"Terminamos emplatando con la pechuga laminada por encima."
+	]
+},
+{
+	"id": 20,
+	"categoria": "Carne y aves",
+	"nombre": "Guiso de conejo con setas",
+	"ingredientes": [{
+			"alimento": 533,
+			"ingrediente": "1 conejo en trozos"
+		},{
+			"alimento": 72,
+			"ingrediente": "2 dientes de ajo"
+		},{
+			"alimento": 92,
+			"ingrediente": "1 cebolla"
+		},{
+			"alimento": 138,
+			"ingrediente": "400 g de setas variadas"
+		},{
+			"alimento": 548,
+			"ingrediente": "Laurel"
+		},{
+			"alimento": 600,
+			"ingrediente": "Romero fresco"
+		},{
+			"alimento": 549,
+			"ingrediente": "Tomillo fresco"
+		},{
+			"alimento": 543,
+			"ingrediente": "100 ml de vino blanco"
+		},{
+			"alimento": 557,
+			"ingrediente": "300 ml de caldo de conejo"
+		},{
+			"alimento": 556,
+			"ingrediente": "Aceite de oliva virgen extra"
+		},{
+			"alimento": 128,
+			"ingrediente": "Pimienta negra"
+		},{
+			"alimento": 547,
+			"ingrediente": "Sal"
+		}],
+	"dieta": "regular",
+	"preparacion":[
+		"Para esta elaboración vamos a utilizar una olla exprés de 4 litros. Ponemos la olla al calentar con un poco de aceite de oliva mientras salpimentamos un conejo en trozos.",
+		"A continuación, doramos el conejo. Es importante que no movamos el conejo para que se dore bien y así quede más jugoso por dentro. Cuando los trozos de conejo estén dorados por ambas caras, añadimos el ajo picado y rehogamos.",
+		"Pasados unos minutos incorporamos la cebolla picada en brunoise. Mezclamos y rehogamos unos minutos más hasta que la cebolla comience a transparentar.",
+		"Incorporamos al guiso las setas, una hoja de laurel y tomillo y romero al gusto. Agregamos el vino blanco y esperamos unos minutos para que desglase todos los jugos y evapore el alcohol.",
+		"Incorporamos el caldo de conejo, también podemos utilizar caldo de pollo, y cerramos la olla durante 15 minutos.",
+		"Pasado ese tiempo abrimos la olla, rectificamos y emplatamos."
+	]
+},
+{
+	"id": 21,
+	"categoria": "Carne y aves",
+	"nombre": "Conejo al ajillo",
+	"ingredientes": [{
+			"alimento": 533,
+			"ingrediente": "1 kg de conejo"
+		},{
+			"alimento": 73,
+			"ingrediente": "4 ajos"
+		},{
+			"alimento": 127,
+			"ingrediente": "Perejil"
+		},{
+			"alimento": 271,
+			"ingrediente": "Aceite de oliva"
+		},{
+			"alimento": 553,
+			"ingrediente": "Vinagre"
+		},{
+			"alimento": 547,
+			"ingrediente": "Sal"
+		}],
+	"dieta": "regular",
+	"preparacion":[
+		"Lo primero, pelamos y picamos los ajos y el perejil. Los mezclamos con una cucharada de vinagre. Reservamos.",
+		"Seguidamente, ponemos a calentar una sartén amplia con aceite en la que doramos el conejo.",
+		"Vertemos la picada de ajo y perejil, damos unas vueltas y cubrimos con agua.",
+		"Tapamos y dejamos cocinar 30 minutos.",
+		"Transcurrido este tiempo, retiramos del fuego y emplatamos nuestro conejo al ajillo."
+	]
+},
+{
+	"id": 22,
+	"categoria": "Carne y aves",
+	"nombre": "Pato estofado",
+	"ingredientes": [{
+			"alimento": 517,
+			"ingrediente": "1 pato en trozos"
+		},{
+			"alimento": 601,
+			"ingrediente": "1 vasito de coñac"
+		},{
+			"alimento": 72,
+			"ingrediente": "3-4 ajos"
+		},{
+			"alimento": 271,
+			"ingrediente": "Aceite de oliva"
+		},{
+			"alimento": 92,
+			"ingrediente": "1 cebolla"
+		},{
+			"alimento": 547,
+			"ingrediente": "Sal"
+		}],
+	"dieta": "regular",
+	"preparacion":[
+		"Cubrimos una sartén grande de aceite y añadimos la carne de pato, a la que habremos retirado toda la grasa previamente, al fuego para que quede dorado.",
+		"Mientras tanto, pelamos y cortamos una cebolla en tiras.",
+		"Cuando el pato esté listo, lo retiramos del fuego y lo echamos a una olla. Añadimos el aceite con el que le hemos frito, un vasito de coñac, la cebolla, una hojita de laurel y los ajos.",
+		"Tapamos y dejamos cocinar durante 30 minutos.",
+		"Transcurrido este tiempo, retiramos la olla del fuego y emplatamos nuestro pato estofado."
+	]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
