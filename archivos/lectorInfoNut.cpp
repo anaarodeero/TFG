@@ -15,9 +15,9 @@ int main()
     myfile.open ("example2.json");
     string fichero;
     getline(cin, x);
-    fichero += "{\n\t\"id\": ";
-    fichero += "\n\t\"alimento\": \"\"";
-    fichero += "\n\t\"estado\": \"\"";
+    fichero += "{\n\t\"id\": ,";
+    fichero += "\n\t\"alimento\": \"\",";
+    fichero += "\n\t\"estado\": \"\",";
     while (getline (cin,x)) {
         if(x == "Cals") break;
     }
@@ -27,7 +27,7 @@ int main()
         if(x == "Grasa") break;
     }
     getline (cin,x);
-    replace(x.begin(), x.end(), ",", ".");
+    replace(x.begin(), x.end(), ',', '.');
     x.pop_back();
     gr = x;
 
@@ -35,7 +35,7 @@ int main()
         if(x == "Carbh") break;
     }
     getline (cin,x);
-    replace(x.begin(), x.end(), ",", ".");
+    replace(x.begin(), x.end(), ',', '.');
     x.pop_back();
     hc = x;
 
@@ -43,13 +43,13 @@ int main()
         if(x == "Prot") break;
     }
     getline (cin,x);
-    replace(x.begin(), x.end(), ",", ".");
+    replace(x.begin(), x.end(), ',', '.');
     x.pop_back();
     pr = x;
 
-    fichero += "\n\t\"cal\": " + cal;
-    fichero += "\n\t\"pr\": " + pr;
-    fichero += "\n\t\"gr\": " + gr;
+    fichero += "\n\t\"cal\": " + cal + ",";
+    fichero += "\n\t\"pr\": " + pr + ",";
+    fichero += "\n\t\"gr\": " + gr + ",";
     fichero += "\n\t\"hc\": " + hc;
 
     fichero += "\n}";

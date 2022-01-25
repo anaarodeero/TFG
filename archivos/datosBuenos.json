@@ -640,11 +640,11 @@
 {
     "id": 72,
     "alimento": "ajo",
-    "estado": "bulbo",
-    "cal": 115,
-    "pr": 6.6,
-    "gr": 0.1,
-    "hc": 26.1
+	"estado": "",
+	"cal": 149,
+	"pr": 6.36,
+	"gr": 0.5,
+	"hc": 33.06
 },
 {
     "id": 73,
@@ -1223,14 +1223,14 @@
     "hc": 5.2
 },
 {
-    "id": 137,
-    "alimento": "salsifi",
-    "estado": "cocidos",
-    "cal": 18,
-    "pr": 1.9,
-    "gr": 0,
-    "hc": 2.18
-},
+	"id": 137,
+	"alimento": "Sirope de arce",
+	"estado": "",
+	"cal": 261,
+	"pr": 0,
+	"gr": 0.2,
+	"hc": 67.09
+}
 {
     "id": 138,
     "alimento": "seta",
@@ -1628,22 +1628,22 @@
     "hc": 7.5
 },
 {
-    "id": 182,
-    "alimento": "naranja",
-    "estado": "juego",
-    "cal": 45,
-    "pr": 0.8,
-    "gr": 0.2,
-    "hc": 10.5
+	"id": 182,
+	"alimento": "Naranja",
+	"estado": "",
+	"cal": 62,
+	"pr": 1.23,
+	"gr": 0.16,
+	"hc": 15.39
 },
 {
-    "id": 183,
-    "alimento": "naranja",
-    "estado": "crudas",
-    "cal": 44,
-    "pr": 0.7,
-    "gr": 0.2,
-    "hc": 10.1
+	"id": 183,
+	"alimento": "Naranja",
+	"estado": "zumo",
+	"cal": 112,
+	"pr": 1.74,
+	"gr": 0.5,
+	"hc": 25.79
 },
 {
     "id": 184,
@@ -1989,7 +1989,7 @@
 },
 {
     "id": 222,
-    "alimento": "leche deoveja",
+    "alimento": "leche de oveja",
     "estado": "fresca",
     "cal": 86,
     "pr": 5.6,
@@ -2052,7 +2052,7 @@
 },
 {
     "id": 229,
-    "alimento": "leche devaca",
+    "alimento": "leche de vaca",
     "estado": "con cacao",
     "cal": 100,
     "pr": 3.3,
@@ -2322,12 +2322,12 @@
 },
 {
     "id": 259,
-    "alimento": "Azucar de Uva",
-    "estado": "0",
-    "cal": 391,
-    "pr": 0,
-    "gr": 0,
-    "hc": 99
+    "alimento": "Azucar moreno",
+	"estado": "",
+	"cal": 377,
+	"pr": 0,
+	"gr": 0,
+	"hc": 97.33
 },
 {
     "id": 260,
@@ -2430,22 +2430,22 @@
 },
 {
     "id": 271,
-    "alimento": "Aceite Comestible",
+    "alimento": "Aceite de oliva",
     "estado": "0",
-    "cal": CAL,
-    "pr": PR,
-    "gr": GR,
-    "hc": HC
+    "cal": 119,
+	"pr": 0,
+	"gr": 13.5,
+	"hc": 0
 },
 {
-    "id": 272,
-    "alimento": "Aceite higado bacalao",
-    "estado": "0",
-    "cal": 916,
-    "pr": 0,
-    "gr": 99.8,
-    "hc": 0
-},
+	"id": 272,
+	"alimento": "Aceite de girasol",
+	"estado": "",
+	"cal": 884,
+	"pr": 0,
+	"gr": 100,
+	"hc": 0
+}
 {
     "id": 273,
     "alimento": "Mahonesa",
@@ -3509,14 +3509,14 @@
     "hc": 0
 },
 {
-    "id": 391,
-    "alimento": "Ballena (Carne)",
-    "estado": "cruda",
-    "cal": 120,
-    "pr": 20,
-    "gr": 4,
-    "hc": 1
-},
+	"id": 391,
+	"alimento": "Carne de vacuno",
+	"estado": "picada",
+	"cal": 182,
+	"pr": 17,
+	"gr": 12,
+	"hc": 0.9
+}
 {
     "id": 392,
     "alimento": "Caballo (Carne)",
@@ -4734,12 +4734,12 @@
 },
 {
     "id": 527,
-    "alimento": "Pollo",
-    "estado": "asado",
-    "cal": 189,
-    "pr": 27.3,
-    "gr": 9.2,
-    "hc": 0
+    "alimento": "Pollo (pechuga)",
+	"estado": "",
+	"cal": 195,
+	"pr": 29.55,
+	"gr": 7.72,
+	"hc": 0
 },
 {
     "id": 528,
@@ -4903,7 +4903,15 @@
     "gr": 0,
     "hc": 3.82
 },
-/*rellenar 546*/
+{
+	"id": 546,
+	"alimento": "Pimiento verde",
+	"estado": "",
+	"cal": 20,
+	"pr": 0.86,
+	"gr": 0.17,
+	"hc": 4.64
+}
 {
     "id": 547,
     "alimento": "Sal",
@@ -5230,12 +5238,12 @@
 },
 {
     "id": 583,
-    "alimento": "Frijoles blancos",
-    "estado": "",
-    "cal": 139,
-    "pr": 9.73,
-    "gr": 0.35,
-    "hc": 25.09
+    "alimento": "Frijoles",
+    "estado": "cocidos",
+	"cal": 151,
+	"pr": 5.54,
+	"gr": 5.15,
+	"hc": 21.39
 },
 {
     "id": 584,
@@ -5337,11 +5345,147 @@
     "hc": 3.65
 },
 {
-    "id": 593,
-    "alimento": "Tomate cherry",
-    "estado": "",
-    "cal": 18,
-    "pr": 0.88,
-    "gr": 0.2,
-    "hc": 3.92
+	"id": 595,
+	"alimento": "Germinados",
+	"estado": "",
+	"cal": 38,
+	"pr": 2.9,
+	"gr": 0.5,
+	"hc": 5.4
 },
+{
+	"id": 596,
+	"alimento": "Romero",
+	"estado": "",
+	"cal": 345,
+	"pr": 5,
+	"gr": 15.2,
+	"hc": 46.4
+},
+{
+	"id": 597,
+	"alimento": "Coñac",
+	"estado": "",
+	"cal": 64,
+	"pr": 0,
+	"gr": 0,
+	"hc": 0
+},
+{
+	"id": 598,
+	"alimento": "Bacon",
+	"estado": "",
+	"cal": 240,
+	"pr": 15,
+	"gr": 20,
+	"hc": 0
+},
+{
+	"id": 599,
+	"alimento": "Oregano",
+	"estado": "",
+	"cal": 6,
+	"pr": 0.2,
+	"gr": 0.18,
+	"hc": 1.16
+},
+{
+	"id": 600,
+	"alimento": "Ensalada de brotes",
+	"estado": "",
+	"cal": 19,
+	"pr": 2,
+	"gr": 0.4,
+	"hc": 1.1
+},
+{
+	"id": 601,
+	"alimento": "Cebolla morada",
+	"estado": "",
+	"cal": 40,
+	"pr": 0.89,
+	"gr": 0.08,
+	"hc": 9.74
+},
+{
+	"id": 602,
+	"alimento": "Lomo de cerdo ibérico",
+	"estado": "",
+	"cal": 192,
+	"pr": 22,
+	"gr": 11,
+	"hc": 0
+},
+{
+	"id": 603,
+	"alimento": "Vinagre de manzana",
+	"estado": "",
+	"cal": 18,
+	"pr": 0.5,
+	"gr": 0,
+	"hc": 0.5
+},
+{
+	"id": 604,
+	"alimento": "Durum",
+	"estado": "",
+	"cal": 626,
+	"pr": 37.83,
+	"gr": 16.46,
+	"hc": 79.13
+},
+{
+	"id": 605,
+	"alimento": "Totopos",
+	"estado": "",
+	"cal": 476,
+	"pr": 7.6,
+	"gr": 20,
+	"hc": 64
+},
+{
+	"id": 606,
+	"alimento": "Ghee (mantequilla clarificada)",
+	"estado": "",
+	"cal": 876,
+	"pr": 0.28,
+	"gr": 99.48,
+	"hc": 0
+},
+{
+	"id": 607,
+	"alimento": "Chile serrano",
+	"estado": "",
+	"cal": 32,
+	"pr": 1.74,
+	"gr": 0.44,
+	"hc": 6.7
+},
+{
+	"id": 608,
+	"alimento": "Anacardo",
+	"estado": "",
+	"cal": 604,
+	"pr": 22,
+	"gr": 48,
+	"hc": 19
+},
+{
+	"id": 609,
+	"alimento": "Salvia molida",
+	"estado": "",
+	"cal": 315,
+	"pr": 10.6,
+	"gr": 12.8,
+	"hc": 60.7
+},
+{
+	"id": 610,
+	"alimento": "Hinojo",
+	"estado": "",
+	"cal": 31,
+	"pr": 1.24,
+	"gr": 0.2,
+	"hc": 7.29
+}
+
