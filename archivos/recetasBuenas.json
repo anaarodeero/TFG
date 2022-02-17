@@ -1841,7 +1841,284 @@
 		"Escurrimos la pasta y la añadimos a la sartén de las gambas, mezclando en el fuego durante 1 minuto. Salpimentamos al gusto.",
 		"Emplatamos y servimos."
 	]
-} 
+},
+{
+	"id": 37,
+	"categoria": "Pasta",
+	"nombre": "Cuscús negro con mejillones",
+	"ingredientes": [{
+			"alimento": 618,
+			"ingrediente": "80 g de cuscús precocido"
+		},{
+			"alimento": 343,
+			"ingrediente": "600 g de mejillones"
+		},{
+			"alimento": 619,
+			"ingrediente": "1 cerveza fría"
+		},{
+			"alimento": 20,
+			"ingrediente": "2 cucharadas de harina"
+		},{
+			"alimento": 246,
+			"ingrediente": "1 huevo"
+		},{
+			"alimento": 272,
+			"ingrediente": "Aceite de girasol"
+		},{
+			"alimento": 556,
+			"ingrediente": "Aceite de oliva virgen extra"
+		},{
+			"alimento": 72,
+			"ingrediente": "1 diente de ajo"
+		},{
+			"alimento": 551,
+			"ingrediente": "Azafrán molido"
+		},{
+			"alimento": 620,
+			"ingrediente": "Cebollino"
+		},{
+			"alimento": 127,
+			"ingrediente": "Perejil"
+		},{
+			"alimento": 553,
+			"ingrediente": "Vinagre"
+		},{
+			"alimento": 547,
+			"ingrediente": "Sal"
+		},{
+			"alimento": 128,
+			"ingrediente": "Pimienta"
+		}],
+	"dieta": "regular",
+	"preparacion":[
+		"Ponemos una olla al fuego y dejamos que coja mucho calor.",
+		"Mientras tanto, limpiamos bien los mejillones.",
+		"Introducimos los mejillones en la olla y los mojamos con agua y un chorrito de vino blanco. Aderezamos con sal y añadimos también una rama de perejil. Dejamos que se abran y retiramos del fuego inmediatamente.",
+		"Sacamos los mejillones de sus conchas y dejamos que se enfríen sobre papel de cocina para que estén secos.",
+		"Añadimos en el caldo de la cocción de los mejillones tinta de calamar y removemos. Colamos y vertemos el caldo caliente de los mejillones sobre el cuscús (misma cantidad de caldo que de cuscús), movemos un poco y tapamos con un paño limpio durante 5 minutos.",
+		"Por otro lado, preparamos una mayonesa a la manera tradicional con el huevo, aceite de girasol y aceite de oliva a partes iguales, un diente de ajo y azafrán molido. Batimos hasta que emulsione y añadimos un chorrito de vinagre y una pizca de sal.",
+		"Preparamos la tempura con harina y cerveza muy fría. Salpimentamos e introducimos los mejillones en nuestra mezcla de tempura.",
+		"Freímos en abundante aceite muy caliente y reservamos.",
+		"Mezclamos el cuscús con cebollino y perejil picado. Lo emplatamos con la ayuda de un aro.",
+		"Disponemos encima los mejillones en tempura y terminamos con nuestra mayonesa de azafrán."
+	]
+},
+{
+	"id": 38,
+	"categoria": "Pasta",
+	"nombre": "Cuscús de marisco",
+	"ingredientes": [{
+			"alimento": 343,
+			"ingrediente": "250 g de mejillones"
+		},{
+			"alimento": 332,
+			"ingrediente": "250 g de langostinos"
+		},{
+			"alimento": 621,
+			"ingrediente": "200 ml de caldo de pescado"
+		},{
+			"alimento": 622,
+			"ingrediente": "150 g de sofrito de verduras"
+		},{
+			"alimento": 72,
+			"ingrediente": "1 diente de ajo"
+		},{
+			"alimento": 618,
+			"ingrediente": "100 g cuscús precocido"
+		},{
+			"alimento": 623,
+			"ingrediente": "Una cucharadita de ras el hanut"
+		},{
+			"alimento": 556,
+			"ingrediente": "Aceite de oliva virgen extra"
+		},{
+			"alimento": 620,
+			"ingrediente": "Cebollino"
+		}],
+	"dieta": "regular",
+	"preparacion":[
+		"Cocemos los mejillones y los langostinos sin la cabeza en el caldo de pescado.",
+		"Hacemos el cuscús según las indicaciones del fabricante con el caldo de pescado.",
+		"Sacamos de las conchas los mejillones y pelamos los langostinos, reservamos.",
+		"En una sartén con aceite, doramos las cabezas y las aplastamos bien. En esta misma sartén, salteamos el sofrito de verduras con un diente de ajo entero y con camisa. Añadimos una cucharadita de ras el hanut y dejamos sofreír unos minutos más.",
+		"Ponemos el cuscús a remojo con la misma cantidad de caldo hirviendo que de sémola. Lo tapamos y lo dejamos 5 minutos.",
+		"Desmigamos bien el cuscús con la ayuda de un tenedor y un poco de aceite.",
+		"Incorporamos las verduras y los mariscos al cuscús y servimos en cuencos elegantes con cebolleta verde cortada en juliana muy fina."	
+	]
+
+},
+{
+	"id": 39,
+	"categoria": "Pasta",
+	"nombre": "Pasta con ajo y setas",
+	"ingredientes": [{
+			"alimento": 624,
+			"ingrediente": "150 g de trofie o fusilli"
+		},{
+			"alimento": 72,
+			"ingrediente": "2 dientes de ajo"
+		},{
+			"alimento": 139,
+			"ingrediente": "250 g de setas variadas"
+		},{
+			"alimento": 568,
+			"ingrediente": "25 g de parmesano"
+		},{
+			"alimento": 231,
+			"ingrediente": "2 cucharadas de nata"
+		}],
+	"dieta": "vegetariano",
+	"preparacion":[
+		"Lo primero que tenemos que hacer es cocer la pasta en una cacerola con agua hirviendo. Escurrimos y reservamos una taza de agua con el agua de cocción.",
+		"Pelamos lo ajos y los cortamos en láminas.",
+		"Los cocinamos en una sartén con aceite y a fuego medio.",
+		"Añadimos las setas en trozos grandes. Salpimentamos y dejamos cocinando unos 8 minutos o hasta que estén doradas.",
+		"Añadir la pasta con un chorrito del agua de cocción, añadir la nata y el parmesano rallado y emplatar."
+	]
+},
+{
+	"id": 40,
+	"categoria": "Pasta",
+	"nombre": "Espaguetis con verduras y tomate",
+	"ingredientes": [{
+			"alimento": 28,
+			"ingrediente": "400 g de espaguetis"
+		},{
+			"alimento": 92,
+			"ingrediente": "1 cebolla"
+		},{
+			"alimento": 129,
+			"ingrediente": "1 pimiento rojo"
+		},{
+			"alimento": 546,
+			"ingrediente": "1 pimiento verde"
+		},{
+			"alimento": 79,
+			"ingrediente": "1 berenjena"
+		},{
+			"alimento": 108,
+			"ingrediente": "8 espárragos trigueros"
+		},{
+			"alimento": 325,
+			"ingrediente": "100 g de tomate seco"
+		},{
+			"alimento": 626,
+			"ingrediente": "50 g de aceitunas negras deshuesadas"
+		},{
+			"alimento": 248,
+			"ingrediente": "2 yemas de huevo"
+		},{
+			"alimento": 599,
+			"ingrediente": "1 cucharadita de orégano"
+		},{
+			"alimento": 600,
+			"ingrediente": "1 puñado de brotes"
+		},{
+			"alimento": 556,
+			"ingrediente": "Aceite de oliva virgen extra"
+		},{
+			"alimento": 547,
+			"ingrediente": "Sal"
+		}],
+	"dieta": "regular",
+	"preparacion":[
+		"En una cazuela con aceite pochamos la cebolla, los pimientos, la berenjena, el calabacín y los espárragos picados.",
+		"Ponemos a hervir la pasta en agua con sal el tiempo que indique el fabricante.",
+		"Escurrimos y lo añadimos a la cazuela.",
+		"Incorporamos el tomate y las aceitunas cortadas en rodajas, sazonamos y aderezamos con el orégano.",
+		"Agregamos las yemas de huevo y mezclamos.",
+		"Servimos con un puñado de brotes."
+	]
+},
+{
+	"id": 41,
+	"categoria": "Pasta",
+	"nombre": "Pasta al pesto con verduritas",
+	"ingredientes": [{
+			"alimento": 592,
+			"ingrediente": "400 g de pasta fresca"
+		},{
+			"alimento": 233,
+			"ingrediente": "100 g de queso de cabra"
+		},{
+			"alimento": 216,
+			"ingrediente": "2 puñados de piñones"
+		},{
+			"alimento": 570,
+			"ingrediente": "100 g de hojas de albahaca"
+		},{
+			"alimento": 86,
+			"ingrediente": "1 calabacín"
+		},{
+			"alimento": 108,
+			"ingrediente": "4 espárragos trigueros"
+		},{
+			"alimento": 556,
+			"ingrediente": "Aceite de oliva virgen extra"
+		},{
+			"alimento": 547,
+			"ingrediente": "Sal"
+		}],
+	"dieta": "vegetariana",
+	"preparacion":[
+		"En un vaso americano trituramos el queso, los piñones y un vaso de aceite de oliva.",
+		"Añadimos la albahaca y trituramos.",
+		"En una cazuela con agua hirviendo y sal cocinamos la pasta hasta que flote, unos 2-3 minutos.",
+		"Picamos el calabacín y los trigueros y en el último minuto lo añadimos a la cazuela con la pasta.",
+		"Escurrimos y guardamos un vaso de su agua de cocción.",
+		"Ponemos de nuevo la pasta y la verdura en la cazuela y añadimos el pesto.",
+		"Mezclamos bien y servimos.",
+		"Rallamos más queso por encima y decoramos con unos piñones y unas hojas de albahaca."
+	]
+},
+{
+	"id": 42,
+	"categoria": "Pasta",
+	"nombre": "Tagliatelle con curry de gambas",
+	"ingredientes": [{
+			"alimento": 627,
+			"ingrediente": "7 Gambones"
+		},{
+			"alimento": 556,
+			"ingrediente": "Aceite de oliva virgen extra"
+		},{
+			"alimento": 621,
+			"ingrediente": "½ vaso de caldo de pescado"
+		},{
+			"alimento": 140,
+			"ingrediente": "1 cucharada de concentrado de tomate"
+		},{
+			"alimento": 92,
+			"ingrediente": "1 cebolla"
+		},{
+			"alimento": 210,
+			"ingrediente": "1 chorrito de leche de coco"
+		},{
+			"alimento": 231,
+			"ingrediente": "1 chorrito de nata"
+		},{
+			"alimento": 26,
+			"ingrediente": "150 g de tagliatelle"
+		}],
+	"dieta": "regular",
+	"preparacion":[
+		"Lo primero que tenemos que hacer es lavar y pelar 7 gambones. Reservamos en dos boles por un lado las cabezas y por otro las colas peladas.",
+		"A continuación, salteamos sus cabezas en una sartén con aceite de oliva virgen extra caliente.",
+		"Después, añadimos medio vaso de caldo de pescado, dejamos que se reduzca todo un poco durante un par de minutos y retiramos la sartén del fuego.",
+		"Ya fuera del fuego, retiramos las cabezas de gambón, incorporamos a la sartén una cucharada de concentrado de tomate y reservamos.",
+		"En otra sartén salteamos con un poco de aceite de oliva virgen extra las colas de gambón.",
+		"Por otro lado, lavamos, pelamos y cortamos una cebolla en brunoise y la freímos en la misma sartén de las colas de los gambones. Reservamos algún brote verde de la cebolla para decorar nuestro plato al final.",
+		"En la misma sartén, añadimos con la cebolla salteada las especias en la cantidad que consideremos para hacer el curry. Comino molido, cardamomo molido, chile molido, canela molida, pimienta negra molida, cúrcuma molida, jengibre molido, nuez moscada molida, pimentón en polvo y 2 hojas de curry.",
+		"Además, vertemos a la sartén el caldo reservado de las cabezas de langostinos, un chorrito de leche de coco y otro de nata. Una vez coja consistencia de salsa, lo retiramos del fuego. Incorporamos las colas de langostinos.",
+		"Cocemos 150 g de pasta tagliatelle según las indicaciones del fabricante y los mantecamos con la salsa.",
+		"Por último, decoramos con los tallos verdes de cebolla que hemos reservado al principio.",
+		"Servimos."
+	]
+}
+
+
+
+
 
 
 
