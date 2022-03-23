@@ -1,0 +1,40 @@
+{
+	"id": 53,
+	"categoria": "Verduras/Hortalizas",
+	"nombre": "Crema de aguacate",
+	"ingredientes": [{
+			"alimento": 571,
+			"ingrediente": "2 Aguacates"
+		},{
+			"alimento": 244,
+			"ingrediente": "1 Yogur griego"
+		},{
+			"alimento": 637,
+			"ingrediente": "2 cucharadas de crema de queso"
+		},{
+			"alimento": 231,
+			"ingrediente": "1 chorrito de nata de cocinar"
+		},{
+			"alimento": 577,
+			"ingrediente": "1 Lima en zumo"
+		},{
+			"alimento": 556,
+			"ingrediente": "Aceite de oliva virgen extra"
+		},{
+			"alimento": 575,
+			"ingrediente": "Cilantro"
+		},{
+			"alimento": 140,
+			"ingrediente": "1/2 tomate"
+		},{
+			"alimento": 92,
+			"ingrediente": "1 cebolla"
+		}],
+	"dieta": "regular",
+	"preparacion":[
+		"Lo primero que tenemos que hacer es lavar y abrir 2 aguacates y les sacamos la carne con ayuda de una cuchara. La reservamos en un bol.",
+		"Agregamos al bol un yogur griego, dos cucharadas de crema de queso, un chorrito de nata de cocinar, el zumo de una lima y aceite de oliva virgen extra al gusto.",
+		"Trituramos todos los ingredientes del bol hasta que consigamos una crema lisa y homogénea.",
+		"Servimos con cilantro al gusto, medio tomate lavado y una cebolla lavada, pelada y picada por encima para decorar."
+	]
+}

@@ -576,12 +576,12 @@
 },
 {
     "id": 65,
-    "alimento": "soja seca",
-    "estado": "crudas",
-    "cal": 342,
-    "pr": 34.9,
-    "gr": 18.1,
-    "hc": 34.3
+    "alimento": "Salsa de soja",
+    "estado": "",
+    "cal": 53,
+	"pr": 6.28,
+	"gr": 0.04,
+	"hc": 7.61
 },
 {
     "id": 66,
@@ -1252,7 +1252,7 @@
 {
 	"id": 140,
     "alimento": "tomate",
-    "estado": "cruda",
+    "estado": "crudo",
 	"cal": 18,
 	"pr": 0.88,
 	"gr": 0.2,
@@ -1261,7 +1261,7 @@
 {
     "id": 141,
     "alimento": "tomate",
-    "estado": "cocida",
+    "estado": "cocido",
     "cal": 19,
     "pr": 1,
     "gr": 0.1,
@@ -2186,14 +2186,14 @@
     "hc": 1.9
 },
 {
-    "id": 244,
-    "alimento": "requeson miraflores",
-    "estado": "0",
-    "cal": 150,
-    "pr": 8.7,
-    "gr": 12.1,
-    "hc": 4.8
-},
+	"id": 244,
+	"alimento": "Yogur griego",
+	"estado": "",
+	"cal": 129,
+	"pr": 3.9,
+	"gr": 10.8,
+	"hc": 3.9
+}
 {
     "id": 245,
     "alimento": "yogur",
@@ -4943,10 +4943,10 @@
     "id": 550,
     "alimento": "Pimenton",
     "estado": "",
-    "cal": 8,
-    "pr": 0.22,
-    "gr": 0.11,
-    "hc": 1.8
+	"cal": 29,
+	"pr": 0.8,
+	"gr": 0.41,
+	"hc": 6.68
 },
 {
     "id": 551,
@@ -5639,6 +5639,95 @@
 	"pr": 18,
 	"gr": 1.8,
 	"hc": 0
+},
+{
+	"id": 628,
+	"alimento": "Queso cheddar",
+	"estado": "",
+	"cal": 403,
+	"pr": 24.9,
+	"gr": 33.14,
+	"hc": 1.28
+},
+{
+	"id": 629,
+	"alimento": "Carabineros",
+	"estado": "",
+	"cal": 113,
+	"pr": 22.83,
+	"gr": 1.49,
+	"hc": 0.9
+},
+{
+	"id": 630,
+	"alimento": "Yuca",
+	"estado": "",
+	"cal": 160,
+	"pr": 1.36,
+	"gr": 0.28,
+	"hc": 38.06
+},
+{
+	"id": 631,
+	"alimento": "Boniato",
+	"estado": "",
+	"cal": 107,
+	"pr": 1.61,
+	"gr": 0.6,
+	"hc": 24.19
+},
+{
+    "id": 632,
+    "alimento": "Pimenton dulce",
+    "estado": "",
+	"cal": 357,
+	"pr": 14.8,
+	"gr": 12.95,
+	"hc": 34.84
+},
+{
+	"id": 633,
+	"alimento": "Bimi",
+	"estado": "",
+	"cal": 33,
+	"pr": 2.85,
+	"gr": 0.37,
+	"hc": 6.41
+},
+{
+	"id": 634,
+	"alimento": "Sucedáneo de Angulas",
+	"estado": "",
+	"cal": 112,
+	"pr": 10,
+	"gr": 4.9,
+	"hc": 6
+},
+{
+	"id": 635,
+	"alimento": "Eneldo",
+	"estado": "",
+	"cal": 292,
+	"pr": 19.9,
+	"gr": 4.4,
+	"hc": 42.2
+},
+{
+	"id": 636,
+	"alimento": "Arroz salvaje",
+	"estado": "",
+	"cal": 335,
+	"pr": 12.6,
+	"gr": 0.9,
+	"hc": 69.1
+},
+{
+	"id": 637,
+	"alimento": "Crema de queso",
+	"estado": "",
+	"cal": 349,
+	"pr": 7.55,
+	"gr": 34.87,
+	"hc": 2.66
 }
-
 

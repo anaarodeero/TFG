@@ -15,9 +15,12 @@ int main()
     myfile.open ("example2.json");
     string fichero;
     getline(cin, x);
-    fichero += "{\n\t\"id\": ,";
-    fichero += "\n\t\"alimento\": \"\",";
-    fichero += "\n\t\"estado\": \"\",";
+    fichero += "{\n\t\"id\": ";
+    fichero += x;
+    fichero += ",\n\t\"alimento\": \"";
+    getline(cin, x);
+    fichero += x;
+    fichero += "\",\n\t\"estado\": \"\",";
     while (getline (cin,x)) {
         if(x == "Cals") break;
     }

@@ -15,7 +15,7 @@ int main()
     string fichero;
     getline(cin, x);
     string aux = x.erase(0,1);
-    fichero += "{\n\t\"id\": ,\n\t\"categoria\": \"Pasta\",\n\t\"nombre\": \"" + aux + "\",\n\t\"ingredientes\": [" ;
+    fichero += "{\n\t\"id\": ,\n\t\"categoria\": \"Pescados y mariscos\",\n\t\"nombre\": \"" + aux + "\",\n\t\"ingredientes\": [" ;
     while (getline (cin,x)) {
         if(x == "INGREDIENTES PRINCIPALES") break;
     }
@@ -35,7 +35,18 @@ int main()
 
         if (aux.find("Aceite de oliva virgen extra") != string::npos ){
             num = "556";
+        } else if (aux.find("Aceite de oliva") != string::npos ){
+            num = "271";
         }
+
+        if (aux.find("puerro") != string::npos ){
+            num = "131";
+        }
+
+        if (aux.find("mantequilla") != string::npos ){
+            num = "230";
+        }
+        
         if (aux.find("Perejil") != string::npos ){
             num = "127";
         }
