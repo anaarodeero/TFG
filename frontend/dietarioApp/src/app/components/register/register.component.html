@@ -1,189 +1,33 @@
-<div class="container" fxLayout="column" fxFlex="100" fxLayoutAlign="center center">
+<div class="container" ngClass.gt-sm="container-sm" fxLayout="column" fxLayoutAlign="center center">
   <h1 class="mat-display-2 titulo">Registro</h1>
-  <mat-horizontal-stepper class="stepper mat-elevation-z8" ngClass.lt-md="stepper-sm" labelPosition="bottom" #stepper>
-    <mat-step [stepControl]="firstFormGroup" >
-      <form [formGroup]="firstFormGroup">
-        <ng-template matStepLabel>Tu cuenta</ng-template>
-        <p class="texto">Escribe tu nombre y apellidos</p>
-        <div fxLayout="row" fxLayout.lt-md="column" fxFill fxLayoutAlign="center center"> 
-          <div fxLayout="column" fxLayoutAlign="center center" ngClass.gt-sm="input-doble-col" ngClass.lt-md="input"> 
-            <mat-form-field ngClass.gt-sm="input-doble" ngClass.lt-md="input-full">
-              <input matInput placeholder="Nombre" formControlName="nombre" required [(ngModel)]="usuario.nombre">
-              <mat-error *ngIf="this.firstFormGroup.get('nombre').invalid">{{getErrorMessage()}}</mat-error>
-            </mat-form-field>
-          </div>
-          <div fxLayout="column" fxLayoutAlign="center center" ngClass.gt-sm="input-doble-col" ngClass.lt-md="input"> 
-            <mat-form-field ngClass.gt-sm="input-doble" ngClass.lt-md="input-full">
-              <input matInput placeholder="Apellidos" formControlName="apellidos" required [(ngModel)]="usuario.apellidos">
-              <mat-error *ngIf="this.firstFormGroup.get('apellidos').invalid">{{getErrorMessage()}}</mat-error>
-            </mat-form-field>
-          </div>
-        </div>
-        <p class="texto" >Escribe tu correo electronico</p>
-        <mat-form-field class="input">
-          <input matInput placeholder="Email" formControlName="email" required [(ngModel)]="usuario.email">
-          <mat-error *ngIf="this.firstFormGroup.get('email').invalid">{{getErrorMessageEmail()}}</mat-error>
-        </mat-form-field>
-        <p class="texto">Escribe una contraseña</p>
-        <mat-form-field class="input">
-          <mat-label>Password</mat-label>
-          <input matInput [type]="hide ? 'password' : 'text'" formControlName="password" required [(ngModel)]="usuario.password">
-          <mat-error *ngIf="this.firstFormGroup.get('password').invalid">{{getErrorMessage()}}</mat-error>
-          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
-            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-          </button>
-        </mat-form-field>
-        <div>
-          <button mat-button matStepperNext [disabled]="firstFormGroup.invalid" class="boton">Siguiente</button>
-        </div>
-      </form>
+  <mat-stepper linear [orientation]="orientation" ngClass.gt-md="stepper-bg" ngClass.md="stepper-md" ngClass.lt-md="stepper-sm"
+    class="stepper mat-elevation-z8" labelPosition="bottom" #stepper>
+    <mat-step [stepControl]="firstFormGroup">
+      <ng-template matStepLabel>Tu cuenta</ng-template>
+      <app-datos-cuenta [firstFormGroup]="firstFormGroup" [usuario]="usuario"></app-datos-cuenta>
+      <button mat-button matStepperNext [disabled]="firstFormGroup.invalid" class="boton">Siguiente</button>
     </mat-step>
     <mat-step [stepControl]="secondFormGroup">
-      <form [formGroup]="secondFormGroup">
-        <ng-template matStepLabel>Tus datos fisicos</ng-template>
-        <div>
-          <mat-radio-group aria-label="Select an option" formControlName="sexo" required [(ngModel)]="usuario.sexo">
-            <mat-radio-button value="Mujer">Mujer</mat-radio-button>
-            <mat-radio-button value="Hombre">Hombre</mat-radio-button>
-          </mat-radio-group>
-        </div>
-        
-        <p class="texto">¿Cuando es tu cumpleaños?</p>
-        <mat-form-field class="input">
-          <mat-label>Elige una fecha</mat-label>
-          <input matInput [matDatepicker]="picker" formControlName="fechaNacimiento" [(ngModel)]="usuario.fecha_nacimiento">
-          <mat-error *ngIf="this.secondFormGroup.get('fechaNacimiento').invalid">{{getErrorMessage()}}</mat-error>
-          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-          <mat-datepicker #picker></mat-datepicker>
-        </mat-form-field>
-        <p class="texto">¿Cuanto mides?</p>
-        <mat-form-field class="input">
-          <input matInput placeholder="cm" formControlName="altura" [(ngModel)]="usuario.altura">
-          <mat-error *ngIf="this.secondFormGroup.get('altura').invalid">{{getErrorMessage()}}</mat-error>
-        </mat-form-field>
-        <p class="texto">¿Cuanto pesas?</p>
-        <mat-form-field class="input">
-          <input matInput placeholder="kg" formControlName="peso" [(ngModel)]="usuario.peso">
-          <mat-error *ngIf="this.secondFormGroup.get('peso').invalid">{{getErrorMessage()}}</mat-error>
-        </mat-form-field>
-        <div>
-          <button mat-button matStepperPrevious class="boton">Anterior</button>
-          <button mat-button matStepperNext class="boton" [disabled]="secondFormGroup.invalid">Siguiente</button>
-        </div>
-      </form>
+      <ng-template matStepLabel>Alergías</ng-template>
+      <app-alergias [secondFormGroup]="secondFormGroup" [usuario]="usuario"></app-alergias>
+      <div>
+        <button mat-button matStepperPrevious class="boton">Anterior</button>
+        <button mat-button matStepperNext class="boton" [disabled]="secondFormGroup.invalid">Siguiente</button>
+      </div>
     </mat-step>
-    <!-- <mat-step [stepControl]="thirdFormGroup">
-      <form [formGroup]="thirdFormGroup" >
-        <ng-template matStepLabel>Objetivo</ng-template>
-        <p>¿Cual es tu objetivo?</p>
-        <mat-radio-group formControlName="objetivo" [(ngModel)]="usuario.objetivo">
-          <mat-radio-button disableRipple="true" class="objetivo mat-elevation-z3" value="Perder">Perder peso</mat-radio-button>
-          <mat-radio-button disableRipple="true" class="objetivo mat-elevation-z3" value="Mantener">Mantener tu peso</mat-radio-button>
-          <mat-radio-button disableRipple="true" class="objetivo mat-elevation-z3" value="Ganar">Ganar peso</mat-radio-button>
-        </mat-radio-group>
-        <div>
-          <button mat-button matStepperPrevious class="boton">Anterior</button>
-          <button mat-button matStepperNext class="boton" [disabled]="thirdFormGroup.invalid">Siguiente</button>
-        </div>
-      </form>
-    </mat-step> -->
-    <mat-step [stepControl]="fourthFormGroup">
-      <form [formGroup]="fourthFormGroup" >
-        <ng-template matStepLabel>Alergías</ng-template>
-        <p>¿Tienes alguna alergía o intolerancia?</p>
-        <section formGroupName="alergia">
-          <div fxLayout="row wrap" fxLayoutAlign="center center" >
-            <div fxLayout="column" class="alergia" fxLayoutAlign="center center" *ngFor="let alergia of alergias">
-              <img class="alergia-img" src={{getAlergia(alergia)}}>
-              <mat-checkbox class="alergia-texto" formControlName="{{alergia}}" >{{alergia}}</mat-checkbox>
-            </div>
-          </div>
-        </section>
-        <div>
-          <button mat-button matStepperPrevious class="boton">Anterior</button>
-          <button mat-button matStepperNext class="boton" [disabled]="fourthFormGroup.invalid">Siguiente</button>
-        </div>
-      </form>
+    <mat-step [stepControl]="thirdFormGroup">
+      <ng-template matStepLabel>Dieta</ng-template>
+      <app-dieta [thirdFormGroup]="thirdFormGroup" [usuario]="usuario"></app-dieta>
+      <div>
+        <button mat-button matStepperPrevious class="boton">Anterior</button>
+        <button mat-button matStepperNext class="boton" [disabled]="thirdFormGroup.invalid"
+          (click)="registrarUsuario()">Siguiente</button>
+      </div>
     </mat-step>
-    <mat-step [stepControl]="fithFormGroup">
-      <form [formGroup]="fithFormGroup" >
-        <ng-template matStepLabel>Dieta</ng-template>
-        <p>¿Eres vegetario o vegano?</p>
-        <mat-radio-group formControlName="dieta" [(ngModel)]="usuario.dieta">
-          <mat-radio-button class="radio-dieta"  value="vegetariano">Vegetariano</mat-radio-button>
-          <mat-radio-button class="radio-dieta" value="vegano">Vegano</mat-radio-button>
-          <mat-radio-button class="radio-dieta"  value="ninguno">Ninguno</mat-radio-button>
-        </mat-radio-group>
-        <div>
-          <button mat-button matStepperPrevious class="boton">Anterior</button>
-          <button mat-button matStepperNext class="boton" [disabled]="fithFormGroup.invalid" (click)="registrarUsuario()">Siguiente</button>
-        </div>
-      </form>
-    </mat-step>
-    <!-- <mat-step [stepControl]="fithFormGroup">
-      <form [formGroup]="fithFormGroup" >
-        <ng-template matStepLabel>Gustos</ng-template>
-        <p>¿Hay algún alimento que no quieres tomar?</p>
-        <mat-form-field appearance="fill">
-          <mat-label>Grupo</mat-label>
-          <mat-select formControlName="grupo" multiple>
-            <mat-select-trigger>
-              {{grupo.value ? grupo.value[0] : ''}}
-              <span *ngIf="grupo.value?.length > 1" class="example-additional-selection">
-                (+{{grupo.value.length - 1}} {{grupo.value?.length === 2 ? 'other' : 'others'}})
-              </span>
-            </mat-select-trigger>
-            <mat-option *ngFor="let topping of gruposAlimentos" [value]="topping">{{topping}}</mat-option>
-          </mat-select>
-        </mat-form-field>
-        
-        <mat-form-field appearance="standard">
-          <mat-label>Filter</mat-label>
-          <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Mia" #input>
-        </mat-form-field>
-        
-    
-          <table mat-table [dataSource]="dataSource" matSort>
-        
-            <ng-container matColumnDef="select">
-              <th mat-header-cell *matHeaderCellDef></th>
-              <td mat-cell *matCellDef="let element">
-                  <mat-checkbox [checked]="selected === element" (change)="selected = element; alimentoCambio = element">
-                  </mat-checkbox>
-              </td>
-          </ng-container>
-        
-          
-            <ng-container matColumnDef="progress">
-              <th mat-header-cell *matHeaderCellDef mat-sort-header> Nombre </th>
-              <td mat-cell *matCellDef="let element"> {{element.nombre}}% </td>
-            </ng-container>
-        
-            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-        
-            <tr class="mat-row" *matNoDataRow>
-              <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
-            </tr>
-          </table>
-        
-          <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
-
-        
-        
-        
-        
-        <div>
-          <button mat-button matStepperPrevious class="boton">Anterior</button>
-          <button mat-button matStepperNext class="boton" [disabled]="fithFormGroup.invalid" (click)="registrarUsuario()">Siguiente</button>
-        </div>
-      </form>
-    </mat-step> -->
     <mat-step>
       <ng-template matStepLabel>Fin.</ng-template>
       <p>¡Ya estas registrado!</p>
     </mat-step>
-  </mat-horizontal-stepper>
-  
-    
+  </mat-stepper>
+
 </div>

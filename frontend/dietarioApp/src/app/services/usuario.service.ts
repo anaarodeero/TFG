@@ -24,7 +24,7 @@ export class UsuarioService {
     return this.usuarioSubject.value;
   }
 
-  login(email, password) {
+  login(email: string, password: string) {
     return this.http
       .post<Usuario>('http://localhost:4000/api/login', {
         email,
@@ -52,7 +52,7 @@ export class UsuarioService {
   logout() {
     // remove usuario from local storage and set current usuario to null
     localStorage.removeItem('usuario');
-    this.usuarioSubject.next(null);
+    //this.usuarioSubject.next(null);
     this.router.navigate(['/login']);
   }
 
@@ -74,7 +74,7 @@ export class UsuarioService {
     //return this.http.get<Usuario>(`http://localhost:4000/getUser`, requestOptions);
   }
 
-  update(params) {
+  update(params: any) {
     return this.http.put(`http://localhost:4000/api/update`, params);
   }
 

@@ -1,6 +1,6 @@
 import { BreakpointObserver } from '@angular/cdk/layout';
 import { StepperOrientation } from '@angular/cdk/stepper';
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, HostListener, OnInit, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
@@ -18,13 +18,16 @@ import { Router } from '@angular/router';
   styleUrls: ['./register.component.css'],
 })
 export class RegisterComponent implements OnInit {
+
+  orientation: StepperOrientation;
+  
   firstFormGroup: FormGroup;
+  secondFormGroup_no: FormGroup;
+  thirdFormGroup_no: FormGroup;
   secondFormGroup: FormGroup;
   thirdFormGroup: FormGroup;
-  fourthFormGroup: FormGroup;
-  fithFormGroup: FormGroup;
   hide = true;
-  objetivosSeleccionados = [];
+  // objetivosSeleccionados = [];
   indice = 0;
   objetivos: string[] = ['Perder peso', 'Mantener mi peso', 'Ganar peso'];
   usuario: Usuario = {
@@ -32,11 +35,6 @@ export class RegisterComponent implements OnInit {
     apellidos: '',
     email: '',
     password: '',
-    sexo: '',
-    altura: 0,
-    peso: 0,
-    fecha_nacimiento: new Date(),
-    //objetivo: '',
     alergias: [],
     dieta: ''
   };
@@ -50,6 +48,14 @@ export class RegisterComponent implements OnInit {
   displayedColumns: string[] = ['select', 'name'];
   dataSource = new MatTableDataSource(ELEMENT_DATA);
 
+  @HostListener('window:resize') onWindowResize() {
+
+    if (window.innerWidth <= 768) {
+      this.orientation = 'vertical'
+    } else {
+      this.orientation = 'horizontal'
+    }
+  }
 
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
@@ -65,8 +71,21 @@ export class RegisterComponent implements OnInit {
   }
 
   ngOnInit() {
-    if(this.usuarioService.isLoggedIn()){
-      this.router.navigateByUrl('/dashboard');
+    if (window.innerWidth <= 768) {
+      this.orientation = 'vertical'
+    } else {
+      this.orientation = 'horizontal'
+    }
+    
+    if(this.usuarioService.usuarioValue){
+      if (/register/.test(this.router.url)){
+        this.router.navigateByUrl('/dashboard');
+      }
+      this.usuarioService.getUser().subscribe(
+        (user) => {
+          this.usuario = user
+        }
+      );
     }
 
     this.firstFormGroup = this._formBuilder.group({
@@ -76,15 +95,6 @@ export class RegisterComponent implements OnInit {
       nombre: ['', Validators.required]
     });
     this.secondFormGroup = this._formBuilder.group({
-      sexo: ['', Validators.required],
-      fechaNacimiento: ['', Validators.required],
-      altura: ['', Validators.required],
-      peso: ['', Validators.required],
-    });
-    this.thirdFormGroup = this._formBuilder.group({
-      objetivo: ['', Validators.required],
-    });
-    this.fourthFormGroup = this._formBuilder.group({
       alergia: this._formBuilder.group({
         gluten: false,
         sesamo: false,
@@ -102,30 +112,33 @@ export class RegisterComponent implements OnInit {
         sulfatos: false,
       })
     });
-    this.fithFormGroup = this._formBuilder.group({
+    this.thirdFormGroup = this._formBuilder.group({
       dieta: ['', Validators.required]
     });
     
   }
+
+
   getErrorMessage() {
     return 'Este campo es obligatorio';
   }
 
   getErrorMessageEmail() {
-    if (this.firstFormGroup.get('email').hasError('required')) {
+    if (this.firstFormGroup.get('email')?.hasError('required')) {
       return 'Este campo es obligatorio';
     }
-    return this.firstFormGroup.get('email').hasError('email') ? 'No es valido este email' : '';
+    return this.firstFormGroup.get('email')?.hasError('email') ? 'No es valido este email' : '';
   }
 
   registrarUsuario(){
     for (let index = 0; index < this.alergias.length; index++) {
       const element = this.alergias[index];
-      if(this.fourthFormGroup.get('alergia').get(element).value == true){
+      if(this.secondFormGroup.get('alergia')?.get(element)?.value == true){
         this.usuario.alergias.push(element);
       }
       
     }
+    console.log("user: ", this.usuario)
     let data = this.usuarioService.register(this.usuario).subscribe((data:any)=>{
       this.cookieService.set('CookieSesion', data.token);
     });

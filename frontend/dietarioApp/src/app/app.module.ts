@@ -18,6 +18,9 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FoodPyramidComponent } from './components/food-pyramid/food-pyramid.component';
 import { EditProfileComponent } from './components/edit-profile/edit-profile.component';
+import { DatosCuentaComponent } from './components/register/datos-cuenta/datos-cuenta.component';
+import { DietaComponent } from './components/register/dieta/dieta.component';
+import { AlergiasComponent } from './components/register/alergias/alergias.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +38,9 @@ import { EditProfileComponent } from './components/edit-profile/edit-profile.com
     FooterComponent,
     FoodPyramidComponent,
     EditProfileComponent,
+    DatosCuentaComponent,
+    AlergiasComponent,
+    DietaComponent,
   ],
   imports: [
     BrowserModule,

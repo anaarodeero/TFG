@@ -1,0 +1,11 @@
+.alergia {
+    margin: 1rem;
+}
+
+.alergia-img {
+    width: 6rem;
+}
+
+.alergia-texto {
+    text-transform: capitalize;
+}

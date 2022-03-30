@@ -53,7 +53,7 @@ const routes: Routes = [
   { path: 'food', component:  FoodComponent, canActivate: [GlobalGuard]},
   { path: 'dashboard', component:  DashboardComponent, canActivate: [GlobalGuard]},
   { path: 'pyramid', component:  FoodPyramidComponent, canActivate: [GlobalGuard]},
-  { path: 'edit', component:  EditProfileComponent, canActivate: [GlobalGuard]},
+  { path: 'edit', component:  RegisterComponent, canActivate: [GlobalGuard]},
 ];
 
 @NgModule({

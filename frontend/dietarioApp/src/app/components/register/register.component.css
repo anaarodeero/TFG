@@ -23,8 +23,12 @@
   background-size: cover;
   background-position: center;
   position: absolute;
-  height: 100%;
+  min-height: 100%;
   width: 100%;
+}
+
+.container-bg {
+  height: 100%;
 }
 
 .alergia {
@@ -43,7 +47,7 @@
   color: #37b97d;
   font-weight: bold;
   font-size: xx-large;
-  margin-bottom: 2rem;
+  margin: 2rem;
 }
 
 .mat-form-field {
@@ -62,16 +66,23 @@
 
 .stepper {
   text-align: center;
-  min-width: 35rem;
-  width: 40%;
   border-radius: 1rem;
+  margin-bottom: 5rem;
+}
+
+.stepper-bg {
+  width: 40%;
+}
+
+.stepper-md {
+  width: 60%;
 }
 
 .stepper-sm {
-  /* text-align: center; */
-  width: 80%;
-  /* border-radius: 1rem; */
+  width: 90%;
 }
+
+
 
 .boton {
   background-color: #37b97d;

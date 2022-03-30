@@ -52,8 +52,8 @@
                         <div fxLayout="column" fxLayoutAlign="center start" class="nombre">
                             <p class="textoAlimentos">{{element.nombre}}</p>
                         </div>
-                        <div fxLayout="column" fxLayoutAlign="center center" class="der" *ngFor="let column of nutrientes">
-                            <p class="textoAlimentos">{{element[column]}}</p>
+                        <div fxLayout="column" fxLayoutAlign="center center" class="der" *ngFor="let property of element | keyvalue">
+                            <p class="textoAlimentos">{{property.value}}</p>
                         </div>
                         <div fxLayout="column" fxLayoutAlign="center center" >
                             <button mat-icon-button class="boton" (click)="editFood(element.nombre);">
@@ -66,8 +66,8 @@
                     <div fxLayout="column" fxLayoutAlign="center start" class="nombre">
                         <p class="textoAlimentos textoAlimentos-nombre"> - {{comida.alimento}}</p>
                     </div>
-                    <div fxLayout="column" fxLayoutAlign="center center" class="der" *ngFor="let column of nutrientes">
-                        <p class="textoAlimentos">{{comida[column]}}</p>
+                    <div fxLayout="column" fxLayoutAlign="center center" class="der" *ngFor="let property of comida | keyvalue">
+                        <p class="textoAlimentos">{{property.value}}</p>
                     </div>
                 </div>
                 <!-- <button mat-raised-button class="boton" (click)="editFood(element.nombre);">
@@ -106,8 +106,8 @@
                 <div fxLayout="column" fxLayoutAlign="center start" class="der-sm">
                     <p class="textoAlimentos">{{comida.alimento}}</p>
                 </div>
-                <div fxLayout="column" fxLayoutAlign="center center" class="der-sm" *ngFor="let nutriente of nutrientes">
-                    <p class="textoAlimentos">{{comida[nutriente]}}</p>
+                <div fxLayout="column" fxLayoutAlign="center center" class="der-sm" *ngFor="let property of comida | keyvalue">
+                    <p class="textoAlimentos">{{property.value}}</p>
                 </div>
               </div>
             </mat-expansion-panel>
@@ -143,8 +143,8 @@
                     </div>
                 </div>
                 <div fxLayout="row" fxLayoutAlign="center center" class="fila fila-lg" ngClass.lt-md="fila-sm">
-                <div fxLayout="column" fxLayoutAlign="center center" class="cuarto" *ngFor="let column of alimentoParam">
-                    <p class="textoAlimento">{{alimentoSeleccionado[column]}}</p>
+                <div fxLayout="column" fxLayoutAlign="center center" class="cuarto" *ngFor="let property of alimentoSeleccionado | keyvalue">
+                    <p class="textoAlimento">{{property.value}}</p>
                 </div>
                 </div>
                 <h1 class="titulo">Alimentos con los mismos nutrientes para sustituir</h1>

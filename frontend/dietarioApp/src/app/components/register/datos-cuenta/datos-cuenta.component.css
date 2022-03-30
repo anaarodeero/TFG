@@ -1,0 +1,27 @@
+.form {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+
+.container-sm {
+    width: 90%;
+}
+
+.nombre-doble, .passwd-doble {
+    grid-column: 1 / 2;
+}
+
+.apellidos-doble, .passwd-repeat-doble {
+    grid-column: 2 / 3;
+}
+
+.email, .boton, .nombre-full, .apellidos-full, .passwd-repeat-full, .passwd-full {
+    grid-column: 1 / 3;
+}

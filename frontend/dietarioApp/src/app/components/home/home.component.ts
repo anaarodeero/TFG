@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
   constructor(private router: Router, private usuarioService: UsuarioService) { }
 
   ngOnInit(): void {
-    if(this.usuarioService.isLoggedIn()){
+    if(this.usuarioService.usuarioValue){
       this.router.navigateByUrl('/dashboard');
     }
   }

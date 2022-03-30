@@ -1,0 +1,11 @@
+<form [formGroup]="secondFormGroup">
+    <p>¿Tienes alguna alergía o intolerancia?</p>
+    <section formGroupName="alergia">
+        <div fxLayout="row wrap" fxLayoutAlign="center center">
+            <div fxLayout="column" class="alergia" fxLayoutAlign="center center" *ngFor="let alergia of alergias">
+                <img class="alergia-img" src={{getAlergia(alergia)}}>
+                <mat-checkbox class="alergia-texto" formControlName="{{alergia}}">{{alergia}}</mat-checkbox>
+            </div>
+        </div>
+    </section>
+</form>

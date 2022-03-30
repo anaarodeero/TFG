@@ -17,21 +17,21 @@ export class LoginComponent implements OnInit {
   password: string;
 
   getErrorMessage() {
-    if (this.firstFormGroup.get('password').hasError('required')) {
+    if (this.firstFormGroup.get('password')?.hasError('required')) {
       return 'Este campo es obligatorio';
-    }
+    } else return "";
   }
 
   getErrorMessageEmail() {
-    if (this.firstFormGroup.get('email').hasError('required')) {
+    if (this.firstFormGroup.get('email')?.hasError('required')) {
       return 'Este campo es obligatorio';
     }
-    return this.firstFormGroup.get('email').hasError('email') ? 'No es valido este email' : '';
+    return this.firstFormGroup.get('email')?.hasError('email') ? 'No es valido este email' : '';
   }
   constructor(private _formBuilder: FormBuilder, private usuarioService: UsuarioService, private cookieService: CookieService, private router: Router) { }
 
   ngOnInit(): void {
-    if(this.usuarioService.isLoggedIn()){
+    if(this.usuarioService.usuarioValue){
       this.router.navigateByUrl('/dashboard');
     }
     

@@ -36,6 +36,7 @@ export class DailyPlanComponent implements OnInit {
   panelOpenState = false;
   show: boolean = false;
   tablaShow: boolean = false;
+  selected: ListadoAlimentos;
 
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
