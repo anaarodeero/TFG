@@ -79,7 +79,7 @@
 }
 
 .stepper-sm {
-  width: 90%;
+  width: 95%;
 }
 
 
@@ -106,11 +106,11 @@
 }
 
 ::ng-deep .mat-radio-button.mat-accent .mat-radio-inner-circle {
-  background-color: #009e5b!important;  
+  background-color: #009e5b!important;
 }
 
 ::ng-deep.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
- border-color: #009e5b!important; 
+ border-color: #009e5b!important;
 } */
 
 .mat-radio-button ~ .mat-radio-button {
@@ -133,7 +133,7 @@
 
 .input-full {
   width: 100%;
-} 
+}
 
 .input-doble {
   width: 85%;
@@ -166,7 +166,7 @@
   width: 100%;
 }
 /* ::ng-deep .mat-step-header .mat-step-icon-selected, .mat-step-icon-state-done .mat-step-icon-state-edit {
-  background-color: #37B97D; 
+  background-color: #37B97D;
 } */
 
 .example-form-field {

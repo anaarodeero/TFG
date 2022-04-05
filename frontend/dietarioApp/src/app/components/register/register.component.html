@@ -4,7 +4,7 @@
     class="stepper mat-elevation-z8" labelPosition="bottom" #stepper>
     <mat-step [stepControl]="firstFormGroup">
       <ng-template matStepLabel>Tu cuenta</ng-template>
-      <app-datos-cuenta [firstFormGroup]="firstFormGroup" [usuario]="usuario"></app-datos-cuenta>
+      <app-datos-cuenta [firstFormGroup]="firstFormGroup" [usuario]="usuario" [modoEdicion]="editMode"></app-datos-cuenta>
       <button mat-button matStepperNext [disabled]="firstFormGroup.invalid" class="boton">Siguiente</button>
     </mat-step>
     <mat-step [stepControl]="secondFormGroup">

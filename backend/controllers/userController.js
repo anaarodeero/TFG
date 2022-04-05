@@ -80,7 +80,13 @@ userCtrl.authenticate = async (req, res, next) => {
 };
 
 
-
+userCtrl.getUserByEmail = async (req, res, next) => {
+  let email = req.query.email;
+  console.log("email", email)
+  const user = await User.find({email: email});
+  if(user[0]) res.json(user);
+  else null;
+};
 
 
 

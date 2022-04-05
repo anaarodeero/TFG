@@ -20,7 +20,8 @@ import { Router } from '@angular/router';
 export class RegisterComponent implements OnInit {
 
   orientation: StepperOrientation;
-  
+  editMode: boolean;
+
   firstFormGroup: FormGroup;
   secondFormGroup_no: FormGroup;
   thirdFormGroup_no: FormGroup;
@@ -61,7 +62,7 @@ export class RegisterComponent implements OnInit {
     const filterValue = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase();
   }
-  
+
   constructor(private _formBuilder: FormBuilder, private usuarioService: UsuarioService, private cookieService: CookieService, private router: Router) {
   }
 
@@ -76,17 +77,24 @@ export class RegisterComponent implements OnInit {
     } else {
       this.orientation = 'horizontal'
     }
-    
-    if(this.usuarioService.usuarioValue){
+
+    if(this.usuarioService.isLoggedIn()){
+      this.editMode = true;
+      console.log("user inciado")
+      console.log("aqui", /register/.test(this.router.url))
       if (/register/.test(this.router.url)){
-        this.router.navigateByUrl('/dashboard');
+        this.router.navigate(['/dashboard']);
       }
       this.usuarioService.getUser().subscribe(
         (user) => {
           this.usuario = user
         }
       );
+    } else {
+      this.editMode = false;
     }
+
+
 
     this.firstFormGroup = this._formBuilder.group({
       email: ['', Validators.required],
@@ -115,7 +123,7 @@ export class RegisterComponent implements OnInit {
     this.thirdFormGroup = this._formBuilder.group({
       dieta: ['', Validators.required]
     });
-    
+
   }
 
 
@@ -136,11 +144,12 @@ export class RegisterComponent implements OnInit {
       if(this.secondFormGroup.get('alergia')?.get(element)?.value == true){
         this.usuario.alergias.push(element);
       }
-      
+
     }
     console.log("user: ", this.usuario)
     let data = this.usuarioService.register(this.usuario).subscribe((data:any)=>{
       this.cookieService.set('CookieSesion', data.token);
+      this.router.navigateByUrl('/login')
     });
   }
 

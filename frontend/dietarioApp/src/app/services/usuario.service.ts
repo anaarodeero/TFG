@@ -5,7 +5,7 @@ import { map } from 'rxjs/operators';
 import { Usuario } from '../models/usuario';
 import { environment } from 'src/environments/environment';
 import { CookieService } from 'ngx-cookie-service';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 //import {RequestOptions, Request, RequestMethod} from '@angular/http';
 
 @Injectable({ providedIn: 'root' })
@@ -29,20 +29,21 @@ export class UsuarioService {
       .post<Usuario>('http://localhost:4000/api/login', {
         email,
         password,
-      });
-      // .pipe(
-      //   map((usuario) => {
-      //     // store usuario details and jwt token in local storage to keep usuario logged in between page refreshes
-      //     localStorage.setItem('usuario', JSON.stringify(usuario));
-      //     this.usuarioSubject.next(usuario);
-      //     return usuario;
-      //   })
-      // );
+      })
+      .pipe(
+        map((usuario) => {
+          // store usuario details and jwt token in local storage to keep usuario logged in between page refreshes
+          localStorage.setItem('usuario', JSON.stringify(usuario));
+          this.usuarioSubject.next(usuario);
+          return usuario;
+        })
+      );
   }
 
   isLoggedIn(){
-    let result = this.http.post('http://localhost:4000/api/authenticate', {token: this.cookieService.get('CookieSesion')}).toPromise();
-    return result;
+    return this.http.post('http://localhost:4000/api/authenticate', {token: this.cookieService.get('CookieSesion')}).subscribe((result)=>{
+      return result;
+    })
   }
 
   authenticate(token: string){
@@ -52,7 +53,7 @@ export class UsuarioService {
   logout() {
     // remove usuario from local storage and set current usuario to null
     localStorage.removeItem('usuario');
-    //this.usuarioSubject.next(null);
+    this.usuarioSubject.next(null);
     this.router.navigate(['/login']);
   }
 
@@ -72,6 +73,14 @@ export class UsuarioService {
       headers: headers
     });
     //return this.http.get<Usuario>(`http://localhost:4000/getUser`, requestOptions);
+  }
+
+  getUserByEmail(email: string){
+    let paramsQuery = new HttpParams().set("email", email);
+    console.log("parametros", paramsQuery)
+    return this.http.get<Usuario>('http://localhost:4000/api/getUserByEmail', {
+      params: paramsQuery
+    });
   }
 
   update(params: any) {

@@ -8,6 +8,7 @@ router.post('/register', usersCtrl.createUser)
 router.post('/login', usersCtrl.loginUser)
 router.post('/authenticate', usersCtrl.authenticate)
 router.get('/getUser', usersCtrl.getUser)
+router.get('/getUserByEmail', usersCtrl.getUserByEmail)
 router.put('/update', usersCtrl.editUser)
 
 router.delete('/:id', usersCtrl.deleteUser)

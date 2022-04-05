@@ -12,13 +12,16 @@ export class HomeComponent implements OnInit {
   constructor(private router: Router, private usuarioService: UsuarioService) { }
 
   ngOnInit(): void {
-    if(this.usuarioService.usuarioValue){
+    if(this.usuarioService.isLoggedIn()){
       this.router.navigateByUrl('/dashboard');
     }
+    // if(this.usuarioService.usuarioValue){
+    //   this.router.navigateByUrl('/dashboard');
+    // }
   }
 
   registrar(){
-    this.router.navigateByUrl('/register');
+    this.router.navigateByUrl('/dashboard');
   }
 
   iniciarSesion(){

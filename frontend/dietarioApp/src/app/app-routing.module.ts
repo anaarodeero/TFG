@@ -51,9 +51,9 @@ const routes: Routes = [
   { path: 'daily-plan', component: DailyPlanComponent, canActivate: [GlobalGuard] },
   { path: 'weekly-plan', component:  WeeklyPlanComponent, canActivate: [GlobalGuard]},
   { path: 'food', component:  FoodComponent, canActivate: [GlobalGuard]},
-  { path: 'dashboard', component:  DashboardComponent, canActivate: [GlobalGuard]},
+  { path: 'dashboard', component:  DashboardComponent},
   { path: 'pyramid', component:  FoodPyramidComponent, canActivate: [GlobalGuard]},
-  { path: 'edit', component:  RegisterComponent, canActivate: [GlobalGuard]},
+  { path: 'edit', component:  EditProfileComponent},
 ];
 
 @NgModule({

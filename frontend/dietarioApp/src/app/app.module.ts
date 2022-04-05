@@ -21,6 +21,7 @@ import { EditProfileComponent } from './components/edit-profile/edit-profile.com
 import { DatosCuentaComponent } from './components/register/datos-cuenta/datos-cuenta.component';
 import { DietaComponent } from './components/register/dieta/dieta.component';
 import { AlergiasComponent } from './components/register/alergias/alergias.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { AlergiasComponent } from './components/register/alergias/alergias.compo
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

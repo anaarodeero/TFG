@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { UsuarioService } from 'src/app/services/usuario.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -11,10 +13,18 @@ export class DashboardComponent implements OnInit {
 
   shouldRun = [/(^|\.)plnkr\.co$/, /(^|\.)stackblitz\.io$/].some(h => h.test(window.location.host));
 
-  constructor() { }
+  constructor(private usuarioService: UsuarioService, private router: Router) { }
 
   ngOnInit(): void {
     this.opened = true;
+  }
+
+  logout(){
+    this.usuarioService.logout();
+  }
+
+  editProfile(){
+    this.router.navigateByUrl('/edit')
   }
 
 }

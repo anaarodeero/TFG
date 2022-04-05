@@ -3,7 +3,7 @@
     <button mat-button (click)="sidenav.toggle()">sidenav.toggle()</button>
     <span class="example-spacer"></span>
     <button mat-button class="botonInicio">Hola Ana</button>
-    
+
     <button mat-icon-button [matMenuTriggerFor]="menu">
         <mat-icon class="perfil">account_circle</mat-icon>
       </button>
@@ -36,15 +36,15 @@
     <mat-icon class="perfil">account_circle</mat-icon>
   </button>
   <mat-menu #menu="matMenu">
-    <button mat-menu-item>
+    <button mat-menu-item (click)="editProfile()">
       <mat-icon>manage_accounts</mat-icon>
       <span>Editar perfil</span>
     </button>
-    <button mat-menu-item>
+    <button mat-menu-item (click)="logout()">
       <mat-icon>person_off</mat-icon>
       <span>Cerrar sesión</span>
     </button>
   </mat-menu>
- 
+
 </mat-toolbar>
 

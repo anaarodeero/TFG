@@ -14,7 +14,7 @@ export class GlobalGuard implements CanActivate {
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
     const currentUser = this.usuarioService.usuarioValue;
     if (!currentUser) {
-      if(!this.router.url.includes("home") && !this.router.url.includes("register") && !this.router.url.includes("edit")) this.router.navigateByUrl('/login');
+      if(!this.router.url.includes("home") && !this.router.url.includes("register"))  this.router.navigateByUrl('/login');
       return false;
     }
     return true;;
