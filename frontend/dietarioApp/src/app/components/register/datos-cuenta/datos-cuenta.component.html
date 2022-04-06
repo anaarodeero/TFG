@@ -1,5 +1,6 @@
 <form [formGroup]="firstFormGroup" class="form">
   <div class="container" ngClass.lt-md="container-sm">
+    <h3 class="texto title">Datos personales</h3>
     <mat-form-field ngClass.gt-sm="nombre-doble" ngClass.lt-md="nombre-full">
       <input matInput placeholder="Nombre" formControlName="nombre" required [(ngModel)]="usuario.nombre">
       <mat-error *ngIf="this.firstFormGroup.get('nombre').invalid">{{getErrorMessage()}}</mat-error>
@@ -38,20 +39,63 @@
 
     </ng-container>
 
-    <div *ngIf="modoEdicion" class="bloque_edicion">
-      <mat-form-field ngClass.gt-sm="passwd-doble-edicion" ngClass.lt-md="full-edicion">
-        <mat-label>Contraseña</mat-label>
-        <input matInput [type]="hide ? 'password' : 'text'" formControlName="password" required (keyup)="actualizar()"
-          [(ngModel)]="usuario.password">
-        <mat-error *ngIf="this.firstFormGroup.get('password').hasError('required')">{{getErrorMessage()}}</mat-error>
-        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
-          [attr.aria-pressed]="hide">
-          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+    <div *ngIf="modoEdicion" class="bloque_edicion" [formGroup]="cambioForm">
+      <ng-container *ngIf="!cambioPassword">
+        <mat-form-field ngClass.gt-sm="passwd-doble-edicion" ngClass.lt-md="full-edicion">
+          <mat-label>Contraseña</mat-label>
+          <input matInput disabled [type]="hide ? 'password' : 'text'" required [value]="usuario.password">
+          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+            [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </button>
+        </mat-form-field>
+        <button mat-button class="boton_edit" ngClass.gt-sm="boton_edit_bg" ngClass.lt-md="full-edicion" (click)="cambiar()">
+          <span>Cambiar contraseña</span>
         </button>
-      </mat-form-field>
-      <button mat-button class="boton_edit" ngClass.gt-sm="boton_edit_bg" ngClass.lt-md="full-edicion">
-        <span>Cambiar contraseña</span>
-      </button>
+      </ng-container>
+      <ng-container *ngIf="cambioPassword">
+        <h3 class="full-edicion texto title">
+          Cambio de contraseña
+          <button mat-icon-button class="boton boton-cancelar" (click)="cancelarCambio()">
+            <mat-icon>close</mat-icon>
+          </button>
+          <button mat-icon-button class="boton boton-actualizar" (click)="guardarCambio()">
+            <mat-icon>save_alt</mat-icon>
+          </button>
+        </h3>
+        <p class="full-edicion texto">Escribe tu contraseña actual</p>
+        <mat-form-field ngClass.gt-sm="cambio-doble-edicion-1" ngClass.lt-md="full-edicion">
+          <mat-label>Contraseña</mat-label>
+          <input matInput [type]="hide ? 'password' : 'text'" formControlName="password_antigua" required (keyup)="actualizar()">
+          <mat-error *ngIf="this.cambioForm.get('password_antigua').hasError('required')">{{getErrorMessage()}}</mat-error>
+          <mat-error *ngIf="this.cambioForm.get('password_antigua').hasError('error')">{{getErrorMessagePasswdActual()}}</mat-error>
+          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+            [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </button>
+        </mat-form-field>
+        <p class="full-edicion texto">Escribe tu nueva contraseña</p>
+        <mat-form-field ngClass.gt-sm="cambio-doble-edicion-2" ngClass.lt-md="full-edicion">
+          <mat-label>Nueva contraseña</mat-label>
+          <input matInput [disabled]="!this.cambioForm.get('password_antigua').valid" [type]="hide ? 'password' : 'text'" formControlName="password_nueva1" required (keyup)="actualizarEdicion()">
+          <mat-error *ngIf="this.cambioForm.get('password_nueva1').hasError('required')">{{getErrorMessage()}}</mat-error>
+          <mat-error *ngIf="this.cambioForm.get('password_nueva1').hasError('errorPasswd')">{{getErrorMessagePasswd()}}</mat-error>
+          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+            [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </button>
+        </mat-form-field>
+        <mat-form-field ngClass.gt-sm="cambio-doble-edicion-3" ngClass.lt-md="full-edicion">
+          <mat-label>Repite la nueva contraseña</mat-label>
+          <input matInput [type]="hide ? 'password' : 'text'" formControlName="password_nueva2" required (keyup)="actualizarEdicion()">
+          <mat-error *ngIf="this.cambioForm.get('password_nueva2').hasError('required')">{{getErrorMessage()}}</mat-error>
+          <mat-error *ngIf="this.cambioForm.get('password_nueva2').hasError('errorPasswd')">{{getErrorMessagePasswd()}}</mat-error>
+          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+            [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </button>
+        </mat-form-field>
+      </ng-container>
 
       <!-- <mat-form-field ngClass.gt-sm="passwd-repeat-doble" ngClass.lt-md="passwd-repeat-full">
         <mat-label>Repite la contraseña</mat-label>

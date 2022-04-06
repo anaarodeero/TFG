@@ -11,6 +11,7 @@ import { Usuario } from 'src/app/models/usuario';
 import { UsuarioService } from 'src/app/services/usuario.service';
 import { CookieService } from 'ngx-cookie-service';
 import { Router } from '@angular/router';
+import { DatosCuentaComponent } from './datos-cuenta/datos-cuenta.component';
 
 @Component({
   selector: 'app-register',
@@ -123,9 +124,15 @@ export class RegisterComponent implements OnInit {
     this.thirdFormGroup = this._formBuilder.group({
       dieta: ['', Validators.required]
     });
-
   }
 
+  datosCuentaDisabled(){
+    if(this.editMode){
+      this.firstFormGroup.get('password').setValidators([])
+      this.firstFormGroup.get('password_repeat').setValidators([])
+    }
+    return this.firstFormGroup.invalid
+  }
 
   getErrorMessage() {
     return 'Este campo es obligatorio';

@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { AbstractControl, FormControl, FormGroup, ValidationErrors, Validators } from '@angular/forms';
+import { AbstractControl, FormBuilder, FormControl, FormGroup, ValidationErrors, Validators } from '@angular/forms';
 import { Usuario } from 'src/app/models/usuario';
 import { UsuarioService } from 'src/app/services/usuario.service';
 
@@ -13,26 +13,54 @@ export class DatosCuentaComponent implements OnInit {
   @Input() firstFormGroup: FormGroup;
   @Input() usuario: Usuario;
   @Input() modoEdicion: boolean;
-  public cambioPassword = {
-    cambio: false,
-    antigua: '',
-    passwd1: '',
-    passwd2: ''
-  }
+  @Input() cambioPassword: boolean;
+
+  public cambioForm: FormGroup;
+  // public cambioPassword: boolean = false;
   hide = true;
   hide_2 = true;
 
-  constructor(private usuarioService: UsuarioService) { }
+  constructor(private usuarioService: UsuarioService, private formBuilder: FormBuilder) {
+    // this.cambioForm = this.formBuilder.group({});
+  }
 
   ngOnInit() {
     this.firstFormGroup.addControl('password_repeat', new FormControl('', [Validators.required, this.validatePassword.bind(this)]))
     this.firstFormGroup.get('password').addValidators(this.validatePassword.bind(this));
     this.firstFormGroup.get('email').addValidators(this.validateEmail.bind(this));
+
+    this.cambioForm = this.formBuilder.group({
+      password_antigua: [''],
+      password_nueva1: [''],
+      password_nueva2: [''],
+    })
+
+    console.log(this.firstFormGroup)
+  }
+
+  datosCuentaDisabled(){
+    if(this.modoEdicion){
+      this.firstFormGroup.get('password').setValidators([])
+      this.firstFormGroup.get('password_repeat').setValidators([])
+    }
+    return this.firstFormGroup.invalid
+  }
+
+  cambiar(){
+    this.cambioPassword = true;
+    this.cambioForm.get('password_antigua').addValidators([Validators.required, this.validatePasswordAntigua.bind(this)])
+    this.cambioForm.get('password_nueva1').addValidators([Validators.required, this.validatePasswordNueva.bind(this)])
+    this.cambioForm.get('password_nueva2').addValidators([Validators.required, this.validatePasswordNueva.bind(this)])
   }
 
   actualizar(){
     this.firstFormGroup.get('password').updateValueAndValidity();
     this.firstFormGroup.get('password_repeat').updateValueAndValidity();
+  }
+
+  actualizarEdicion(){
+    this.cambioForm.get('password_nueva1').updateValueAndValidity();
+    this.cambioForm.get('password_nueva2').updateValueAndValidity();
   }
 
   validateEmail(control: AbstractControl): ValidationErrors | null{
@@ -44,12 +72,46 @@ export class DatosCuentaComponent implements OnInit {
   existeUsuario(){
     if(this.firstFormGroup.get('email').valid){
       let email = this.firstFormGroup.get('email').value;
-      this.usuarioService.getUserByEmail(email).subscribe((data: Usuario)=>{
-        if(data) {
+      this.usuarioService.getUserByEmail(email).subscribe((data: any)=>{
+        if(data && (data[0]._id != this.usuario._id)) {
           this.firstFormGroup.get('email').setErrors({'usrYaExite': true});
         }
       });
     }
+  }
+
+  cancelarCambio(){
+    this.cambioForm.reset();
+    this.cambioForm.markAsUntouched();
+    this.cambioPassword = false;
+  }
+
+  guardarCambio(){
+    if(this.cambioForm.valid){
+      let nuevaPasswd = this.cambioForm.get('password_nueva1').value;
+      this.usuario.password = nuevaPasswd;
+      this.cambioForm.reset();
+      this.cambioPassword = false;
+    } else {
+      this.cambioForm.markAllAsTouched();
+      console.log("form", this.cambioForm as FormGroup)
+    }
+  }
+
+  validatePasswordAntigua(control: AbstractControl): ValidationErrors | null{
+    if(control.value && (control.value != this.usuario.password)){
+      return {"error": true};
+    }
+    return null;
+  }
+
+  validatePasswordNueva(control: AbstractControl): ValidationErrors | null{
+    if(this.cambioForm.get('password_nueva1')?.value == '' || this.cambioForm.get('password_nueva2')?.value == ''){
+      return null;
+    } else if(this.cambioForm.get('password_nueva1')?.value != this.cambioForm.get('password_nueva2')?.value){
+      return {'errorPasswd': true}
+    }
+    return null;
   }
 
   validatePassword(control: AbstractControl): ValidationErrors | null{
@@ -63,6 +125,10 @@ export class DatosCuentaComponent implements OnInit {
 
   getErrorMessage() {
     return 'Este campo es obligatorio';
+  }
+
+  getErrorMessagePasswdActual() {
+    return 'La contraseña actual no coincide con esta';
   }
 
   getErrorMessagePasswd() {

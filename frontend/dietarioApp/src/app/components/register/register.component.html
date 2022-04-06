@@ -1,11 +1,12 @@
 <div class="container" ngClass.gt-sm="container-sm" fxLayout="column" fxLayoutAlign="center center">
-  <h1 class="mat-display-2 titulo">Registro</h1>
+  <h1 class="mat-display-2 titulo" *ngIf="!editMode">Registro</h1>
+  <h1 class="mat-display-2 titulo" *ngIf="editMode">Editar</h1>
   <mat-stepper linear [orientation]="orientation" ngClass.gt-md="stepper-bg" ngClass.md="stepper-md" ngClass.lt-md="stepper-sm"
     class="stepper mat-elevation-z8" labelPosition="bottom" #stepper>
     <mat-step [stepControl]="firstFormGroup">
       <ng-template matStepLabel>Tu cuenta</ng-template>
       <app-datos-cuenta [firstFormGroup]="firstFormGroup" [usuario]="usuario" [modoEdicion]="editMode"></app-datos-cuenta>
-      <button mat-button matStepperNext [disabled]="firstFormGroup.invalid" class="boton">Siguiente</button>
+      <button mat-button matStepperNext [disabled]="datosCuentaDisabled()" class="boton">Siguiente</button>
     </mat-step>
     <mat-step [stepControl]="secondFormGroup">
       <ng-template matStepLabel>Alergías</ng-template>
