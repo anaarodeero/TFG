@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { AbstractControl, FormBuilder, FormControl, FormGroup, ValidationErrors, Validators } from '@angular/forms';
 import { Usuario } from 'src/app/models/usuario';
 import { UsuarioService } from 'src/app/services/usuario.service';
@@ -13,12 +13,15 @@ export class DatosCuentaComponent implements OnInit {
   @Input() firstFormGroup: FormGroup;
   @Input() usuario: Usuario;
   @Input() modoEdicion: boolean;
-  @Input() cambioPassword: boolean;
+
+  @Output() cambioActivado = new EventEmitter<boolean>();
 
   public cambioForm: FormGroup;
-  // public cambioPassword: boolean = false;
+  public cambioPassword: boolean = false;
   hide = true;
   hide_2 = true;
+
+  emailPattern = "[A-Za-z0-9._%-]+@[A-Za-z0-9._%-]+\\.[a-z]{2,3}";
 
   constructor(private usuarioService: UsuarioService, private formBuilder: FormBuilder) {
     // this.cambioForm = this.formBuilder.group({});
@@ -27,7 +30,7 @@ export class DatosCuentaComponent implements OnInit {
   ngOnInit() {
     this.firstFormGroup.addControl('password_repeat', new FormControl('', [Validators.required, this.validatePassword.bind(this)]))
     this.firstFormGroup.get('password').addValidators(this.validatePassword.bind(this));
-    this.firstFormGroup.get('email').addValidators(this.validateEmail.bind(this));
+    this.firstFormGroup.get('email').addValidators(Validators.pattern(this.emailPattern));
 
     this.cambioForm = this.formBuilder.group({
       password_antigua: [''],
@@ -48,6 +51,7 @@ export class DatosCuentaComponent implements OnInit {
 
   cambiar(){
     this.cambioPassword = true;
+    this.cambioActivado.emit(true);
     this.cambioForm.get('password_antigua').addValidators([Validators.required, this.validatePasswordAntigua.bind(this)])
     this.cambioForm.get('password_nueva1').addValidators([Validators.required, this.validatePasswordNueva.bind(this)])
     this.cambioForm.get('password_nueva2').addValidators([Validators.required, this.validatePasswordNueva.bind(this)])
@@ -84,6 +88,7 @@ export class DatosCuentaComponent implements OnInit {
     this.cambioForm.reset();
     this.cambioForm.markAsUntouched();
     this.cambioPassword = false;
+    this.cambioActivado.emit(false);
   }
 
   guardarCambio(){
@@ -92,6 +97,7 @@ export class DatosCuentaComponent implements OnInit {
       this.usuario.password = nuevaPasswd;
       this.cambioForm.reset();
       this.cambioPassword = false;
+      this.cambioActivado.emit(false);
     } else {
       this.cambioForm.markAllAsTouched();
       console.log("form", this.cambioForm as FormGroup)

@@ -13,6 +13,7 @@ export class GlobalGuard implements CanActivate {
 
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
     const currentUser = this.usuarioService.usuarioValue;
+    console.log("hay?", currentUser)
     if (!currentUser) {
       if(!this.router.url.includes("home") && !this.router.url.includes("register"))  this.router.navigateByUrl('/login');
       return false;
@@ -23,13 +24,13 @@ export class GlobalGuard implements CanActivate {
   // canActivate(
   //   route: ActivatedRouteSnapshot,
   //   state: RouterStateSnapshot): Promise<boolean> {
-  //     return this.usuarioService.isLoggedIn().then((result: boolean) => { 
+  //     return this.usuarioService.isLoggedIn().then((result: boolean) => {
   //       if(!result) {
   //         if(!this.router.url.includes("home") && !this.router.url.includes("register")) this.router.navigateByUrl('/login');
   //       }
-  //       return result; 
+  //       return result;
   //     });
 
   //   }
-  
+
 }

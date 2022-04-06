@@ -11,6 +11,7 @@ export class AlergiasComponent implements OnInit {
 
   @Input() secondFormGroup: FormGroup;
   @Input() usuario: Usuario;
+  @Input() modoEdicion: boolean;
 
   alergias = ['gluten', 'sesamo', 'nueces', 'crustaceos', 'huevos', 'pescado', 'mostaza', 'lacteos', 'apio', 'cacahuetes', 'soja', 'marisco', 'altramuces', 'sulfatos'];
 
@@ -22,6 +23,19 @@ export class AlergiasComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    // if(this.modoEdicion){
+    //   console.log("usr tiene: ", this.usuario.alergias)
+    //   for (let index = 0; index < this.alergias.length; index++) {
+    //     const element = this.alergias[index];
+    //     console.log("elemento: " + element)
+    //     if(this.usuario.alergias.includes(element)){
+    //       console.log("el usr lo tiene")
+    //       this.secondFormGroup.get('alergia').get(element).setValue(true);
+    //     }
+    //   }
+    // }
+    // this.secondFormGroup
   }
+
 
 }

@@ -41,6 +41,7 @@ export class UsuarioService {
   }
 
   isLoggedIn(){
+    console.log("userrr: ", this.getUser())
     return this.http.post('http://localhost:4000/api/authenticate', {token: this.cookieService.get('CookieSesion')}).subscribe((result)=>{
       return result;
     })
@@ -83,8 +84,8 @@ export class UsuarioService {
     });
   }
 
-  update(params: any) {
-    return this.http.put(`http://localhost:4000/api/update`, params);
+  update(usuario: Usuario) {
+    return this.http.put(`http://localhost:4000/api/update`, usuario);
   }
 
   delete(id: string) {

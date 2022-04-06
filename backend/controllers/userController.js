@@ -48,7 +48,7 @@ userCtrl.loginUser = async (req, res, next) => {
       return res.status(401).send("La contraseña es incorrecta");
     }
   } else {
-    return res.status(401).send("Este usuario no tiene cuenta");
+    return res.status(404).send("Este usuario no tiene cuenta");
   }
 
   const token = jwt.sign({ _id: userEncontrado._id }, "clave_secreta");

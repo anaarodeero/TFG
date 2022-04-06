@@ -22,6 +22,7 @@ export class RegisterComponent implements OnInit {
 
   orientation: StepperOrientation;
   editMode: boolean;
+  disabledActivated: boolean = false;
 
   firstFormGroup: FormGroup;
   secondFormGroup_no: FormGroup;
@@ -95,8 +96,6 @@ export class RegisterComponent implements OnInit {
       this.editMode = false;
     }
 
-
-
     this.firstFormGroup = this._formBuilder.group({
       email: ['', Validators.required],
       apellidos: ['', Validators.required],
@@ -126,7 +125,12 @@ export class RegisterComponent implements OnInit {
     });
   }
 
+  updateDisabled(update: boolean){
+    this.disabledActivated = update;
+  }
+
   datosCuentaDisabled(){
+    if(this.disabledActivated) return true;
     if(this.editMode){
       this.firstFormGroup.get('password').setValidators([])
       this.firstFormGroup.get('password_repeat').setValidators([])
@@ -146,6 +150,7 @@ export class RegisterComponent implements OnInit {
   }
 
   registrarUsuario(){
+    this.usuario.alergias = [];
     for (let index = 0; index < this.alergias.length; index++) {
       const element = this.alergias[index];
       if(this.secondFormGroup.get('alergia')?.get(element)?.value == true){
@@ -154,10 +159,17 @@ export class RegisterComponent implements OnInit {
 
     }
     console.log("user: ", this.usuario)
-    let data = this.usuarioService.register(this.usuario).subscribe((data:any)=>{
-      this.cookieService.set('CookieSesion', data.token);
-      this.router.navigateByUrl('/login')
-    });
+    if(this.editMode){
+      this.usuarioService.update(this.usuario).subscribe((data:any)=>{
+        this.cookieService.set('CookieSesion', data.token);
+        this.router.navigateByUrl('/login')
+      });
+    } else {
+      this.usuarioService.register(this.usuario).subscribe((data:any)=>{
+        this.cookieService.set('CookieSesion', data.token);
+        this.router.navigateByUrl('/login')
+      });
+    }
   }
 
 }

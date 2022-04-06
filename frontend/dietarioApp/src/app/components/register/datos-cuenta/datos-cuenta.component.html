@@ -12,7 +12,7 @@
     <mat-form-field class="email">
       <input matInput placeholder="Email" formControlName="email" required [(ngModel)]="usuario.email" (blur)="existeUsuario()">
       <mat-error *ngIf="this.firstFormGroup.get('email').hasError('required')">{{getErrorMessage()}}</mat-error>
-      <mat-error *ngIf="this.firstFormGroup.get('email').hasError('errorEmail')">{{getErrorFormatoEmail()}}</mat-error>
+      <mat-error *ngIf="this.firstFormGroup.get('email').hasError('pattern')">{{getErrorFormatoEmail()}}</mat-error>
       <mat-error *ngIf="this.firstFormGroup.get('email').hasError('usrYaExite')">{{getErrorEmailExistente()}}</mat-error>
     </mat-form-field>
     <ng-container *ngIf="!modoEdicion">
