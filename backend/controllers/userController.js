@@ -57,11 +57,6 @@ userCtrl.loginUser = async (req, res, next) => {
 };
 
 userCtrl.authenticate = async (req, res, next) => {
-  console.log("aqui")
-  // jwt.verify(req.body.token, "clave_secreta", 
-  //   (data, err)=>{res.status(200).json({result: data})},
-  //   (err)=>{console.log(err)}
-  // );
   let token = req.body.token;
   if(token == '') token = "null";
 

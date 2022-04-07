@@ -22,18 +22,17 @@
     border-radius: 1rem;
     text-decoration: underline;
   }
-  
+
   .container {
-    /* background-image: url(../../assets/image12.png); */
-    align-content: center;
-    background-size: cover;
+    background-image: url(../../../assets/image12.png);
+    background-size: contain;
     background-position: center;
     position: contain;
     /* min-height: %; */
     width: 100%;
   }
-  
-  
+
+
   .titulo {
     margin-top: 3rem;
     color: #37b97d;
@@ -50,15 +49,15 @@
     margin:0.5rem;
     margin-bottom: 1rem;
   }
-  
+
   .card-lg {
     width: 40%;
   }
-  
+
   .card-md {
     width: 60%;
   }
-  
+
   .card-sm {
     width: 80%;
   }
