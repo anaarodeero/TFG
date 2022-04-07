@@ -41,10 +41,10 @@ export class UsuarioService {
   }
 
   isLoggedIn(){
-    console.log("userrr: ", this.getUser())
-    return this.http.post('http://localhost:4000/api/authenticate', {token: this.cookieService.get('CookieSesion')}).subscribe((result)=>{
-      return result;
-    })
+    // console.log("userrr: ", this.getUser())
+    return this.http.post('http://localhost:4000/api/authenticate', {token: this.cookieService.get('CookieSesion')}).subscribe(result => {
+      return result
+    });
   }
 
   authenticate(token: string){
@@ -53,6 +53,7 @@ export class UsuarioService {
 
   logout() {
     // remove usuario from local storage and set current usuario to null
+    this.cookieService.delete('CookieSesion')
     localStorage.removeItem('usuario');
     this.usuarioSubject.next(null);
     this.router.navigate(['/login']);

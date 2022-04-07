@@ -13,30 +13,30 @@ import { AuthInterceptorService } from './interceptors/auth-interceptor.service'
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
-import { MatButtonModule } from '@angular/material/button'; 
-import { MatGridListModule } from '@angular/material/grid-list'; 
+import { MatButtonModule } from '@angular/material/button';
+import { MatGridListModule } from '@angular/material/grid-list';
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { MatStepperModule } from '@angular/material/stepper';
-import { MatFormFieldModule } from '@angular/material/form-field'; 
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
-import { MatCheckboxModule } from '@angular/material/checkbox'; 
+import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatRadioModule } from '@angular/material/radio';
-import { MatDatepickerModule } from '@angular/material/datepicker'; 
+import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { FormsModule } from '@angular/forms';
-import { MatCardModule } from '@angular/material/card'; 
-import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'; 
-import { MatExpansionModule } from '@angular/material/expansion'; 
-import { MatTableModule } from '@angular/material/table'; 
-import { MatDividerModule } from '@angular/material/divider'; 
-import { MatMenuModule } from '@angular/material/menu'; 
-import { MatPaginatorModule } from '@angular/material/paginator'; 
+import { MatCardModule } from '@angular/material/card';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatTableModule } from '@angular/material/table';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
-import { MatSidenavModule } from '@angular/material/sidenav'; 
+import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatSelectModule } from '@angular/material/select';
-import { CdkStepperModule } from '@angular/cdk/stepper'; 
+import { CdkStepperModule } from '@angular/cdk/stepper';
 import { GlobalGuard } from './guards/global.guard';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { MatListModule } from '@angular/material/list';
@@ -44,16 +44,16 @@ import { MatListModule } from '@angular/material/list';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' }, 
-  { path: 'home', component: HomeComponent },
-  { path: 'login', component: LoginComponent },
-  { path: 'register', component: RegisterComponent },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent, canActivate: [GlobalGuard] },
+  { path: 'login', component: LoginComponent, canActivate: [GlobalGuard] },
+  { path: 'register', component: RegisterComponent, canActivate: [GlobalGuard] },
   { path: 'daily-plan', component: DailyPlanComponent, canActivate: [GlobalGuard] },
   { path: 'weekly-plan', component:  WeeklyPlanComponent, canActivate: [GlobalGuard]},
   { path: 'food', component:  FoodComponent, canActivate: [GlobalGuard]},
-  { path: 'dashboard', component:  DashboardComponent},
+  { path: 'dashboard', component:  DashboardComponent, canActivate: [GlobalGuard]},
   { path: 'pyramid', component:  FoodPyramidComponent, canActivate: [GlobalGuard]},
-  { path: 'edit', component:  EditProfileComponent},
+  { path: 'edit', component:  EditProfileComponent, canActivate: [GlobalGuard]},
 ];
 
 @NgModule({

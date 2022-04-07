@@ -82,8 +82,6 @@ export class RegisterComponent implements OnInit {
 
     if(this.usuarioService.isLoggedIn()){
       this.editMode = true;
-      console.log("user inciado")
-      console.log("aqui", /register/.test(this.router.url))
       if (/register/.test(this.router.url)){
         this.router.navigate(['/dashboard']);
       }
@@ -158,7 +156,6 @@ export class RegisterComponent implements OnInit {
       }
 
     }
-    console.log("user: ", this.usuario)
     if(this.editMode){
       this.usuarioService.update(this.usuario).subscribe((data:any)=>{
         this.cookieService.set('CookieSesion', data.token);

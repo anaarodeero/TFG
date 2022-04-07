@@ -1,6 +1,7 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { AfterViewInit, Component, Input, OnInit } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 import { Usuario } from 'src/app/models/usuario';
+import { UsuarioService } from 'src/app/services/usuario.service';
 
 @Component({
   selector: 'app-alergias',
@@ -11,7 +12,7 @@ export class AlergiasComponent implements OnInit {
 
   @Input() secondFormGroup: FormGroup;
   @Input() usuario: Usuario;
-  @Input() modoEdicion: boolean;
+  public modoEdicion: boolean;
 
   alergias = ['gluten', 'sesamo', 'nueces', 'crustaceos', 'huevos', 'pescado', 'mostaza', 'lacteos', 'apio', 'cacahuetes', 'soja', 'marisco', 'altramuces', 'sulfatos'];
 
@@ -20,21 +21,22 @@ export class AlergiasComponent implements OnInit {
     return "../../../assets/" + alergia + ".png";
   }
 
-  constructor() { }
+  constructor(private usuarioService: UsuarioService) { }
 
   ngOnInit(): void {
-    // if(this.modoEdicion){
-    //   console.log("usr tiene: ", this.usuario.alergias)
-    //   for (let index = 0; index < this.alergias.length; index++) {
-    //     const element = this.alergias[index];
-    //     console.log("elemento: " + element)
-    //     if(this.usuario.alergias.includes(element)){
-    //       console.log("el usr lo tiene")
-    //       this.secondFormGroup.get('alergia').get(element).setValue(true);
-    //     }
-    //   }
-    // }
-    // this.secondFormGroup
+    if(this.usuarioService.isLoggedIn()){
+      this.modoEdicion = true;
+      this.usuarioService.getUser().subscribe(
+        (user) => {
+          this.usuario = user
+          this.usuario.alergias.forEach(alergia => {
+            this.secondFormGroup.get('alergia').get(alergia).setValue(true)
+          })
+        }
+      );
+    } else {
+      this.modoEdicion = false;
+    }
   }
 
 

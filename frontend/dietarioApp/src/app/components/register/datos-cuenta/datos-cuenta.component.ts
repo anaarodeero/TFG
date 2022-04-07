@@ -12,7 +12,7 @@ export class DatosCuentaComponent implements OnInit {
 
   @Input() firstFormGroup: FormGroup;
   @Input() usuario: Usuario;
-  @Input() modoEdicion: boolean;
+  public modoEdicion: boolean;
 
   @Output() cambioActivado = new EventEmitter<boolean>();
 
@@ -28,6 +28,18 @@ export class DatosCuentaComponent implements OnInit {
   }
 
   ngOnInit() {
+    if(this.usuarioService.isLoggedIn()){
+      this.modoEdicion = true;
+      this.usuarioService.getUser().subscribe(
+        (user) => {
+          this.usuario = user
+        }
+      );
+    } else {
+      this.modoEdicion = false;
+    }
+
+
     this.firstFormGroup.addControl('password_repeat', new FormControl('', [Validators.required, this.validatePassword.bind(this)]))
     this.firstFormGroup.get('password').addValidators(this.validatePassword.bind(this));
     this.firstFormGroup.get('email').addValidators(Validators.pattern(this.emailPattern));
