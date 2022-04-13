@@ -1,0 +1,150 @@
+{
+    "id": 1,
+    "nombre": "Dieta regular",
+    "piramide":[
+        {
+            "idCategoria":  1,
+            "nombre": "Lacteos",
+            "frecuencia": "DIARIA",
+            "limiteInferior": 2,
+            "limiteSuperior": 3,
+            "desayuno": true,
+            "almuerzo": true,
+            "comida": true,
+            "merienda": true,
+            "cena": true
+        },{
+            "idCategoria":  2,
+            "nombre": "Pescado",
+            "frecuencia": "SEMANAL",
+            "limiteInferior": 3,
+            "limiteSuperior": 4,
+            "desayuno": false,
+            "almuerzo": false,
+            "comida": true,
+            "merienda": false,
+            "cena": false
+        },{
+            "idCategoria":  3,
+            "nombre": "Carne blanca",
+            "frecuencia": "SEMANAL",
+            "limiteInferior": 3,
+            "limiteSuperior": 3,
+            "desayuno": false,
+            "almuerzo": false,
+            "comida": true,
+            "merienda": false,
+            "cena": true
+        },{
+            "idCategoria":  4,
+            "nombre": "Carne roja",
+            "frecuencia": "SEMANAL",
+            "limiteInferior": 1,
+            "limiteSuperior": 1,
+            "desayuno": false,
+            "almuerzo": false,
+            "comida": true,
+            "merienda": false,
+            "cena": false
+        },{
+            "idCategoria":  5,
+            "nombre": "Huevo",
+            "frecuencia": "SEMANAL",
+            "limiteInferior": 3,
+            "limiteSuperior": 5,
+            "desayuno": true,
+            "almuerzo": false,
+            "comida": true,
+            "merienda": false,
+            "cena": true
+        },{
+            "idCategoria":  6,
+            "nombre": "Legumbres",
+            "frecuencia": "SEMANAL",
+            "limiteInferior": 2,
+            "limiteSuperior": 4,
+            "desayuno": false,
+            "almuerzo": false,
+            "comida": true,
+            "merienda": false,
+            "cena": false
+        },{
+            "idCategoria":  7,
+            "nombre": "Frutos secos",
+            "frecuencia": "SEMANAL",
+            "limiteInferior": 3,
+            "limiteSuperior": 7,
+            "desayuno": true,
+            "almuerzo": true,
+            "comida": false,
+            "merienda": true,
+            "cena": false
+        },{
+            "idCategoria":  8,
+            "nombre": "Verduras y hortalizas",
+            "frecuencia": "DIARIA",
+            "limiteInferior": 2,
+            "limiteSuperior": 3,
+            "desayuno": false,
+            "almuerzo": true,
+            "comida": true,
+            "merienda": true,
+            "cena": true
+        },{
+            "idCategoria":  9,
+            "nombre": "Fruta",
+            "frecuencia": "DIARIA",
+            "limiteInferior": 3,
+            "limiteSuperior": 4,
+            "desayuno": true,
+            "almuerzo": true,
+            "comida": true,
+            "merienda": true,
+            "cena": true
+        },{
+            "idCategoria":  10,
+            "nombre": "Pan integral",
+            "frecuencia": "DIARIA",
+            "limiteInferior": 1,
+            "limiteSuperior": 1,
+            "desayuno": true,
+            "almuerzo": true,
+            "comida": true,
+            "merienda": true,
+            "cena": true
+        },{
+            "idCategoria":  11,
+            "nombre": "Pasta integral",
+            "frecuencia": "SEMANAL",
+            "limiteInferior": 2,
+            "limiteSuperior": 3,
+            "desayuno": false,
+            "almuerzo": false,
+            "comida": true,
+            "merienda": false,
+            "cena": true
+        },{
+            "idCategoria":  12,
+            "nombre": "Arroz integral",
+            "frecuencia": "SEMANAL",
+            "limiteInferior": 2,
+            "limiteSuperior": 3,
+            "desayuno": false,
+            "almuerzo": false,
+            "comida": true,
+            "merienda": false,
+            "cena": true
+        },{
+            "idCategoria":  13,
+            "nombre": "Patatas",
+            "frecuencia": "SEMANAL",
+            "limiteInferior": 1,
+            "limiteSuperior": 1,
+            "desayuno": false,
+            "almuerzo": false,
+            "comida": true,
+            "merienda": false,
+            "cena": false
+        }
+    ]
+}

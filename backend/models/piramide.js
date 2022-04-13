@@ -3,7 +3,7 @@ const { Schema, model } = require('mongoose')
 const DistribucionCategoriaAlimentoSchema = new Schema({
     idCategoria: {type: Number, required: true},
     nombre: {type: String, required: true},
-    frecuencia: {enum: [SEMANAL, DIARIA], required: true},
+    frecuencia: {enum: ['SEMANAL', 'DIARIA']},
     limiteInferior: {type: Number, required: true},
     limiteSuperior: {type: Number, required: true},
     desayuno: {type: Boolean, required: true},
@@ -16,7 +16,16 @@ const DistribucionCategoriaAlimentoSchema = new Schema({
     versionKey: false
 });
 
-module.exports = model('DistribucionCategoriaAlimento',DistribucionCategoriaAlimentoSchema);
+const PiramideSchema = new Schema({
+    id: {type: Number, required: true},
+    nombre: {type: String, required: true},
+    piramide: [DistribucionCategoriaAlimentoSchema]
+}, {
+    timestamps: true,
+    versionKey: false
+});
+
+module.exports = model('Piramide',PiramideSchema);
   
   
   

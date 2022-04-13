@@ -4,14 +4,19 @@
         <img src="../../../assets/piramide.png">
         <mat-card class="card mat-elevation-z8">
             <mat-grid-list cols="3" rowHeight="50px">
-                <mat-grid-tile
+                <!-- <mat-grid-tile
                     *ngFor="let celda of celdas"
                     [colspan]="celda.colums"
                     [rowspan]="celda.filas">
                   <p>{{celda.texto}}</p>
+                </mat-grid-tile> -->
+                <mat-grid-tile [colspan]="1" [rowspan]="1">
                 </mat-grid-tile>
+                <!-- <mat-grid-tile [colspan]="1" [rowspan]="1">
+                  <p>{{celda.texto}}</p>
+                </mat-grid-tile> -->
               </mat-grid-list>
-              
+
         </mat-card>
     </div>
 </div>

@@ -1,4 +1,12 @@
+import { ThisReceiver } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
+import { CoreModule } from '@angular/flex-layout';
+import { firstValueFrom } from 'rxjs';
+import { Alimento } from 'src/app/models/alimento';
+import { DistribucionCategoriaAlimento, Frecuencia, Piramide } from 'src/app/models/piramide';
+import { AlimentoService } from 'src/app/services/alimento.service';
+import { PiramideService } from 'src/app/services/piramide.service';
+import { RecetaService } from 'src/app/services/receta.service';
 
 export interface Celda {
   colums: number;
@@ -49,9 +57,106 @@ export class FoodPyramidComponent implements OnInit {
     {texto: 'Consumo ocasional y moderado', colums: 1, filas: 1},
   ];
 
-  constructor() { }
+  piramide: Piramide;
+  categoriaDiaria: DistribucionCategoriaAlimento[];
+
+  constructor(private piramideService: PiramideService, private alimentoService: AlimentoService, private recetaService: RecetaService) { }
 
   ngOnInit(): void {
+    // this.getPiramide();
+    // this.getAlimento();
+    // let alimento = this.getAlimento();
+    // console.log("numero:", this.getNumeroAlimentos())
+    // this.getRecetas();
+    this.cargarPiramide();
+    console.log("Piramide: ", this.piramide)
+  }
+
+
+  cargarPiramide(){
+    this.piramideService.getPiramideById(1).subscribe(elemento => {
+      console.log("PIRAMIDE: ", elemento)
+      this.piramide = elemento
+      // this.categoriaDiaria = elemento.piramide.filter(elem => elem.frecuencia == Frecuencia.DIARIA)
+      elemento.piramide.forEach(elem => {
+        console.log(elem.frecuencia)
+        if(elem.frecuencia === Frecuencia.DIARIA){
+          console.log("diaria")
+          this.categoriaDiaria.push(elem)
+        }
+      })
+      console.log("Consumo diario: ", this.categoriaDiaria)
+    })
+  }
+
+
+
+
+
+
+
+
+  getRecetas(){
+    this.recetaService.getAll().subscribe(response => {
+      console.log("Todas recetas: ", response)
+    })
+    this.recetaService.getNumeroRecetas().subscribe(response => {
+      console.log("Numero recetas: ", response)
+    })
+
+    this.recetaService.getRecetaById(34).subscribe(response => {
+      console.log("Receta 34: ", response)
+    })
+  }
+
+  getPiramide(){
+    let piramides: Piramide[];
+    this.piramideService.getAll().subscribe(response => {
+      console.log("PIRAMIDES: ", response)
+    })
+
+    this.piramideService.getPiramideById(1).subscribe(response => {
+      console.log("PIRAMIDE: ", response)
+    })
+  }
+
+  // async getAlimento(){
+  //   let piramides: Piramide[];
+  //   let num = this.alimentoService.getNumeroAlimentos()
+  //   console.log("TAMAÑO: ", num)
+
+  //   let alimento: Alimento;
+  //   await this.alimentoService.getAlimentoById(345).subscribe(response => {
+  //     console.log("ALIMENTO dentro: ", response)
+  //     alimento = response
+  //   })
+  //   console.log("ALIMENTO fuera: ", alimento)
+
+  //   // let alim: Alimento = {
+  //   //   idAlimento
+  //   // }
+
+
+  // }
+
+  getNumeroAlimentos(){
+    this.alimentoService.getNumeroAlimentos()
+    // return this.alimentoService.getNumeroAlimentos().subscribe(numero => {
+    //   console.log("numero:", numero)
+    //   return numero
+    // });
+  }
+
+  getAlimento(){
+    this.alimentoService.getAlimentoById(345).subscribe(alimento => {
+      console.log("alimento:", alimento)
+    });
+
+    // let alim: Alimento = {
+    //   idAlimento
+    // }
+
+
   }
 
 }
