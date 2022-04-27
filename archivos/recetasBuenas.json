@@ -1,5 +1,5 @@
 {
-	"id": 1,
+	"idReceta": 1,
 	"categoria": "Arroces",
 	"nombre": "Arroz seco de puerros, alubias y coliflor",
 	"ingredientes": [{
@@ -49,7 +49,7 @@
 	]
 },
 {
-	"id": 2,
+	"idReceta": 2,
 	"categoria": "Arroces",
 	"nombre": "Arroz caldoso de matanza",
 	"ingredientes": [{
@@ -101,7 +101,7 @@
 	]
 },
 {
-	"id": 3,
+	"idReceta": 3,
 	"categoria": "Arroces",
 	"nombre": "Arroz a la cubana",
 	"ingredientes": [{
@@ -162,7 +162,7 @@
 	]
 },
 {
-	"id": 4,
+	"idReceta": 4,
 	"categoria": "Arroces",
 	"nombre": "Curry de langostinos con pastel de arroz",
 	"ingredientes": [{
@@ -201,7 +201,7 @@
 	]
 },
 {
-	"id": 5,
+	"idReceta": 5,
 	"categoria": "Arroces",
 	"nombre": "Risotto con ajetes y albahaca en burrata",
 	"ingredientes": [{
@@ -253,7 +253,7 @@
 	]
 },
 {
-	"id": 6,
+	"idReceta": 6,
 	"categoria": "Arroces",
 	"nombre": "Arroz de espárragos y panceta ibérica con salsa de yema",
 	"ingredientes": [{
@@ -307,7 +307,7 @@
 	]
 },
 {
-	"id": 7,
+	"idReceta": 7,
 	"categoria": "Arroces",
 	"nombre": "Ensalada de arroz prohibido con aguacate y mango",
 	"ingredientes": [{
@@ -367,7 +367,7 @@
 		]
 },
 {
-	"id": 8,
+	"idReceta": 8,
 	"categoria": "Arroces",
 	"nombre": "Risotto de langostinos con curry y leche de coco",
 	"ingredientes": [{
@@ -411,7 +411,7 @@
     ]
 },
 {
-	"id": 9,
+	"idReceta": 9,
 	"categoria": "Arroces",
 	"nombre": "Arroz salteado con espinacas",
 	"ingredientes": [{
@@ -464,7 +464,7 @@
 	]
 },
 {
-	"id": 10,
+	"idReceta": 10,
 	"categoria": "Arroces",
 	"nombre": "Arroz con frijoles y cebolla morada",
 	"ingredientes": [{
@@ -499,7 +499,7 @@
 	]
 },
 {
-	"id": 11,
+	"idReceta": 11,
 	"categoria": "Arroces",
 	"nombre": "Risotto de peras y queso gorgonzola",
 	"ingredientes": [{
@@ -552,7 +552,7 @@
 	]
 },
 {
-	"id": 12,
+	"idReceta": 12,
 	"categoria": "Arroces",
 	"nombre": "Arroz con verduras y pollo",
 	"ingredientes": [{
@@ -612,7 +612,7 @@
 	]
 },
 {
-	"id": 13,
+	"idReceta": 13,
 	"categoria": "Arroces",
 	"nombre": "Arroz con pato",
 	"ingredientes": [{
@@ -679,7 +679,7 @@
 	]
 },
 {
-	"id": 14,
+	"idReceta": 14,
 	"categoria": "Arroces",
 	"nombre": "Risotto de zanahorias, miel y queso roquefort",
 	"ingredientes": [{
@@ -738,7 +738,7 @@
 	]
 },
 {
-	"id": 15,
+	"idReceta": 15,
 	"categoria": "Arroces",
 	"nombre": "Arroz basmati al limón (Lemon basmati)",
 	"ingredientes": [{
@@ -793,7 +793,7 @@
 	]
 },
 {
-	"id": 16,
+	"idReceta": 16,
 	"categoria": "Carne y aves",
 	"nombre": "Perdices con manzana",
 	"ingredientes": [{
@@ -854,7 +854,7 @@
 	]
 },
 {
-	"id": 17,
+	"idReceta": 17,
 	"categoria": "Carne y aves",
 	"nombre": "Estofado de lengua de ternera con hortalizas",
 	"ingredientes": [{
@@ -903,7 +903,7 @@
 	]
 },
 {
-	"id": 18,
+	"idReceta": 18,
 	"categoria": "Carne y aves",
 	"nombre": "Terrina de ternera, vino dulce y espárragos",
 	"ingredientes": [{
@@ -939,7 +939,7 @@
 	]
 },
 {
-	"id": 19,
+	"idReceta": 19,
 	"categoria": "Carne y aves",
 	"nombre": "Ensalada de pechugas jugosas",
 	"ingredientes": [{
@@ -985,7 +985,7 @@
 	]
 },
 {
-	"id": 20,
+	"idReceta": 20,
 	"categoria": "Carne y aves",
 	"nombre": "Guiso de conejo con setas",
 	"ingredientes": [{
@@ -1036,7 +1036,7 @@
 	]
 },
 {
-	"id": 21,
+	"idReceta": 21,
 	"categoria": "Carne y aves",
 	"nombre": "Conejo al ajillo",
 	"ingredientes": [{
@@ -1068,7 +1068,7 @@
 	]
 },
 {
-	"id": 22,
+	"idReceta": 22,
 	"categoria": "Carne y aves",
 	"nombre": "Pato estofado",
 	"ingredientes": [{
@@ -1100,7 +1100,7 @@
 	]
 },
 {
-	"id": 23,
+	"idReceta": 23,
 	"categoria": "Carne y aves",
 	"nombre": "Pechuga de pollo al estilo Hasselback",
 	"ingredientes": [{
@@ -1146,7 +1146,7 @@
 	]
 },
 {
-	"id": 24,
+	"idReceta": 24,
 	"categoria": "Carne y aves",
 	"nombre": "Pinchos de lomo marinado",
 	"ingredientes": [{
@@ -1204,7 +1204,7 @@
 	]
 },
 {
-	"id": 25,
+	"idReceta": 25,
 	"categoria": "Carne y aves",
 	"nombre": "Chili con carne",
 	"ingredientes": [{
@@ -1265,7 +1265,7 @@
 	]
 },
 {
-	"id": 26,
+	"idReceta": 26,
 	"categoria": "Carne y aves",
 	"nombre": "Pollo mantequilla con coco",
 	"ingredientes": [{
@@ -1333,7 +1333,7 @@
 	]
 },
 {
-	"id": 27,
+	"idReceta": 27,
 	"categoria": "Carne y aves",
 	"nombre": "Hamburguesas caseras con hierbas aromáticas",
 	"ingredientes": [{
@@ -1380,7 +1380,7 @@
 	]
 },
 {
-	"id": 28,
+	"idReceta": 28,
 	"categoria": "Carne y aves",
 	"nombre": "Albóndigas tradicionales",
 	"ingredientes": [{
@@ -1442,7 +1442,7 @@
 	]
 },
 {
-	"id": 29,
+	"idReceta": 29,
 	"categoria": "Carne y aves",
 	"nombre": "Pollo margarita al horno",
 	"ingredientes": [{
@@ -1481,7 +1481,7 @@
 	]
 },
 {
-	"id": 30,
+	"idReceta": 30,
 	"categoria": "Carne y aves",
 	"nombre": "Redondo de pavo con setas en escabeche",
 	"ingredientes": [{
@@ -1549,7 +1549,7 @@
 	]
 },
 {
-	"id": 31,
+	"idReceta": 31,
 	"categoria": "Carne y aves",
 	"nombre": "Pollo asado",
 	"ingredientes": [{
@@ -1596,7 +1596,7 @@
 	]
 },
 {
-	"id": 32,
+	"idReceta": 32,
 	"categoria": "Pasta",
 	"nombre": "Lasaña vegetal con bechamel de albahaca",
 	"ingredientes": [{
@@ -1652,7 +1652,7 @@
 	]
 },
 {
-	"id": 33,
+	"idReceta": 33,
 	"categoria": "Pasta",
 	"nombre": "Macarrones con salsa de coco y anacardos",
 	"ingredientes": [{
@@ -1687,7 +1687,7 @@
 	]
 },
 {
-	"id": 34,
+	"idReceta": 34,
 	"categoria": "Pasta",
 	"nombre": "Tallarines con albóndigas y salsa de pimientos, tomates y tomillo",
 	"ingredientes": [{
@@ -1752,7 +1752,7 @@
 	]
 },
 {
-	"id": 35,
+	"idReceta": 35,
 	"categoria": "Pasta",
 	"nombre": "Canelones de carne y foie con setas",
 	"ingredientes": [{
@@ -1802,7 +1802,7 @@
 	]
 },
 {
-	"id": 36,
+	"idReceta": 36,
 	"categoria": "Pasta",
 	"nombre": "Pasta con langostinos, pesto y rosado",
 	"ingredientes": [{
@@ -1843,7 +1843,7 @@
 	]
 },
 {
-	"id": 37,
+	"idReceta": 37,
 	"categoria": "Pasta",
 	"nombre": "Cuscús negro con mejillones",
 	"ingredientes": [{
@@ -1904,7 +1904,7 @@
 	]
 },
 {
-	"id": 38,
+	"idReceta": 38,
 	"categoria": "Pasta",
 	"nombre": "Cuscús de marisco",
 	"ingredientes": [{
@@ -1948,7 +1948,7 @@
 
 },
 {
-	"id": 39,
+	"idReceta": 39,
 	"categoria": "Pasta",
 	"nombre": "Pasta con ajo y setas",
 	"ingredientes": [{
@@ -1977,7 +1977,7 @@
 	]
 },
 {
-	"id": 40,
+	"idReceta": 40,
 	"categoria": "Pasta",
 	"nombre": "Espaguetis con verduras y tomate",
 	"ingredientes": [{
@@ -2031,7 +2031,7 @@
 	]
 },
 {
-	"id": 41,
+	"idReceta": 41,
 	"categoria": "Pasta",
 	"nombre": "Pasta al pesto con verduritas",
 	"ingredientes": [{
@@ -2072,7 +2072,7 @@
 	]
 },
 {
-	"id": 42,
+	"idReceta": 42,
 	"categoria": "Pasta",
 	"nombre": "Tagliatelle con curry de gambas",
 	"ingredientes": [{
@@ -2116,7 +2116,7 @@
 	]
 },
 {
-	"id": 43,
+	"idReceta": 43,
 	"categoria": "Pasta",
 	"nombre": "Macarrones con queso",
 	"ingredientes": [{
@@ -2153,7 +2153,7 @@
 	]
 },
 {
-	"id": 44,
+	"idReceta": 44,
 	"categoria": "Pescados y mariscos",
 	"nombre": "Carabineros a la plancha",
 	"ingredientes": [{
@@ -2186,7 +2186,7 @@
 	]
 },
 {
-	"id": 45,
+	"idReceta": 45,
 	"categoria": "Pescados y mariscos",
 	"nombre": "Guiso de calabaza y mejillones",
 	"ingredientes": [{
@@ -2245,7 +2245,7 @@
 	]
 },
 {
-	"id": 46,
+	"idReceta": 46,
 	"categoria": "Pescados y mariscos",
 	"nombre": "Merluza gratinada al horno",
 	"ingredientes": [{
@@ -2295,7 +2295,7 @@
 	]
 },
 {
-	"id": 47,
+	"idReceta": 47,
 	"categoria": "Pescados y mariscos",
 	"nombre": "Lenguado con habitas y salsa de naranja",
 	"ingredientes": [{
@@ -2340,7 +2340,7 @@
 	]
 },
 {
-	"id": 48,
+	"idReceta": 48,
 	"categoria": "Pescados y mariscos",
 	"nombre": "Cuscús de langostinos y mango",
 	"ingredientes": [{
@@ -2399,7 +2399,7 @@
 	]
 },
 {
-	"id": 49,
+	"idReceta": 49,
 	"categoria": "Pescados y mariscos",
 	"nombre": "Tortilla de bacalao y pimiento verde",
 	"ingredientes": [{
@@ -2436,7 +2436,7 @@
 	]
 },
 {
-	"id": 50,
+	"idReceta": 50,
 	"categoria": "Pescados y mariscos",
 	"nombre": "Huevos rotos con bacalao",
 	"ingredientes": [{
@@ -2474,7 +2474,7 @@
 	]
 },
 {
-	"id": 51,
+	"idReceta": 51,
 	"categoria": "Pescados y mariscos",
 	"nombre": "Salmón con miel y limón",
 	"ingredientes": [{
@@ -2518,7 +2518,7 @@
 	]
 },
 {
-	"id": 52,
+	"idReceta": 52,
 	"categoria": "Verduras/Hortalizas",
 	"nombre": "Gazpacho de fresones",
 	"ingredientes": [{
@@ -2555,7 +2555,7 @@
 	]
 },
 {
-	"id": 53,
+	"idReceta": 53,
 	"categoria": "Verduras/Hortalizas",
 	"nombre": "Crema de aguacate",
 	"ingredientes": [{

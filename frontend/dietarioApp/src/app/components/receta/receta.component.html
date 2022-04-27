@@ -1,0 +1,26 @@
+<div class="container" fxLayout="column" fxLayoutAlign="center center">
+  <mat-card class="card mat-elevation-z8" ngClass.lt-md="card-sm" fxLayout="column">
+    <button mat-icon-button class="boton" (click)="volver()"><mat-icon>chevron_left</mat-icon> Volver</button>
+    <h1 class="mat-display-2 titulo capitalize">{{receta.nombre}}</h1>
+    <h3 class="sub-titulo uppercase">Dieta {{receta.dieta}}</h3>
+    <div class="cards" fxLayout.lt-lg="column" fxLayout="row" fxLayoutAlign="space-between start" >
+      <mat-card class="ingredientes-card mat-elevation-z3" ngClass.lt-md="ingredientes-card-sm">
+        <img src="../../../assets/pin.png" class="pin">
+        <mat-card-title class="title-ingrediente">Ingredientes</mat-card-title>
+        <div class="elemento" *ngFor="let ingrediente of receta.ingredientes">
+          <mat-icon>chevron_right</mat-icon>
+          <p class="ingrediente">{{ingrediente.ingrediente}}</p>
+        </div>
+      </mat-card>
+      <mat-card class="preparacion-card mat-elevation-z3" ngClass.lt-lg="ingredientes-card-sm">
+        <img src="../../../assets/pin2.png" class="pin2">
+        <mat-card-title class="title-ingrediente">Preparación</mat-card-title>
+        <div class="elemento" *ngFor="let paso of receta.preparacion; let i=index">
+          <p class="paso-numeracion"> {{i+1}}.</p>
+          <p class="paso">{{paso}}</p>
+        </div>
+      </mat-card>
+    </div>
+
+  </mat-card>
+</div>

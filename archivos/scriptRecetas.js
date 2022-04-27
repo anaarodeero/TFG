@@ -1,6 +1,6 @@
 db.getCollection('recetas').insert({
-	"id": NumberInt(1),
-	"categoria": "Arroces",
+	"idReceta": NumberInt(1),
+	"categoria": "ARROCES",
 	"nombre": "Arroz seco de puerros, alubias y coliflor",
 	"ingredientes": [{
 			"alimento": NumberInt(1),
@@ -39,7 +39,7 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(556),
 			"ingrediente": "Aceite de oliva virgen extra"
 		}],
-	"dieta": "",
+	"dieta": "VEGANA",
 	"preparacion":[
 		"En una paella sofreímos en aceite de oliva la coliflor troceada, las judías verdes y el puerro bien picado. Debe coger color.",
 		"Hacemos un hueco e incorporamos el tomate rallado, el diente de ajo troceado y el pimentón.",
@@ -49,8 +49,8 @@ db.getCollection('recetas').insert({
 	]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(2),
-	"categoria": "Arroces",
+	"idReceta": NumberInt(2),
+	"categoria": "ARROCES",
 	"nombre": "Arroz caldoso de matanza",
 	"ingredientes": [{
 			"alimento": NumberInt(1),
@@ -92,7 +92,7 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(556),
 			"ingrediente": "Aceite de oliva virgen extra"
 		}],
-	"dieta": "",
+	"dieta": "REGULAR",
 	"preparacion":[
 		"En una olla doramos poco a poco la panceta, el secreto y la costilla troceada, Sazonamos bien.",
 		"Incorporamos el tomate, el ajo picado, el pimentón, el azafrán y hacemos un sofrito.",
@@ -101,8 +101,8 @@ db.getCollection('recetas').insert({
 	]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(3),
-	"categoria": "Arroces",
+	"idReceta": NumberInt(3),
+	"categoria": "ARROCES",
 	"nombre": "Arroz a la cubana",
 	"ingredientes": [{
 			"alimento": NumberInt(246),
@@ -150,7 +150,7 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(128),
 			"ingrediente": "Pimienta negra"
 		}],
-	"dieta": "",
+	"dieta": "REGULAR",
 	"preparacion":[
 		"En un recipiente que sea apto para horno sofreímos un diente de ajo, cuando esté dorado incorporamos la cebolla picada en brunoise. Cuando ésta esté rehogada añadimos el bouquet garni.",
 		"Añadimos una parte de arroz por dos de caldo y lo metemos al horno a 180º 12 minutos.",
@@ -162,8 +162,8 @@ db.getCollection('recetas').insert({
 	]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(4),
-	"categoria": "Arroces",
+	"idReceta": NumberInt(4),
+	"categoria": "ARROCES",
 	"nombre": "Curry de langostinos con pastel de arroz",
 	"ingredientes": [{
 			"alimento": NumberInt(564),
@@ -190,7 +190,7 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(245),
 			"ingrediente": "150 g de yogur natural"
 		}],
-	"dieta": "",
+	"dieta": "REGULAR",
 	"preparacion":[
 		"Poner 1 taza de arroz y 2 tazas de agua hirviendo (596 ml) en una cazuela antiadherente mediana con una pizca de sal marina. Dejar que borbotee 10 minutos y luego cocinar a fuego suave 5 minutos. Pasado este tiempo, podrá convertirse en un pastel de arroz.",
 		"Mientras tanto, pelar el ajo y cortarlo en rodajas finas junto con el chile. Pelar el jengibre y cortarlo en tiras finas. Limpiar las cebolletas y cortarlas en trozos de 2 cm.",
@@ -201,8 +201,8 @@ db.getCollection('recetas').insert({
 	]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(5),
-	"categoria": "Arroces",
+	"idReceta": NumberInt(5),
+	"categoria": "ARROCES",
 	"nombre": "Risotto con ajetes y albahaca en burrata",
 	"ingredientes": [{
 			"alimento": NumberInt(1),
@@ -241,7 +241,7 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(556),
 			"ingrediente": "Aceite de oliva virgen extra"
 		}],
-	"dieta": "regular",
+	"dieta": "REGULAR",
 	"preparacion":[
 		"En una olla doramos la cebolla picada en aceite de oliva. Incorporamos los ajetes troceados y cocinamos a fuego medio hasta que todo coja color.",
 		"Incorporamos el arroz, nacaramos y mojamos con el vino. Removemos hasta que evapore por completo y sazonamos.",
@@ -253,8 +253,8 @@ db.getCollection('recetas').insert({
 	]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(6),
-	"categoria": "Arroces",
+	"idReceta": NumberInt(6),
+	"categoria": "ARROCES",
 	"nombre": "Arroz de espárragos y panceta ibérica con salsa de yema",
 	"ingredientes": [{
 			"alimento": NumberInt(1),
@@ -296,7 +296,7 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(547),
 			"ingrediente": "Sal"
 		}],
-	"dieta": "regular",
+	"dieta": "VEGETARIANA",
 	"preparacion":[
 		"Comenzamos calentando una paellera y poniendo dos cucharadas de aceite de oliva virgen extra por cada comensal.",
 		"Cortamos finamente los ajos y la cebolleta y los añadimos. Doramos ligeramente y hacemos lo mismo con el tomate y el pimentón hasta que evapore toda su agua. A continuación, añadimos unas hebras de azafrán y lo tostamos un poquito.",
@@ -307,8 +307,8 @@ db.getCollection('recetas').insert({
 	]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(7),
-	"categoria": "Arroces",
+	"idReceta": NumberInt(7),
+	"categoria": "ARROCES",
 	"nombre": "Ensalada de arroz prohibido con aguacate y mango",
 	"ingredientes": [{
 			"alimento": NumberInt(1),
@@ -356,7 +356,7 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(547),
 			"ingrediente": "Sal"
 		}],
-	"dieta": "regular",
+	"dieta": "VEGANA",
 	"preparacion":[
 		"Para esta receta utilizaremos arroz prohibido y será necesario lavarlo un par de veces con agua abundante. Después de esto, lo ponemos a cocer durante 35 minutos.",
 		"Mientras tanto aprovechamos para cortar todos los ingredientes de la receta. Cortamos el aguacate en brunoise y añadimos unas gotas de limón para que no se oxide mientras preparamos el resto.",
@@ -367,8 +367,8 @@ db.getCollection('recetas').insert({
 		]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(8),
-	"categoria": "Arroces",
+	"idReceta": NumberInt(8),
+	"categoria": "ARROCES",
 	"nombre": "Risotto de langostinos con curry y leche de coco",
 	"ingredientes": [{
 			"alimento": NumberInt(1),
@@ -401,7 +401,7 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(547),
 			"ingrediente": "Sal"
 		}],
-	"dieta": "regular",
+	"dieta": "REGULAR",
 	"preparacion":[
 		"Picamos la cebolleta y el ajo.",
 		"Las pochamos en una sartén con un poco de aceite de oliva virgen extra. Incorporamos el arroz y nacaramos. Vertemos el vino blanco, cuando se evapore introducimos la sal y el curry.",
@@ -411,8 +411,8 @@ db.getCollection('recetas').insert({
 	]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(9),
-	"categoria": "Arroces",
+	"idReceta": NumberInt(9),
+	"categoria": "ARROCES",
 	"nombre": "Arroz salteado con espinacas",
 	"ingredientes": [{
 			"alimento": NumberInt(1),
@@ -454,7 +454,7 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(556),
 			"ingrediente": "Aceite de oliva virgen extra"
 		}],
-	"dieta": "regular",
+	"dieta": "REGULAR",
 	"preparacion":[
 		"En una sartén con aceite pochamos la cebolla en dados.",
 		"Añadimos la carne picada, dejamos que se dore, y a continuación introducimos el tomate en dados.",
@@ -464,8 +464,8 @@ db.getCollection('recetas').insert({
 	]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(10),
-	"categoria": "Arroces",
+	"idReceta": NumberInt(10),
+	"categoria": "ARROCES",
 	"nombre": "Arroz con frijoles y cebolla morada",
 	"ingredientes": [{
 			"alimento": NumberInt(1),
@@ -492,15 +492,15 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(575),
 			"ingrediente": "Ramita de cilantro"
 		}],
-	"dieta": "regular",
+	"dieta": "REGULAR",
 	"preparacion":[
 		"Sofreímos el ajo. Reservamos. Sofreímos la cebolla y reservamos. Pasamos la panceta por la sartén también, en tiritas. Reservamos.",
 		"Abrimos el vasito de arroz y añadimos ambas cosas a la sartén. Volvemos a añadir la cebolla y el ajo. Escurrimos los frijoles y los añadimos también. Echamos comino en polvo y servimos con cilantro.",
 	]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(11),
-	"categoria": "Arroces",
+	"idReceta": NumberInt(11),
+	"categoria": "ARROCES",
 	"nombre": "Risotto de peras y queso gorgonzola",
 	"ingredientes": [{
 			"alimento": NumberInt(185),
@@ -539,7 +539,7 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(556),
 			"ingrediente": "Aceite de oliva virgen extra"
 		}],
-	"dieta": "regular",
+	"dieta": "VEGETARIANA",
 	"preparacion":[
 		"Eduardo Ruano propone esta receta al cocinero Sergio Fernández desde Zaragoza.",
 		"Picamos una cebolla y la incorporamos a una cazuela con aceite para que se dore. Añadimos el arroz y sofreímos.",
@@ -552,8 +552,8 @@ db.getCollection('recetas').insert({
 	]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(12),
-	"categoria": "Arroces",
+	"idReceta": NumberInt(12),
+	"categoria": "ARROCES",
 	"nombre": "Arroz con verduras y pollo",
 	"ingredientes": [{
 			"alimento": NumberInt(525),
@@ -598,7 +598,7 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(554),
 			"ingrediente": "1 l de caldo de verduras"
 		}],
-	"dieta": "regular",
+	"dieta": "REGULAR",
 	"preparacion":[
 		"Lo primero que tenemos que hacer es salpimentar 4 muslos de pollo.",
 		"Seguidamente, ponemos una cazuela al fuego con 3 cucharadas de aceite de oliva virgen extra. Cuando esté el aceite caliente doramos los muslos de pollo y reservamos.",
@@ -612,8 +612,8 @@ db.getCollection('recetas').insert({
 	]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(13),
-	"categoria": "Arroces",
+	"idReceta": NumberInt(13),
+	"categoria": "ARROCES",
 	"nombre": "Arroz con pato",
 	"ingredientes": [{
 			"alimento": NumberInt(517),
@@ -661,7 +661,7 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(575),
 			"ingrediente": "Hojas de cilantro fresco"
 		}],
-	"dieta": "regular",
+	"dieta": "REGULAR",
 	"preparacion":[
 		"Lo primero que tenemos que hacer es cortar en cuartos medio pato. En una sartén echamos una taza de aceite de oliva. Mientras se calienta, salpimentamos al gusto el pato.",
 		"Cuando el aceite esté bien caliente doramos las porciones de pato por todos sus lados. Una vez las tengamos listas, las reservamos en una bandeja.",
@@ -679,8 +679,8 @@ db.getCollection('recetas').insert({
 	]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(14),
-	"categoria": "Arroces",
+	"idReceta": NumberInt(14),
+	"categoria": "ARROCES",
 	"nombre": "Risotto de zanahorias, miel y queso roquefort",
 	"ingredientes": [{
 			"alimento": NumberInt(174),
@@ -708,7 +708,7 @@ db.getCollection('recetas').insert({
 			"ingrediente": "20 ml de vino blanco"
 		},{
 			"alimento": NumberInt(554),
-			"ingrediente": "500 ml de caldo de verduras claro"
+			"ingrediente": "500 ml de caldo de verduras"
 		},{
 			"alimento": NumberInt(574),
 			"ingrediente": "Sal"
@@ -725,7 +725,7 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(230),
 			"ingrediente": "60 g de mantequilla"
 		}],
-	"dieta": "regular",
+	"dieta": "VEGETARIANA",
 	"preparacion":[
 		"Lo primero que tenemos que hacer es cortar en lavar y cortar en brunoise dos zanahorias, una cebolla pelada y un diente de ajo pelado.",
 		"Calentamos una cacerola o una sartén con un chorrito de aceite de oliva y doramos la zanahoria, la cebolla y el ajo.",
@@ -738,8 +738,8 @@ db.getCollection('recetas').insert({
 	]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(15),
-	"categoria": "Arroces",
+	"idReceta": NumberInt(15),
+	"categoria": "ARROCES",
 	"nombre": "Arroz basmati al limón (Lemon basmati)",
 	"ingredientes": [{
 			"alimento": NumberInt(585),
@@ -781,7 +781,7 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(117),
 			"ingrediente": "10 g semilla de mostaza"
 		}],
-	"dieta": "regular",
+	"dieta": "VEGANA",
 	"preparacion":[
 		"En primer lugar, dejamos el arroz en remojo en un bol con agua fría durante 2 horas.",
 		"Transcurrido ese tiempo, lavamos el arroz pasándolo por agua y ponemos una olla al fuego con agua fría.",
@@ -793,8 +793,8 @@ db.getCollection('recetas').insert({
 	]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(16),
-	"categoria": "Carne y aves",
+	"idReceta": NumberInt(16),
+	"categoria": "CARNE",
 	"nombre": "Perdices con manzana",
 	"ingredientes": [{
 			"alimento": NumberInt(521),
@@ -842,7 +842,7 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(547),
 			"ingrediente": "Sal"
 		}],
-	"dieta": "regular",
+	"dieta": "REGULAR",
 	"preparacion":[
 		"Separamos las patas de las pechugas y reservamos. Pelamos y cortamos las manzanas reservando las pieles y los corazones.",
 		"Colocamos una olla al fuego y añadimos aceite de oliva. Comenzamos a dorar la cebolla en juliana, el tocino y la sobrasada.",
@@ -854,8 +854,8 @@ db.getCollection('recetas').insert({
 	]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(17),
-	"categoria": "Carne y aves",
+	"idReceta": NumberInt(17),
+	"categoria": "CARNE",
 	"nombre": "Estofado de lengua de ternera con hortalizas",
 	"ingredientes": [{
 			"alimento": NumberInt(452),
@@ -891,7 +891,7 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(556),
 			"ingrediente": "Aceite de oliva virgen extra"
 		}],
-	"dieta": "regular",
+	"dieta": "REGULAR",
 	"preparacion":[
 		"En una olla a presión ponemos la lengua, una cebolla, dos de las zanahorias, el laurel, sal y cubrimos de agua.",
 		"Cocinamos 50 minutos desde que salga el vapor.",
@@ -903,8 +903,8 @@ db.getCollection('recetas').insert({
 	]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(18),
-	"categoria": "Carne y aves",
+	"idReceta": NumberInt(18),
+	"categoria": "CARNE",
 	"nombre": "Terrina de ternera, vino dulce y espárragos",
 	"ingredientes": [{
 			"alimento": NumberInt(492),
@@ -931,7 +931,7 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(117),
 			"ingrediente": "Mostaza"
 		}],
-	"dieta": "regular",
+	"dieta": "REGULAR",
 	"preparacion":[
 		"Ponemos a cocer el morcillo en agua, vino, sal y pimienta. En una olla exprés tardará 40 minutos. Cocinamos los espárragos a la plancha.",
 		"Desmenuzamos la carne, la sazonamos bien con mostaza, sal y pimienta, la cubrimos con su caldo de cocción y la metemos en una tarrina forrada con film colocando los espárragos en la zona central del molde.",
@@ -939,8 +939,8 @@ db.getCollection('recetas').insert({
 	]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(19),
-	"categoria": "Carne y aves",
+	"idReceta": NumberInt(19),
+	"categoria": "CARNE",
 	"nombre": "Ensalada de pechugas jugosas",
 	"ingredientes": [{
 			"alimento": NumberInt(525),
@@ -973,7 +973,7 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(547),
 			"ingrediente": "Sal"
 		}],
-	"dieta": "regular",
+	"dieta": "REGULAR",
 	"preparacion":[
 		"Lo primero que vamos a hacer es preparar la pechuga para después servirla fría.",
 		"Colocamos un poco de papel film sobre la mesa y espolvoreamos semillas de sésamo. Ponemos la pechuga y enrollamos con el papel hasta que quede bien sellada. Repetimos este proceso con todas las pechugas.",
@@ -985,8 +985,8 @@ db.getCollection('recetas').insert({
 	]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(20),
-	"categoria": "Carne y aves",
+	"idReceta": NumberInt(20),
+	"categoria": "CARNE",
 	"nombre": "Guiso de conejo con setas",
 	"ingredientes": [{
 			"alimento": NumberInt(533),
@@ -1025,7 +1025,7 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(547),
 			"ingrediente": "Sal"
 		}],
-	"dieta": "regular",
+	"dieta": "REGULAR",
 	"preparacion":[
 		"Para esta elaboración vamos a utilizar una olla exprés de 4 litros. Ponemos la olla al calentar con un poco de aceite de oliva mientras salpimentamos un conejo en trozos.",
 		"A continuación, doramos el conejo. Es importante que no movamos el conejo para que se dore bien y así quede más jugoso por dentro. Cuando los trozos de conejo estén dorados por ambas caras, añadimos el ajo picado y rehogamos.",
@@ -1036,8 +1036,8 @@ db.getCollection('recetas').insert({
 	]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(21),
-	"categoria": "Carne y aves",
+	"idReceta": NumberInt(21),
+	"categoria": "CARNE",
 	"nombre": "Conejo al ajillo",
 	"ingredientes": [{
 			"alimento": NumberInt(533),
@@ -1058,7 +1058,7 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(547),
 			"ingrediente": "Sal"
 		}],
-	"dieta": "regular",
+	"dieta": "REGULAR",
 	"preparacion":[
 		"Lo primero, pelamos y picamos los ajos y el perejil. Los mezclamos con una cucharada de vinagre. Reservamos.",
 		"Seguidamente, ponemos a calentar una sartén amplia con aceite en la que doramos el conejo.",
@@ -1068,8 +1068,8 @@ db.getCollection('recetas').insert({
 	]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(22),
-	"categoria": "Carne y aves",
+	"idReceta": NumberInt(22),
+	"categoria": "CARNE",
 	"nombre": "Pato estofado",
 	"ingredientes": [{
 			"alimento": NumberInt(517),
@@ -1090,7 +1090,7 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(547),
 			"ingrediente": "Sal"
 		}],
-	"dieta": "regular",
+	"dieta": "REGULAR",
 	"preparacion":[
 		"Cubrimos una sartén grande de aceite y añadimos la carne de pato, a la que habremos retirado toda la grasa previamente, al fuego para que quede dorado.",
 		"Mientras tanto, pelamos y cortamos una cebolla en tiras.",
@@ -1100,8 +1100,8 @@ db.getCollection('recetas').insert({
 	]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(23),
-	"categoria": "Carne y aves",
+	"idReceta": NumberInt(23),
+	"categoria": "CARNE",
 	"nombre": "Pechuga de pollo al estilo Hasselback",
 	"ingredientes": [{
 			"alimento": NumberInt(519),
@@ -1137,7 +1137,7 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(547),
 			"ingrediente": "Sal"
 		}],
-	"dieta": "regular",
+	"dieta": "REGULAR",
 	"preparacion":[
 		"Lo primero que hacemos es cortar la pechuga de pavo en rodajas sin llegar hasta el final para que quede el aspecto de las hojas de un libro.",
 		"Espolvoreamos con las hierbas e introducimos una hoja de laurel y las lonchas de bacon entre las aberturas. Aliñamos con pimienta y sal, regamos con un chorrito de aceite y pasamos a una fuente resistente al calor.",
@@ -1146,8 +1146,8 @@ db.getCollection('recetas').insert({
 	]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(24),
-	"categoria": "Carne y aves",
+	"idReceta": NumberInt(24),
+	"categoria": "CARNE",
 	"nombre": "Pinchos de lomo marinado",
 	"ingredientes": [{
 			"alimento": NumberInt(602),
@@ -1195,7 +1195,7 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(604),
 			"ingrediente": "Durum o tortitas"
 		}],
-	"dieta": "regular",
+	"dieta": "REGULAR",
 	"preparacion":[
 		"Para la marinada: mezcla el zumo naranja, el orégano, el comino, el pimentón, el aceite y el vinagre. Cuela la mezcla e introduce la carne cortada. Marina en el frigorífico unas 2 horas.",
 		"Pela y corta las cebollas en juliana fina. Mezcla en un bol con el zumo de lima y sal. Remueve y dejar macerar.",
@@ -1204,8 +1204,8 @@ db.getCollection('recetas').insert({
 	]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(25),
-	"categoria": "Carne y aves",
+	"idReceta": NumberInt(25),
+	"categoria": "CARNE",
 	"nombre": "Chili con carne",
 	"ingredientes": [{
 			"alimento": NumberInt(72),
@@ -1256,7 +1256,7 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(547),
 			"ingrediente": "Sal"
 		}],
-	"dieta": "regular",
+	"dieta": "REGULAR",
 	"preparacion":[
 		"Picamos finamente dos dientes de ajo y lo sofreímos en una olla con aceite de oliva virgen extra. Picamos la cebolla en brunoise y la sofreímos junto al ajo.",
 		"Añadimos la carne picada a la olla y comenzamos a dorar. Salpimentamos al gusto y añadimos los cominos picados, pimentón dulce, pimentón picante y el cacao. Para que el pimentón no se queme añadimos el tomate triturado, el tomate concentrado y mezclamos bien.",
@@ -1265,8 +1265,8 @@ db.getCollection('recetas').insert({
 	]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(26),
-	"categoria": "Carne y aves",
+	"idReceta": NumberInt(26),
+	"categoria": "CARNE",
 	"nombre": "Pollo mantequilla con coco",
 	"ingredientes": [{
 			"alimento": NumberInt(606),
@@ -1323,7 +1323,7 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(259),
 			"ingrediente": "15 g de azúcar moreno"
 		}],
-	"dieta": "regular",
+	"dieta": "REGULAR",
 	"preparacion":[
 		"Calentamos 1 cucharada de ghee en una cacerola grande a fuego medio-alto. Agregamos los trozos de pollo, sazonamos con sal y pimienta y freímos, dándoles la vuelta ocasionalmente, hasta que estén dorados por todos lados, aproximadamente de 5 a 7 minutos. Retiramos a un plato y reservamos.",
 		"Calentamos el ghee restante a fuego medio, añadimos las cebollas y sofreímos hasta que se ablanden, aproximadamente 5 minutos. Echamos jengibre, ajo, chile serrano y las especias.",
@@ -1333,8 +1333,8 @@ db.getCollection('recetas').insert({
 	]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(27),
-	"categoria": "Carne y aves",
+	"idReceta": NumberInt(27),
+	"categoria": "CARNE",
 	"nombre": "Hamburguesas caseras con hierbas aromáticas",
 	"ingredientes": [{
 			"alimento": NumberInt(580),
@@ -1370,7 +1370,7 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(272),
 			"ingrediente": "Aceite de girasol"
 		}],
-	"dieta": "regular",
+	"dieta": "REGULAR",
 	"preparacion":[
 		"Precalentamos el horno a 95ºC. Forramos una bandeja del horno con un papel vegetal.",
 		"En un bol grande mezclamos todos los ingredientes menos el aceite. Con las manos húmedas, formamos 12 generosas hamburguesas de ½ cm de grosor.",
@@ -1380,8 +1380,8 @@ db.getCollection('recetas').insert({
 	]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(28),
-	"categoria": "Carne y aves",
+	"idReceta": NumberInt(28),
+	"categoria": "CARNE",
 	"nombre": "Albóndigas tradicionales",
 	"ingredientes": [{
 			"alimento": NumberInt(391),
@@ -1432,7 +1432,7 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(560),
 			"ingrediente": "200 ml de caldo de pollo"
 		}],
-	"dieta": "regular",
+	"dieta": "REGULAR",
 	"preparacion":[
 		"Mezclamos carne picada de cerdo y de ternera y le incorporamos manteca de cerdo, pan mojado en leche, perejil, ajo en polvo, cuatro huevos, sal y pimienta.",
 		"Formamos y enharinamos las albóndigas. Las freímos en abundante aceite hasta que estén doradas pero no hechas del todo. Las sacamos y reservamos.",
@@ -1442,8 +1442,8 @@ db.getCollection('recetas').insert({
 	]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(29),
-	"categoria": "Carne y aves",
+	"idReceta": NumberInt(29),
+	"categoria": "CARNE",
 	"nombre": "Pollo margarita al horno",
 	"ingredientes": [{
 			"alimento": NumberInt(120),
@@ -1470,7 +1470,7 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(594),
 			"ingrediente": "60 g de rúcula"
 		}],
-	"dieta": "regular",
+	"dieta": "REGULAR",
 	"preparacion":[
 		"Precalentar el horno a 180 ºC.",
 		"Pelar las patatas, cortarlas en trozos de tamaño similar y cocerlas en una olla grande con agua salada hirviendo 15 minutos, o hasta que estén tiernas.",
@@ -1481,8 +1481,8 @@ db.getCollection('recetas').insert({
 	]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(30),
-	"categoria": "Carne y aves",
+	"idReceta": NumberInt(30),
+	"categoria": "CARNE",
 	"nombre": "Redondo de pavo con setas en escabeche",
 	"ingredientes": [{
 			"alimento": NumberInt(138),
@@ -1539,7 +1539,7 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(600),
 			"ingrediente": "Brotes para decorar"
 		}],
-	"dieta": "regular",
+	"dieta": "REGULAR",
 	"preparacion":[
 		"En una olla incorporamos el aceite, la pimienta y el laurel. Añadimos la cebolla, la zanahoria y los ajos y pochamos.",
 		"Cocinamos hasta que queden tiernas. Agregamos el vino blanco y dejamos evaporar. Troceamos las setas y las incorporamos con el tomillo y el romero. Mojamos con el Jerez y con el vinagre. Cocinamos 15 minutos.",
@@ -1549,8 +1549,8 @@ db.getCollection('recetas').insert({
 	]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(31),
-	"categoria": "Carne y aves",
+	"idReceta": NumberInt(31),
+	"categoria": "CARNE",
 	"nombre": "Pollo asado",
 	"ingredientes": [{
 			"alimento": NumberInt(136),
@@ -1586,7 +1586,7 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(271),
 			"ingrediente": "Aceite de oliva"
 		}],
-	"dieta": "regular",
+	"dieta": "REGULAR",
 	"preparacion":[
 		"Calentamos el aceite en una sartén grande y profunda a fuego alto. Salpimiéntanos los muslos de pollo generosamente y los colocamos con la piel hacia abajo en la sartén con la ralladura de limón, el tomillo y las patatas cortadas a la mitad.",
 		"Dejamos que los muslos de pollo y las patatas se hagan sin moverlos durante 10–15 minutos, o hasta que la piel del pollo se vuelva crujiente y dorado. Damos la vuelta al pollo y las patatas, añadimos las zanahorias y cocinamos durante 2-3 minutos hasta que las zanahorias comiencen a ponerse tiernas.",
@@ -1596,8 +1596,8 @@ db.getCollection('recetas').insert({
 	]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(32),
-	"categoria": "Pasta",
+	"idReceta": NumberInt(32),
+	"categoria": "PASTA",
 	"nombre": "Lasaña vegetal con bechamel de albahaca",
 	"ingredientes": [{
 			"alimento": NumberInt(612),
@@ -1642,7 +1642,7 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(556),
 			"ingrediente": "Aceite de oliva virgen extra"
 		}],
-	"dieta": "vegetariana",
+	"dieta": "VEGETARIANA",
 	"preparacion":[
 		"Picamos todas las verduras en cubos de 4 mm aproximadamente (brunoise)",
 		"Sofreímos muy bien las verduras hasta que la calabaza, que es la más dura, esté tierna.",
@@ -1652,8 +1652,8 @@ db.getCollection('recetas').insert({
 	]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(33),
-	"categoria": "Pasta",
+	"idReceta": NumberInt(33),
+	"categoria": "PASTA",
 	"nombre": "Macarrones con salsa de coco y anacardos",
 	"ingredientes": [{
 			"alimento": NumberInt(28),
@@ -1675,9 +1675,9 @@ db.getCollection('recetas').insert({
 			"ingrediente": "Especias al gusto"
 		},{
 			"alimento": NumberInt(568),
-			"ingrediente": "Parmesano"
+			"ingrediente": "Parmesano (opcional)"
 		}],
-	"dieta": "vegetariana",
+	"dieta": "VEGANA",
 	"preparacion":[
 		"Para esta receta debemos remojar los anacardos en agua caliente durante 20 minutos.",
 		"Mientras, ponemos una olla con agua al fuego y cocemos la pasta hasta dejarlo al dente.",
@@ -1687,8 +1687,8 @@ db.getCollection('recetas').insert({
 	]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(34),
-	"categoria": "Pasta",
+	"idReceta": NumberInt(34),
+	"categoria": "PASTA",
 	"nombre": "Tallarines con albóndigas y salsa de pimientos, tomates y tomillo",
 	"ingredientes": [{
 			"alimento": NumberInt(26),
@@ -1739,7 +1739,7 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(556),
 			"ingrediente": "Aceite de oliva virgen extra"
 		}],
-	"dieta": "regular",
+	"dieta": "REGULAR",
 	"preparacion":[
 		"Comenzamos picando la cebolleta y pochándola bien en una sartén con aceite.",
 		"Incorporamos la cebolleta a la carne junto al pan rallado, el perejil, el ajo y la leche. Sazonamos y mezclamos para formar las albóndigas.",
@@ -1752,8 +1752,8 @@ db.getCollection('recetas').insert({
 	]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(35),
-	"categoria": "Pasta",
+	"idReceta": NumberInt(35),
+	"categoria": "PASTA",
 	"nombre": "Canelones de carne y foie con setas",
 	"ingredientes": [{
 			"alimento": NumberInt(612),
@@ -1789,7 +1789,7 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(556),
 			"ingrediente": "Aceite de oliva virgen extra"
 		}],
-	"dieta": "regular",
+	"dieta": "REGULAR",
 	"preparacion":[
 		"Comenzamos reduciendo la nata a fuego lento. Reservamos.",
 		"Picamos la cebolleta y la rehogamos en una cazuela con aceite.",
@@ -1802,9 +1802,9 @@ db.getCollection('recetas').insert({
 	]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(36),
-	"categoria": "Pasta",
-	"nombre": "Pasta con langostinos, pesto y rosado",
+	"idReceta": NumberInt(36),
+	"categoria": "PASTA",
+	"nombre": "PASTA con langostinos, pesto y rosado",
 	"ingredientes": [{
 			"alimento": NumberInt(332),
 			"ingrediente": "300 g de langostinos crudos"
@@ -1830,7 +1830,7 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(128),
 			"ingrediente": "Pimienta"
 		}],
-	"dieta": "regular",
+	"dieta": "REGULAR",
 	"preparacion":[
 		"En primer lugar, ponemos a cocer la pasta en agua hirviendo con sal siguiendo las instrucciones del fabricante.",
 		"Mientras tanto, salteamos en una sartén con aceite de oliva 4 langostinos enteros. Reservamos.",
@@ -1843,8 +1843,8 @@ db.getCollection('recetas').insert({
 	]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(37),
-	"categoria": "Pasta",
+	"idReceta": NumberInt(37),
+	"categoria": "PASTA",
 	"nombre": "Cuscús negro con mejillones",
 	"ingredientes": [{
 			"alimento": NumberInt(618),
@@ -1889,7 +1889,7 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(128),
 			"ingrediente": "Pimienta"
 		}],
-	"dieta": "regular",
+	"dieta": "REGULAR",
 	"preparacion":[
 		"Ponemos una olla al fuego y dejamos que coja mucho calor.",
 		"Mientras tanto, limpiamos bien los mejillones.",
@@ -1904,8 +1904,8 @@ db.getCollection('recetas').insert({
 	]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(38),
-	"categoria": "Pasta",
+	"idReceta": NumberInt(38),
+	"categoria": "PASTA",
 	"nombre": "Cuscús de marisco",
 	"ingredientes": [{
 			"alimento": NumberInt(343),
@@ -1935,7 +1935,7 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(620),
 			"ingrediente": "Cebollino"
 		}],
-	"dieta": "regular",
+	"dieta": "REGULAR",
 	"preparacion":[
 		"Cocemos los mejillones y los langostinos sin la cabeza en el caldo de pescado.",
 		"Hacemos el cuscús según las indicaciones del fabricante con el caldo de pescado.",
@@ -1948,9 +1948,9 @@ db.getCollection('recetas').insert({
 
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(39),
-	"categoria": "Pasta",
-	"nombre": "Pasta con ajo y setas",
+	"idReceta": NumberInt(39),
+	"categoria": "PASTA",
+	"nombre": "PASTA con ajo y setas",
 	"ingredientes": [{
 			"alimento": NumberInt(624),
 			"ingrediente": "150 g de trofie o fusilli"
@@ -1977,8 +1977,8 @@ db.getCollection('recetas').insert({
 	]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(40),
-	"categoria": "Pasta",
+	"idReceta": NumberInt(40),
+	"categoria": "PASTA",
 	"nombre": "Espaguetis con verduras y tomate",
 	"ingredientes": [{
 			"alimento": NumberInt(28),
@@ -2020,7 +2020,7 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(547),
 			"ingrediente": "Sal"
 		}],
-	"dieta": "regular",
+	"dieta": "VEGETARIANA",
 	"preparacion":[
 		"En una cazuela con aceite pochamos la cebolla, los pimientos, la berenjena, el calabacín y los espárragos picados.",
 		"Ponemos a hervir la pasta en agua con sal el tiempo que indique el fabricante.",
@@ -2031,9 +2031,9 @@ db.getCollection('recetas').insert({
 	]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(41),
-	"categoria": "Pasta",
-	"nombre": "Pasta al pesto con verduritas",
+	"idReceta": NumberInt(41),
+	"categoria": "PASTA",
+	"nombre": "PASTA al pesto con verduritas",
 	"ingredientes": [{
 			"alimento": NumberInt(592),
 			"ingrediente": "400 g de pasta fresca"
@@ -2059,7 +2059,7 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(547),
 			"ingrediente": "Sal"
 		}],
-	"dieta": "vegetariana",
+	"dieta": "VEGETARIANA",
 	"preparacion":[
 		"En un vaso americano trituramos el queso, los piñones y un vaso de aceite de oliva.",
 		"Añadimos la albahaca y trituramos.",
@@ -2072,8 +2072,8 @@ db.getCollection('recetas').insert({
 	]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(42),
-	"categoria": "Pasta",
+	"idReceta": NumberInt(42),
+	"categoria": "PASTA",
 	"nombre": "Tagliatelle con curry de gambas",
 	"ingredientes": [{
 			"alimento": NumberInt(627),
@@ -2100,7 +2100,7 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(26),
 			"ingrediente": "150 g de tagliatelle"
 		}],
-	"dieta": "regular",
+	"dieta": "REGULAR",
 	"preparacion":[
 		"Lo primero que tenemos que hacer es lavar y pelar 7 gambones. Reservamos en dos boles por un lado las cabezas y por otro las colas peladas.",
 		"A continuación, salteamos sus cabezas en una sartén con aceite de oliva virgen extra caliente.",
@@ -2116,8 +2116,8 @@ db.getCollection('recetas').insert({
 	]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(43),
-	"categoria": "Pasta",
+	"idReceta": NumberInt(43),
+	"categoria": "PASTA",
 	"nombre": "Macarrones con queso",
 	"ingredientes": [{
 			"alimento": NumberInt(27),
@@ -2141,7 +2141,7 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(628),
 			"ingrediente": "2 tazas de queso cheddar rallado"
 		}],
-	"dieta": "vegetariana",
+	"dieta": "VEGETARIANA",
 	"preparacion":[
 		"Para comenzar, cocemos los coditos en agua con sal siguiendo las indicaciones del fabricante. Cuando estén listos, los escurrimos y reservamos.",
 		"Después, en un cazo, derretimos mantequilla y añadimos la harina. Cocemos a fuego medio y removemos para que la harina coja color. Entonces, sin dejar de remover añadimos la leche y hacemos una bechamel ligera, sazonamos con sal y pimienta.",
@@ -2153,8 +2153,8 @@ db.getCollection('recetas').insert({
 	]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(44),
-	"categoria": "Pescados y mariscos",
+	"idReceta": NumberInt(44),
+	"categoria": "PESCADO",
 	"nombre": "Carabineros a la plancha",
 	"ingredientes": [{
 			"alimento": NumberInt(629),
@@ -2178,7 +2178,7 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(127),
 			"ingrediente": "Perejil fresco"
 		}],
-	"dieta": "regular",
+	"dieta": "REGULAR",
 	"preparacion":[
 		"Ponemos los dientes de ajo, guindillas, perejil, sal y aceite de oliva para la salsa Mery en un vaso batidor y trituramos hasta conseguir una salsa.",
 		"Ponemos una gota de aceite en la plancha y doramos los carabineros minuto y medio por cada lado. Salamos y ponemos un poco de salsa Mery.",
@@ -2186,8 +2186,8 @@ db.getCollection('recetas').insert({
 	]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(45),
-	"categoria": "Pescados y mariscos",
+	"idReceta": NumberInt(45),
+	"categoria": "PESCADO",
 	"nombre": "Guiso de calabaza y mejillones",
 	"ingredientes": [{
 			"alimento": NumberInt(72),
@@ -2232,7 +2232,7 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(547),
 			"ingrediente": "Sal"
 		}],
-	"dieta": "regular",
+	"dieta": "REGULAR",
 	"preparacion":[
 		"En una olla exprés ponemos un poco de aceite y sofreímos un diente de ajo picado. Cortamos el puerro y lo añadimos a la olla cuando el ajo esté dorado.",
 		"Pelamos y troceamos la calabaza, la yuca y el boniato. Incorporamos los tubérculos al guiso y rehogamos un par de minutos.",
@@ -2245,8 +2245,8 @@ db.getCollection('recetas').insert({
 	]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(46),
-	"categoria": "Pescados y mariscos",
+	"idReceta": NumberInt(46),
+	"categoria": "PESCADO",
 	"nombre": "Merluza gratinada al horno",
 	"ingredientes": [{
 			"alimento": NumberInt(345),
@@ -2285,7 +2285,7 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(547),
 			"ingrediente": "Sal"
 		}],
-	"dieta": "regular",
+	"dieta": "REGULAR",
 	"preparacion":[
 		"Ponemos una sartén al fuego con un poco de aceite. Cuando esté caliente añadimos la merluza y sellamos por ambas caras. Aun estando cruda, retiramos del fuego. Salamos y reservamos.",
 		"Pelamos y cortamos las zanahorias y el bimi a nuestro gusto. En una olla con abundante agua hirviendo las blanqueamos durante 30 segundos.",
@@ -2295,8 +2295,8 @@ db.getCollection('recetas').insert({
 	]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(47),
-	"categoria": "Pescados y mariscos",
+	"idReceta": NumberInt(47),
+	"categoria": "PESCADO",
 	"nombre": "Lenguado con habitas y salsa de naranja",
 	"ingredientes": [{
 			"alimento": NumberInt(334),
@@ -2329,7 +2329,7 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(128),
 			"ingrediente": "Pimienta"
 		}],
-	"dieta": "regular",
+	"dieta": "REGULAR",
 	"preparacion":[
 		"En un cazo ponemos a reducir el zumo de las naranjas y la piel rallada de dos de ellas. Debemos dejarlo reducir a la mitad. Introducimos la mantequilla y sazonamos.",
 		"Pincelamos los lenguados con aceite de oliva, sazonamos y los envolvemos en papel de horno.",
@@ -2340,8 +2340,8 @@ db.getCollection('recetas').insert({
 	]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(48),
-	"categoria": "Pescados y mariscos",
+	"idReceta": NumberInt(48),
+	"categoria": "PESCADO",
 	"nombre": "Cuscús de langostinos y mango",
 	"ingredientes": [{
 			"alimento": NumberInt(618),
@@ -2386,7 +2386,7 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(556),
 			"ingrediente": "75 ml de aceite de oliva virgen extra"
 		}],
-	"dieta": "regular",
+	"dieta": "REGULAR",
 	"preparacion":[
 		"Para comenzar, ponemos el cuscús en un bol.",
 		"Calentamos el agua y cuando haya hervido la volcamos sobre el cuscús y tapamos bien. Dejamos reposar 5 minutos. Pasado este tiempo movemos bien y añadimos un poco de aceite para que quede suelto. Reservamos.",
@@ -2399,8 +2399,8 @@ db.getCollection('recetas').insert({
 	]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(49),
-	"categoria": "Pescados y mariscos",
+	"idReceta": NumberInt(49),
+	"categoria": "PESCADO",
 	"nombre": "Tortilla de bacalao y pimiento verde",
 	"ingredientes": [{
 			"alimento": NumberInt(120),
@@ -2427,7 +2427,7 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(547),
 			"ingrediente": "Sal"
 		}],
-	"dieta": "regular",
+	"dieta": "REGULAR",
 	"preparacion":[
 		"Para comenzar, pelamos y cortamos las patatas y las ponemos a pochar junto con la cebolla y el pimiento cortados muy finos. Sazonamos, dejamos que cojan color y retiramos.",
 		"Desmigamos el bacalao y cocinamos con una cucharada de aceite dejando que suelte el agua y reduciendo el caldo aparte.",
@@ -2436,8 +2436,8 @@ db.getCollection('recetas').insert({
 	]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(50),
-	"categoria": "Pescados y mariscos",
+	"idReceta": NumberInt(50),
+	"categoria": "PESCADO",
 	"nombre": "Huevos rotos con bacalao",
 	"ingredientes": [{
 			"alimento": NumberInt(246),
@@ -2464,7 +2464,7 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(556),
 			"ingrediente": "Aceite de oliva virgen extra"
 		}],
-	"dieta": "regular",
+	"dieta": "REGULAR",
 	"preparacion":[
 		"Empezamos cortando las patatas en láminas. Las lavamos, las sazonamos y las añadimos en una sartén con aceite para saltearlas. Terminamos llevándolas al horno a 180ºC.",
 		"Picamos la cebolla en juliana y la rehogamos en una sartén con aceite a fuego vivo. Añadimos los tomates en tiras.",
@@ -2474,8 +2474,8 @@ db.getCollection('recetas').insert({
 	]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(51),
-	"categoria": "Pescados y mariscos",
+	"idReceta": NumberInt(51),
+	"categoria": "PESCADO",
 	"nombre": "Salmón con miel y limón",
 	"ingredientes": [{
 			"alimento": NumberInt(371),
@@ -2508,7 +2508,7 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(556),
 			"ingrediente": "Aceite de oliva virgen extra"
 		}],
-	"dieta": "regular",
+	"dieta": "REGULAR",
 	"preparacion":[
 		"Salpimentamos el pescado.",
 		"Mezclamos la mantequilla fundida con limón y miel.",
@@ -2518,8 +2518,8 @@ db.getCollection('recetas').insert({
 	]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(52),
-	"categoria": "Verduras/Hortalizas",
+	"idReceta": NumberInt(52),
+	"categoria": "VERDURAS",
 	"nombre": "Gazpacho de fresones",
 	"ingredientes": [{
 			"alimento": NumberInt(161),
@@ -2546,7 +2546,7 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(547),
 			"ingrediente": "Sal"
 		}],
-	"dieta": "regular",
+	"dieta": "VEGANA",
 	"preparacion":[
 		"Introduce el pan en un bol, cubre con agua y deja en remojo durante 5-10 minutos. Lava los tomates y retira el pedúnculo. Lava el pimiento y retira las semillas y los filamentos blancos.",
 		"Corta en dados regulares. Coloca tomate y pimiento en el vaso de la batidora.",
@@ -2555,8 +2555,8 @@ db.getCollection('recetas').insert({
 	]
 })
 db.getCollection('recetas').insert({
-	"id": NumberInt(53),
-	"categoria": "Verduras/Hortalizas",
+	"idReceta": NumberInt(53),
+	"categoria": "VERDURAS",
 	"nombre": "Crema de aguacate",
 	"ingredientes": [{
 			"alimento": NumberInt(571),
@@ -2586,7 +2586,7 @@ db.getCollection('recetas').insert({
 			"alimento": NumberInt(92),
 			"ingrediente": "1 cebolla"
 		}],
-	"dieta": "regular",
+	"dieta": "VEGETARIANA",
 	"preparacion":[
 		"Lo primero que tenemos que hacer es lavar y abrir 2 aguacates y les sacamos la carne con ayuda de una cuchara. La reservamos en un bol.",
 		"Agregamos al bol un yogur griego, dos cucharadas de crema de queso, un chorrito de nata de cocinar, el zumo de una lima y aceite de oliva virgen extra al gusto.",

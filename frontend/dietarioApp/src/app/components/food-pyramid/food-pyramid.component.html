@@ -12,6 +12,34 @@
                 </mat-grid-tile> -->
                 <mat-grid-tile [colspan]="1" [rowspan]="1">
                 </mat-grid-tile>
+                <mat-grid-tile [colspan]="1" [rowspan]="1">
+                  Alimentos
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="1" [rowspan]="1">
+                  Cantidad
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="1" [rowspan]="categoriaDiaria.length">
+                  Alimentos consumo diario
+                </mat-grid-tile>
+                <ng-container *ngFor="let alimento of categoriaDiaria">
+                  <mat-grid-tile [colspan]="1" [rowspan]="1">
+                    {{alimento.nombre}}
+                  </mat-grid-tile>
+                  <mat-grid-tile [colspan]="1" [rowspan]="1">
+                    {{getNumeroRaciones(alimento)}}
+                  </mat-grid-tile>
+                </ng-container>
+                <mat-grid-tile [colspan]="1" [rowspan]="categoriaSemanal.length">
+                  Alimentos consumo semanal
+                </mat-grid-tile>
+                <ng-container *ngFor="let alimento of categoriaSemanal">
+                  <mat-grid-tile [colspan]="1" [rowspan]="1">
+                    {{alimento.nombre}}
+                  </mat-grid-tile>
+                  <mat-grid-tile [colspan]="1" [rowspan]="1">
+                    {{getNumeroRaciones(alimento)}}
+                  </mat-grid-tile>
+                </ng-container>
                 <!-- <mat-grid-tile [colspan]="1" [rowspan]="1">
                   <p>{{celda.texto}}</p>
                 </mat-grid-tile> -->

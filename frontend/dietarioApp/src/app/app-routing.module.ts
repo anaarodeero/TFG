@@ -5,7 +5,7 @@ import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { WeeklyPlanComponent } from './components/weekly-plan/weekly-plan.component';
 import { DailyPlanComponent } from './components/dialy-plan/dialy-plan.component';
-import { FoodComponent } from './components/food/food.component';
+import { AlimentoComponent } from './components/alimento/alimento.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { FoodPyramidComponent } from './components/food-pyramid/food-pyramid.component';
 import { EditProfileComponent } from './components/edit-profile/edit-profile.component';
@@ -37,9 +37,14 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatSelectModule } from '@angular/material/select';
 import { CdkStepperModule } from '@angular/cdk/stepper';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import { GlobalGuard } from './guards/global.guard';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { MatListModule } from '@angular/material/list';
+import { RecetasBBDDComponent } from './components/recetas-bbdd/recetas-bbdd.component';
+import { RecetaComponent } from './components/receta/receta.component';
+import { AddRecetaComponent } from './components/add-receta/add-receta.component';
+
 
 
 
@@ -50,7 +55,10 @@ const routes: Routes = [
   { path: 'register', component: RegisterComponent, canActivate: [GlobalGuard] },
   { path: 'daily-plan', component: DailyPlanComponent, canActivate: [GlobalGuard] },
   { path: 'weekly-plan', component:  WeeklyPlanComponent, canActivate: [GlobalGuard]},
-  { path: 'food', component:  FoodComponent, canActivate: [GlobalGuard]},
+  { path: 'alimento', component:  AlimentoComponent, canActivate: [GlobalGuard]},
+  { path: 'receta', component:  RecetasBBDDComponent, canActivate: [GlobalGuard]},
+  { path: 'add-receta', component:  AddRecetaComponent, canActivate: [GlobalGuard]},
+  { path: 'receta/:id', component:  RecetaComponent, canActivate: [GlobalGuard]},
   { path: 'dashboard', component:  DashboardComponent, canActivate: [GlobalGuard]},
   { path: 'pyramid', component:  FoodPyramidComponent, canActivate: [GlobalGuard]},
   { path: 'edit', component:  EditProfileComponent, canActivate: [GlobalGuard]},
@@ -85,7 +93,8 @@ const routes: Routes = [
     MatDialogModule,
     MatSelectModule,
     CdkStepperModule,
-    MatListModule],
+    MatListModule,
+    MatAutocompleteModule],
   providers: [
     {
       provide: HTTP_INTERCEPTORS,

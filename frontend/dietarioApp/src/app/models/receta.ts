@@ -12,10 +12,24 @@ export interface Ingrediente {
   ingrediente: String
 }
 
-enum Categoria {
-  ARROCES, PASTA, PESCADO, CARNE, VERDURAS
+// export enum Categoria {
+//   ARROCES, PASTA, PESCADO, CARNE, VERDURAS
+// }
+
+// export enum Dieta {
+//   REGULAR, VEGETARIANA, VEGANA
+// }
+
+export enum Categoria {
+  ARROCES = "ARROCES",
+  PASTA = "PASTA",
+  PESCADO = "PESCADO",
+  CARNE = "CARNE",
+  VERDURAS = "VERDURAS"
 }
 
-enum Dieta {
-  REGULAR, VEGETARIANA, VEGANA
+export enum Dieta {
+  REGULAR = "REGULAR",
+  VEGETARIANA = "VEGETARIANA",
+  VEGANA = "VEGANA"
 }

@@ -19,7 +19,7 @@ export class RecetaService {
   }
 
   getRecetaById(id: number){
-    let paramsQuery = new HttpParams().set("id", id);
+    let paramsQuery = new HttpParams().set("idReceta", id);
     console.log("parametros", paramsQuery)
     let alime: Receta
     return this.http.get<Receta>('http://localhost:4000/api/receta/getReceta', {

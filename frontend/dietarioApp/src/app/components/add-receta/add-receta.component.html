@@ -1,0 +1,120 @@
+<div class="container" fxLayout="column" fxLayoutAlign="center center">
+  <h1 class="mat-display-2 titulo">Añade una receta</h1>
+  <mat-card class="card mat-elevation-z8" ngClass.lt-md="card-sm" fxLayout="column">
+    <!-- <button mat-icon-button class="boton" (click)="volver()"><mat-icon>chevron_left</mat-icon> Volver</button> -->
+    <form class="form" [formGroup]="firstFormGroup">
+      <!-- <p class="texto" >Escribe tu correo electronico</p> -->
+      <mat-form-field class="input-full">
+          <mat-label>Titulo</mat-label>
+          <input matInput placeholder="Titulo" formControlName="titulo" required>
+          <mat-error *ngIf="this.firstFormGroup.get('titulo').hasError('required')">{{getErrorMessage()}}</mat-error>
+      </mat-form-field>
+      <!-- <p class="texto">Escribe una contraseña</p> -->
+      <mat-form-field class="input" ngClass.lt-md="input-full">
+          <mat-label>Dieta</mat-label>
+          <mat-select formControlName="dieta">
+            <mat-option *ngFor="let dieta of Dieta | keyvalue" [value]="dieta">{{dieta.value}}</mat-option>
+          </mat-select>
+          <mat-error *ngIf="this.firstFormGroup.get('dieta').hasError('required')">{{getErrorMessage()}}</mat-error>
+      </mat-form-field>
+      <mat-form-field class="input" ngClass.lt-md="input-full">
+        <mat-label>Categoria</mat-label>
+        <mat-select formControlName="categoria">
+          <mat-option *ngFor="let categoria of Categoria | keyvalue" [value]="categoria">{{categoria.value}}</mat-option>
+        </mat-select>
+        <mat-error *ngIf="this.firstFormGroup.get('categoria').hasError('required')">{{getErrorMessage()}}</mat-error>
+      </mat-form-field>
+      <ng-container>
+        <h3 class="text">Ingredientes</h3>
+        <div class="ingredientes">
+          <div class="elemento" *ngFor="let ingrediente of ingredientes">
+            <mat-icon>chevron_right</mat-icon>
+            <p class="ingrediente">{{ingrediente.ingrediente}}</p>
+          </div>
+          <div class="elemento" fxLayout="row" fxLayoutAlign="start center" *ngIf="!addAlimento">
+            <mat-icon class="add_flecha">chevron_right</mat-icon>
+            <button mat-button class="boton_icon" (click)="addAlimento=true">Añade un ingrediente...</button>
+          </div>
+        </div>
+        <div *ngIf="addAlimento" class="alimentos-table" [formGroup]="addIngredienteFormGroup">
+          <p>Busca un alimento</p>
+          <mat-form-field class="input-cantidad" ngClass.lt-md="input-cantidad-full">
+            <mat-label>Cantidad</mat-label>
+            <input matInput placeholder="100 gr" formControlName="cantidad">
+            <mat-error *ngIf="this.addIngredienteFormGroup.get('cantidad').hasError('required')">{{getErrorMessage()}}</mat-error>
+          </mat-form-field>
+          <mat-form-field class="input-cantidad" ngClass.lt-md="input-cantidad-full">
+            <mat-label>Medida</mat-label>
+            <select matNativeControl formControlName="medida" >
+              <option *ngFor="let medida of medidas" [value]="medida">
+                {{medida}}
+              </option>
+            </select>
+            <mat-error *ngIf="this.addIngredienteFormGroup.get('cantidad').hasError('required')">{{getErrorMessage()}}</mat-error>
+          </mat-form-field>
+          <mat-form-field class="input-alimento" ngClass.lt-md="input-cantidad-full">
+            <mat-label>Alimento</mat-label>
+            <input matInput formControlName="alimento" [matAutocomplete]="auto" required>
+            <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete" [displayWith]="displayFn">
+              <mat-option *ngFor="let option of filteredOptions | async" [value]="option" class="capitalize">
+                {{option.nombre + getEstado(option)}}
+              </mat-option>
+            </mat-autocomplete>
+            <mat-error *ngIf="this.addIngredienteFormGroup.get('alimento').hasError('required')">{{getErrorMessage()}}</mat-error>
+            <mat-error *ngIf="this.addIngredienteFormGroup.get('alimento').hasError('errorSeleccion')">{{getErrorMessageAlimento()}}</mat-error>
+          </mat-form-field>
+          <button mat-button [disabled]="addIngredienteFormGroup.invalid" class="boton" (click)="addIngrediente()">Añadir ingrediente</button>
+        </div>
+      </ng-container>
+      <ng-container>
+        <h3 class="text">Preparación</h3>
+        <div class="ingredientes">
+          <div class="elemento" *ngFor="let paso of pasos; let i = index">
+            <!-- <mat-icon>chevron_right</mat-icon> -->
+            <p class="numerador">{{i+1}}) </p>
+            <p class="ingrediente capitalize">{{paso}}</p>
+          </div>
+          <div class="elemento" fxLayout="row" fxLayoutAlign="start center" *ngIf="!addPaso">
+            <mat-icon class="add_flecha">chevron_right</mat-icon>
+            <button mat-button class="boton_icon" (click)="addPaso=true">Añade un paso...</button>
+          </div>
+        </div>
+        <div *ngIf="addPaso" class="alimentos-table" [formGroup]="addPasoFormGroup">
+          <mat-form-field class="text-area-paso" >
+            <mat-label>Escribe el siguiente paso</mat-label>
+            <textarea matInput placeholder="Incorporamos los ingredientes..." formControlName="paso"></textarea>
+          </mat-form-field>
+          <button mat-button [disabled]="addPasoFormGroup.invalid" class="boton" (click)="addPasoNuevo()">Añadir paso</button>
+        </div>
+      </ng-container>
+      <button mat-raised-button [disabled]="!formValido()" class="boton boton_crear" (click)="crearReceta()">Crear receta</button>
+    </form>
+
+
+    <!-- <h1 class="mat-display-2 titulo">{{receta.nombre}}</h1>
+    <h3 class="sub-titulo">(Dieta {{receta.dieta}})</h3>
+    <div class="cards" fxLayout.lt-lg="column" fxLayout="row" fxLayoutAlign="space-between start" >
+      <mat-card class="ingredientes-card mat-elevation-z3" ngClass.lt-md="ingredientes-card-sm">
+        <img src="../../../assets/pin.png" class="pin">
+        <mat-card-title class="title-ingrediente">Ingredientes</mat-card-title>
+        <div class="elemento" *ngFor="let ingrediente of receta.ingredientes">
+          <mat-icon>chevron_right</mat-icon>
+          <p class="ingrediente">{{ingrediente.ingrediente}}</p>
+        </div>
+      </mat-card>
+      <mat-card class="preparacion-card mat-elevation-z3" ngClass.lt-lg="ingredientes-card-sm">
+        <img src="../../../assets/pin2.png" class="pin2">
+        <mat-card-title class="title-ingrediente">Preparación</mat-card-title>
+        <div class="elemento" *ngFor="let paso of receta.preparacion; let i=index">
+          <p class="paso-numeracion"> {{i+1}}.</p>
+          <p class="paso">{{paso}}</p>
+        </div>
+      </mat-card>
+    </div> -->
+    <!-- <div>- KCalorias: {{ element.cal }}</div>
+    <div>- Proteinas: {{ element.pr }}</div>
+    <div>- Grasas: {{ element.gr }}</div>
+    <div>- Carbohidratos: {{ element.hc }}</div> -->
+
+  </mat-card>
+</div>

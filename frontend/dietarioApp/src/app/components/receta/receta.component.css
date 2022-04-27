@@ -1,0 +1,153 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+.toolbar {
+  color: black;
+  background-color: transparent;
+}
+.botonRegistro {
+  background-color: #37b97d;
+  border-radius: 1rem;
+  color: white;
+}
+.perfil {
+  /* background-color: #37b97d;
+    border-radius: 1rem; */
+  color: #37b97d;
+  font-size: 30px;
+}
+.botonInicio {
+  color: white;
+  color: #37b97d;
+  border-radius: 1rem;
+  text-decoration: underline;
+}
+
+.container {
+  background-image: url(../../../assets/image12.png);
+  align-content: center;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  min-height: 95%;
+  width: 100%;
+}
+
+.boton{
+  color: #37B97D;
+  width: max-content;
+}
+
+.titulo {
+  text-align: center;
+  /* margin-top: 2rem; */
+  color: #37b97d;
+  font-weight: bold;
+  font-size: xx-large;
+  margin: 0
+  /* font-family: "Amatemora"; */
+}
+
+.sub-titulo {
+  text-align: center;
+  color: #37b97d;
+  margin-bottom: 2rem;
+}
+
+.card {
+  width: 60%;
+  display: flex;
+  border-radius: 1rem;
+  padding: 50px;
+}
+
+.card-sm {
+  width: 80%;
+  border-radius: 1rem;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.icon {
+  text-align: end;
+}
+
+.capitalize::first-letter {
+  text-transform: capitalize;
+}
+
+.elemento {
+  display: flex;
+}
+
+.ingrediente {
+  /* font-size: smaller; */
+  margin: 3px 0 0 5px;
+  /* font-family: "Amatemora"; */
+}
+
+.paso-numeracion {
+  margin: 5px 0;
+  font-weight: bold;
+}
+.paso {
+  margin: 5px 10px;
+}
+
+.title-ingrediente {
+  font-family: "Amatemora";
+  margin: 0 0 4px 0;
+  font-size: 30px;
+  text-align: center;
+}
+
+.ingredientes-card {
+  width: 25%;
+  min-width: 200px;
+  background-color: #fffddb;
+  border-radius: 0.5rem;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.preparacion-card {
+  width: 65%;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #fffddb;
+  border-radius: 0.5rem;
+}
+
+.ingredientes-card-sm {
+  width: 90%;
+}
+
+.pin {
+  position: absolute;
+  margin: -25px 0 0 -15px !important;
+}
+
+.pin2 {
+  position: absolute;
+  margin: -27px 0 0 -15px !important;
+}
+
+.dieta {
+  display: flex;
+}
+
+.dieta-p {
+  align-self: center;
+  margin-left: 5px;
+  text-transform: capitalize;
+  font-size: large;
+  margin-bottom: 16px;
+}
+
+.dieta-h3 {
+  color: #37b97d;
+  font-size: 21px;
+  font-weight: bold;
+}

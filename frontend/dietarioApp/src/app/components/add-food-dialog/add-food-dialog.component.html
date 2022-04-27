@@ -1,4 +1,4 @@
-<h2 mat-dialog-title class="titulo">Añadir alimento</h2>
+<!-- <h2 mat-dialog-title class="titulo">Añadir alimento</h2>
 <mat-dialog-content class="mat-typography" align="center">
   <form [formGroup]="firstFormGroup">
       <p class="texto">Escribe el nombre del alimento</p>
@@ -7,29 +7,76 @@
         <mat-error *ngIf="this.firstFormGroup.get('alimento').invalid">{{getErrorMessage()}}</mat-error>
       </mat-form-field>
       <p class="texto">Nutrientes: </p>
-      <div fxLayout="row" fxFill fxLayoutAlign="space-between center"> 
-        <div fxLayout="column" fxLayoutAlign="center center" class="input-doble-col"> 
+      <div fxLayout="row" fxFill fxLayoutAlign="space-between center">
+        <div fxLayout="column" fxLayoutAlign="center center" class="input-doble-col">
           <mat-form-field class="input-doble">
-            <input matInput placeholder="Carbohidratos" formControlName="carbohidratos" required>
-            <mat-error *ngIf="this.firstFormGroup.get('carbohidratos').invalid">{{getErrorMessage()}}</mat-error>
+            <input matInput placeholder="KCalorias" formControlName="calorias" required>
+            <mat-error *ngIf="this.firstFormGroup.get('calorias').invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
-        <div fxLayout="column" fxLayoutAlign="center center" class="input-doble-col"> 
+        <div fxLayout="column" fxLayoutAlign="center center" class="input-doble-col">
           <mat-form-field class="input-doble">
             <input matInput placeholder="Proteinas" formControlName="proteinas" required>
             <mat-error *ngIf="this.firstFormGroup.get('proteinas').invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
-        <div fxLayout="column" fxLayoutAlign="center center" class="input-doble-col"> 
+        <div fxLayout="column" fxLayoutAlign="center center" class="input-doble-col">
           <mat-form-field class="input-doble">
             <input matInput placeholder="Grasas" formControlName="grasas" required>
             <mat-error *ngIf="this.firstFormGroup.get('grasas').invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
       </div>
+      <div fxLayout="column" fxLayoutAlign="center center" class="input-doble-col">
+        <mat-form-field class="input-doble">
+          <input matInput placeholder="Carbohidratos" formControlName="carbohidratos" required>
+          <mat-error *ngIf="this.firstFormGroup.get('carbohidratos').invalid">{{getErrorMessage()}}</mat-error>
+        </mat-form-field>
+      </div>
   </form>
 </mat-dialog-content>
 <mat-dialog-actions align="end">
   <button mat-button mat-dialog-close>Cancelar</button>
   <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Añadir</button>
+</mat-dialog-actions> -->
+<h2 mat-dialog-title class="titulo">Añadir alimento</h2>
+<mat-dialog-content class="mat-typography" align="center">
+  <form [formGroup]="firstFormGroup">
+      <p class="texto">Escribe el nombre del alimento</p>
+      <mat-form-field class="input" ngClass.lt-md="input-doble-full">
+        <input matInput placeholder="Alimento" formControlName="alimento" required>
+        <mat-error *ngIf="this.firstFormGroup.get('alimento').invalid">{{getErrorMessage()}}</mat-error>
+      </mat-form-field>
+      <mat-form-field class="input" ngClass.lt-md="input-doble-full">
+        <input matInput placeholder="Estado" formControlName="estado">
+        <mat-error *ngIf="this.firstFormGroup.get('estado').invalid">{{getErrorMessage()}}</mat-error>
+      </mat-form-field>
+      <p class="texto">Nutrientes: </p>
+      <div class="nutrientes-container">
+          <mat-form-field class="input-doble" ngClass.lt-md="input-doble-col">
+            <input matInput placeholder="KCalorias" formControlName="calorias" required>
+            <mat-error *ngIf="this.firstFormGroup.get('calorias').hasError('required')">{{getErrorMessage()}}</mat-error>
+            <mat-error *ngIf="this.firstFormGroup.get('calorias').hasError('pattern')">{{getErrorNumberMessage()}}</mat-error>
+          </mat-form-field>
+          <mat-form-field class="input-doble" ngClass.lt-md="input-doble-col">
+            <input matInput placeholder="Proteinas" formControlName="proteinas" required>
+            <mat-error *ngIf="this.firstFormGroup.get('proteinas').hasError('required')">{{getErrorMessage()}}</mat-error>
+            <mat-error *ngIf="this.firstFormGroup.get('proteinas').hasError('pattern')">{{getErrorNumberMessage()}}</mat-error>
+          </mat-form-field>
+          <mat-form-field class="input-doble" ngClass.lt-md="input-doble-col">
+            <input matInput placeholder="Grasas" formControlName="grasas" required>
+            <mat-error *ngIf="this.firstFormGroup.get('grasas').hasError('required')">{{getErrorMessage()}}</mat-error>
+            <mat-error *ngIf="this.firstFormGroup.get('grasas').hasError('pattern')">{{getErrorNumberMessage()}}</mat-error>
+          </mat-form-field>
+        <mat-form-field class="input-doble" ngClass.lt-md="input-doble-col">
+          <input matInput placeholder="Carbohidratos" formControlName="carbohidratos" required>
+          <mat-error *ngIf="this.firstFormGroup.get('carbohidratos').hasError('required')">{{getErrorMessage()}}</mat-error>
+          <mat-error *ngIf="this.firstFormGroup.get('carbohidratos').hasError('pattern')">{{getErrorNumberMessage()}}</mat-error>
+        </mat-form-field>
+      </div>
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancelar</button>
+  <button mat-button (click)="addAlimento()">Añadir</button>
 </mat-dialog-actions>

@@ -10,7 +10,7 @@ import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { WeeklyPlanComponent } from './components/weekly-plan/weekly-plan.component';
 import { DailyPlanComponent } from './components/dialy-plan/dialy-plan.component';
-import { FoodComponent } from './components/food/food.component';
+import { AlimentoComponent } from './components/alimento/alimento.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { AddFoodDialogComponent } from './components/add-food-dialog/add-food-dialog.component';
 import { SwapFoodDialogComponent } from './components/swap-food-dialog/swap-food-dialog.component';
@@ -22,6 +22,9 @@ import { DatosCuentaComponent } from './components/register/datos-cuenta/datos-c
 import { DietaComponent } from './components/register/dieta/dieta.component';
 import { AlergiasComponent } from './components/register/alergias/alergias.component';
 import { CommonModule } from '@angular/common';
+import { RecetasBBDDComponent } from './components/recetas-bbdd/recetas-bbdd.component';
+import { RecetaComponent } from './components/receta/receta.component';
+import { AddRecetaComponent } from './components/add-receta/add-receta.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +34,7 @@ import { CommonModule } from '@angular/common';
     RegisterComponent,
     WeeklyPlanComponent,
     DailyPlanComponent,
-    FoodComponent,
+    AlimentoComponent,
     DashboardComponent,
     AddFoodDialogComponent,
     SwapFoodDialogComponent,
@@ -42,6 +45,9 @@ import { CommonModule } from '@angular/common';
     DatosCuentaComponent,
     AlergiasComponent,
     DietaComponent,
+    RecetasBBDDComponent,
+    RecetaComponent,
+    AddRecetaComponent,
   ],
   imports: [
     BrowserModule,

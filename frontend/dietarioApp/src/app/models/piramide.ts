@@ -18,5 +18,6 @@ export interface DistribucionCategoriaAlimento {
 }
 
 export enum Frecuencia {
-  SEMANAL, DIARIA
+  SEMANAL = 'SEMANAL',
+  DIARIA = 'DIARIA'
 }

@@ -1,15 +1,21 @@
 .input {
-  width: 60%;
+  width: 45%;
   font-size: smaller;
+  margin-right: 20px;
+}
+
+.input-doble-full{
+  width: 70%;
 }
 
 .input-doble {
   width: 100%;
   font-size: smaller;
+  grid-column: auto / span 1;
 }
 
 .input-doble-col {
-  width: 30%;
+  grid-column: auto / span 2;
 }
 
 .texto {
@@ -18,4 +24,11 @@
 
 .titulo {
   align-self: center;
+}
+
+
+.nutrientes-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+  gap: 20px;
 }

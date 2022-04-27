@@ -58,7 +58,8 @@ export class FoodPyramidComponent implements OnInit {
   ];
 
   piramide: Piramide;
-  categoriaDiaria: DistribucionCategoriaAlimento[];
+  categoriaDiaria: DistribucionCategoriaAlimento[] = [];
+  categoriaSemanal: DistribucionCategoriaAlimento[] = [];
 
   constructor(private piramideService: PiramideService, private alimentoService: AlimentoService, private recetaService: RecetaService) { }
 
@@ -69,24 +70,29 @@ export class FoodPyramidComponent implements OnInit {
     // console.log("numero:", this.getNumeroAlimentos())
     // this.getRecetas();
     this.cargarPiramide();
-    console.log("Piramide: ", this.piramide)
   }
 
 
   cargarPiramide(){
     this.piramideService.getPiramideById(1).subscribe(elemento => {
-      console.log("PIRAMIDE: ", elemento)
       this.piramide = elemento
-      // this.categoriaDiaria = elemento.piramide.filter(elem => elem.frecuencia == Frecuencia.DIARIA)
       elemento.piramide.forEach(elem => {
-        console.log(elem.frecuencia)
         if(elem.frecuencia === Frecuencia.DIARIA){
-          console.log("diaria")
           this.categoriaDiaria.push(elem)
+        } else {
+          this.categoriaSemanal.push(elem)
         }
       })
-      console.log("Consumo diario: ", this.categoriaDiaria)
     })
+  }
+
+  getNumeroRaciones(alimento: DistribucionCategoriaAlimento){
+    if(alimento.limiteSuperior == alimento.limiteInferior) {
+      if(alimento.limiteSuperior == 1) return "1 ración"
+      return alimento.limiteSuperior + " raciones"
+    } else {
+      return alimento.limiteInferior + " - " + alimento.limiteSuperior + " raciones";
+    }
   }
 
 

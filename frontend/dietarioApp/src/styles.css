@@ -2,3 +2,14 @@
 
 html, body { min-height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@font-face {
+  font-family: "HandWritting";
+  src: local("HandWritting"), url(./assets/fonts/handwritting.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Amatemora";
+  src: local("Amatemora"), url(./assets/fonts/amatemora.ttf) format("truetype");
+}
+

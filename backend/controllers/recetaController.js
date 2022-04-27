@@ -22,12 +22,13 @@ recetaCtrl.createReceta = async (req, res, next) => {
   console.log("nuevo id: ", idReceta);
   const receta = new Receta({
     idReceta: idReceta,
-    categoria: req.body.categoria,
+    categoria: req.body.categoria.value,
     nombre: req.body.nombre,
     ingredientes: req.body.ingredientes,
-    dieta: req.body.dieta,
-    preparacion: req.body.preparacio
+    dieta: req.body.dieta.value,
+    preparacion: req.body.preparacion
   });
+  console.log("receta", receta);
 
   const recetaGuardado = await receta.save();
 
@@ -37,8 +38,8 @@ recetaCtrl.createReceta = async (req, res, next) => {
 };
 
 recetaCtrl.getRecetaById = async (req, res, next) => {
-  let id = req.query.id;
-  const receta = await Receta.find({ id: Number(id) });
+  let id = req.query.idReceta;
+  const receta = await Receta.find({ idReceta: Number(id) });
   if (receta[0]) res.json(receta[0]);
   else null;
 };
