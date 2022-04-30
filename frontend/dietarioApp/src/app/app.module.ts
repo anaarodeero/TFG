@@ -9,7 +9,6 @@ import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { WeeklyPlanComponent } from './components/weekly-plan/weekly-plan.component';
-import { DailyPlanComponent } from './components/dialy-plan/dialy-plan.component';
 import { AlimentoComponent } from './components/alimento/alimento.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { AddFoodDialogComponent } from './components/add-food-dialog/add-food-dialog.component';
@@ -17,7 +16,6 @@ import { SwapFoodDialogComponent } from './components/swap-food-dialog/swap-food
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FoodPyramidComponent } from './components/food-pyramid/food-pyramid.component';
-import { EditProfileComponent } from './components/edit-profile/edit-profile.component';
 import { DatosCuentaComponent } from './components/register/datos-cuenta/datos-cuenta.component';
 import { DietaComponent } from './components/register/dieta/dieta.component';
 import { AlergiasComponent } from './components/register/alergias/alergias.component';
@@ -25,6 +23,8 @@ import { CommonModule } from '@angular/common';
 import { RecetasBBDDComponent } from './components/recetas-bbdd/recetas-bbdd.component';
 import { RecetaComponent } from './components/receta/receta.component';
 import { AddRecetaComponent } from './components/add-receta/add-receta.component';
+import { DailyPlanComponent } from './components/daily-plan/daily-plan.component';
+import { AddRecetaSimpleComponent } from './components/add-receta-simple/add-receta-simple.component';
 
 @NgModule({
   declarations: [
@@ -41,13 +41,13 @@ import { AddRecetaComponent } from './components/add-receta/add-receta.component
     HeaderComponent,
     FooterComponent,
     FoodPyramidComponent,
-    EditProfileComponent,
     DatosCuentaComponent,
     AlergiasComponent,
     DietaComponent,
     RecetasBBDDComponent,
     RecetaComponent,
     AddRecetaComponent,
+    AddRecetaSimpleComponent,
   ],
   imports: [
     BrowserModule,

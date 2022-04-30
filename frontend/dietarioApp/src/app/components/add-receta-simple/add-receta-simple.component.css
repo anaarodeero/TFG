@@ -1,0 +1,136 @@
+
+.container {
+  background-image: url(../../../assets/image12.png);
+  align-content: center;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  min-height: 95%;
+  width: 100%;
+}
+
+.form{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+}
+
+.input-full{
+  grid-column: 1 / 3;
+}
+
+.input-cantidad{
+  /* grid-column: span 1; */
+  width: 20%;
+  margin-right: 20px;
+}
+
+.input-alimento{
+  /* grid-column: span 1; */
+  width: 45%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.input-cantidad-full{
+  width: 80%;
+}
+
+.elemento{
+  margin-left: 30px;
+  display: flex;
+}
+
+.ingrediente{
+  margin: 0;
+  align-self: center;
+  padding-left: 10px;
+}
+
+.ingredientes{
+  grid-column: 1 / 3;
+}
+
+.numerador{
+  margin: 4px 0;
+  font-weight: bold;
+}
+
+.text{
+  grid-column: 1 / 3;
+  color: #37B97D;
+}
+
+.boton{
+  background-color: #37B97D;
+  border-radius: 1rem;
+  color: white;
+  width: max-content;
+}
+
+.boton_crear{
+  align-self: center;
+  justify-self: center;
+  grid-column: 1 / 3;
+  margin-top: 25px;
+}
+
+.boton_icon{
+  margin-bottom: 4px;
+  color: #9a9a9b;
+  padding: 10px;
+  text-decoration: underline;
+  font-size: medium;
+}
+
+.add_flecha{
+  color: #9a9a9b;
+}
+
+.mat-button.mat-button-disabled.mat-button-disabled{
+  background-color: #e5e5e5;
+}
+
+.titulo {
+  text-align: center;
+  /* margin-top: 2rem; */
+  color: #37b97d;
+  font-weight: bold;
+  font-size: xx-large;
+  margin-bottom: 2rem;
+  /* font-family: "Amatemora"; */
+}
+
+.sub-titulo {
+  text-align: center;
+  color: #37b97d;
+  margin-bottom: 2rem;
+}
+
+.card {
+  width: 50%;
+  display: flex;
+  border-radius: 1rem;
+  padding: 50px;
+}
+
+.card-sm {
+  width: 80%;
+  border-radius: 1rem;
+}
+
+.alimentos-table{
+  grid-column: 1 / 3;
+  border: solid 1px #37b97d;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.capitalize{
+  text-transform: capitalize
+}
+
+.text-area-paso{
+  width: 100%;
+}

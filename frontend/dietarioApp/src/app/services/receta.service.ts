@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { Receta } from '../models/receta';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
+import { RecetaSimple } from '../models/recetaSimple';
 
 @Injectable({ providedIn: 'root' })
 export class RecetaService {
@@ -12,6 +13,19 @@ export class RecetaService {
 
   getAll() {
     return this.http.get<Receta[]>(`http://localhost:4000/api/receta`);
+  }
+
+  getAllSimples() {
+    return this.http.get<RecetaSimple[]>(`http://localhost:4000/api/receta/simple`);
+  }
+
+  getRecetaSimpleById(id: number){
+    let paramsQuery = new HttpParams().set("id", id);
+    console.log("parametros", paramsQuery)
+    return this.http.get<RecetaSimple>('http://localhost:4000/api/receta/simple/getReceta', {
+      params: paramsQuery
+    })
+    // return salida;
   }
 
   getNumeroRecetas(){
@@ -31,6 +45,11 @@ export class RecetaService {
   createReceta(receta: Receta){
     console.log("creamos2")
     return this.http.post<Receta>('http://localhost:4000/api/receta/create', receta);
+  }
+
+  createRecetaSimple(receta: RecetaSimple){
+    console.log("creamos2")
+    return this.http.post<RecetaSimple>('http://localhost:4000/api/receta/simple/create', receta);
   }
 
 }

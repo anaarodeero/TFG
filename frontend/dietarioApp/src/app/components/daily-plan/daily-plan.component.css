@@ -1,0 +1,101 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+.toolbar {
+  color: black;
+  background-color: transparent;
+}
+.botonRegistro {
+  background-color: #37b97d;
+  border-radius: 1rem;
+  color: white;
+}
+.perfil {
+  /* background-color: #37b97d;
+    border-radius: 1rem; */
+  color: #37b97d;
+  font-size: 30px;
+}
+.botonInicio {
+  color: white;
+  color: #37b97d;
+  border-radius: 1rem;
+  text-decoration: underline;
+}
+
+.container {
+  background-image: url(../../../assets/image12.png);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  min-height: 95%;
+  width: 100%;
+}
+
+.titulo {
+  margin-top: 3rem;
+  color: #37b97d;
+  font-weight: bold;
+  font-size: xx-large;
+  margin-bottom: 2rem;
+}
+
+.card {
+  width: 60%;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 1rem;
+  margin: 0.5rem;
+  margin-bottom: 1rem;
+  display: block ruby;
+}
+
+.card-lg {
+  width: 60%;
+}
+
+
+.card-sm {
+  width: 80%;
+}
+
+.card-xs {
+  width: 95%;
+}
+
+.tabla {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* border: solid 1px #e0e0e0;
+  border-top: none; */
+  width: 100%;
+}
+
+.mat-list{
+  width: 100%;
+}
+
+.item {
+  /* margin: 0.2rem !important; */
+}
+.mat-list-base .mat-list-item{
+  height: fit-content;
+  padding: 9px 5px;
+}
+
+.mat-list-base .mat-list-item .mat-list-item-content{
+  padding: 0;
+}
+
+.sm {
+  /* text-align: start; */
+  color: gray;
+  font-size: smaller;
+}
+
+.diaSemana {
+  text-transform: uppercase;
+  font-size: larger;
+  font-weight: bold;
+}

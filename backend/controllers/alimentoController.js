@@ -76,8 +76,28 @@ alimentoCtrl.createAlimento = async (req, res, next) => {
 
 alimentoCtrl.getAlimentoById = async (req, res, next) => {
   let id = req.query.id;
-  const alimento = await Alimento.find({id: Number(id)});
+  const alimento = await Alimento.find({idAlimento: Number(id)});
   if(alimento[0]) res.json(alimento[0]);
+  else null;
+};
+
+alimentoCtrl.getMultipleAlimento = async (req, res, next) => {
+  let ids = req.query.ids;
+  console.log("ids: ", ids)
+  var arrayIds = ids.split(',').map(function(item) {
+    return Number(item)
+  });
+  console.log("ids: ", arrayIds)
+  const alimento = await Alimento.find({idAlimento:{"$in": arrayIds}});
+  console.log("aqui", alimento)
+  if(alimento) res.json(alimento);
+  else null;
+};
+
+alimentoCtrl.getAlimentoNombreById = async (req, res, next) => {
+  let id = req.query.id;
+  const alimento = await Alimento.find({idAlimento: Number(id)});
+  if(alimento[0]) res.json(alimento[0].nombre);
   else null;
 };
 

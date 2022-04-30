@@ -1,0 +1,6520 @@
+{
+	"id": 1,
+	"nombre": "Arroz",
+	"estado": "descasac.",
+	"categoria": "CEREALES",
+	"cal": 355,
+	"pr": 8.2,
+	"gr": 0.6,
+	"hc": 77
+},
+{
+	"id": 2,
+	"nombre": "Arroz",
+	"estado": "hervido",
+	"categoria": "CEREALES",
+	"cal": 126,
+	"pr": 2.3,
+	"gr": 0.2,
+	"hc": 31.1
+},
+{
+	"id": 3,
+	"nombre": "Arroz",
+	"estado": "paella",
+	"categoria": "CEREALES",
+	"cal": 320,
+	"pr": 6.9,
+	"gr": 0.4,
+	"hc": 74.5
+},
+{
+	"id": 4,
+	"nombre": "avena",
+	"estado": "grano",
+	"categoria": "CEREALES",
+	"cal": 384,
+	"pr": 14.3,
+	"gr": 7.7,
+	"hc": 65.2
+},
+{
+	"id": 5,
+	"nombre": "cebada",
+	"estado": "grano ",
+	"categoria": "CEREALES",
+	"cal": 355,
+	"pr": 8.6,
+	"gr": 1.4,
+	"hc": 78.2
+},
+{
+	"id": 6,
+	"nombre": "cebada",
+	"estado": "hervida",
+	"categoria": "CEREALES",
+	"cal": 125,
+	"pr": 2.6,
+	"gr": 0.6,
+	"hc": 27.6
+},
+{
+	"id": 7,
+	"nombre": "centeno",
+	"estado": "grano",
+	"categoria": "CEREALES",
+	"cal": 341,
+	"pr": 8.2,
+	"gr": 1.6,
+	"hc": 75
+},
+{
+	"id": 8,
+	"nombre": "maiz",
+	"estado": "grano",
+	"categoria": "CEREALES",
+	"cal": 364,
+	"pr": 9.6,
+	"gr": 3.5,
+	"hc": 73.9
+},
+{
+	"id": 9,
+	"nombre": "trigo",
+	"estado": "grano",
+	"categoria": "CEREALES",
+	"cal": 356,
+	"pr": 10.8,
+	"gr": 2.3,
+	"hc": 75
+},
+{
+	"id": 10,
+	"nombre": "amidon de arroz",
+	"estado": "grano",
+	"categoria": "CEREALES",
+	"cal": 353,
+	"pr": 0.8,
+	"gr": 0,
+	"hc": 85.2
+},
+{
+	"id": 11,
+	"nombre": "almidon de maiz",
+	"estado": "grano",
+	"categoria": "CEREALES",
+	"cal": 364,
+	"pr": 0.4,
+	"gr": 0.2,
+	"hc": 86.6
+},
+{
+	"id": 12,
+	"nombre": "almidon de trigo",
+	"estado": "grano",
+	"categoria": "CEREALES",
+	"cal": 352,
+	"pr": 1.1,
+	"gr": 0.2,
+	"hc": 84.1
+},
+{
+	"id": 13,
+	"nombre": "harina de arroz",
+	"estado": "grano",
+	"categoria": "CEREALES",
+	"cal": 361,
+	"pr": 7.4,
+	"gr": 0.6,
+	"hc": 79
+},
+{
+	"id": 14,
+	"nombre": "harina de avena",
+	"estado": "grano",
+	"categoria": "CEREALES",
+	"cal": 402,
+	"pr": 13.2,
+	"gr": 7.7,
+	"hc": 70.2
+},
+{
+	"id": 15,
+	"nombre": "harina de avena",
+	"estado": "copos",
+	"categoria": "CEREALES",
+	"cal": 368,
+	"pr": 6.7,
+	"gr": 0.9,
+	"hc": 84.3
+},
+{
+	"id": 16,
+	"nombre": "harina de cebada",
+	"estado": "cruda",
+	"categoria": "CEREALES",
+	"cal": 359,
+	"pr": 9.1,
+	"gr": 14.5,
+	"hc": 76.2
+},
+{
+	"id": 17,
+	"nombre": "harina de centeno",
+	"estado": "cruda",
+	"categoria": "CEREALES",
+	"cal": 354,
+	"pr": 10,
+	"gr": 1.1,
+	"hc": 74.2
+},
+{
+	"id": 18,
+	"nombre": "harina de maiz",
+	"estado": "cruda",
+	"categoria": "CEREALES",
+	"cal": 362,
+	"pr": 9.2,
+	"gr": 3.1,
+	"hc": 72.6
+},
+{
+	"id": 19,
+	"nombre": "harina de trigo integral",
+	"estado": "",
+	"categoria": "CEREALES",
+	"cal": 339,
+	"pr": 13.7,
+	"gr": 1.87,
+	"hc": 72.57
+},
+{
+	"id": 20,
+	"nombre": "harina de trigo",
+	"estado": "",
+	"categoria": "CEREALES",
+	"cal": 341,
+	"pr": 9.86,
+	"gr": 1.2,
+	"hc": 70.6
+},
+{
+	"id": 21,
+	"nombre": "harina de trigo",
+	"estado": "segunda",
+	"categoria": "CEREALES",
+	"cal": 355,
+	"pr": 10.1,
+	"gr": 1.2,
+	"hc": 78
+},
+{
+	"id": 22,
+	"nombre": "harina trigo manitoba",
+	"estado": "1",
+	"categoria": "CEREALES",
+	"cal": 339,
+	"pr": 13.6,
+	"gr": 2.5,
+	"hc": 69.1
+},
+{
+	"id": 23,
+	"nombre": "harina trigo manitoba",
+	"estado": "0,85",
+	"categoria": "CEREALES",
+	"cal": 350,
+	"pr": 13.4,
+	"gr": 1.5,
+	"hc": 72
+},
+{
+	"id": 24,
+	"nombre": "harina trigo manitoba",
+	"estado": "0,8",
+	"categoria": "CEREALES",
+	"cal": 350,
+	"pr": 13.2,
+	"gr": 1.4,
+	"hc": 73.5
+},
+{
+	"id": 25,
+	"nombre": "Pan rallado",
+	"estado": "",
+	"categoria": "CEREALES",
+	"cal": 395,
+	"pr": 13.35,
+	"gr": 5.3,
+	"hc": 71.98
+},
+{
+	"id": 26,
+	"nombre": "Tallarines",
+	"estado": "",
+	"categoria": "CEREALES",
+	"cal": 344,
+	"pr": 12,
+	"gr": 2,
+	"hc": 68
+},
+{
+	"id": 27,
+	"nombre": "Macarrones",
+	"estado": "",
+	"categoria": "CEREALES",
+	"cal": 220,
+	"pr": 8.06,
+	"gr": 1.29,
+	"hc": 42.95
+},
+{
+	"id": 28,
+	"nombre": "Espaguetis",
+	"estado": "",
+	"categoria": "CEREALES",
+	"cal": 220,
+	"pr": 8.06,
+	"gr": 1.29,
+	"hc": 42.95
+},
+{
+	"id": 29,
+	"nombre": "pan de avena",
+	"estado": "natural",
+	"categoria": "CEREALES",
+	"cal": 212,
+	"pr": 7.6,
+	"gr": 1.5,
+	"hc": 40.9
+},
+{
+	"id": 30,
+	"nombre": "pan de debada",
+	"estado": "natural",
+	"categoria": "CEREALES",
+	"cal": 198,
+	"pr": 6.4,
+	"gr": 1.1,
+	"hc": 39.9
+},
+{
+	"id": 31,
+	"nombre": "pan de centeno",
+	"estado": "natural",
+	"categoria": "CEREALES",
+	"cal": 232,
+	"pr": 6.5,
+	"gr": 0.9,
+	"hc": 47.9
+},
+{
+	"id": 32,
+	"nombre": "pan dediabeticos",
+	"estado": "natural",
+	"categoria": "CEREALES",
+	"cal": 235,
+	"pr": 8.7,
+	"gr": 0.7,
+	"hc": 47.8
+},
+{
+	"id": 33,
+	"nombre": "pan de maiz",
+	"estado": "natural",
+	"categoria": "CEREALES",
+	"cal": 227,
+	"pr": 6.4,
+	"gr": 1.9,
+	"hc": 43.8
+},
+{
+	"id": 34,
+	"nombre": "pan de trigo",
+	"estado": "natural",
+	"categoria": "CEREALES",
+	"cal": 241,
+	"pr": 8.9,
+	"gr": 1.6,
+	"hc": 36.7
+},
+{
+	"id": 35,
+	"nombre": "pan de trigo",
+	"estado": "moreno",
+	"categoria": "CEREALES",
+	"cal": 246,
+	"pr": 8.4,
+	"gr": 1.9,
+	"hc": 37
+},
+{
+	"id": 36,
+	"nombre": "pan de trigo",
+	"estado": "blanco",
+	"categoria": "CEREALES",
+	"cal": 262,
+	"pr": 8.2,
+	"gr": 1.3,
+	"hc": 35.6
+},
+{
+	"id": 37,
+	"nombre": "pan de trigo",
+	"estado": "blanco tostado",
+	"categoria": "CEREALES",
+	"cal": 314,
+	"pr": 9.4,
+	"gr": 0.9,
+	"hc": 20
+},
+{
+	"id": 38,
+	"nombre": "pan de trigo",
+	"estado": "blanco frito",
+	"categoria": "CEREALES",
+	"cal": 542,
+	"pr": 7.2,
+	"gr": 37.2,
+	"hc": 4
+},
+{
+	"id": 39,
+	"nombre": "pan de viena",
+	"estado": "0",
+	"categoria": "CEREALES",
+	"cal": 265,
+	"pr": 8.2,
+	"gr": 2.2,
+	"hc": 33
+},
+{
+	"id": 40,
+	"nombre": "buñuelos",
+	"estado": "fritos",
+	"categoria": "CEREALES",
+	"cal": 408,
+	"pr": 6.3,
+	"gr": 20.1,
+	"hc": 20.8
+},
+{
+	"id": 41,
+	"nombre": "galletas",
+	"estado": "natural",
+	"categoria": "CEREALES",
+	"cal": 435,
+	"pr": 7.4,
+	"gr": 13,
+	"hc": 5.2
+},
+{
+	"id": 42,
+	"nombre": "polvo para flanes",
+	"estado": "0",
+	"categoria": "CEREALES",
+	"cal": 353,
+	"pr": 0.5,
+	"gr": 0.7,
+	"hc": 8
+},
+{
+	"id": 43,
+	"nombre": "sagú",
+	"estado": "natural",
+	"categoria": "CEREALES",
+	"cal": 348,
+	"pr": 1.8,
+	"gr": 0.2,
+	"hc": 14.8
+},
+{
+	"id": 44,
+	"nombre": "semola",
+	"estado": "natural",
+	"categoria": "CEREALES",
+	"cal": 349,
+	"pr": 9.8,
+	"gr": 1.4,
+	"hc": 12.5
+},
+{
+	"id": 45,
+	"nombre": "soja",
+	"estado": "harina",
+	"categoria": "CEREALES",
+	"cal": 440,
+	"pr": 43,
+	"gr": 22,
+	"hc": 7.8
+},
+{
+	"id": 46,
+	"nombre": "tapioca",
+	"estado": "natural",
+	"categoria": "CEREALES",
+	"cal": 350,
+	"pr": 0.6,
+	"gr": 0.2,
+	"hc": 12.6
+},
+{
+	"id": 47,
+	"nombre": "tarta manzana",
+	"estado": "natural",
+	"categoria": "CEREALES",
+	"cal": 250,
+	"pr": 2.1,
+	"gr": 9.1,
+	"hc": 38
+},
+{
+	"id": 48,
+	"nombre": "almortas",
+	"estado": "crudos",
+	"categoria": "LEGUMBRES",
+	"cal": 328,
+	"pr": 27.8,
+	"gr": 1.1,
+	"hc": 10
+},
+{
+	"id": 49, 
+	"nombre": "garbanzos",
+	"estado": "crudos",
+	"categoria": "LEGUMBRES",
+	"cal": 355,
+	"pr": 21.8,
+	"gr": 5.1,
+	"hc": 12.6
+},
+{
+	"id": 50,
+	"nombre": "garbanzos",
+	"estado": "cocidos",
+	"categoria": "LEGUMBRES",
+	"cal": 150,
+	"pr": 10.2,
+	"gr": 5,
+	"hc": 65
+},
+{
+	"id": 51,
+	"nombre": "guisantes frescos",
+	"estado": "crudos",
+	"categoria": "LEGUMBRES",
+	"cal": 98,
+	"pr": 7.2,
+	"gr": 0.4,
+	"hc": 73.9
+},
+{
+	"id": 52,
+	"nombre": "guisantes frescos",
+	"estado": "cocidos",
+	"categoria": "LEGUMBRES",
+	"cal": 68,
+	"pr": 4,
+	"gr": 0.3,
+	"hc": 85
+},
+{
+	"id": 53,
+	"nombre": "guisantes secos",
+	"estado": "crudos",
+	"categoria": "LEGUMBRES",
+	"cal": 323,
+	"pr": 23.5,
+	"gr": 1.8,
+	"hc": 9.7
+},
+{
+	"id": 54,
+	"nombre": "guisantes secos",
+	"estado": "hervidos",
+	"categoria": "LEGUMBRES",
+	"cal": 77,
+	"pr": 6.9,
+	"gr": 0,
+	"hc": 73.3
+},
+{
+	"id": 55,
+	"nombre": "guisantes secos",
+	"estado": "conserva",
+	"categoria": "LEGUMBRES",
+	"cal": 91,
+	"pr": 5.9,
+	"gr": 0,
+	"hc": 73.7
+},
+{
+	"id": 56,
+	"nombre": "habas",
+	"estado": "crudos",
+	"categoria": "LEGUMBRES",
+	"cal": 315,
+	"pr": 29.4,
+	"gr": 1.5,
+	"hc": 14.5
+},
+{
+	"id": 57,
+	"nombre": "habas",
+	"estado": "cocidos",
+	"categoria": "LEGUMBRES",
+	"cal": 108,
+	"pr": 7.1,
+	"gr": 0.9,
+	"hc": 70.5
+},
+{
+	"id": 58,
+	"nombre": "judias blancas",
+	"estado": "crudas",
+	"categoria": "LEGUMBRES",
+	"cal": 320,
+	"pr": 20.8,
+	"gr": 1.7,
+	"hc": 62.5
+},
+{
+	"id": 59,
+	"nombre": "judias blancas",
+	"estado": "cocidas ",
+	"categoria": "LEGUMBRES",
+	"cal": 99,
+	"pr": 7.6,
+	"gr": 0.8,
+	"hc": 18.3
+},
+{
+	"id": 60,
+	"nombre": "judias rojas",
+	"estado": "crudas",
+	"categoria": "LEGUMBRES",
+	"cal": 332,
+	"pr": 20.1,
+	"gr": 1.5,
+	"hc": 63.5
+},
+{
+	"id": 61,
+	"nombre": "judias rojas",
+	"estado": "cocidas ",
+	"categoria": "LEGUMBRES",
+	"cal": 92,
+	"pr": 6.6,
+	"gr": 0.4,
+	"hc": 16.3
+},
+{
+	"id": 62,
+	"nombre": "lentejas secas",
+	"estado": "crudas",
+	"categoria": "LEGUMBRES",
+	"cal": 339,
+	"pr": 23.7,
+	"gr": 1.2,
+	"hc": 62.5
+},
+{
+	"id": 63,
+	"nombre": "lentejas secas",
+	"estado": "cocidas ",
+	"categoria": "LEGUMBRES",
+	"cal": 102,
+	"pr": 7.1,
+	"gr": 0.3,
+	"hc": 19.5
+},
+{
+	"id": 64,
+	"nombre": "soja fresca",
+	"estado": "crudas",
+	"categoria": "LEGUMBRES",
+	"cal": 135,
+	"pr": 13.9,
+	"gr": 4.8,
+	"hc": 10.3
+},
+{
+	"id": 65,
+	"nombre": "Salsa de soja",
+	"estado": "",
+	"categoria": "LEGUMBRES",
+	"cal": 53,
+	"pr": 6.28,
+	"gr": 0.04,
+	"hc": 7.61
+},
+{
+	"id": 66,
+	"nombre": "acederas",
+	"estado": "crudas",
+	"categoria": "VERDURAS",
+	"cal": 18,
+	"pr": 2.5,
+	"gr": 0.4,
+	"hc": 2.2
+},
+{
+	"id": 67,
+	"nombre": "acederas",
+	"estado": "cocidas ",
+	"categoria": "VERDURAS",
+	"cal": 5,
+	"pr": 0.9,
+	"gr": 0.1,
+	"hc": 1.1
+},
+{
+	"id": 68,
+	"nombre": "acelgas ",
+	"estado": "crudas",
+	"categoria": "VERDURAS",
+	"cal": 18,
+	"pr": 1.9,
+	"gr": 0.3,
+	"hc": 2.4
+},
+{
+	"id": 69,
+	"nombre": "acelgas ",
+	"estado": "cocidas ",
+	"categoria": "VERDURAS",
+	"cal": 5,
+	"pr": 0.36,
+	"gr": 0,
+	"hc": 0.9
+},
+{
+	"id": 70,
+	"nombre": "achicoria",
+	"estado": "cruda",
+	"categoria": "VERDURAS",
+	"cal": 16,
+	"pr": 1.2,
+	"gr": 0.2,
+	"hc": 2.9
+},
+{
+	"id": 71,
+	"nombre": "achicoria",
+	"estado": "tostada ",
+	"categoria": "VERDURAS",
+	"cal": 280,
+	"pr": 28.1,
+	"gr": 2,
+	"hc": 42
+},
+{
+	"id": 72,
+	"nombre": "ajo",
+	"estado": "",
+	"categoria": "VERDURAS",
+	"cal": 149,
+	"pr": 6.36,
+	"gr": 0.5,
+	"hc": 33.06
+},
+{
+	"id": 73,
+	"nombre": "alcachofa",
+	"estado": "cruda",
+	"categoria": "VERDURAS",
+	"cal": 67,
+	"pr": 3,
+	"gr": 0.8,
+	"hc": 18.8
+},
+{
+	"id": 74,
+	"nombre": "alcachofa",
+	"estado": "cocidas ",
+	"categoria": "VERDURAS",
+	"cal": 16,
+	"pr": 1.1,
+	"gr": 0.2,
+	"hc": 3.5
+},
+{
+	"id": 75,
+	"nombre": "apio",
+	"estado": "crudos",
+	"categoria": "VERDURAS",
+	"cal": 19,
+	"pr": 1.2,
+	"gr": 0.2,
+	"hc": 4.5
+},
+{
+	"id": 76,
+	"nombre": "apio",
+	"estado": "cocidos",
+	"categoria": "VERDURAS",
+	"cal": 9.5,
+	"pr": 1,
+	"gr": 0.15,
+	"hc": 2.1
+},
+{
+	"id": 77,
+	"nombre": "batata",
+	"estado": "cruda",
+	"categoria": "VERDURAS",
+	"cal": 127,
+	"pr": 2.1,
+	"gr": 0.6,
+	"hc": 29.5
+},
+{
+	"id": 78,
+	"nombre": "batata",
+	"estado": "cocidas ",
+	"categoria": "VERDURAS",
+	"cal": 98,
+	"pr": 1.7,
+	"gr": 0.5,
+	"hc": 26
+},
+{
+	"id": 79,
+	"nombre": "berenjena",
+	"estado": "cruda",
+	"categoria": "VERDURAS",
+	"cal": 19,
+	"pr": 1.2,
+	"gr": 0.2,
+	"hc": 4.9
+},
+{
+	"id": 80,
+	"nombre": "berenjena",
+	"estado": "cocidas ",
+	"categoria": "VERDURAS",
+	"cal": 10,
+	"pr": 1.1,
+	"gr": 0,
+	"hc": 2.6
+},
+{
+	"id": 81,
+	"nombre": "berros",
+	"estado": "crudos",
+	"categoria": "VERDURAS",
+	"cal": 25,
+	"pr": 2.1,
+	"gr": 0.3,
+	"hc": 47.7
+},
+{
+	"id": 82,
+	"nombre": "brocoli",
+	"estado": "crudos",
+	"categoria": "VERDURAS",
+	"cal": 29,
+	"pr": 3.2,
+	"gr": 0.2,
+	"hc": 4.9
+},
+{
+	"id": 83,
+	"nombre": "brocoli",
+	"estado": "cocidos",
+	"categoria": "VERDURAS",
+	"cal": 17,
+	"pr": 1.3,
+	"gr": 0.13,
+	"hc": 4.2
+},
+{
+	"id": 84,
+	"nombre": "calabaza",
+	"estado": "cruda",
+	"categoria": "VERDURAS",
+	"cal": 28,
+	"pr": 0.7,
+	"gr": 0.1,
+	"hc": 6.3
+},
+{
+	"id": 85,
+	"nombre": "calabaza",
+	"estado": "cocidas ",
+	"categoria": "VERDURAS",
+	"cal": 21,
+	"pr": 1.08,
+	"gr": 0.22,
+	"hc": 4.8
+},
+{
+	"id": 86,
+	"nombre": "calabacin",
+	"estado": "crudo ",
+	"categoria": "VERDURAS",
+	"cal": 23,
+	"pr": 4.2,
+	"gr": 0.1,
+	"hc": 7.3
+},
+{
+	"id": 87,
+	"nombre": "calabacin",
+	"estado": "cocidos",
+	"categoria": "VERDURAS",
+	"cal": 6,
+	"pr": 0.9,
+	"gr": 0,
+	"hc": 1.6
+},
+{
+	"id": 88,
+	"nombre": "cardo",
+	"estado": "crudo",
+	"categoria": "VERDURAS",
+	"cal": 24,
+	"pr": 2.3,
+	"gr": 0.3,
+	"hc": 5.3
+},
+{
+	"id": 89,
+	"nombre": "cardo",
+	"estado": "cocidos",
+	"categoria": "VERDURAS",
+	"cal": 17,
+	"pr": 1.4,
+	"gr": 0.2,
+	"hc": 3.6
+},
+{
+	"id": 90,
+	"nombre": "cardillo",
+	"estado": "crudo",
+	"categoria": "VERDURAS",
+	"cal": 15,
+	"pr": 1.05,
+	"gr": 0,
+	"hc": 5.2
+},
+{
+	"id": 91,
+	"nombre": "cardillo",
+	"estado": "cocidos",
+	"categoria": "VERDURAS",
+	"cal": 10,
+	"pr": 0.7,
+	"gr": 0,
+	"hc": 2.4
+},
+{
+	"id": 92,
+	"nombre": "cebolla",
+	"estado": "crudo",
+	"categoria": "VERDURAS",
+	"cal": 38,
+	"pr": 1.3,
+	"gr": 0.2,
+	"hc": 8.8
+},
+{
+	"id": 93,
+	"nombre": "cebolla",
+	"estado": "cocidas ",
+	"categoria": "VERDURAS",
+	"cal": 20.2,
+	"pr": 0.4,
+	"gr": 0.2,
+	"hc": 4.3
+},
+{
+	"id": 94,
+	"nombre": "Cebolla",
+	"estado": "frita",
+	"categoria": "VERDURAS",
+	"cal": 335,
+	"pr": 1.8,
+	"gr": 33.3,
+	"hc": 13.2
+},
+{
+	"id": 95,
+	"nombre": "col",
+	"estado": "cruda",
+	"categoria": "VERDURAS",
+	"cal": 28,
+	"pr": 1.7,
+	"gr": 0.2,
+	"hc": 6.1
+},
+{
+	"id": 96,
+	"nombre": "col",
+	"estado": "cocidas ",
+	"categoria": "VERDURAS",
+	"cal": 15,
+	"pr": 1.3,
+	"gr": 0.1,
+	"hc": 2.6
+},
+{
+	"id": 97,
+	"nombre": "col",
+	"estado": "acida",
+	"categoria": "VERDURAS",
+	"cal": 23,
+	"pr": 1.4,
+	"gr": 0.3,
+	"hc": 4.1
+},
+{
+	"id": 98,
+	"nombre": "col debruselas",
+	"estado": "cruda",
+	"categoria": "VERDURAS",
+	"cal": 42,
+	"pr": 3.8,
+	"gr": 0.5,
+	"hc": 8.2
+},
+{
+	"id": 99,
+	"nombre": "col debruselas",
+	"estado": "cocidas ",
+	"categoria": "VERDURAS",
+	"cal": 20,
+	"pr": 3.1,
+	"gr": 0.4,
+	"hc": 5.1
+},
+{
+	"id": 100,
+	"nombre": "col rizada",
+	"estado": "cruda",
+	"categoria": "VERDURAS",
+	"cal": 33,
+	"pr": 3.2,
+	"gr": 0.4,
+	"hc": 5.2
+},
+{
+	"id": 101,
+	"nombre": "coliflor",
+	"estado": "cruda",
+	"categoria": "VERDURAS",
+	"cal": 28,
+	"pr": 2.3,
+	"gr": 0.2,
+	"hc": 5.04
+},
+{
+	"id": 102,
+	"nombre": "coliflor",
+	"estado": "cocida crudo",
+	"categoria": "VERDURAS",
+	"cal": 20,
+	"pr": 1.9,
+	"gr": 0.7,
+	"hc": 3
+},
+{
+	"id": 103,
+	"nombre": "colinabo",
+	"estado": "crudo",
+	"categoria": "VERDURAS",
+	"cal": 33,
+	"pr": 2.2,
+	"gr": 0.1,
+	"hc": 6.8
+},
+{
+	"id": 104,
+	"nombre": "champiñon",
+	"estado": "crudo",
+	"categoria": "VERDURAS",
+	"cal": 27,
+	"pr": 3.7,
+	"gr": 0.2,
+	"hc": 3.7
+},
+{
+	"id": 105,
+	"nombre": "chirivia",
+	"estado": "crudo",
+	"categoria": "VERDURAS",
+	"cal": 5.8,
+	"pr": 1.5,
+	"gr": 0.5,
+	"hc": 13.5
+},
+{
+	"id": 106,
+	"nombre": "chirivia",
+	"estado": "cocidos",
+	"categoria": "VERDURAS",
+	"cal": 34,
+	"pr": 1.1,
+	"gr": 0.4,
+	"hc": 8.5
+},
+{
+	"id": 107,
+	"nombre": "escarola",
+	"estado": "crudo",
+	"categoria": "VERDURAS",
+	"cal": 20,
+	"pr": 1.6,
+	"gr": 0.2,
+	"hc": 4
+},
+{
+	"id": 108,
+	"nombre": "esparragos",
+	"estado": "crdudos",
+	"categoria": "VERDURAS",
+	"cal": 25,
+	"pr": 2.3,
+	"gr": 0.2,
+	"hc": 4.1
+},
+{
+	"id": 109,
+	"nombre": "esparragos",
+	"estado": "cocidos",
+	"categoria": "VERDURAS",
+	"cal": 20,
+	"pr": 2.1,
+	"gr": 0.2,
+	"hc": 3.8
+},
+{
+	"id": 110,
+	"nombre": "espinacas",
+	"estado": "crudas",
+	"categoria": "VERDURAS",
+	"cal": 26,
+	"pr": 2.5,
+	"gr": 0.3,
+	"hc": 4.1
+},
+{
+	"id": 111,
+	"nombre": "espinacas",
+	"estado": "cocidas ",
+	"categoria": "VERDURAS",
+	"cal": 20,
+	"pr": 2.2,
+	"gr": 0.2,
+	"hc": 5.2
+},
+{
+	"id": 112,
+	"nombre": "judias verdes",
+	"estado": "crudas",
+	"categoria": "VERDURAS",
+	"cal": 35,
+	"pr": 2.3,
+	"gr": 0.2,
+	"hc": 6.2
+},
+{
+	"id": 113,
+	"nombre": "judias verdes",
+	"estado": "cocidas ",
+	"categoria": "VERDURAS",
+	"cal": 15,
+	"pr": 1,
+	"gr": 0.1,
+	"hc": 3.2
+},
+{
+	"id": 114,
+	"nombre": "lechuga",
+	"estado": "crudas",
+	"categoria": "VERDURAS",
+	"cal": 17,
+	"pr": 1.2,
+	"gr": 0.2,
+	"hc": 2.9
+},
+{
+	"id": 115,
+	"nombre": "lombarda",
+	"estado": "crudas",
+	"categoria": "VERDURAS",
+	"cal": 35,
+	"pr": 2.6,
+	"gr": 0.15,
+	"hc": 5.2
+},
+{
+	"id": 116,
+	"nombre": "lombarda",
+	"estado": "cocida",
+	"categoria": "VERDURAS",
+	"cal": 10,
+	"pr": 1.1,
+	"gr": 0,
+	"hc": 2.8
+},
+{
+	"id": 117,
+	"nombre": "mostaza",
+	"estado": "cruda",
+	"categoria": "VERDURAS",
+	"cal": 20,
+	"pr": 2.1,
+	"gr": 0.3,
+	"hc": 3.8
+},
+{
+	"id": 118,
+	"nombre": "nabos",
+	"estado": "crudos",
+	"categoria": "VERDURAS",
+	"cal": 30,
+	"pr": 1.8,
+	"gr": 0.3,
+	"hc": 5.8
+},
+{
+	"id": 119,
+	"nombre": "nabos",
+	"estado": "cocidos",
+	"categoria": "VERDURAS",
+	"cal": 21,
+	"pr": 1.3,
+	"gr": 0.2,
+	"hc": 4.7
+},
+{
+	"id": 120,
+	"nombre": "patata",
+	"estado": "cruda",
+	"categoria": "VERDURAS",
+	"cal": 85,
+	"pr": 2.1,
+	"gr": 0.2,
+	"hc": 19
+},
+{
+	"id": 121,
+	"nombre": "patata",
+	"estado": "cocida",
+	"categoria": "VERDURAS",
+	"cal": 65,
+	"pr": 1.7,
+	"gr": 0.3,
+	"hc": 15.4
+},
+{
+	"id": 122,
+	"nombre": "patata",
+	"estado": "asada",
+	"categoria": "VERDURAS",
+	"cal": 110,
+	"pr": 2.6,
+	"gr": 0.7,
+	"hc": 29.4
+},
+{
+	"id": 123,
+	"nombre": "patata",
+	"estado": "frita",
+	"categoria": "VERDURAS",
+	"cal": 230,
+	"pr": 3.3,
+	"gr": 10.6,
+	"hc": 30.1
+},
+{
+	"id": 124,
+	"nombre": "patata",
+	"estado": "pure",
+	"categoria": "VERDURAS",
+	"cal": 121,
+	"pr": 1.8,
+	"gr": 5.5,
+	"hc": 16.3
+},
+{
+	"id": 125,
+	"nombre": "patata",
+	"estado": "almidon",
+	"categoria": "VERDURAS",
+	"cal": 350,
+	"pr": 1.8,
+	"gr": 0.9,
+	"hc": 81.8
+},
+{
+	"id": 126,
+	"nombre": "pepino",
+	"estado": "crudo",
+	"categoria": "VERDURAS",
+	"cal": 10,
+	"pr": 0.7,
+	"gr": 0.15,
+	"hc": 2.7
+},
+{
+	"id": 127,
+	"nombre": "perejil",
+	"estado": "crudo",
+	"categoria": "VERDURAS",
+	"cal": 36,
+	"pr": 2.97,
+	"gr": 0.79,
+	"hc": 6.33
+},
+{
+	"id": 128,
+	"nombre": "pimienta",
+	"estado": "crudo",
+	"categoria": "VERDURAS",
+	"cal": 255,
+	"pr": 10.95,
+	"gr": 3.26,
+	"hc": 64.81
+},
+{
+	"id": 129,
+	"nombre": "pimiento rojo",
+	"estado": "crudo",
+	"categoria": "VERDURAS",
+	"cal": 27,
+	"pr": 1.3,
+	"gr": 0.6,
+	"hc": 7.2
+},
+{
+	"id": 130,
+	"nombre": "pimiento del piquillo",
+	"estado": "crudos",
+	"categoria": "VERDURAS",
+	"cal": 44,
+	"pr": 0.8,
+	"gr": 0.2,
+	"hc": 9.3
+},
+{
+	"id": 131,
+	"nombre": "puerros",
+	"estado": "crudo",
+	"categoria": "VERDURAS",
+	"cal": 37,
+	"pr": 2.8,
+	"gr": 0.35,
+	"hc": 7.7
+},
+{
+	"id": 132,
+	"nombre": "puerros",
+	"estado": "cocidos",
+	"categoria": "VERDURAS",
+	"cal": 25,
+	"pr": 2.3,
+	"gr": 0,
+	"hc": 4.9
+},
+{
+	"id": 133,
+	"nombre": "rabanos",
+	"estado": "crudo",
+	"categoria": "VERDURAS",
+	"cal": 18,
+	"pr": 1.2,
+	"gr": 0.1,
+	"hc": 3.6
+},
+{
+	"id": 134,
+	"nombre": "remolacha",
+	"estado": "cruda",
+	"categoria": "VERDURAS",
+	"cal": 43,
+	"pr": 1.8,
+	"gr": 0.1,
+	"hc": 10.6
+},
+{
+	"id": 135,
+	"nombre": "remolacha",
+	"estado": "cocida",
+	"categoria": "VERDURAS",
+	"cal": 35,
+	"pr": 1.9,
+	"gr": 0.1,
+	"hc": 8.9
+},
+{
+	"id": 136,
+	"nombre": "Pollo (muslo)",
+	"estado": "crudo",
+	"categoria": "VERDURAS",
+	"cal": 119,
+	"pr": 19.65,
+	"gr": 3.91,
+	"hc": 0
+},
+{
+	"id": 137,
+	"nombre": "Sirope de arce",
+	"estado": "",
+	"categoria": "VERDURAS",
+	"cal": 261,
+	"pr": 0,
+	"gr": 0.2,
+	"hc": 67.09
+}
+{
+	"id": 138,
+	"nombre": "seta",
+	"estado": "cruda",
+	"categoria": "VERDURAS",
+	"cal": 17,
+	"pr": 1.9,
+	"gr": 0.3,
+	"hc": 3.8
+},
+{
+	"id": 139,
+	"nombre": "seta",
+	"estado": "frita",
+	"categoria": "VERDURAS",
+	"cal": 217,
+	"pr": 2.2,
+	"gr": 24.3,
+	"hc": 5.8
+},
+{
+	"id": 140,
+	"nombre": "tomate",
+	"estado": "crudo",
+	"categoria": "VERDURAS",
+	"cal": 18,
+	"pr": 0.88,
+	"gr": 0.2,
+	"hc": 3.92
+},
+{
+	"id": 141,
+	"nombre": "tomate",
+	"estado": "cocido",
+	"categoria": "VERDURAS",
+	"cal": 19,
+	"pr": 1,
+	"gr": 0.1,
+	"hc": 3.8
+},
+{
+	"id": 142,
+	"nombre": "tomate",
+	"estado": "frito",
+	"categoria": "VERDURAS",
+	"cal": 73,
+	"pr": 2.3,
+	"gr": 6.2,
+	"hc": 4.2
+},
+{
+	"id": 143,
+	"nombre": "tomate",
+	"estado": "jugo",
+	"categoria": "VERDURAS",
+	"cal": 18,
+	"pr": 0.8,
+	"gr": 1.2,
+	"hc": 3.5
+},
+{
+	"id": 144,
+	"nombre": "trufa",
+	"estado": "fresca",
+	"categoria": "VERDURAS",
+	"cal": 63,
+	"pr": 7.6,
+	"gr": 0.5,
+	"hc": 6.6
+},
+{
+	"id": 145,
+	"nombre": "trufa",
+	"estado": "seca",
+	"categoria": "VERDURAS",
+	"cal": 260,
+	"pr": 36.9,
+	"gr": 2,
+	"hc": 28.9
+},
+{
+	"id": 146,
+	"nombre": "verduras (medio)",
+	"estado": "crudas",
+	"categoria": "VERDURAS",
+	"cal": 23,
+	"pr": 1.3,
+	"gr": 0.2,
+	"hc": 38
+},
+{
+	"id": 147,
+	"nombre": "zanahoria",
+	"estado": "cruda",
+	"categoria": "VERDURAS",
+	"cal": 40,
+	"pr": 1.1,
+	"gr": 0.3,
+	"hc": 8.8
+},
+{
+	"id": 148,
+	"nombre": "zanahoria",
+	"estado": "cocida",
+	"categoria": "VERDURAS",
+	"cal": 27,
+	"pr": 0.8,
+	"gr": 0.4,
+	"hc": 6.1
+},
+{
+	"id": 149,
+	"nombre": "aceitunas verdes",
+	"estado": "",
+	"categoria": "",
+	"cal": 181,
+	"pr": 2.9,
+	"gr": 24.8,
+	"hc": 4.7
+},
+{
+	"id": 150,
+	"nombre": "albaricoque",
+	"estado": "crudo",
+	"categoria": "FRUTAS",
+	"cal": 45,
+	"pr": 0.8,
+	"gr": 0.6,
+	"hc": 9.9
+},
+{
+	"id": 151,
+	"nombre": "albaricoque",
+	"estado": "conserva",
+	"categoria": "FRUTAS",
+	"cal": 72,
+	"pr": 0.5,
+	"gr": 0.3,
+	"hc": 18
+},
+{
+	"id": 152,
+	"nombre": "albaricoque",
+	"estado": "jugo",
+	"categoria": "FRUTAS",
+	"cal": 50,
+	"pr": 0.45,
+	"gr": 0.7,
+	"hc": 11.8
+},
+{
+	"id": 153,
+	"nombre": "arandano",
+	"estado": "crudo",
+	"categoria": "FRUTAS",
+	"cal": 53,
+	"pr": 0.8,
+	"gr": 0.6,
+	"hc": 13.1
+},
+{
+	"id": 154,
+	"nombre": "cerezas",
+	"estado": "crudas",
+	"categoria": "FRUTAS",
+	"cal": 65,
+	"pr": 1.3,
+	"gr": 0.6,
+	"hc": 15.9
+},
+{
+	"id": 155,
+	"nombre": "cerezas",
+	"estado": "cocidas",
+	"categoria": "FRUTAS",
+	"cal": 23,
+	"pr": 0.8,
+	"gr": 0.4,
+	"hc": 9.1
+},
+{
+	"id": 156,
+	"nombre": "ciruelas",
+	"estado": "crudas",
+	"categoria": "FRUTAS",
+	"cal": 58,
+	"pr": 0.75,
+	"gr": 0.3,
+	"hc": 15.5
+},
+{
+	"id": 157,
+	"nombre": "ciruelas",
+	"estado": "crudas",
+	"categoria": "FRUTAS",
+	"cal": 71,
+	"pr": 0.4,
+	"gr": 0,
+	"hc": 19.5
+},
+{
+	"id": 158,
+	"nombre": "frambuesas",
+	"estado": "crudas",
+	"categoria": "FRUTAS",
+	"cal": 45,
+	"pr": 1.1,
+	"gr": 0.5,
+	"hc": 11.1
+},
+{
+	"id": 159,
+	"nombre": "frambuesas",
+	"estado": "crudas",
+	"categoria": "FRUTAS",
+	"cal": 38,
+	"pr": 0.2,
+	"gr": 0,
+	"hc": 10.6
+},
+{
+	"id": 160,
+	"nombre": "fresa",
+	"estado": "jugop",
+	"categoria": "FRUTAS",
+	"cal": 40,
+	"pr": 0.8,
+	"gr": 0.6,
+	"hc": 8.9
+},
+{
+	"id": 161,
+	"nombre": "freson",
+	"estado": "crudas",
+	"categoria": "FRUTAS",
+	"cal": 25,
+	"pr": 1.8,
+	"gr": 0.1,
+	"hc": 5.3
+},
+{
+	"id": 162,
+	"nombre": "granada",
+	"estado": "crudas",
+	"categoria": "FRUTAS",
+	"cal": 60,
+	"pr": 2.5,
+	"gr": 0.8,
+	"hc": 16.2
+},
+{
+	"id": 163,
+	"alimento": "Granada",
+	"estado": "zumo",
+	"categoria": "FRUTAS",
+	"cal": 50,
+	"pr": 0.3,
+	"gr": 0,
+	"hc": 12.3
+},
+{
+	"id": 164,
+	"nombre": "guindas",
+	"estado": "crudas",
+	"categoria": "FRUTAS",
+	"cal": 55,
+	"pr": 0.66,
+	"gr": 0,
+	"hc": 13.3
+},
+{
+	"id": 165,
+	"nombre": "higo comun",
+	"estado": "",
+	"categoria": "FRUTAS",
+	"cal": 69,
+	"pr": 1.3,
+	"gr": 0.4,
+	"hc": 16.1
+},
+{
+	"id": 166,
+	"nombre": "limon",
+	"estado": "",
+	"categoria": "FRUTAS",
+	"cal": 36,
+	"pr": 1,
+	"gr": 1.5,
+	"hc": 9.3
+},
+{
+	"id": 167,
+	"alimento": "Limon",
+	"estado": "zumo",
+	"categoria": "FRUTAS",
+	"cal": 25,
+	"pr": 0.38,
+	"gr": 0,
+	"hc": 8.63
+},
+{
+	"id": 168,
+	"nombre": "majuela",
+	"estado": "zumo",
+	"categoria": "FRUTAS",
+	"cal": 131,
+	"pr": 4.1,
+	"gr": 0,
+	"hc": 24.6
+},
+{
+	"id": 169,
+	"nombre": "mandarina",
+	"estado": "jugo",
+	"categoria": "FRUTAS",
+	"cal": 33,
+	"pr": 1.2,
+	"gr": 0.9,
+	"hc": 10.8
+},
+{
+	"id": 170,
+	"nombre": "mango",
+	"estado": "crudos",
+	"categoria": "FRUTAS",
+	"cal": 66,
+	"pr": 0.7,
+	"gr": 0.2,
+	"hc": 17.2
+},
+{
+	"id": 171,
+	"nombre": "manzana",
+	"estado": "crudos",
+	"categoria": "FRUTAS",
+	"cal": 52,
+	"pr": 0.3,
+	"gr": 0.4,
+	"hc": 13.8
+},
+{
+	"id": 172,
+	"nombre": "manzana",
+	"estado": "crudo",
+	"categoria": "FRUTAS",
+	"cal": 102,
+	"pr": 0.8,
+	"gr": 0.5,
+	"hc": 27
+},
+{
+	"id": 173,
+	"nombre": "manzana",
+	"estado": "asada",
+	"categoria": "FRUTAS",
+	"cal": 52,
+	"pr": 0.5,
+	"gr": 0,
+	"hc": 13.8
+},
+{
+	"id": 174,
+	"nombre": "melocoton",
+	"estado": "jugo",
+	"categoria": "FRUTAS",
+	"cal": 48,
+	"pr": 0.7,
+	"gr": 0.2,
+	"hc": 12.1
+},
+{
+	"id": 175,
+	"nombre": "melocoton",
+	"estado": "crudo",
+	"categoria": "FRUTAS",
+	"cal": 68,
+	"pr": 0.4,
+	"gr": 0.1,
+	"hc": 18.2
+},
+{
+	"id": 176,
+	"nombre": "melocoton",
+	"estado": "conserva",
+	"categoria": "FRUTAS",
+	"cal": 49.6,
+	"pr": 0.32,
+	"gr": 0.1,
+	"hc": 13.4
+},
+{
+	"id": 177,
+	"nombre": "melon",
+	"estado": "jugo",
+	"categoria": "FRUTAS",
+	"cal": 29,
+	"pr": 0.4,
+	"gr": 0.2,
+	"hc": 6.4
+},
+{
+	"id": 178,
+	"nombre": "membrillo",
+	"estado": "crudo",
+	"categoria": "FRUTAS",
+	"cal": 42,
+	"pr": 0.6,
+	"gr": 0.93,
+	"hc": 11.4
+},
+{
+	"id": 179,
+	"nombre": "mora",
+	"estado": "crudo",
+	"categoria": "FRUTAS",
+	"cal": 56,
+	"pr": 1.1,
+	"gr": 0.9,
+	"hc": 10.2
+},
+{
+	"id": 180,
+	"nombre": "mora",
+	"estado": "crudo",
+	"categoria": "FRUTAS",
+	"cal": 15,
+	"pr": 0.7,
+	"gr": 0,
+	"hc": 3.2
+},
+{
+	"id": 181,
+	"nombre": "mora",
+	"estado": "cocidas",
+	"categoria": "FRUTAS",
+	"cal": 32,
+	"pr": 3,
+	"gr": 0,
+	"hc": 7.5
+},
+{
+	"id": 182,
+	"nombre": "Naranja",
+	"estado": "",
+	"categoria": "FRUTAS",
+	"cal": 62,
+	"pr": 1.23,
+	"gr": 0.16,
+	"hc": 15.39
+},
+{
+	"id": 183,
+	"nombre": "Naranja",
+	"estado": "zumo",
+	"categoria": "FRUTAS",
+	"cal": 112,
+	"pr": 1.74,
+	"gr": 0.5,
+	"hc": 25.79
+},
+{
+	"id": 184,
+	"nombre": "nispero",
+	"estado": "zumo",
+	"categoria": "FRUTAS",
+	"cal": 80,
+	"pr": 0.8,
+	"gr": 0.8,
+	"hc": 22.3
+},
+{
+	"id": 185,
+	"nombre": "peras",
+	"estado": "crudo",
+	"categoria": "FRUTAS",
+	"cal": 58,
+	"pr": 0.7,
+	"gr": 0.4,
+	"hc": 16.8
+},
+{
+	"id": 186,
+	"nombre": "peras",
+	"estado": "crudos",
+	"categoria": "FRUTAS",
+	"cal": 90,
+	"pr": 1.3,
+	"gr": 0,
+	"hc": 22.6
+},
+{
+	"id": 187,
+	"nombre": "peras",
+	"estado": "asadas",
+	"categoria": "FRUTAS",
+	"cal": 75,
+	"pr": 0.8,
+	"gr": 0.1,
+	"hc": 25.2
+},
+{
+	"id": 188,
+	"nombre": "peras",
+	"estado": "conserva",
+	"categoria": "FRUTAS",
+	"cal": 51,
+	"pr": 0.3,
+	"gr": 0.08,
+	"hc": 13.7
+},
+{
+	"id": 189,
+	"nombre": "piña",
+	"estado": "nectar",
+	"categoria": "FRUTAS",
+	"cal": 51,
+	"pr": 0.45,
+	"gr": 0.2,
+	"hc": 13.6
+},
+{
+	"id": 190,
+	"nombre": "piña",
+	"estado": "crudas",
+	"categoria": "FRUTAS",
+	"cal": 76,
+	"pr": 0.4,
+	"gr": 0.1,
+	"hc": 19.8
+},
+{
+	"id": 191,
+	"nombre": "piña",
+	"estado": "conserva",
+	"categoria": "FRUTAS",
+	"cal": 51,
+	"pr": 0.3,
+	"gr": 0.1,
+	"hc": 13.1
+},
+{
+	"id": 192,
+	"nombre": "platano",
+	"estado": "jugo crudo",
+	"categoria": "FRUTAS",
+	"cal": 91,
+	"pr": 1.2,
+	"gr": 0.3,
+	"hc": 21.8
+},
+{
+	"id": 193,
+	"nombre": "ruibardo",
+	"estado": "crudo",
+	"categoria": "FRUTAS",
+	"cal": 16,
+	"pr": 0.5,
+	"gr": 0.1,
+	"hc": 3.8
+},
+{
+	"id": 194,
+	"nombre": "sandia",
+	"estado": "crudo",
+	"categoria": "FRUTAS",
+	"cal": 31,
+	"pr": 0.5,
+	"gr": 0.2,
+	"hc": 6.9
+},
+{
+	"id": 195,
+	"nombre": "toronja",
+	"estado": "crudo",
+	"categoria": "FRUTAS",
+	"cal": 32,
+	"pr": 0.6,
+	"gr": 0.2,
+	"hc": 8
+},
+{
+	"id": 196,
+	"nombre": "uva blanca",
+	"estado": "crudo",
+	"categoria": "FRUTAS",
+	"cal": 74,
+	"pr": 0.8,
+	"gr": 1,
+	"hc": 17
+},
+{
+	"id": 197,
+	"nombre": "uva negra",
+	"estado": "crudo",
+	"categoria": "FRUTAS",
+	"cal": 110,
+	"pr": 1.47,
+	"gr": 0,
+	"hc": 26
+},
+{
+	"id": 198,
+	"nombre": "uva (jugo)",
+	"estado": "fresco",
+	"categoria": "FRUTAS",
+	"cal": 38,
+	"pr": 2.5,
+	"gr": 0.1,
+	"hc": 8
+},
+{
+	"id": 199,
+	"nombre": "uva (jugo)",
+	"estado": "conserva",
+	"categoria": "FRUTAS",
+	"cal": 67,
+	"pr": 1.8,
+	"gr": 0,
+	"hc": 18
+},
+{
+	"id": 200,
+	"nombre": "albaricoque",
+	"estado": "seco",
+	"categoria": "FRUTOS SECOS",
+	"cal": 268,
+	"pr": 5.3,
+	"gr": 0.4,
+	"hc": 67.6
+},
+{
+	"id": 201,
+	"nombre": "almendras",
+	"estado": "seco",
+	"categoria": "FRUTOS SECOS",
+	"cal": 612,
+	"pr": 19.7,
+	"gr": 54.5,
+	"hc": 17.6
+},
+{
+	"id": 202,
+	"nombre": "avellana",
+	"estado": "seco",
+	"categoria": "FRUTOS SECOS",
+	"cal": 620,
+	"pr": 15.5,
+	"gr": 62.2,
+	"hc": 15.5
+},
+{
+	"id": 203,
+	"nombre": "cacahuete",
+	"estado": "seco",
+	"categoria": "FRUTOS SECOS",
+	"cal": 550,
+	"pr": 26.1,
+	"gr": 44.2,
+	"hc": 20
+},
+{
+	"id": 204,
+	"nombre": "cacahuete",
+	"estado": "tostado",
+	"categoria": "FRUTOS SECOS",
+	"cal": 610,
+	"pr": 26.5,
+	"gr": 48.1,
+	"hc": 18.3
+},
+{
+	"id": 205,
+	"nombre": "cacao",
+	"estado": "polvo",
+	"categoria": "FRUTOS SECOS",
+	"cal": 340,
+	"pr": 26,
+	"gr": 18.8,
+	"hc": 38
+},
+{
+	"id": 206,
+	"nombre": "castaña seca",
+	"estado": "cruda",
+	"categoria": "FRUTOS SECOS",
+	"cal": 350,
+	"pr": 8.2,
+	"gr": 3.5,
+	"hc": 75.3
+},
+{
+	"id": 207,
+	"nombre": "castaña tierna",
+	"estado": "cruda",
+	"categoria": "FRUTOS SECOS",
+	"cal": 188,
+	"pr": 3.2,
+	"gr": 2.5,
+	"hc": 40
+},
+{
+	"id": 208,
+	"nombre": "ciruela pasa",
+	"estado": "cruda",
+	"categoria": "FRUTOS SECOS",
+	"cal": 262,
+	"pr": 2.4,
+	"gr": 0.6,
+	"hc": 72
+},
+{
+	"id": 209,
+	"nombre": "coco",
+	"estado": "fresco",
+	"categoria": "FRUTOS SECOS",
+	"cal": 350,
+	"pr": 3.8,
+	"gr": 34.8,
+	"hc": 14.8
+},
+{
+	"id": 210,
+	"nombre": "coco",
+	"estado": "leche",
+	"categoria": "FRUTOS SECOS",
+	"cal": 25,
+	"pr": 0.4,
+	"gr": 0.2,
+	"hc": 5.8
+},
+{
+	"id": 211,
+	"nombre": "coco",
+	"estado": "seco",
+	"categoria": "FRUTOS SECOS",
+	"cal": 580,
+	"pr": 4.7,
+	"gr": 48,
+	"hc": 41.3
+},
+{
+	"id": 212,
+	"nombre": "datiles",
+	"estado": "secos",
+	"categoria": "FRUTOS SECOS",
+	"cal": 271,
+	"pr": 2.2,
+	"gr": 0.6,
+	"hc": 72
+},
+{
+	"id": 213,
+	"nombre": "higos",
+	"estado": "secos",
+	"categoria": "FRUTOS SECOS",
+	"cal": 280,
+	"pr": 3.9,
+	"gr": 1.3,
+	"hc": 67.2
+},
+{
+	"id": 214,
+	"nombre": "melocoton",
+	"estado": "secos",
+	"categoria": "FRUTOS SECOS",
+	"cal": 253,
+	"pr": 3,
+	"gr": 0.5,
+	"hc": 63
+},
+{
+	"id": 215,
+	"nombre": "nuez",
+	"estado": "secos",
+	"categoria": "FRUTOS SECOS",
+	"cal": 643,
+	"pr": 17.8,
+	"gr": 57.6,
+	"hc": 17.6
+},
+{
+	"id": 216,
+	"nombre": "piñones",
+	"estado": "secos",
+	"categoria": "FRUTOS SECOS",
+	"cal": 310,
+	"pr": 26.4,
+	"gr": 40,
+	"hc": 29.2
+},
+{
+	"id": 217,
+	"nombre": "uva",
+	"estado": "pasa",
+	"categoria": "FRUTOS SECOS",
+	"cal": 288,
+	"pr": 3.1,
+	"gr": 0.9,
+	"hc": 69.2
+},
+{
+	"id": 218,
+	"nombre": "helado",
+	"estado": "0",
+	"categoria": "LACTEOS",
+	"cal": 206,
+	"pr": 3.9,
+	"gr": 12,
+	"hc": 21
+},
+{
+	"id": 219,
+	"nombre": "leche de burra",
+	"estado": "fresca",
+	"categoria": "LACTEOS",
+	"cal": 42,
+	"pr": 1.7,
+	"gr": 1.5,
+	"hc": 5.8
+},
+{
+	"id": 220,
+	"nombre": "leche de cabra",
+	"estado": "fresca",
+	"categoria": "LACTEOS",
+	"cal": 68,
+	"pr": 3.6,
+	"gr": 4.4,
+	"hc": 4.5
+},
+{
+	"id": 221,
+	"nombre": "leche de mujer",
+	"estado": "fresca",
+	"categoria": "LACTEOS",
+	"cal": 68,
+	"pr": 1.5,
+	"gr": 3.8,
+	"hc": 6.9
+},
+{
+	"id": 222,
+	"nombre": "leche de oveja",
+	"estado": "fresca",
+	"categoria": "LACTEOS",
+	"cal": 86,
+	"pr": 5.6,
+	"gr": 5.5,
+	"hc": 5.7
+},
+{
+	"id": 223,
+	"nombre": "leche de vaca",
+	"estado": "fresca",
+	"categoria": "LACTEOS",
+	"cal": 68,
+	"pr": 3.5,
+	"gr": 3.8,
+	"hc": 5
+},
+{
+	"id": 224,
+	"nombre": "leche de vaca",
+	"estado": "desnatada",
+	"categoria": "LACTEOS",
+	"cal": 36,
+	"pr": 3.6,
+	"gr": 0.1,
+	"hc": 4.9
+},
+{
+	"id": 225,
+	"nombre": "leche de vaca",
+	"estado": "entera",
+	"categoria": "LACTEOS",
+	"cal": 146,
+	"pr": 7.86,
+	"gr": 7.93,
+	"hc": 11.03
+},
+{
+	"id": 226,
+	"nombre": "leche vaca condens.",
+	"estado": "con azucar",
+	"categoria": "LACTEOS",
+	"cal": 348,
+	"pr": 8.1,
+	"gr": 8.9,
+	"hc": 54.8
+},
+{
+	"id": 227,
+	"nombre": "leche de vaca",
+	"estado": "total seca",
+	"categoria": "LACTEOS",
+	"cal": 510,
+	"pr": 26.8,
+	"gr": 27.9,
+	"hc": 38.8
+},
+{
+	"id": 228,
+	"nombre": "leche vaca cond. Desn.",
+	"estado": "seca",
+	"categoria": "LACTEOS",
+	"cal": 356,
+	"pr": 36.8,
+	"gr": 1.3,
+	"hc": 53.9
+},
+{
+	"id": 229,
+	"nombre": "leche de vaca",
+	"estado": "con cacao",
+	"categoria": "LACTEOS",
+	"cal": 100,
+	"pr": 3.3,
+	"gr": 4.3,
+	"hc": 12
+},
+{
+	"id": 230,
+	"nombre": "mantequilla",
+	"estado": "fresca",
+	"categoria": "LACTEOS",
+	"cal": 718,
+	"pr": 0.68,
+	"gr": 81.3,
+	"hc": 0.7
+},
+{
+	"id": 231,
+	"nombre": "nata",
+	"estado": "fresca",
+	"categoria": "LACTEOS",
+	"cal": 362,
+	"pr": 2.3,
+	"gr": 38,
+	"hc": 3.1
+},
+{
+	"id": 232,
+	"nombre": "queso brugos",
+	"estado": "natural",
+	"categoria": "LACTEOS",
+	"cal": 190,
+	"pr": 12.1,
+	"gr": 14.6,
+	"hc": 3.16
+},
+{
+	"id": 233,
+	"nombre": "queso de cabra",
+	"estado": "",
+	"categoria": "LACTEOS",
+	"cal": 361,
+	"pr": 23.52,
+	"gr": 28.85,
+	"hc": 1.87
+}
+{
+	"id": 234,
+	"nombre": "queso emmertal",
+	"estado": "natural",
+	"categoria": "LACTEOS",
+	"cal": 397,
+	"pr": 26.8,
+	"gr": 30.5,
+	"hc": 2.3
+},
+{
+	"id": 235,
+	"nombre": "queso gervaia",
+	"estado": "natural",
+	"categoria": "LACTEOS",
+	"cal": 415,
+	"pr": 19.7,
+	"gr": 36,
+	"hc": 2
+},
+{
+	"id": 236,
+	"nombre": "queso gorgonzola",
+	"estado": "natural",
+	"categoria": "LACTEOS",
+	"cal": 365,
+	"pr": 24.5,
+	"gr": 28,
+	"hc": 1.8
+},
+{
+	"id": 237,
+	"nombre": "queso graso",
+	"estado": "natural",
+	"categoria": "LACTEOS",
+	"cal": 270,
+	"pr": 8,
+	"gr": 25,
+	"hc": 3
+},
+{
+	"id": 238,
+	"nombre": "queso gruyere",
+	"estado": "natural",
+	"categoria": "LACTEOS",
+	"cal": 420,
+	"pr": 33,
+	"gr": 32.2,
+	"hc": 4
+},
+{
+	"id": 239,
+	"nombre": "queso magro",
+	"estado": "natural",
+	"categoria": "LACTEOS",
+	"cal": 200,
+	"pr": 39,
+	"gr": 1.8,
+	"hc": 4.2
+},
+{
+	"id": 240,
+	"nombre": "queso manchego",
+	"estado": "natural",
+	"categoria": "LACTEOS",
+	"cal": 400,
+	"pr": 32.5,
+	"gr": 32,
+	"hc": 1.4
+},
+{
+	"id": 241,
+	"nombre": "queso roquefort",
+	"estado": "natural",
+	"categoria": "LACTEOS",
+	"cal": 393,
+	"pr": 23.4,
+	"gr": 33.6,
+	"hc": 2.5
+},
+{
+	"id": 242,
+	"nombre": "queso semigraso",
+	"estado": "natural",
+	"categoria": "LACTEOS",
+	"cal": 253,
+	"pr": 36.2,
+	"gr": 9.9,
+	"hc": 3
+},
+{
+	"id": 243,
+	"nombre": "queso villalon",
+	"estado": "natural",
+	"categoria": "LACTEOS",
+	"cal": 450,
+	"pr": 17.5,
+	"gr": 46,
+	"hc": 1.9
+},
+{
+	"id": 244,
+	"nombre": "Yogur griego",
+	"estado": "",
+	"categoria": "LACTEOS",
+	"cal": 129,
+	"pr": 3.9,
+	"gr": 10.8,
+	"hc": 3.9
+}
+{
+	"id": 245,
+	"nombre": "yogur",
+	"estado": "natural",
+	"categoria": "LACTEOS",
+	"cal": 62,
+	"pr": 3.8,
+	"gr": 3.5,
+	"hc": 4.3
+},
+{
+	"id": 246,
+	"nombre": "Huevo entero",
+	"estado": "Crudo",
+	"categoria": "HUEVOS",
+	"cal": 155,
+	"pr": 13.6,
+	"gr": 10.9,
+	"hc": 0.55
+},
+{
+	"id": 247,
+	"nombre": "Huevo Clara",
+	"estado": "Crudo",
+	"categoria": "HUEVOS",
+	"cal": 53,
+	"pr": 10.4,
+	"gr": 0.3,
+	"hc": 0.7
+},
+{
+	"id": 248,
+	"nombre": "Huevo Yema",
+	"estado": "Crudo",
+	"categoria": "HUEVOS",
+	"cal": 352,
+	"pr": 16.4,
+	"gr": 30.1,
+	"hc": 0.6
+},
+{
+	"id": 249,
+	"nombre": "Huevo",
+	"estado": "Escalfado",
+	"categoria": "HUEVOS",
+	"cal": 154,
+	"pr": 12.2,
+	"gr": 11.3,
+	"hc": 0.6
+},
+{
+	"id": 250,
+	"nombre": "Huevo",
+	"estado": "Frito",
+	"categoria": "HUEVOS",
+	"cal": 220,
+	"pr": 13.6,
+	"gr": 17.5,
+	"hc": 2
+},
+{
+	"id": 251,
+	"nombre": "Huevo",
+	"estado": "Hervido",
+	"categoria": "HUEVOS",
+	"cal": 155,
+	"pr": 12.1,
+	"gr": 11.6,
+	"hc": 0.6
+},
+{
+	"id": 252,
+	"nombre": "Huevo",
+	"estado": "Revuelto",
+	"categoria": "HUEVOS",
+	"cal": 250,
+	"pr": 11.7,
+	"gr": 18.3,
+	"hc": 1.2
+},
+{
+	"id": 253,
+	"nombre": "Huevo",
+	"estado": "seco",
+	"categoria": "HUEVOS",
+	"cal": 567,
+	"pr": 44.1,
+	"gr": 43,
+	"hc": 2.8
+},
+{
+	"id": 254,
+	"nombre": "Huevo",
+	"estado": "Tortilla",
+	"categoria": "HUEVOS",
+	"cal": 258,
+	"pr": 9.1,
+	"gr": 26.3,
+	"hc": 4.6
+},
+{
+	"id": 255,
+	"nombre": "Huevo de pata",
+	"estado": "Crudo",
+	"categoria": "HUEVOS",
+	"cal": 141,
+	"pr": 9.1,
+	"gr": 10.2,
+	"hc": 2.4
+},
+{
+	"id": 256,
+	"nombre": "Huevo de Pava",
+	"estado": "Crudo",
+	"categoria": "HUEVOS",
+	"cal": 162,
+	"pr": 13.2,
+	"gr": 1,
+	"hc": 11.3
+},
+{
+	"id": 257,
+	"nombre": "Azucar",
+	"estado": "refinado",
+	"categoria": "AZUCARES",
+	"cal": 401,
+	"pr": 0,
+	"gr": 0,
+	"hc": 99.8
+},
+{
+	"id": 258,
+	"nombre": "Azucar",
+	"estado": "sin refinar",
+	"categoria": "AZUCARES",
+	"cal": 378,
+	"pr": 1.4,
+	"gr": 0,
+	"hc": 93.6
+},
+{
+	"id": 259,
+	"nombre": "Azucar moreno",
+	"estado": "",
+	"categoria": "AZUCARES",
+	"cal": 377,
+	"pr": 0,
+	"gr": 0,
+	"hc": 97.33
+},
+{
+	"id": 260,
+	"nombre": "Caldo en Cubitos",
+	"estado": "0",
+	"categoria": "AZUCARES",
+	"cal": 190,
+	"pr": 11,
+	"gr": 1.4,
+	"hc": 47
+},
+{
+	"id": 261,
+	"nombre": "Caramelos ",
+	"estado": "0",
+	"categoria": "AZUCARES",
+	"cal": 397,
+	"pr": 2.4,
+	"gr": 11.6,
+	"hc": 79.5
+},
+{
+	"id": 262,
+	"nombre": "Confituras",
+	"estado": "0",
+	"categoria": "AZUCARES",
+	"cal": 292,
+	"pr": 0.6,
+	"gr": 2.1,
+	"hc": 69.2
+},
+{
+	"id": 263,
+	"nombre": "Chocolate",
+	"estado": "amargo",
+	"categoria": "AZUCARES",
+	"cal": 561,
+	"pr": 5.7,
+	"gr": 53.3,
+	"hc": 38
+},
+{
+	"id": 264,
+	"nombre": "Chocolate",
+	"estado": "lacteado",
+	"categoria": "AZUCARES",
+	"cal": 558,
+	"pr": 7.4,
+	"gr": 31.3,
+	"hc": 53
+},
+{
+	"id": 265,
+	"nombre": "Jaleas",
+	"estado": "0",
+	"categoria": "AZUCARES",
+	"cal": 270,
+	"pr": 3.1,
+	"gr": 0.3,
+	"hc": 67
+},
+{
+	"id": 266,
+	"nombre": "Levadura",
+	"estado": "prensada",
+	"categoria": "AZUCARES",
+	"cal": 96,
+	"pr": 13.1,
+	"gr": 0.28,
+	"hc": 12.2
+},
+{
+	"id": 267,
+	"nombre": "Levadura",
+	"estado": "seca",
+	"categoria": "AZUCARES",
+	"cal": 276,
+	"pr": 38.9,
+	"gr": 1.8,
+	"hc": 39.9
+},
+{
+	"id": 268,
+	"nombre": "Malta (extracto)",
+	"estado": "seco",
+	"categoria": "AZUCARES",
+	"cal": 300,
+	"pr": 5.2,
+	"gr": 0,
+	"hc": 84.8
+},
+{
+	"id": 269,
+	"nombre": "Melaza",
+	"estado": "0",
+	"categoria": "AZUCARES",
+	"cal": 242,
+	"pr": 2.4,
+	"gr": 0,
+	"hc": 69.6
+},
+{
+	"id": 270,
+	"nombre": "Miel de Abeja",
+	"estado": "0",
+	"categoria": "AZUCARES",
+	"cal": 328,
+	"pr": 0.4,
+	"gr": 0,
+	"hc": 81
+},
+{
+	"id": 271,
+	"nombre": "Aceite de oliva",
+	"estado": "0",
+	"categoria": "ACEITES Y GRASAS",
+	"cal": 119,
+	"pr": 0,
+	"gr": 13.5,
+	"hc": 0
+},
+{
+	"id": 272,
+	"nombre": "Aceite de girasol",
+	"estado": "",
+	"categoria": "ACEITES Y GRASAS",
+	"cal": 884,
+	"pr": 0,
+	"gr": 100,
+	"hc": 0
+}
+{
+	"id": 273,
+	"nombre": "Mahonesa",
+	"estado": "0",
+	"categoria": "ACEITES Y GRASAS",
+	"cal": 720,
+	"pr": 1.5,
+	"gr": 78,
+	"hc": 8
+},
+{
+	"id": 274,
+	"nombre": "Manteca Cerdo grasa",
+	"estado": "0",
+	"categoria": "ACEITES Y GRASAS",
+	"cal": 893,
+	"pr": 0.5,
+	"gr": 99.2,
+	"hc": 0
+},
+{
+	"id": 275,
+	"nombre": "Margarina",
+	"estado": "0",
+	"categoria": "ACEITES Y GRASAS",
+	"cal": 732,
+	"pr": 0.5,
+	"gr": 88.5,
+	"hc": 0.7
+},
+{
+	"id": 276,
+	"nombre": "Abadejo",
+	"estado": "fresco",
+	"categoria": "PESCADOS",
+	"cal": 58,
+	"pr": 13.6,
+	"gr": 0.3,
+	"hc": 0
+},
+{
+	"id": 277,
+	"nombre": "abadejo (seco)",
+	"estado": "salado",
+	"categoria": "PESCADOS",
+	"cal": 361,
+	"pr": 81.5,
+	"gr": 2.7,
+	"hc": 0
+},
+{
+	"id": 278,
+	"nombre": "abadejo",
+	"estado": "cocido",
+	"categoria": "PESCADOS",
+	"cal": 107,
+	"pr": 23.7,
+	"gr": 1.1,
+	"hc": 0.7
+},
+{
+	"id": 279,
+	"nombre": "abadejo",
+	"estado": "frito",
+	"categoria": "PESCADOS",
+	"cal": 170,
+	"pr": 17.6,
+	"gr": 9.5,
+	"hc": 6.8
+},
+{
+	"id": 280,
+	"nombre": "almeja",
+	"estado": "fresco",
+	"categoria": "PESCADOS",
+	"cal": 81,
+	"pr": 13.5,
+	"gr": 1.6,
+	"hc": 8.4
+},
+{
+	"id": 281,
+	"nombre": "almeja",
+	"estado": "cocido",
+	"categoria": "PESCADOS",
+	"cal": 68,
+	"pr": 12.1,
+	"gr": 2.4,
+	"hc": 0
+},
+{
+	"id": 282,
+	"nombre": "anchoas",
+	"estado": "fresco",
+	"categoria": "PESCADOS",
+	"cal": 138,
+	"pr": 21.4,
+	"gr": 5.8,
+	"hc": 0.9
+},
+{
+	"id": 283,
+	"nombre": "anchoas",
+	"estado": "conserva",
+	"categoria": "PESCADOS",
+	"cal": 185,
+	"pr": 18.8,
+	"gr": 11.2,
+	"hc": 1
+},
+{
+	"id": 284,
+	"nombre": "anguila de rio",
+	"estado": "fresco",
+	"categoria": "PESCADOS",
+	"cal": 142,
+	"pr": 18.8,
+	"gr": 13.6,
+	"hc": 3.9
+},
+{
+	"id": 285,
+	"nombre": "anguila de rio",
+	"estado": "cocida",
+	"categoria": "PESCADOS",
+	"cal": 232,
+	"pr": 13.1,
+	"gr": 17.3,
+	"hc": 3.5
+},
+{
+	"id": 286,
+	"nombre": "arenque",
+	"estado": "fresco",
+	"categoria": "PESCADOS",
+	"cal": 120,
+	"pr": 16.8,
+	"gr": 8.7,
+	"hc": 0
+},
+{
+	"id": 287,
+	"nombre": "arenque",
+	"estado": "frito",
+	"categoria": "PESCADOS",
+	"cal": 212,
+	"pr": 21.9,
+	"gr": 13.7,
+	"hc": 1.5
+},
+{
+	"id": 288,
+	"nombre": "atun",
+	"estado": "fresco",
+	"categoria": "PESCADOS",
+	"cal": 148,
+	"pr": 18.9,
+	"gr": 9.1,
+	"hc": 0.3
+},
+{
+	"id": 289,
+	"nombre": "atun",
+	"estado": "en lata",
+	"categoria": "PESCADOS",
+	"cal": 116,
+	"pr": 25.51,
+	"gr": 0.82,
+	"hc": 0
+},
+{
+	"id": 290,
+	"nombre": "bacalao",
+	"estado": "fresco",
+	"categoria": "PESCADOS",
+	"cal": 64,
+	"pr": 14.3,
+	"gr": 0.5,
+	"hc": 6.5
+},
+{
+	"id": 291,
+	"nombre": "bacalao seco",
+	"estado": "salado",
+	"categoria": "PESCADOS",
+	"cal": 230,
+	"pr": 38.7,
+	"gr": 7.2,
+	"hc": 0
+},
+{
+	"id": 292,
+	"nombre": "balalao",
+	"estado": "cocido",
+	"categoria": "PESCADOS",
+	"cal": 94,
+	"pr": 19.2,
+	"gr": 3.1,
+	"hc": 5
+},
+{
+	"id": 293,
+	"nombre": "bacalao",
+	"estado": "frito",
+	"categoria": "PESCADOS",
+	"cal": 181,
+	"pr": 21.7,
+	"gr": 9,
+	"hc": 0
+},
+{
+	"id": 294,
+	"nombre": "barbo",
+	"estado": "fresco",
+	"categoria": "PESCADOS",
+	"cal": 95,
+	"pr": 15.2,
+	"gr": 4.6,
+	"hc": 0
+},
+{
+	"id": 295,
+	"nombre": "barbo",
+	"estado": "cocido",
+	"categoria": "PESCADOS",
+	"cal": 120,
+	"pr": 19.3,
+	"gr": 5,
+	"hc": 0
+},
+{
+	"id": 296,
+	"nombre": "barbo",
+	"estado": "frito",
+	"categoria": "PESCADOS",
+	"cal": 153,
+	"pr": 18.8,
+	"gr": 10.5,
+	"hc": 0
+},
+{
+	"id": 297,
+	"nombre": "bonito",
+	"estado": "fresco",
+	"categoria": "PESCADOS",
+	"cal": 147,
+	"pr": 26.7,
+	"gr": 4.5,
+	"hc": 0
+},
+{
+	"id": 298,
+	"nombre": "boqueron",
+	"estado": "fresco",
+	"categoria": "PESCADOS",
+	"cal": 110,
+	"pr": 21.2,
+	"gr": 3.2,
+	"hc": 0
+},
+{
+	"id": 299,
+	"nombre": "boqueron",
+	"estado": "conserva",
+	"categoria": "PESCADOS",
+	"cal": 177,
+	"pr": 22,
+	"gr": 10.2,
+	"hc": 0
+},
+{
+	"id": 300,
+	"nombre": "breca",
+	"estado": "fresca",
+	"categoria": "PESCADOS",
+	"cal": 75,
+	"pr": 17,
+	"gr": 0.9,
+	"hc": 0
+},
+{
+	"id": 301,
+	"nombre": "breca",
+	"estado": "frita ",
+	"categoria": "PESCADOS",
+	"cal": 146,
+	"pr": 19.6,
+	"gr": 8.3,
+	"hc": 0
+},
+{
+	"id": 302,
+	"nombre": "calamar",
+	"estado": "fresco",
+	"categoria": "PESCADOS",
+	"cal": 62,
+	"pr": 8.7,
+	"gr": 3.6,
+	"hc": 0
+},
+{
+	"id": 303,
+	"nombre": "calamar",
+	"estado": "cocido",
+	"categoria": "PESCADOS",
+	"cal": 73,
+	"pr": 9.4,
+	"gr": 4.3,
+	"hc": 0
+},
+{
+	"id": 304,
+	"nombre": "calamar",
+	"estado": "frito",
+	"categoria": "PESCADOS",
+	"cal": 118,
+	"pr": 10.1,
+	"gr": 9.2,
+	"hc": 0
+},
+{
+	"id": 305,
+	"nombre": "camaron",
+	"estado": "fresco ",
+	"categoria": "PESCADOS",
+	"cal": 121,
+	"pr": 26.5,
+	"gr": 1.6,
+	"hc": 4.2
+},
+{
+	"id": 306,
+	"nombre": "camaron",
+	"estado": "cocido",
+	"categoria": "PESCADOS",
+	"cal": 128,
+	"pr": 25.2,
+	"gr": 1.8,
+	"hc": 0.45
+},
+{
+	"id": 307,
+	"nombre": "cangrejo",
+	"estado": "fresco",
+	"categoria": "PESCADOS",
+	"cal": 89,
+	"pr": 14.2,
+	"gr": 2.7,
+	"hc": 1.6
+},
+{
+	"id": 308,
+	"nombre": "cangrejo",
+	"estado": "cocido",
+	"categoria": "PESCADOS",
+	"cal": 103,
+	"pr": 14,
+	"gr": 4.1,
+	"hc": 0
+},
+{
+	"id": 309,
+	"nombre": "carpa",
+	"estado": "fresco",
+	"categoria": "PESCADOS",
+	"cal": 97,
+	"pr": 19.4,
+	"gr": 1.9,
+	"hc": 0
+},
+{
+	"id": 310,
+	"nombre": "carpa",
+	"estado": "cocido",
+	"categoria": "PESCADOS",
+	"cal": 92,
+	"pr": 19.2,
+	"gr": 1.5,
+	"hc": 0
+},
+{
+	"id": 311,
+	"nombre": "carpa",
+	"estado": "frita ",
+	"categoria": "PESCADOS",
+	"cal": 115,
+	"pr": 20.1,
+	"gr": 4.6,
+	"hc": 0
+},
+{
+	"id": 312,
+	"nombre": "caviar",
+	"estado": "conserva",
+	"categoria": "PESCADOS",
+	"cal": 276,
+	"pr": 32,
+	"gr": 16,
+	"hc": 0
+},
+{
+	"id": 313,
+	"nombre": "centollo",
+	"estado": "fresco",
+	"categoria": "PESCADOS",
+	"cal": 64,
+	"pr": 13.6,
+	"gr": 2.5,
+	"hc": 0
+},
+{
+	"id": 314,
+	"nombre": "centollo",
+	"estado": "cocido",
+	"categoria": "PESCADOS",
+	"cal": 75,
+	"pr": 14.8,
+	"gr": 2.7,
+	"hc": 0
+},
+{
+	"id": 315,
+	"nombre": "congrio",
+	"estado": "fresco",
+	"categoria": "PESCADOS",
+	"cal": 98,
+	"pr": 15.7,
+	"gr": 4.5,
+	"hc": 0
+},
+{
+	"id": 316,
+	"nombre": "congrio",
+	"estado": "cocido",
+	"categoria": "PESCADOS",
+	"cal": 109,
+	"pr": 20.8,
+	"gr": 3.5,
+	"hc": 0
+},
+{
+	"id": 317,
+	"nombre": "congrio",
+	"estado": "frito",
+	"categoria": "PESCADOS",
+	"cal": 246,
+	"pr": 17.3,
+	"gr": 19,
+	"hc": 6.5
+},
+{
+	"id": 318,
+	"nombre": "chirla",
+	"estado": "fresco",
+	"categoria": "PESCADOS",
+	"cal": 79,
+	"pr": 12.8,
+	"gr": 1.4,
+	"hc": 3.4
+},
+{
+	"id": 319,
+	"nombre": "dorada",
+	"estado": "fresco",
+	"categoria": "PESCADOS",
+	"cal": 83,
+	"pr": 18.6,
+	"gr": 1,
+	"hc": 0
+},
+{
+	"id": 320,
+	"nombre": "dorada",
+	"estado": "cocido",
+	"categoria": "PESCADOS",
+	"cal": 91,
+	"pr": 19.9,
+	"gr": 1.4,
+	"hc": 0
+},
+{
+	"id": 321,
+	"nombre": "faneca",
+	"estado": "fresca",
+	"categoria": "PESCADOS",
+	"cal": 76,
+	"pr": 18.8,
+	"gr": 0.14,
+	"hc": 0
+},
+{
+	"id": 322,
+	"nombre": "faneca",
+	"estado": "cocida",
+	"categoria": "PESCADOS",
+	"cal": 83,
+	"pr": 20.1,
+	"gr": 0.4,
+	"hc": 0
+},
+{
+	"id": 323,
+	"nombre": "faneca",
+	"estado": "frita ",
+	"categoria": "PESCADOS",
+	"cal": 124,
+	"pr": 19,
+	"gr": 6.1,
+	"hc": 0
+},
+{
+	"id": 324,
+	"nombre": "gallo",
+	"estado": "fresco",
+	"categoria": "PESCADOS",
+	"cal": 79,
+	"pr": 19,
+	"gr": 1.2,
+	"hc": 0
+},
+{
+	"id": 325,
+	"nombre": "gallo",
+	"estado": "cocido",
+	"categoria": "PESCADOS",
+	"cal": 97,
+	"pr": 20.6,
+	"gr": 1.6,
+	"hc": 0
+},
+{
+	"id": 326,
+	"nombre": "gallo",
+	"estado": "frito",
+	"categoria": "PESCADOS",
+	"cal": 122,
+	"pr": 20.6,
+	"gr": 5.3,
+	"hc": 0
+},
+{
+	"id": 327,
+	"nombre": "gambas",
+	"estado": "fresco",
+	"categoria": "PESCADOS",
+	"cal": 96,
+	"pr": 20.1,
+	"gr": 2,
+	"hc": 0
+},
+{
+	"id": 328,
+	"nombre": "gambas",
+	"estado": "cocidas",
+	"categoria": "PESCADOS",
+	"cal": 107,
+	"pr": 22.3,
+	"gr": 2.4,
+	"hc": 0
+},
+{
+	"id": 329,
+	"nombre": "hipoglomo (halibut(",
+	"estado": "fresco",
+	"categoria": "PESCADOS",
+	"cal": 126,
+	"pr": 18.9,
+	"gr": 4.9,
+	"hc": 0
+},
+{
+	"id": 330,
+	"nombre": "langosta",
+	"estado": "frseca",
+	"categoria": "PESCADOS",
+	"cal": 90,
+	"pr": 17.5,
+	"gr": 1.8,
+	"hc": 0
+},
+{
+	"id": 331,
+	"nombre": "langosta",
+	"estado": "cocida",
+	"categoria": "PESCADOS",
+	"cal": 106,
+	"pr": 8.2,
+	"gr": 3.4,
+	"hc": 0
+},
+{
+	"id": 332,
+	"nombre": "langostino",
+	"estado": "fresco",
+	"categoria": "PESCADOS",
+	"cal": 240,
+	"pr": 45.7,
+	"gr": 10.2,
+	"hc": 0
+},
+{
+	"id": 333,
+	"nombre": "langostino",
+	"estado": "cocido",
+	"categoria": "PESCADOS",
+	"cal": 124,
+	"pr": 39.2,
+	"gr": 8.3,
+	"hc": 0
+},
+{
+	"id": 334,
+	"nombre": "lenguado",
+	"estado": "fresco",
+	"categoria": "PESCADOS",
+	"cal": 74,
+	"pr": 17.3,
+	"gr": 0.8,
+	"hc": 0
+},
+{
+	"id": 335,
+	"nombre": "lenguado",
+	"estado": "cocido",
+	"categoria": "PESCADOS",
+	"cal": 93,
+	"pr": 19.4,
+	"gr": 1.4,
+	"hc": 0
+},
+{
+	"id": 336,
+	"nombre": "lenguado",
+	"estado": "frito",
+	"categoria": "PESCADOS",
+	"cal": 221,
+	"pr": 20.1,
+	"gr": 15.3,
+	"hc": 0
+},
+{
+	"id": 337,
+	"nombre": "lija",
+	"estado": "cocida",
+	"categoria": "PESCADOS",
+	"cal": 98,
+	"pr": 21.8,
+	"gr": 0.9,
+	"hc": 0
+},
+{
+	"id": 338,
+	"nombre": "lija",
+	"estado": "frita ",
+	"categoria": "PESCADOS",
+	"cal": 169,
+	"pr": 17,
+	"gr": 8.2,
+	"hc": 0
+},
+{
+	"id": 339,
+	"nombre": "lubina",
+	"estado": "fresca",
+	"categoria": "PESCADOS",
+	"cal": 97,
+	"pr": 15.4,
+	"gr": 4.5,
+	"hc": 0
+},
+{
+	"id": 340,
+	"nombre": "lubina",
+	"estado": "cocida",
+	"categoria": "PESCADOS",
+	"cal": 123,
+	"pr": 19.5,
+	"gr": 5.1,
+	"hc": 0
+},
+{
+	"id": 341,
+	"nombre": "mecarel",
+	"estado": "fresca",
+	"categoria": "PESCADOS",
+	"cal": 160,
+	"pr": 18.9,
+	"gr": 9.3,
+	"hc": 0
+},
+{
+	"id": 342,
+	"nombre": "mecarel",
+	"estado": "frito",
+	"categoria": "PESCADOS",
+	"cal": 185,
+	"pr": 19.8,
+	"gr": 11.2,
+	"hc": 0
+},
+{
+	"id": 343,
+	"nombre": "mejillon",
+	"estado": "frsco",
+	"categoria": "PESCADOS",
+	"cal": 62,
+	"pr": 9.8,
+	"gr": 1.6,
+	"hc": 2.2
+},
+{
+	"id": 344,
+	"nombre": "mejillon",
+	"estado": "cocido",
+	"categoria": "PESCADOS",
+	"cal": 87,
+	"pr": 16.8,
+	"gr": 2,
+	"hc": 0
+},
+{
+	"id": 345,
+	"nombre": "merluza",
+	"estado": "fresco",
+	"categoria": "PESCADOS",
+	"cal": 87,
+	"pr": 16.7,
+	"gr": 2.3,
+	"hc": 0
+},
+{
+	"id": 346,
+	"nombre": "merluza",
+	"estado": "cocido",
+	"categoria": "PESCADOS",
+	"cal": 104,
+	"pr": 18.3,
+	"gr": 3.3,
+	"hc": 0
+},
+{
+	"id": 347,
+	"nombre": "merluza",
+	"estado": "frita ",
+	"categoria": "PESCADOS",
+	"cal": 170,
+	"pr": 18.3,
+	"gr": 9.3,
+	"hc": 6.2
+},
+{
+	"id": 348,
+	"nombre": "mero",
+	"estado": "fresco",
+	"categoria": "PESCADOS",
+	"cal": 86,
+	"pr": 19.2,
+	"gr": 1.04,
+	"hc": 0
+},
+{
+	"id": 349,
+	"nombre": "mero",
+	"estado": "cocido",
+	"categoria": "PESCADOS",
+	"cal": 107,
+	"pr": 20.4,
+	"gr": 3.4,
+	"hc": 0
+},
+{
+	"id": 350,
+	"nombre": "mujol",
+	"estado": "fresco",
+	"categoria": "PESCADOS",
+	"cal": 68,
+	"pr": 17.8,
+	"gr": 1.2,
+	"hc": 0
+},
+{
+	"id": 351,
+	"nombre": "mujol",
+	"estado": "cocido",
+	"categoria": "PESCADOS",
+	"cal": 123,
+	"pr": 21.6,
+	"gr": 4,
+	"hc": 0
+},
+{
+	"id": 352,
+	"nombre": "navajas",
+	"estado": "fresco",
+	"categoria": "PESCADOS",
+	"cal": 118,
+	"pr": 26.7,
+	"gr": 1.6,
+	"hc": 0
+},
+{
+	"id": 353,
+	"nombre": "ostras",
+	"estado": "fresco",
+	"categoria": "PESCADOS",
+	"cal": 53,
+	"pr": 9.6,
+	"gr": 1.5,
+	"hc": 3.8
+},
+{
+	"id": 354,
+	"nombre": "ostras",
+	"estado": "cocido",
+	"categoria": "PESCADOS",
+	"cal": 87,
+	"pr": 5.3,
+	"gr": 5.4,
+	"hc": 5.3
+},
+{
+	"id": 355,
+	"nombre": "percas",
+	"estado": "fresco",
+	"categoria": "PESCADOS",
+	"cal": 83,
+	"pr": 16.7,
+	"gr": 1.4,
+	"hc": 0
+},
+{
+	"id": 356,
+	"nombre": "percas",
+	"estado": "cocido",
+	"categoria": "PESCADOS",
+	"cal": 92,
+	"pr": 18.4,
+	"gr": 2.2,
+	"hc": 0.8
+},
+{
+	"id": 357,
+	"nombre": "percebes",
+	"estado": "cocido",
+	"categoria": "PESCADOS",
+	"cal": 75,
+	"pr": 19.2,
+	"gr": 1.9,
+	"hc": 0.8
+},
+{
+	"id": 358,
+	"nombre": "pescadilla",
+	"estado": "fresco",
+	"categoria": "PESCADOS",
+	"cal": 70,
+	"pr": 16.4,
+	"gr": 0.5,
+	"hc": 0
+},
+{
+	"id": 359,
+	"nombre": "pescadilla",
+	"estado": "cocido",
+	"categoria": "PESCADOS",
+	"cal": 95,
+	"pr": 20.9,
+	"gr": 0.8,
+	"hc": 1.2
+},
+{
+	"id": 360,
+	"nombre": "pescadilla",
+	"estado": "frito",
+	"categoria": "PESCADOS",
+	"cal": 183,
+	"pr": 19.6,
+	"gr": 10.7,
+	"hc": 2.8
+},
+{
+	"id": 361,
+	"nombre": "platija",
+	"estado": "fresco",
+	"categoria": "PESCADOS",
+	"cal": 80,
+	"pr": 15.8,
+	"gr": 1.7,
+	"hc": 0
+},
+{
+	"id": 362,
+	"nombre": "platija",
+	"estado": "cocido",
+	"categoria": "PESCADOS",
+	"cal": 90,
+	"pr": 16.9,
+	"gr": 1.5,
+	"hc": 0
+},
+{
+	"id": 363,
+	"nombre": "platija",
+	"estado": "frita ",
+	"categoria": "PESCADOS",
+	"cal": 219,
+	"pr": 15.4,
+	"gr": 13,
+	"hc": 9.3
+},
+{
+	"id": 364,
+	"nombre": "rana (ancas)",
+	"estado": "fresco",
+	"categoria": "PESCADOS",
+	"cal": 72,
+	"pr": 16.3,
+	"gr": 0.3,
+	"hc": 0
+},
+{
+	"id": 365,
+	"nombre": "rana (ancas)",
+	"estado": "frita ",
+	"categoria": "PESCADOS",
+	"cal": 283,
+	"pr": 22,
+	"gr": 7.9,
+	"hc": 8.8
+},
+{
+	"id": 366,
+	"nombre": "rape",
+	"estado": "fresco",
+	"categoria": "PESCADOS",
+	"cal": 73,
+	"pr": 15.8,
+	"gr": 1.4,
+	"hc": 0
+},
+{
+	"id": 367,
+	"nombre": "rape",
+	"estado": "cocido",
+	"categoria": "PESCADOS",
+	"cal": 82,
+	"pr": 16.5,
+	"gr": 2.1,
+	"hc": 0
+},
+{
+	"id": 368,
+	"nombre": "raya",
+	"estado": "frito",
+	"categoria": "PESCADOS",
+	"cal": 242,
+	"pr": 15,
+	"gr": 16.4,
+	"hc": 7.5
+},
+{
+	"id": 369,
+	"nombre": "rodaballo",
+	"estado": "fresco",
+	"categoria": "PESCADOS",
+	"cal": 81,
+	"pr": 18.1,
+	"gr": 1.2,
+	"hc": 0
+},
+{
+	"id": 370,
+	"nombre": "rodaballo",
+	"estado": "cocido",
+	"categoria": "PESCADOS",
+	"cal": 117,
+	"pr": 26.2,
+	"gr": 1.6,
+	"hc": 0
+},
+{
+	"id": 371,
+	"nombre": "salmon",
+	"estado": "fresco",
+	"categoria": "PESCADOS",
+	"cal": 145,
+	"pr": 21.5,
+	"gr": 7.8,
+	"hc": 0
+},
+{
+	"id": 372,
+	"nombre": "salmon",
+	"estado": "cocido",
+	"categoria": "PESCADOS",
+	"cal": 195,
+	"pr": 20.8,
+	"gr": 10.6,
+	"hc": 3.4
+},
+{
+	"id": 373,
+	"nombre": "salmon",
+	"estado": "conserva",
+	"categoria": "PESCADOS",
+	"cal": 155,
+	"pr": 20.3,
+	"gr": 8.2,
+	"hc": 0.2
+},
+{
+	"id": 374,
+	"nombre": "salmonete",
+	"estado": "fresco",
+	"categoria": "PESCADOS",
+	"cal": 69,
+	"pr": 13.5,
+	"gr": 1.8,
+	"hc": 0
+},
+{
+	"id": 375,
+	"nombre": "salmonete",
+	"estado": "cocido",
+	"categoria": "PESCADOS",
+	"cal": 118,
+	"pr": 21.4,
+	"gr": 4.3,
+	"hc": 0
+},
+{
+	"id": 376,
+	"nombre": "salmonete",
+	"estado": "frito",
+	"categoria": "PESCADOS",
+	"cal": 164,
+	"pr": 17.6,
+	"gr": 10.5,
+	"hc": 0.7
+},
+{
+	"id": 377,
+	"nombre": "sardina",
+	"estado": "fresco",
+	"categoria": "PESCADOS",
+	"cal": 141,
+	"pr": 21.8,
+	"gr": 6.3,
+	"hc": 1.7
+},
+{
+	"id": 378,
+	"nombre": "sardina",
+	"estado": "cocido",
+	"categoria": "PESCADOS",
+	"cal": 225,
+	"pr": 24.9,
+	"gr": 14,
+	"hc": 1.2
+},
+{
+	"id": 379,
+	"nombre": "sardina",
+	"estado": "frita ",
+	"categoria": "PESCADOS",
+	"cal": 347,
+	"pr": 19.6,
+	"gr": 33.4,
+	"hc": 0
+},
+{
+	"id": 380,
+	"nombre": "sardina",
+	"estado": "coserva ",
+	"categoria": "PESCADOS",
+	"cal": 209,
+	"pr": 19.8,
+	"gr": 14.5,
+	"hc": 0.9
+},
+{
+	"id": 381,
+	"nombre": "sollo",
+	"estado": "fresco",
+	"categoria": "PESCADOS",
+	"cal": 80,
+	"pr": 17.1,
+	"gr": 1.8,
+	"hc": 0
+},
+{
+	"id": 382,
+	"nombre": "sollo",
+	"estado": "cocido",
+	"categoria": "PESCADOS",
+	"cal": 122,
+	"pr": 23.2,
+	"gr": 4,
+	"hc": 0
+},
+{
+	"id": 383,
+	"nombre": "tenca",
+	"estado": "fresco",
+	"categoria": "PESCADOS",
+	"cal": 55,
+	"pr": 8.2,
+	"gr": 2.7,
+	"hc": 0
+},
+{
+	"id": 384,
+	"nombre": "tenca",
+	"estado": "cocido",
+	"categoria": "PESCADOS",
+	"cal": 88,
+	"pr": 16,
+	"gr": 3.1,
+	"hc": 0
+},
+{
+	"id": 385,
+	"nombre": "trucha",
+	"estado": "fresco",
+	"categoria": "PESCADOS",
+	"cal": 96,
+	"pr": 19.2,
+	"gr": 2.1,
+	"hc": 0
+},
+{
+	"id": 386,
+	"nombre": "trucha",
+	"estado": "cocido",
+	"categoria": "PESCADOS",
+	"cal": 133,
+	"pr": 22.3,
+	"gr": 3.8,
+	"hc": 1.3
+},
+{
+	"id": 387,
+	"nombre": "trucha",
+	"estado": "frita ",
+	"categoria": "PESCADOS",
+	"cal": 188,
+	"pr": 26,
+	"gr": 10.2,
+	"hc": 0
+},
+{
+	"id": 388,
+	"nombre": "vieira",
+	"estado": "fresco",
+	"categoria": "PESCADOS",
+	"cal": 73,
+	"pr": 14.8,
+	"gr": 1.9,
+	"hc": 0
+},
+{
+	"id": 389,
+	"nombre": "volador",
+	"estado": "fresco",
+	"categoria": "PESCADOS",
+	"cal": 87,
+	"pr": 15.8,
+	"gr": 3,
+	"hc": 0
+},
+{
+	"id": 390,
+	"nombre": "volador",
+	"estado": "cocido",
+	"categoria": "PESCADOS",
+	"cal": 130,
+	"pr": 21.6,
+	"gr": 5.9,
+	"hc": 0
+},
+{
+	"id": 391,
+	"nombre": "Carne de vacuno",
+	"estado": "picada",
+	"categoria": "CARNES",
+	"cal": 182,
+	"pr": 17,
+	"gr": 12,
+	"hc": 0.9
+}
+{
+	"id": 392,
+	"nombre": "Caballo (Carne)",
+	"estado": "cruda",
+	"categoria": "CARNES",
+	"cal": 112,
+	"pr": 19,
+	"gr": 4,
+	"hc": 0.9
+},
+{
+	"id": 393,
+	"nombre": "Cabra (carne)",
+	"estado": "cruda",
+	"categoria": "CARNES",
+	"cal": 127,
+	"pr": 19.6,
+	"gr": 4.3,
+	"hc": 0.5
+},
+{
+	"id": 394,
+	"nombre": "Cabrito (carne)",
+	"estado": "cruda",
+	"categoria": "CARNES",
+	"cal": 40,
+	"pr": 7.2,
+	"gr": 1.6,
+	"hc": 0.1
+},
+{
+	"id": 395,
+	"nombre": "Carnero (carne)",
+	"estado": "cruda",
+	"categoria": "CARNES",
+	"cal": 210,
+	"pr": 17.5,
+	"gr": 16,
+	"hc": 0.2
+},
+{
+	"id": 396,
+	"nombre": "Corazon",
+	"estado": "crudo",
+	"categoria": "CARNES",
+	"cal": 117,
+	"pr": 16.8,
+	"gr": 4.9,
+	"hc": 0.4
+},
+{
+	"id": 397,
+	"nombre": "costillas magras",
+	"estado": "crudo",
+	"categoria": "CARNES",
+	"cal": 215,
+	"pr": 14.5,
+	"gr": 17,
+	"hc": 0.3
+},
+{
+	"id": 398,
+	"nombre": "costillas magras",
+	"estado": "estofado",
+	"categoria": "CARNES",
+	"cal": 306,
+	"pr": 22.1,
+	"gr": 24.2,
+	"hc": 2.1
+},
+{
+	"id": 399,
+	"nombre": "costillas magras",
+	"estado": "frito",
+	"categoria": "CARNES",
+	"cal": 308,
+	"pr": 21.5,
+	"gr": 26.6,
+	"hc": 0
+},
+{
+	"id": 400,
+	"nombre": "costillas semimagr.",
+	"estado": "estofado",
+	"categoria": "CARNES",
+	"cal": 505,
+	"pr": 18.6,
+	"gr": 50.3,
+	"hc": 0
+},
+{
+	"id": 401,
+	"nombre": "costillas semimagr.",
+	"estado": "frito",
+	"categoria": "CARNES",
+	"cal": 560,
+	"pr": 15.2,
+	"gr": 62,
+	"hc": 0
+},
+{
+	"id": 402,
+	"nombre": "higado",
+	"estado": "crudo",
+	"categoria": "CARNES",
+	"cal": 134,
+	"pr": 19.4,
+	"gr": 4.9,
+	"hc": 1.8
+},
+{
+	"id": 403,
+	"nombre": "higado",
+	"estado": "frito",
+	"categoria": "CARNES",
+	"cal": 236,
+	"pr": 22.7,
+	"gr": 10.8,
+	"hc": 9.5
+},
+{
+	"id": 404,
+	"nombre": "Jamon",
+	"estado": "crudo",
+	"categoria": "CARNES",
+	"cal": 262,
+	"pr": 15.8,
+	"gr": 18.7,
+	"hc": 0.3
+},
+{
+	"id": 405,
+	"nombre": "Jamon",
+	"estado": "cocido",
+	"categoria": "CARNES",
+	"cal": 354,
+	"pr": 20.3,
+	"gr": 32.1,
+	"hc": 0.3
+},
+{
+	"id": 406,
+	"nombre": "jamon York",
+	"estado": "crudo",
+	"categoria": "CARNES",
+	"cal": 454,
+	"pr": 17.2,
+	"gr": 43,
+	"hc": 0.8
+},
+{
+	"id": 407,
+	"nombre": "jamon York",
+	"estado": "cocido",
+	"categoria": "CARNES",
+	"cal": 435,
+	"pr": 16.2,
+	"gr": 39.6,
+	"hc": 0
+},
+{
+	"id": 408,
+	"nombre": "lomo graso",
+	"estado": "asado",
+	"categoria": "CARNES",
+	"cal": 412,
+	"pr": 23.7,
+	"gr": 35.8,
+	"hc": 0
+},
+{
+	"id": 409,
+	"nombre": "lomo graso",
+	"estado": "estofado",
+	"categoria": "CARNES",
+	"cal": 404,
+	"pr": 18.6,
+	"gr": 41.3,
+	"hc": 0
+},
+{
+	"id": 410,
+	"nombre": "lomo graso",
+	"estado": "frito",
+	"categoria": "CARNES",
+	"cal": 489,
+	"pr": 16.1,
+	"gr": 53.2,
+	"hc": 0
+},
+{
+	"id": 411,
+	"nombre": "lomo magro",
+	"estado": "asado",
+	"categoria": "CARNES",
+	"cal": 271,
+	"pr": 26.1,
+	"gr": 18.1,
+	"hc": 0
+},
+{
+	"id": 412,
+	"nombre": "lomo magro",
+	"estado": "estofado",
+	"categoria": "CARNES",
+	"cal": 285,
+	"pr": 20.3,
+	"gr": 23.2,
+	"hc": 1.8
+},
+{
+	"id": 413,
+	"nombre": "lomo magro",
+	"estado": "frito",
+	"categoria": "CARNES",
+	"cal": 316,
+	"pr": 19.6,
+	"gr": 28.1,
+	"hc": 0
+},
+{
+	"id": 414,
+	"nombre": "manteca",
+	"estado": "crudo",
+	"categoria": "CARNES",
+	"cal": 877,
+	"pr": 0.8,
+	"gr": 98,
+	"hc": 0
+},
+{
+	"id": 415,
+	"nombre": "pierna",
+	"estado": "asado",
+	"categoria": "CARNES",
+	"cal": 317,
+	"pr": 24.6,
+	"gr": 23.2,
+	"hc": 0
+},
+{
+	"id": 416,
+	"nombre": "promedio",
+	"estado": "0",
+	"categoria": "CARNES",
+	"cal": 736,
+	"pr": 3.9,
+	"gr": 80,
+	"hc": 0
+},
+{
+	"id": 417,
+	"nombre": "riñon",
+	"estado": "crudo",
+	"categoria": "CARNES",
+	"cal": 105,
+	"pr": 15.2,
+	"gr": 4.3,
+	"hc": 0.8
+},
+{
+	"id": 418,
+	"nombre": "tocino",
+	"estado": "salado",
+	"categoria": "CARNES",
+	"cal": 763,
+	"pr": 6.6,
+	"gr": 80.2,
+	"hc": 0.7
+},
+{
+	"id": 419,
+	"nombre": "Corazon",
+	"estado": "asado",
+	"categoria": "CARNES",
+	"cal": 239,
+	"pr": 25,
+	"gr": 14.7,
+	"hc": 0
+},
+{
+	"id": 420,
+	"nombre": "Costillas grasas",
+	"estado": "crudo",
+	"categoria": "CARNES",
+	"cal": 312,
+	"pr": 14.9,
+	"gr": 29.3,
+	"hc": 0
+},
+{
+	"id": 421,
+	"nombre": "Costillas grasas",
+	"estado": "estofado",
+	"categoria": "CARNES",
+	"cal": 424,
+	"pr": 20.1,
+	"gr": 40.1,
+	"hc": 0
+},
+{
+	"id": 422,
+	"nombre": "Costillas grasas",
+	"estado": "asado",
+	"categoria": "CARNES",
+	"cal": 396,
+	"pr": 21.7,
+	"gr": 37.8,
+	"hc": 0
+},
+{
+	"id": 423,
+	"nombre": "Costillas grasas",
+	"estado": "frito",
+	"categoria": "CARNES",
+	"cal": 480,
+	"pr": 15.4,
+	"gr": 52.6,
+	"hc": 0
+},
+{
+	"id": 424,
+	"nombre": "Costillas Magras",
+	"estado": "crudo",
+	"categoria": "CARNES",
+	"cal": 158,
+	"pr": 19.3,
+	"gr": 8.3,
+	"hc": 0
+},
+{
+	"id": 425,
+	"nombre": "Costillas Magras",
+	"estado": "estofado",
+	"categoria": "CARNES",
+	"cal": 235,
+	"pr": 26.9,
+	"gr": 14.9,
+	"hc": 0
+},
+{
+	"id": 426,
+	"nombre": "Costillas Magras",
+	"estado": "asado",
+	"categoria": "CARNES",
+	"cal": 195,
+	"pr": 23.3,
+	"gr": 11.7,
+	"hc": 0.8
+},
+{
+	"id": 427,
+	"nombre": "Costillas Magras",
+	"estado": "frito",
+	"categoria": "CARNES",
+	"cal": 305,
+	"pr": 24.8,
+	"gr": 23.6,
+	"hc": 0
+},
+{
+	"id": 428,
+	"nombre": "cuello",
+	"estado": "estofado",
+	"categoria": "CARNES",
+	"cal": 326,
+	"pr": 24.2,
+	"gr": 24.4,
+	"hc": 0
+},
+{
+	"id": 429,
+	"nombre": "higado",
+	"estado": "crudo",
+	"categoria": "CARNES",
+	"cal": 131,
+	"pr": 20,
+	"gr": 3.8,
+	"hc": 2.8
+},
+{
+	"id": 430,
+	"nombre": "higado",
+	"estado": "cocido",
+	"categoria": "CARNES",
+	"cal": 232,
+	"pr": 24.8,
+	"gr": 8.5,
+	"hc": 10.5
+},
+{
+	"id": 431,
+	"nombre": "lengua",
+	"estado": "estofado",
+	"categoria": "CARNES",
+	"cal": 297,
+	"pr": 18,
+	"gr": 24,
+	"hc": 0
+},
+{
+	"id": 432,
+	"nombre": "paletilla",
+	"estado": "cocido",
+	"categoria": "CARNES",
+	"cal": 335,
+	"pr": 23.5,
+	"gr": 24.6,
+	"hc": 0
+},
+{
+	"id": 433,
+	"nombre": "pierna",
+	"estado": "crudo",
+	"categoria": "CARNES",
+	"cal": 235,
+	"pr": 18,
+	"gr": 17.5,
+	"hc": 0.3
+},
+{
+	"id": 434,
+	"nombre": "pierna",
+	"estado": "estofado",
+	"categoria": "CARNES",
+	"cal": 262,
+	"pr": 20.3,
+	"gr": 17.8,
+	"hc": 0
+},
+{
+	"id": 435,
+	"nombre": "pierna",
+	"estado": "asado",
+	"categoria": "CARNES",
+	"cal": 260,
+	"pr": 22,
+	"gr": 19,
+	"hc": 0
+},
+{
+	"id": 436,
+	"nombre": "riñon",
+	"estado": "crudo",
+	"categoria": "CARNES",
+	"cal": 99,
+	"pr": 16.6,
+	"gr": 3,
+	"hc": 0.9
+},
+{
+	"id": 437,
+	"nombre": "riñon",
+	"estado": "frito",
+	"categoria": "CARNES",
+	"cal": 192,
+	"pr": 28,
+	"gr": 9.1,
+	"hc": 0
+},
+{
+	"id": 438,
+	"nombre": "sesos",
+	"estado": "cocido",
+	"categoria": "CARNES",
+	"cal": 103,
+	"pr": 11.7,
+	"gr": 6.7,
+	"hc": 0
+},
+{
+	"id": 439,
+	"nombre": "Carne",
+	"estado": "cruda",
+	"categoria": "CARNES",
+	"cal": 134,
+	"pr": 19.2,
+	"gr": 6.6,
+	"hc": 0.4
+},
+{
+	"id": 440,
+	"nombre": "Carne",
+	"estado": "cocida",
+	"categoria": "CARNES",
+	"cal": 165,
+	"pr": 23.3,
+	"gr": 9.2,
+	"hc": 0
+},
+{
+	"id": 441,
+	"nombre": "corazon",
+	"estado": "crudo ",
+	"categoria": "CARNES",
+	"cal": 130,
+	"pr": 15.4,
+	"gr": 7.1,
+	"hc": 1
+},
+{
+	"id": 442,
+	"nombre": "costillas",
+	"estado": "crudo ",
+	"categoria": "CARNES",
+	"cal": 135,
+	"pr": 19.5,
+	"gr": 7.5,
+	"hc": 0.4
+},
+{
+	"id": 443,
+	"nombre": "costillas",
+	"estado": "asado",
+	"categoria": "CARNES",
+	"cal": 232,
+	"pr": 30.5,
+	"gr": 12.6,
+	"hc": 0.3
+},
+{
+	"id": 444,
+	"nombre": "costillas",
+	"estado": "frito",
+	"categoria": "CARNES",
+	"cal": 296,
+	"pr": 27.5,
+	"gr": 20.1,
+	"hc": 4.4
+},
+{
+	"id": 445,
+	"nombre": "filete",
+	"estado": "crudo ",
+	"categoria": "CARNES",
+	"cal": 108,
+	"pr": 20.1,
+	"gr": 2.7,
+	"hc": 0
+},
+{
+	"id": 446,
+	"nombre": "filete",
+	"estado": "asado",
+	"categoria": "CARNES",
+	"cal": 232,
+	"pr": 30.5,
+	"gr": 11.5,
+	"hc": 0
+},
+{
+	"id": 447,
+	"nombre": "higado",
+	"estado": "crudo ",
+	"categoria": "CARNES",
+	"cal": 134,
+	"pr": 18.7,
+	"gr": 5.2,
+	"hc": 3.6
+},
+{
+	"id": 448,
+	"nombre": "higado",
+	"estado": "cocido",
+	"categoria": "CARNES",
+	"cal": 167,
+	"pr": 20.7,
+	"gr": 7,
+	"hc": 4.7
+},
+{
+	"id": 449,
+	"nombre": "higado",
+	"estado": "frito",
+	"categoria": "CARNES",
+	"cal": 237,
+	"pr": 26.5,
+	"gr": 13.3,
+	"hc": 3.7
+},
+{
+	"id": 450,
+	"nombre": "lechecillas",
+	"estado": "crudo ",
+	"categoria": "CARNES",
+	"cal": 103,
+	"pr": 17.6,
+	"gr": 3.8,
+	"hc": 0
+},
+{
+	"id": 451,
+	"nombre": "lechecillas",
+	"estado": "estofado",
+	"categoria": "CARNES",
+	"cal": 162,
+	"pr": 22.7,
+	"gr": 8.1,
+	"hc": 0
+},
+{
+	"id": 452,
+	"nombre": "lengua",
+	"estado": "estofado",
+	"categoria": "CARNES",
+	"cal": 190,
+	"pr": 15.9,
+	"gr": 14.8,
+	"hc": 0.1
+},
+{
+	"id": 453,
+	"nombre": "promedio",
+	"estado": "0",
+	"categoria": "CARNES",
+	"cal": 184,
+	"pr": 19.1,
+	"gr": 12,
+	"hc": 0
+},
+{
+	"id": 454,
+	"nombre": "riñon",
+	"estado": "cocido",
+	"categoria": "CARNES",
+	"cal": 102,
+	"pr": 15.4,
+	"gr": 4.8,
+	"hc": 0
+},
+{
+	"id": 455,
+	"nombre": "riñon",
+	"estado": "frito",
+	"categoria": "CARNES",
+	"cal": 182,
+	"pr": 14.8,
+	"gr": 15.3,
+	"hc": 0
+},
+{
+	"id": 456,
+	"nombre": "sesos",
+	"estado": "cocido",
+	"categoria": "CARNES",
+	"cal": 115,
+	"pr": 10.3,
+	"gr": 8.3,
+	"hc": 0.8
+},
+{
+	"id": 457,
+	"nombre": "solomillo",
+	"estado": "crudo ",
+	"categoria": "CARNES",
+	"cal": 93,
+	"pr": 19.3,
+	"gr": 1.6,
+	"hc": 2.3
+},
+{
+	"id": 458,
+	"nombre": "solomillo",
+	"estado": "asado",
+	"categoria": "CARNES",
+	"cal": 192,
+	"pr": 28.7,
+	"gr": 8.5,
+	"hc": 3.2
+},
+{
+	"id": 459,
+	"nombre": "solomillo",
+	"estado": "frito",
+	"categoria": "CARNES",
+	"cal": 268,
+	"pr": 23.8,
+	"gr": 20.1,
+	"hc": 0
+},
+{
+	"id": 460,
+	"nombre": "tripas",
+	"estado": "cocido",
+	"categoria": "CARNES",
+	"cal": 99,
+	"pr": 18,
+	"gr": 3.4,
+	"hc": 0
+},
+{
+	"id": 461,
+	"nombre": "Bistec",
+	"estado": "crudo",
+	"categoria": "CARNES",
+	"cal": 177,
+	"pr": 19.2,
+	"gr": 10.5,
+	"hc": 0
+},
+{
+	"id": 462,
+	"nombre": "Bistec",
+	"estado": "frito",
+	"categoria": "CARNES",
+	"cal": 273,
+	"pr": 20.4,
+	"gr": 20.4,
+	"hc": 0
+},
+{
+	"id": 463,
+	"nombre": "Carne",
+	"estado": "crudo",
+	"categoria": "CARNES",
+	"cal": 140,
+	"pr": 18.2,
+	"gr": 7.5,
+	"hc": 0.3
+},
+{
+	"id": 464,
+	"nombre": "Carne",
+	"estado": "congelado",
+	"categoria": "CARNES",
+	"cal": 142,
+	"pr": 20.3,
+	"gr": 7.3,
+	"hc": 0
+},
+{
+	"id": 465,
+	"nombre": "Carne semigrasa",
+	"estado": "crudo",
+	"categoria": "CARNES",
+	"cal": 246,
+	"pr": 17.1,
+	"gr": 16.2,
+	"hc": 0.3
+},
+{
+	"id": 466,
+	"nombre": "Carne semigrasa",
+	"estado": "asado",
+	"categoria": "CARNES",
+	"cal": 355,
+	"pr": 18.1,
+	"gr": 25.2,
+	"hc": 0
+},
+{
+	"id": 467,
+	"nombre": "Carne semigrasa",
+	"estado": "cocido",
+	"categoria": "CARNES",
+	"cal": 210,
+	"pr": 32.5,
+	"gr": 8.2,
+	"hc": 0.4
+},
+{
+	"id": 468,
+	"nombre": "Corazon",
+	"estado": "crudo",
+	"categoria": "CARNES",
+	"cal": 112,
+	"pr": 17.2,
+	"gr": 4.6,
+	"hc": 0.7
+},
+{
+	"id": 469,
+	"nombre": "Costilla",
+	"estado": "cocido",
+	"categoria": "CARNES",
+	"cal": 280,
+	"pr": 26.3,
+	"gr": 5.8,
+	"hc": 0
+},
+{
+	"id": 470,
+	"nombre": "Falda",
+	"estado": "cocido",
+	"categoria": "CARNES",
+	"cal": 413,
+	"pr": 18.1,
+	"gr": 38,
+	"hc": 0
+},
+{
+	"id": 471,
+	"nombre": "Higado",
+	"estado": "crudo",
+	"categoria": "CARNES",
+	"cal": 130,
+	"pr": 20,
+	"gr": 3.5,
+	"hc": 3.8
+},
+{
+	"id": 472,
+	"nombre": "Higado",
+	"estado": "cocido",
+	"categoria": "CARNES",
+	"cal": 148,
+	"pr": 23,
+	"gr": 7.8,
+	"hc": 4
+},
+{
+	"id": 473,
+	"nombre": "Higado",
+	"estado": "frito",
+	"categoria": "CARNES",
+	"cal": 229,
+	"pr": 26,
+	"gr": 9.1,
+	"hc": 9.5
+},
+{
+	"id": 474,
+	"nombre": "Lengua",
+	"estado": "crudo",
+	"categoria": "CARNES",
+	"cal": 210,
+	"pr": 15.8,
+	"gr": 16.3,
+	"hc": 0.4
+},
+{
+	"id": 475,
+	"nombre": "Lengua",
+	"estado": "cocido",
+	"categoria": "CARNES",
+	"cal": 239,
+	"pr": 19.3,
+	"gr": 15.3,
+	"hc": 0.5
+},
+{
+	"id": 476,
+	"nombre": "Promedio",
+	"estado": "cocido",
+	"categoria": "CARNES",
+	"cal": 268,
+	"pr": 17.5,
+	"gr": 22,
+	"hc": 0
+},
+{
+	"id": 477,
+	"nombre": "Riñon",
+	"estado": "crudo",
+	"categoria": "CARNES",
+	"cal": 122,
+	"pr": 16.2,
+	"gr": 6,
+	"hc": 0.8
+},
+{
+	"id": 478,
+	"nombre": "Riñon",
+	"estado": "cocido",
+	"categoria": "CARNES",
+	"cal": 165,
+	"pr": 27,
+	"gr": 5.4,
+	"hc": 0
+},
+{
+	"id": 479,
+	"nombre": "sangre",
+	"estado": "crudo",
+	"categoria": "CARNES",
+	"cal": 77,
+	"pr": 18.1,
+	"gr": 0.2,
+	"hc": 0
+},
+{
+	"id": 480,
+	"nombre": "sesos",
+	"estado": "crudo",
+	"categoria": "CARNES",
+	"cal": 120,
+	"pr": 10,
+	"gr": 8.5,
+	"hc": 0.8
+},
+{
+	"id": 481,
+	"nombre": "sesos",
+	"estado": "cocidos",
+	"categoria": "CARNES",
+	"cal": 126,
+	"pr": 10.4,
+	"gr": 9.2,
+	"hc": 0
+},
+{
+	"id": 482,
+	"nombre": "solomillo",
+	"estado": "crudo",
+	"categoria": "CARNES",
+	"cal": 120,
+	"pr": 21,
+	"gr": 3.9,
+	"hc": 0.6
+},
+{
+	"id": 483,
+	"nombre": "solomillo",
+	"estado": "asado",
+	"categoria": "CARNES",
+	"cal": 214,
+	"pr": 25.3,
+	"gr": 12.1,
+	"hc": 1
+},
+{
+	"id": 484,
+	"nombre": "solomillo",
+	"estado": "cocido",
+	"categoria": "CARNES",
+	"cal": 172,
+	"pr": 22,
+	"gr": 9.1,
+	"hc": 0
+},
+{
+	"id": 485,
+	"nombre": "solomillo",
+	"estado": "frito",
+	"categoria": "CARNES",
+	"cal": 279,
+	"pr": 19.1,
+	"gr": 23.2,
+	"hc": 0
+},
+{
+	"id": 486,
+	"nombre": "tripas",
+	"estado": "crudo",
+	"categoria": "CARNES",
+	"cal": 96,
+	"pr": 17,
+	"gr": 2,
+	"hc": 0.15
+},
+{
+	"id": 487,
+	"nombre": "Butifarra",
+	"estado": "Natural",
+	"categoria": "CARNES",
+	"cal": 150,
+	"pr": 9.8,
+	"gr": 13.4,
+	"hc": 0
+},
+{
+	"id": 488,
+	"nombre": "Chorizo",
+	"estado": "natural",
+	"categoria": "CARNES",
+	"cal": 614,
+	"pr": 13.6,
+	"gr": 70.2,
+	"hc": 0
+},
+{
+	"id": 489,
+	"nombre": "Chorizo",
+	"estado": "frito",
+	"categoria": "CARNES",
+	"cal": 360,
+	"pr": 19.6,
+	"gr": 60.8,
+	"hc": 0
+},
+{
+	"id": 490,
+	"nombre": "Morcilla",
+	"estado": "natural",
+	"categoria": "CARNES",
+	"cal": 258,
+	"pr": 5.3,
+	"gr": 22.5,
+	"hc": 14.7
+},
+{
+	"id": 491,
+	"nombre": "Morcilla",
+	"estado": "cocido",
+	"categoria": "CARNES",
+	"cal": 335,
+	"pr": 13.7,
+	"gr": 29.1,
+	"hc": 15.3
+},
+{
+	"id": 492,
+	"nombre": "Morcilla",
+	"estado": "frita",
+	"categoria": "CARNES",
+	"cal": 453,
+	"pr": 13.9,
+	"gr": 42.9,
+	"hc": 15.9
+},
+{
+	"id": 493,
+	"nombre": "salchicha de cerdo",
+	"estado": "natural",
+	"categoria": "CARNES",
+	"cal": 390,
+	"pr": 9.8,
+	"gr": 36.3,
+	"hc": 9.8
+},
+{
+	"id": 494,
+	"nombre": "salchicha de cerdo",
+	"estado": "cocida",
+	"categoria": "CARNES",
+	"cal": 360,
+	"pr": 16.5,
+	"gr": 28.6,
+	"hc": 7
+},
+{
+	"id": 495,
+	"nombre": "salchicha de cerdo",
+	"estado": "frita",
+	"categoria": "CARNES",
+	"cal": 326,
+	"pr": 13.4,
+	"gr": 29.3,
+	"hc": 12.7
+},
+{
+	"id": 496,
+	"nombre": "salchicha de vaca",
+	"estado": "natural",
+	"categoria": "CARNES",
+	"cal": 140,
+	"pr": 9.1,
+	"gr": 8.3,
+	"hc": 10.5
+},
+{
+	"id": 497,
+	"nombre": "salchicha de vaca",
+	"estado": "cocida",
+	"categoria": "CARNES",
+	"cal": 210,
+	"pr": 15.6,
+	"gr": 12.1,
+	"hc": 13.6
+},
+{
+	"id": 498,
+	"nombre": "salchicha de vaca",
+	"estado": "frita",
+	"categoria": "CARNES",
+	"cal": 264,
+	"pr": 13.8,
+	"gr": 18.4,
+	"hc": 15.7
+},
+{
+	"id": 499,
+	"nombre": "salchicha de Frankfurt",
+	"estado": "natural",
+	"categoria": "CARNES",
+	"cal": 248,
+	"pr": 14,
+	"gr": 20,
+	"hc": 2
+},
+{
+	"id": 500,
+	"nombre": "Salchichon",
+	"estado": "Natural",
+	"categoria": "CARNES",
+	"cal": 430,
+	"pr": 20.3,
+	"gr": 36.7,
+	"hc": 0.1
+},
+{
+	"id": 501,
+	"nombre": "Capon",
+	"estado": "crudo",
+	"categoria": "CARNES",
+	"cal": 158,
+	"pr": 18.7,
+	"gr": 9.3,
+	"hc": 0
+},
+{
+	"id": 502,
+	"nombre": "capon",
+	"estado": "asado",
+	"categoria": "CARNES",
+	"cal": 238,
+	"pr": 22.7,
+	"gr": 18.6,
+	"hc": 0
+},
+{
+	"id": 503,
+	"nombre": "codoriz",
+	"estado": "crudo",
+	"categoria": "CARNES",
+	"cal": 175,
+	"pr": 16.7,
+	"gr": 11.8,
+	"hc": 0
+},
+{
+	"id": 504,
+	"nombre": "codoriz",
+	"estado": "estofado",
+	"categoria": "CARNES",
+	"cal": 230,
+	"pr": 18.5,
+	"gr": 19.1,
+	"hc": 0
+},
+{
+	"id": 505,
+	"nombre": "codoriz",
+	"estado": "asado",
+	"categoria": "CARNES",
+	"cal": 240,
+	"pr": 19.3,
+	"gr": 20.3,
+	"hc": 0
+},
+{
+	"id": 506,
+	"nombre": "Faisan",
+	"estado": "crudo",
+	"categoria": "CARNES",
+	"cal": 138,
+	"pr": 22,
+	"gr": 5.3,
+	"hc": 0.5
+},
+{
+	"id": 507,
+	"nombre": "Faisan",
+	"estado": "estofado",
+	"categoria": "CARNES",
+	"cal": 250,
+	"pr": 28.6,
+	"gr": 17.2,
+	"hc": 0
+},
+{
+	"id": 508,
+	"nombre": "Faisan",
+	"estado": "asado",
+	"categoria": "CARNES",
+	"cal": 256,
+	"pr": 30.8,
+	"gr": 14.3,
+	"hc": 0
+},
+{
+	"id": 509,
+	"nombre": "Gallina Joven",
+	"estado": "crudo",
+	"categoria": "CARNES",
+	"cal": 112,
+	"pr": 21,
+	"gr": 2.2,
+	"hc": 0
+},
+{
+	"id": 510,
+	"nombre": "Gallina Vieja",
+	"estado": "crudo",
+	"categoria": "CARNES",
+	"cal": 302,
+	"pr": 17,
+	"gr": 24,
+	"hc": 0
+},
+{
+	"id": 511,
+	"nombre": "Gallina Vieja",
+	"estado": "asado",
+	"categoria": "CARNES",
+	"cal": 194,
+	"pr": 30.1,
+	"gr": 7.1,
+	"hc": 0
+},
+{
+	"id": 512,
+	"nombre": "Ganso",
+	"estado": "crudo",
+	"categoria": "CARNES",
+	"cal": 320,
+	"pr": 15.6,
+	"gr": 26.2,
+	"hc": 0
+},
+{
+	"id": 513,
+	"nombre": "Ganso",
+	"estado": "asado",
+	"categoria": "CARNES",
+	"cal": 322,
+	"pr": 24,
+	"gr": 26.1,
+	"hc": 0
+},
+{
+	"id": 514,
+	"nombre": "Paloma",
+	"estado": "crudo",
+	"categoria": "CARNES",
+	"cal": 135,
+	"pr": 20.4,
+	"gr": 12,
+	"hc": 0.5
+},
+{
+	"id": 515,
+	"nombre": "Paloma",
+	"estado": "estofado",
+	"categoria": "CARNES",
+	"cal": 212,
+	"pr": 24.5,
+	"gr": 13.2,
+	"hc": 0
+},
+{
+	"id": 516,
+	"nombre": "Paloma",
+	"estado": "asado",
+	"categoria": "CARNES",
+	"cal": 212,
+	"pr": 26.9,
+	"gr": 10.4,
+	"hc": 0
+},
+{
+	"id": 517,
+	"nombre": "Pato",
+	"estado": "crudo",
+	"categoria": "CARNES",
+	"cal": 232,
+	"pr": 17.4,
+	"gr": 17.2,
+	"hc": 0
+},
+{
+	"id": 518,
+	"nombre": "Pato",
+	"estado": "asado",
+	"categoria": "CARNES",
+	"cal": 196,
+	"pr": 22.8,
+	"gr": 23.6,
+	"hc": 0
+},
+{
+	"id": 519,
+	"nombre": "Pavo",
+	"estado": "crudo",
+	"categoria": "CARNES",
+	"cal": 184,
+	"pr": 18.5,
+	"gr": 19,
+	"hc": 0.5
+},
+{
+	"id": 520,
+	"nombre": "Pavo",
+	"estado": "asado",
+	"categoria": "CARNES",
+	"cal": 200,
+	"pr": 27.1,
+	"gr": 12.1,
+	"hc": 0
+},
+{
+	"id": 521,
+	"nombre": "Perdiz",
+	"estado": "crudo",
+	"categoria": "CARNES",
+	"cal": 120,
+	"pr": 22.2,
+	"gr": 3.8,
+	"hc": 0.5
+},
+{
+	"id": 522,
+	"nombre": "Perdiz",
+	"estado": "asado",
+	"categoria": "CARNES",
+	"cal": 217,
+	"pr": 35.2,
+	"gr": 8.8,
+	"hc": 0
+},
+{
+	"id": 523,
+	"nombre": "Perdiz",
+	"estado": "estofado",
+	"categoria": "CARNES",
+	"cal": 218,
+	"pr": 36.1,
+	"gr": 9.6,
+	"hc": 0
+},
+{
+	"id": 524,
+	"nombre": "Pintada",
+	"estado": "crudo",
+	"categoria": "CARNES",
+	"cal": 210,
+	"pr": 32.5,
+	"gr": 8.2,
+	"hc": 0
+},
+{
+	"id": 525,
+	"nombre": "Pollo",
+	"estado": "crudo",
+	"categoria": "CARNES",
+	"cal": 117,
+	"pr": 18,
+	"gr": 3.1,
+	"hc": 3
+},
+{
+	"id": 526,
+	"nombre": "Pollo",
+	"estado": "cocido",
+	"categoria": "CARNES",
+	"cal": 186,
+	"pr": 25.8,
+	"gr": 9.1,
+	"hc": 0.2
+},
+{
+	"id": 527,
+	"nombre": "Pollo (pechuga)",
+	"estado": "",
+	"categoria": "CARNES",
+	"cal": 195,
+	"pr": 29.55,
+	"gr": 7.72,
+	"hc": 0
+},
+{
+	"id": 528,
+	"nombre": "Pollo (corazon)",
+	"estado": "crudo",
+	"categoria": "CARNES",
+	"cal": 156,
+	"pr": 19.7,
+	"gr": 6.9,
+	"hc": 1.7
+},
+{
+	"id": 529,
+	"nombre": "Pollo (higado)",
+	"estado": "crudo",
+	"categoria": "CARNES",
+	"cal": 136,
+	"pr": 20.8,
+	"gr": 4,
+	"hc": 2.9
+},
+{
+	"id": 530,
+	"nombre": "Ciervo",
+	"estado": "Crudo",
+	"categoria": "CARNES",
+	"cal": 116,
+	"pr": 18.2,
+	"gr": 4,
+	"hc": 0.6
+},
+{
+	"id": 531,
+	"nombre": "Ciervo",
+	"estado": "Asado",
+	"categoria": "CARNES",
+	"cal": 180,
+	"pr": 30.2,
+	"gr": 4.4,
+	"hc": 0
+},
+{
+	"id": 532,
+	"nombre": "Cobaya",
+	"estado": "Crudo",
+	"categoria": "CARNES",
+	"cal": 86,
+	"pr": 19.2,
+	"gr": 1.7,
+	"hc": 0
+},
+{
+	"id": 533,
+	"nombre": "Conejo",
+	"estado": "Crudo",
+	"categoria": "CARNES",
+	"cal": 128,
+	"pr": 16.5,
+	"gr": 6.6,
+	"hc": 0.4
+},
+{
+	"id": 534,
+	"nombre": "Conejo",
+	"estado": "Asado",
+	"categoria": "CARNES",
+	"cal": 218,
+	"pr": 29.1,
+	"gr": 12.8,
+	"hc": 0
+},
+{
+	"id": 535,
+	"nombre": "Conejo",
+	"estado": "Estofado",
+	"categoria": "CARNES",
+	"cal": 181,
+	"pr": 27.6,
+	"gr": 7.8,
+	"hc": 0
+},
+{
+	"id": 536,
+	"nombre": "Corzo",
+	"estado": "Crudo",
+	"categoria": "CARNES",
+	"cal": 116,
+	"pr": 18.3,
+	"gr": 4,
+	"hc": 0.4
+},
+{
+	"id": 537,
+	"nombre": "Corzo",
+	"estado": "Asado",
+	"categoria": "CARNES",
+	"cal": 168,
+	"pr": 29,
+	"gr": 5.7,
+	"hc": 2
+},
+{
+	"id": 538,
+	"nombre": "Jabali",
+	"estado": "Crudo",
+	"categoria": "CARNES",
+	"cal": 158,
+	"pr": 16,
+	"gr": 11.2,
+	"hc": 0.4
+},
+{
+	"id": 539,
+	"nombre": "Jabali",
+	"estado": "Asado",
+	"categoria": "CARNES",
+	"cal": 460,
+	"pr": 29.5,
+	"gr": 43.2,
+	"hc": 0
+},
+{
+	"id": 540,
+	"nombre": "Liebre",
+	"estado": "Crudo",
+	"categoria": "CARNES",
+	"cal": 128,
+	"pr": 19.8,
+	"gr": 5.4,
+	"hc": 0.5
+},
+{
+	"id": 541,
+	"nombre": "Liebre",
+	"estado": "Asado",
+	"categoria": "CARNES",
+	"cal": 219,
+	"pr": 36.2,
+	"gr": 7.3,
+	"hc": 0.2
+},
+{
+	"id": 542,
+	"nombre": "Liebre",
+	"estado": "Estofado",
+	"categoria": "CARNES",
+	"cal": 209,
+	"pr": 29.4,
+	"gr": 10.2,
+	"hc": 0
+},
+{
+	"id": 543,
+	"nombre": "Vino blanco",
+	"estado": "",
+	"categoria": "",
+	"cal": 83,
+	"pr": 0.07,
+	"gr": 0,
+	"hc": 2.58
+},
+{
+	"id": 544,
+	"nombre": "Agua",
+	"estado": "",
+	"categoria": "",
+	"cal": 0,
+	"pr": 0,
+	"gr": 0,
+	"hc": 0
+},
+{
+	"id": 545,
+	"nombre": "Vino de jerez",
+	"estado": "",
+	"categoria": "",
+	"cal": 127,
+	"pr": 0.2,
+	"gr": 0,
+	"hc": 10
+},
+{
+	"id": 546,
+	"nombre": "Pimiento verde",
+	"estado": "",
+	"categoria": "VERDURAS",
+	"cal": 20,
+	"pr": 0.86,
+	"gr": 0.17,
+	"hc": 4.64
+}
+{
+	"id": 547,
+	"nombre": "Sal",
+	"estado": "",
+	"categoria": "",
+	"cal": 0,
+	"pr": 0.1,
+	"gr": 0,
+	"hc": 0
+},
+{
+	"id": 548,
+	"nombre": "Laurel",
+	"estado": "",
+	"categoria": "",
+	"cal": 353,
+	"pr": 7.61,
+	"gr": 8.36,
+	"hc": 46.67
+},
+{
+	"id": 549,
+	"nombre": "Tomillo",
+	"estado": "",
+	"categoria": "",
+	"cal": 336,
+	"pr": 9.1,
+	"gr": 7.4,
+	"hc": 57.1
+},
+{
+	"id": 550,
+	"nombre": "Pimenton",
+	"estado": "",
+	"categoria": "",
+	"cal": 29,
+	"pr": 0.8,
+	"gr": 0.41,
+	"hc": 6.68
+},
+{
+	"id": 551,
+	"nombre": "Azafran",
+	"estado": "",
+	"categoria": "",
+	"cal": 310,
+	"pr": 11.43,
+	"gr": 5.85,
+	"hc": 65.37
+},
+{
+	"id": 552,
+	"nombre": "Clavo",
+	"estado": "",
+	"categoria": "",
+	"cal": 323,
+	"pr": 6,
+	"gr": 5.4,
+	"hc": 61.2
+},
+{
+	"id": 553,
+	"nombre": "Vinagre",
+	"estado": "",
+	"categoria": "",
+	"cal": 18,
+	"pr": 0,
+	"gr": 0,
+	"hc": 0.04
+},
+{
+	"id": 554,
+	"nombre": "Caldo de verduras",
+	"estado": "",
+	"categoria": "VERDURAS",
+	"cal": 5,
+	"pr": 0.2,
+	"gr": 0.1,
+	"hc": 0.9
+},
+{
+	"id": 555,
+	"nombre": "Alubia blanca",
+	"estado": "cocida",
+	"categoria": "LEGUMBRES",
+	"cal": 83,
+	"pr": 5.8,
+	"gr": 0.4,
+	"hc": 10.7
+},
+{
+	"id": 556,
+	"nombre": "Aceite de oliva virgen extra",
+	"estado": "",
+	"categoria": "ACEITE",
+	"cal": 119,
+	"pr": 0,
+	"gr": 13.5,
+	"hc": 0
+},
+{
+	"id": 557,
+	"nombre": "Caldo de carne",
+	"estado": "",
+	"categoria": "CARNES",
+	"cal": 7,
+	"pr": 0.84,
+	"gr": 0.19,
+	"hc": 0.8
+},
+{
+	"id": 558,
+	"nombre": "Panceta",
+	"estado": "",
+	"categoria": "CARNES",
+	"cal": 398,
+	"pr": 16.26,
+	"gr": 36.34,
+	"hc": 0.15
+},
+{
+	"id": 559,
+	"nombre": "Secreto ibérico",
+	"estado": "",
+	"categoria": "CARNES",
+	"cal": 225,
+	"pr": 22.12,
+	"gr": 14.45,
+	"hc": 0.03
+},
+{
+	"id": 560,
+	"nombre": "Caldo de pollo",
+	"estado": "",
+	"categoria": "CARNES",
+	"cal": 12,
+	"pr": 0.95,
+	"gr": 0.29,
+	"hc": 1.51
+},
+{
+	"id": 561,
+	"nombre": "Plátano verde",
+	"estado": "",
+	"categoria": "FRUTAS",
+	"cal": 85,
+	"pr": 1.04,
+	"gr": 0.31,
+	"hc": 21.75
+},
+{
+	"id": 562,
+	"nombre": "Comino",
+	"estado": "",
+	"categoria": "",
+	"cal": 8,
+	"pr": 0.37,
+	"gr": 0.47,
+	"hc": 0.93
+},
+{
+	"id": 563,
+	"nombre": "Bouquet garni",
+	"estado": "",
+	"categoria": "",
+	"cal": 59,
+	"pr": 0,
+	"gr": 5,
+	"hc": 3
+},
+{
+	"id": 564,
+	"nombre": "Arroz basmati",
+	"estado": "",
+	"categoria": "CEREALES",
+	"cal": 335,
+	"pr": 9,
+	"gr": 0.6,
+	"hc": 78
+},
+{
+	"id": 565,
+	"nombre": "Chile rojo",
+	"estado": "",
+	"categoria": "VERDURAS",
+	"cal": 19,
+	"pr": 1,
+	"gr": 0,
+	"hc": 4
+},
+{
+	"id": 566,
+	"nombre": "Jengibre",
+	"estado": "",
+	"categoria": "",
+	"cal": 2,
+	"pr": 0.04,
+	"gr": 0.02,
+	"hc": 0.36
+},
+{
+	"id": 567,
+	"nombre": "Ajete",
+	"estado": "",
+	"categoria": "VERDURAS",
+	"cal": 29,
+	"pr": 2.1,
+	"gr": 0.23,
+	"hc": 3.2
+},
+{
+	"id": 568,
+	"nombre": "Queso parmesano",
+	"estado": "",
+	"categoria": "LACTEOS",
+	"cal": 22,
+	"pr": 1.92,
+	"gr": 1.43,
+	"hc": 0.2
+},
+{
+	"id": 569,
+	"nombre": "Burrata",
+	"estado": "",
+	"categoria": "LACTEOS",
+	"cal": 305,
+	"pr": 18.66,
+	"gr": 24.59,
+	"hc": 2.27
+},
+{
+	"id": 570,
+	"nombre": "Albahaca",
+	"estado": "",
+	"categoria": "",
+	"cal": 1,
+	"pr": 0.13,
+	"gr": 0.03,
+	"hc": 0.23
+},
+{
+	"id": 571,
+	"nombre": "Aguacate",
+	"estado": "",
+	"categoria": "VERDURAS",
+	"cal": 322,
+	"pr": 4.02,
+	"gr": 29.47,
+	"hc": 17.15
+},
+{
+	"id": 572,
+	"nombre": "Chutney de mango",
+	"estado": "",
+	"categoria": "",
+	"cal": 182,
+	"pr": 1.26,
+	"gr": 0.98,
+	"hc": 41.27
+},
+{
+	"id": 573,
+	"nombre": "Sesamo",
+	"estado": "",
+	"categoria": "",
+	"cal": 322,
+	"pr": 23,
+	"gr": 56,
+	"hc": 1.6
+},
+{
+	"id": 574,
+	"nombre": "Hierbabuena",
+	"estado": "",
+	"categoria": "",
+	"cal": 44,
+	"pr": 3.29,
+	"gr": 0.73,
+	"hc": 8.41
+},
+{
+	"id": 575,
+	"nombre": "Cilantro",
+	"estado": "",
+	"categoria": "",
+	"cal": 0,
+	"pr": 0.02,
+	"gr": 0.01,
+	"hc": 0.04
+},
+{
+	"id": 576,
+	"nombre": "Menta",
+	"estado": "",
+	"categoria": "",
+	"cal": 70,
+	"pr": 3.75,
+	"gr": 0.49,
+	"hc": 14.89
+},
+{
+	"id": 577,
+	"nombre": "Lima",
+	"estado": "",
+	"categoria": "",
+	"cal": 8,
+	"pr": 0.6,
+	"gr": 0.2,
+	"hc": 1
+},
+{
+	"id": 578,
+	"nombre": "Caldo de marisco",
+	"estado": "",
+	"categoria": "PESCADOS",
+	"cal": 188,
+	"pr": 11.59,
+	"gr": 10.73,
+	"hc": 11.39
+},
+{
+	"id": 579,
+	"nombre": "Curry",
+	"estado": "",
+	"categoria": "",
+	"cal": 6,
+	"pr": 0.25,
+	"gr": 0.28,
+	"hc": 1.16
+},
+{
+	"id": 580,
+	"nombre": "Carne de cerdo",
+	"estado": "",
+	"categoria": "CARNES",
+	"cal": 363,
+	"pr": 36.64,
+	"gr": 22.83,
+	"hc": 0
+},
+{
+	"id": 581,
+	"nombre": "Pan árabe",
+	"estado": "",
+	"categoria": "CEREALES",
+	"cal": 123,
+	"pr": 4.05,
+	"gr": 0.53,
+	"hc": 24.82
+},
+{
+	"id": 582,
+	"nombre": "Canela",
+	"estado": "",
+	"categoria": "",
+	"cal": 6,
+	"pr": 0.09,
+	"gr": 0.07,
+	"hc": 1.84
+},
+{
+	"id": 583,
+	"nombre": "Frijoles",
+	"estado": "cocidos",
+	"categoria": "",
+	"cal": 151,
+	"pr": 5.54,
+	"gr": 5.15,
+	"hc": 21.39
+},
+{
+	"id": 584,
+	"nombre": "Cerveza negra",
+	"estado": "",
+	"categoria": "",
+	"cal": 37,
+	"pr": 0.6,
+	"gr": 0,
+	"hc": 5.26
+},
+{
+	"id": 585,
+	"nombre": "Cúrcuma",
+	"estado": "",
+	"categoria": "",
+	"cal": 354,
+	"pr": 7.83,
+	"gr": 9.88,
+	"hc": 64.93
+},
+{
+	"id": 586,
+	"nombre": "Cardamomo",
+	"estado": "",
+	"categoria": "",
+	"cal": 311,
+	"pr": 10.76,
+	"gr": 6.7,
+	"hc": 68.47
+},
+{
+	"id": 587,
+	"nombre": "Macis",
+	"estado": "",
+	"categoria": "",
+	"cal": 475,
+	"pr": 32.4,
+	"gr": 6.7,
+	"hc": 50.5
+},
+{
+	"id": 588,
+	"nombre": "Sobrasada",
+	"estado": "",
+	"categoria": "CARNES",
+	"cal": 143,
+	"pr": 3.97,
+	"gr": 13.81,
+	"hc": 0.74
+},
+{
+	"id": 589,
+	"nombre": "Vino tinto",
+	"estado": "",
+	"categoria": "",
+	"cal": 85,
+	"pr": 0.07,
+	"gr": 0,
+	"hc": 2.59
+},
+{
+	"id": 590,
+	"nombre": "Alcaparra",
+	"estado": "",
+	"categoria": "",
+	"cal": 23,
+	"pr": 2.36,
+	"gr": 0.86,
+	"hc": 4.89
+},
+{
+	"id": 591,
+	"nombre": "Oporto",
+	"estado": "",
+	"categoria": "",
+	"cal": 160,
+	"pr": 0.2,
+	"gr": 0,
+	"hc": 13.66
+},
+{
+	"id": 592,
+	"nombre": "Pasta fresca",
+	"estado": "cocida",
+	"categoria": "CEREALES",
+	"cal": 131,
+	"pr": 5.15,
+	"gr": 1.05,
+	"hc": 24.93
+},
+{
+	"id": 593,
+	"nombre": "Tomate cherry",
+	"estado": "",
+	"categoria": "VERDURAS",
+	"cal": 18,
+	"pr": 0.88,
+	"gr": 0.2,
+	"hc": 3.92
+},
+{
+	"id": 594,
+	"nombre": "Rúcula",
+	"estado": "",
+	"categoria": "VERDURAS",
+	"cal": 25,
+	"pr": 2.58,
+	"gr": 0.66,
+	"hc": 3.65
+},
+{
+	"id": 595,
+	"nombre": "Germinados",
+	"estado": "",
+	"categoria": "",
+	"cal": 38,
+	"pr": 2.9,
+	"gr": 0.5,
+	"hc": 5.4
+},
+{
+	"id": 596,
+	"nombre": "Romero",
+	"estado": "",
+	"categoria": "",
+	"cal": 345,
+	"pr": 5,
+	"gr": 15.2,
+	"hc": 46.4
+},
+{
+	"id": 597,
+	"nombre": "Coñac",
+	"estado": "",
+	"categoria": "",
+	"cal": 64,
+	"pr": 0,
+	"gr": 0,
+	"hc": 0
+},
+{
+	"id": 598,
+	"nombre": "Bacon",
+	"estado": "",
+	"categoria": "CARNES",
+	"cal": 240,
+	"pr": 15,
+	"gr": 20,
+	"hc": 0
+},
+{
+	"id": 599,
+	"nombre": "Oregano",
+	"estado": "",
+	"categoria": "",
+	"cal": 306,
+	"pr": 11,
+	"gr": 10.25,
+	"hc": 64.43
+}
+{
+	"id": 600,
+	"nombre": "Ensalada de brotes",
+	"estado": "",
+	"categoria": "VERDURAS",
+	"cal": 19,
+	"pr": 2,
+	"gr": 0.4,
+	"hc": 1.1
+},
+{
+	"id": 601,
+	"nombre": "Cebolla morada",
+	"estado": "",
+	"categoria": "VERDURAS",
+	"cal": 40,
+	"pr": 0.89,
+	"gr": 0.08,
+	"hc": 9.74
+},
+{
+	"id": 602,
+	"nombre": "Lomo de cerdo ibérico",
+	"estado": "",
+	"categoria": "CARNES",
+	"cal": 192,
+	"pr": 22,
+	"gr": 11,
+	"hc": 0
+},
+{
+	"id": 603,
+	"nombre": "Vinagre de manzana",
+	"estado": "",
+	"categoria": "",
+	"cal": 18,
+	"pr": 0.5,
+	"gr": 0,
+	"hc": 0.5
+},
+{
+	"id": 604,
+	"nombre": "Durum",
+	"estado": "",
+	"categoria": "",
+	"cal": 626,
+	"pr": 37.83,
+	"gr": 16.46,
+	"hc": 79.13
+},
+{
+	"id": 605,
+	"nombre": "Totopos",
+	"estado": "",
+	"categoria": "",
+	"cal": 476,
+	"pr": 7.6,
+	"gr": 20,
+	"hc": 64
+},
+{
+	"id": 606,
+	"nombre": "Ghee (mantequilla clarificada)",
+	"estado": "",
+	"categoria": "LACTEOS",
+	"cal": 876,
+	"pr": 0.28,
+	"gr": 99.48,
+	"hc": 0
+},
+{
+	"id": 607,
+	"nombre": "Chile serrano",
+	"estado": "",
+	"categoria": "",
+	"cal": 32,
+	"pr": 1.74,
+	"gr": 0.44,
+	"hc": 6.7
+},
+{
+	"id": 608,
+	"nombre": "Anacardo",
+	"estado": "",
+	"categoria": "FRUTOS SECOS",
+	"cal": 604,
+	"pr": 22,
+	"gr": 48,
+	"hc": 19
+},
+{
+	"id": 609,
+	"nombre": "Salvia molida",
+	"estado": "",
+	"categoria": "",
+	"cal": 315,
+	"pr": 10.6,
+	"gr": 12.8,
+	"hc": 60.7
+},
+{
+	"id": 610,
+	"nombre": "Hinojo",
+	"estado": "",
+	"categoria": "",
+	"cal": 31,
+	"pr": 1.24,
+	"gr": 0.2,
+	"hc": 7.29
+},
+{
+	"id": 611,
+	"nombre": "Mozzarella",
+	"estado": "",
+	"categoria": "LACTEOS",
+	"cal": 281,
+	"pr": 22,
+	"gr": 21,
+	"hc": 1
+},
+{
+	"id": 612,
+	"nombre": "Placa de lasaña/canelon fresca",
+	"estado": "",
+	"categoria": "CEREALES",
+	"cal": 307,
+	"pr": 11,
+	"gr": 2.9,
+	"hc": 58
+},{
+	"id": 613,
+	"nombre": "foie",
+	"estado": "",
+	"categoria": "CARNES",
+	"cal": 462,
+	"pr": 11.4,
+	"gr": 43.84,
+	"hc": 4.67
+},
+{
+	"id": 614,
+	"nombre": "Pesto alla Genovese",
+	"estado": "",
+	"categoria": "",
+	"cal": 482,
+	"pr": 4.7,
+	"gr": 46,
+	"hc": 9.8
+},
+{
+	"id": 615,
+	"nombre": "Pesto rojo",
+	"estado": "",
+	"categoria": "",
+	"cal": 210.81,
+	"pr": 7.57,
+	"gr": 10.44,
+	"hc": 25.55
+},
+{
+	"id": 616,
+	"nombre": "Pasta de cabello de ángel",
+	"estado": "",
+	"categoria": "",
+	"cal": 366,
+	"pr": 12,
+	"gr": 1.5,
+	"hc": 74
+},
+{
+	"id": 617,
+	"nombre": "Vino rosado",
+	"estado": "",
+	"categoria": "",
+	"cal": 71,
+	"pr": 0.24,
+	"gr": 0,
+	"hc": 4.12
+},
+{
+	"id": 618,
+	"nombre": "Cúscus",
+	"estado": "",
+	"categoria": "CEREALES",
+	"cal": 176,
+	"pr": 5.95,
+	"gr": 0.25,
+	"hc": 36.46
+},
+{
+	"id": 619,
+	"nombre": "Cerveza",
+	"estado": "",
+	"categoria": "",
+	"cal": 44,
+	"pr": 0.47,
+	"gr": 0,
+	"hc": 3.6
+},
+{
+	"id": 620,
+	"nombre": "Cebollino",
+	"estado": "",
+	"categoria": "VERDURAS",
+	"cal": 30,
+	"pr": 3.27,
+	"gr": 0.73,
+	"hc": 4.35
+},
+{
+	"id": 621,
+	"nombre": "Caldo de pescado",
+	"estado": "",
+	"categoria": "PESCADOS",
+	"cal": 39,
+	"pr": 4.88,
+	"gr": 1.46,
+	"hc": 0.98
+},
+{
+	"id": 622,
+	"nombre": "Pisto sofrito de verduras",
+	"estado": "",
+	"categoria": "VERDURAS",
+	"cal": 82,
+	"pr": 1,
+	"gr": 5.2,
+	"hc": 7.7
+},
+{
+	"id": 623,
+	"nombre": "Ras el hanout",
+	"estado": "",
+	"categoria": "",
+	"cal": 377,
+	"pr": 10.9,
+	"gr": 12.1,
+	"hc": 56.3
+},
+{
+	"id": 624,
+	"nombre": "Fusilli",
+	"estado": "",
+	"categoria": "",
+	"cal": 359,
+	"pr": 12.5,
+	"gr": 2,
+	"hc": 71.2
+},
+{
+	"id": 625,
+	"nombre": "Tomate seco",
+	"estado": "",
+	"categoria": "",
+	"cal": 225,
+	"pr": 9.1,
+	"gr": 1.3,
+	"hc": 39.8
+},
+{
+	"id": 626,
+	"nombre": "Aceitunas negras",
+	"estado": "",
+	"categoria": "",
+	"cal": 105,
+	"pr": 0.88,
+	"gr": 9.54,
+	"hc": 6.06
+},
+{
+	"id": 627,
+	"nombre": "Gambones",
+	"estado": "",
+	"categoria": "PESCADOS",
+	"cal": 88,
+	"pr": 18,
+	"gr": 1.8,
+	"hc": 0
+},
+{
+	"id": 628,
+	"nombre": "Queso cheddar",
+	"estado": "",
+	"categoria": "LACTEOS",
+	"cal": 403,
+	"pr": 24.9,
+	"gr": 33.14,
+	"hc": 1.28
+},
+{
+	"id": 629,
+	"nombre": "Carabineros",
+	"estado": "",
+	"categoria": "PESCADOS",
+	"cal": 113,
+	"pr": 22.83,
+	"gr": 1.49,
+	"hc": 0.9
+},
+{
+	"id": 630,
+	"nombre": "Yuca",
+	"estado": "",
+	"categoria": "",
+	"cal": 160,
+	"pr": 1.36,
+	"gr": 0.28,
+	"hc": 38.06
+},
+{
+	"id": 631,
+	"nombre": "Boniato",
+	"estado": "",
+	"categoria": "VERDURAS",
+	"cal": 107,
+	"pr": 1.61,
+	"gr": 0.6,
+	"hc": 24.19
+},
+{
+	"id": 632,
+	"nombre": "Pimenton dulce",
+	"estado": "",
+	"categoria": "",
+	"cal": 357,
+	"pr": 14.8,
+	"gr": 12.95,
+	"hc": 34.84
+},
+{
+	"id": 633,
+	"nombre": "Bimi",
+	"estado": "",
+	"categoria": "",
+	"cal": 33,
+	"pr": 2.85,
+	"gr": 0.37,
+	"hc": 6.41
+},
+{
+	"id": 634,
+	"nombre": "Sucedáneo de Angulas",
+	"estado": "",
+	"categoria": "PESCADOS",
+	"cal": 112,
+	"pr": 10,
+	"gr": 4.9,
+	"hc": 6
+},
+{
+	"id": 635,
+	"nombre": "Eneldo",
+	"estado": "",
+	"categoria": "",
+	"cal": 292,
+	"pr": 19.9,
+	"gr": 4.4,
+	"hc": 42.2
+},
+{
+	"id": 636,
+	"nombre": "Arroz salvaje",
+	"estado": "",
+	"categoria": "CEREALES",
+	"cal": 335,
+	"pr": 12.6,
+	"gr": 0.9,
+	"hc": 69.1
+},
+{
+	"id": 637,
+	"nombre": "Crema de queso",
+	"estado": "",
+	"categoria": "LACTEOS",
+	"cal": 349,
+	"pr": 7.55,
+	"gr": 34.87,
+	"hc": 2.66
+},
+{
+	"id": 638,
+	"alimento": "Leche de almendras",
+	"estado": "",
+	"categoria": "DERIVADOS LECHE",
+	"cal": 17,
+	"pr": 0.62,
+	"gr": 1.46,
+	"hc": 0.57
+},
+{
+	"id": 639,
+	"alimento": "Pistachos",
+	"estado": "",
+	"categoria": "FRUTOS SECOS",
+	"cal": 557,
+	"pr": 20.61,
+	"gr": 44.44,
+	"hc": 27.97
+},
+{
+	"id": 640,
+	"alimento": "Tofu",
+	"estado": "",
+	"categoria": "",
+	"cal": 78,
+	"pr": 7.82,
+	"gr": 4.93,
+	"hc": 2.08
+},
+{
+	"id": 641,
+	"alimento": "Semillas de lino",
+	"estado": "",
+	"categoria": "",
+	"cal": 534,
+	"pr": 18.29,
+	"gr": 42.16,
+	"hc": 28.88
+},
+{
+	"id": 642,
+	"alimento": "Harina de garbanzos",
+	"estado": "",
+	"categoria": "CEREALES",
+	"cal": 387,
+	"pr": 22.39,
+	"gr": 6.69,
+	"hc": 57.82
+},
+{
+	"id": 643,
+	"alimento": "Pasta de tomate",
+	"estado": "",
+	"categoria": "CEREALES",
+	"cal": 82,
+	"pr": 4.32,
+	"gr": 0.47,
+	"hc": 18.91
+},
+{
+	"id": 644,
+	"alimento": "Harissa",
+	"estado": "",
+	"categoria": "",
+	"cal": 72,
+	"pr": 2.9,
+	"gr": 1.2,
+	"hc": 11
+},
+{
+	"id": 645,
+	"alimento": "Pan integral",
+	"estado": "",
+	"categoria": "CEREALES",
+	"cal": 246,
+	"pr": 9.7,
+	"gr": 4.2,
+	"hc": 46.1
+},
+{
+	"id": 646,
+	"alimento": "Cereales integrales",
+	"estado": "",
+	"categoria": "CEREALES",
+	"cal": 358,
+	"pr": 11.35,
+	"gr": 2.4,
+	"hc": 76.3
+},
+{
+	"id": 647,
+	"alimento": "Mermelada",
+	"estado": "",
+	"categoria": "",
+	"cal": 260,
+	"pr": 0.54,
+	"gr": 0.14,
+	"hc": 66.63
+},
+{
+	"id": 648,
+	"alimento": "Pechuga de pavo",
+	"estado": "",
+	"categoria": "CARNES",
+	"cal": 104,
+	"pr": 17.07,
+	"gr": 1.66,
+	"hc": 4.21
+},
+{
+	"id": 649,
+	"alimento": "Galletas de trigo integral",
+	"estado": "",
+	"categoria": "CEREALES",
+	"cal": 443,
+	"pr": 8.8,
+	"gr": 17.2,
+	"hc": 68.6
+},
+{
+	"id": 650,
+	"alimento": "Galletas de Chocolate",
+	"estado": "",
+	"categoria": "AZUCARES",
+	"cal": 45,
+	"pr": 0.58,
+	"gr": 1.54,
+	"hc": 7.33
+},
+{
+	"id": 651,
+	"alimento": "Galletas de avena",
+	"estado": "",
+	"categoria": "CEREALES",
+	"cal": 450,
+	"pr": 6.2,
+	"gr": 18.1,
+	"hc": 68.7
+},
+{
+	"id": 652,
+	"alimento": "Tortitas de arroz integral",
+	"estado": "",
+	"categoria": "CEREALES",
+	"cal": 29,
+	"pr": 0.6,
+	"gr": 0.2,
+	"hc": 6.2
+}
+

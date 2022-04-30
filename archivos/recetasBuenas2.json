@@ -1,0 +1,258 @@
+{
+	"id": 54,
+	"categoria": "VERDURAS",
+	"nombre": "Ensalada de berenjenas escabechadas caseras",
+	"ingredientes": [{
+			"alimento": 79,
+			"ingrediente": "1 berenjena"
+		},{
+			"alimento": 553,
+			"ingrediente": "300 ml de vinagre"
+		},{
+			"alimento": 544,
+			"ingrediente": "300 ml de agua"
+		},{
+			"alimento": 72,
+			"ingrediente": "3 dientes de ajo"
+		},{
+			"alimento": 556,
+			"ingrediente": "80 ml de aceite de oliva virgen extra"
+		},{
+			"alimento": 550,
+			"ingrediente": "1 cucharada de pimentón"
+		},{
+			"alimento": 562,
+			"ingrediente": "1 cucharadita de comino en polvo"
+		},{
+			"alimento": 166,
+			"ingrediente": "1 limón"
+		},{
+			"alimento": 574,
+			"ingrediente": "1 cucharada de sal"
+		},{
+			"alimento": 114,
+			"ingrediente": "Mix de lechugas"
+		},{
+			"alimento": 92,
+			"ingrediente": "1 cebolla"
+		},{
+			"alimento": 149,
+			"ingrediente": "70 g de aceitunas"
+		},{
+			"alimento": 620,
+			"ingrediente": "1 cebollino"
+		}],
+	"dieta": "VEGANA",
+	"preparacion":[
+		"Cortamos la berenjenas en bastones (mantenemos la piel). Las salamos bien y dejamos que reposen 20 minutos. Las aclaramos y reservamos.",
+		"En una olla ponemos a hervir el agua con el vinagre e introducimos las berenjenas. Cocinamos entre 5 y 7 minutos, dependiendo del tamaño. Dejamos enfriar fuera de la mezcla del vinagre.",
+		"En un bol mezclamos el resto de ingredientes y los ajos bien machacados. Introducimos las berenjenas y reservamos en la nevera un mínimo de una hora.",
+		"Montamos en un bol la ensalada con la cebolleta bien picada. Aliñamos con una mezcla de un poco del escabeche, un poco del vinagre de cocción y aceite de oliva virgen extra.",
+		"Emplatamos y ponemos por encima las berenjenas en escabeche."
+	]
+},
+{
+	"idReceta": 55,
+	"categoria": "VERDURAS",
+	"nombre": "Crema fría de espinacas, berros y brócoli",
+	"ingredientes": [{
+			"alimento": 110,
+			"ingrediente": "Un puñado de espinacas"
+		},{
+			"alimento": 81,
+			"ingrediente": "Un puñado de berros"
+		},{
+			"alimento": 82,
+			"ingrediente": "150 g brócoli"
+		},{
+			"alimento": 638,
+			"ingrediente": "200 ml leche de almendras"
+		},{
+			"alimento": 259,
+			"ingrediente": "2 cucharadas de azúcar moreno"
+		},{
+			"alimento": 639,
+			"ingrediente": "Un puñado de pistachos"
+		},{
+			"alimento": 544,
+			"ingrediente": "Un puñado de hielo picado "
+		}],
+	"dieta": "VEGANA",
+	"preparacion":[
+		"Machacamos los pistachos pelados en un mortero y reservamos.",
+		"Trituramos todos los ingredientes muy limpios con una batidora de vaso americano, colamos y servimos muy frío.",
+		"Decoramos con polvo de pistachos y listo."
+	]
+},
+{
+	"idReceta": 56,
+	"categoria": "VERDURAS",
+	"nombre": "Albóndigas vegetarianas de tofu con salsa de tomate",
+	"ingredientes": [{
+			"alimento": 640,
+			"ingrediente": "200 g de tofu"
+		},{
+			"alimento": 92,
+			"ingrediente": "2 Cebollas"
+		},{
+			"alimento": 641,
+			"ingrediente": "10 g de semillas de lino"
+		},{
+			"alimento": 579,
+			"ingrediente": "1 cucharada de curry en polvo"
+		},{
+			"alimento": 72,
+			"ingrediente": "1 diente de ajo"
+		},{
+			"alimento": 201,
+			"ingrediente": "100 g de almendras molidas"
+		},{
+			"alimento": 642,
+			"ingrediente": "100 g de harina de garbanzos"
+		},{
+			"alimento": 210,
+			"ingrediente": "100 ml de leche de coco"
+		},{
+			"alimento": 599,
+			"ingrediente": "Orégano fresco picado"
+		},{
+			"alimento": 127,
+			"ingrediente": "Perejil fresco picado"
+		},{
+			"alimento": 25,
+			"ingrediente": "Pan rallado"
+		},{
+			"alimento": 72,
+			"ingrediente": "1 diente de ajo"
+		},{
+			"alimento": 556,
+			"ingrediente": "Aceite de oliva virgen extra"
+		},{
+			"alimento": 140,
+			"ingrediente": "8 Tomates (sin piel ni semillas)"
+		},{
+			"alimento": 547,
+			"ingrediente": "Sal"
+		},{
+			"alimento": 128,
+			"ingrediente": "Pimienta"
+		}],
+	"dieta": "VEGANA",
+	"preparacion":[
+		"En el episodio 189 de Fácil y Resultón T9, el cocinero Gonzalo D'Ambrosio prepara una receta de Albóndigas vegetarianas de tofu con salsa de tomate.",
+		"En primer lugar haremos las albóndigas.",
+		"En una picadora trituramos 200 g de tofu, 1 cebolla y 10 g de semillas de lino.",
+		"Cuando esté bien picado, añadimos 1 cucharada de curry en polvo, 1 diente de ajo, 100 g de almendra molida, 100 g de harina de garbanzo y un poco de agua.",
+		"Seguidamente mezclamos bien con 100 ml de leche de coco, orégano fresco y perejil fresco.",
+		"Cuando la masa esté perfectamente mezclada hacemos bolitas con ella y las pasamos por pan rallado.",
+		"En una sartén con aceite caliente las freímos hasta dorar bien, a fuego medio-alto con cuidado de que no se nos quemen.",
+		"Hacemos la salsa para acompañar las albóndigas.",
+		"Picamos 1 diente de ajo, cortamos 1 cebolla en brunoise y ponemos un poco de aceite a calentar en una sartén.",
+		"Salteamos el ajo picado, agregamos la cebolla en brunoise y un poco de sal para sudar. Una vez la cebolla esté transparente, agregamos 8 tomates pera cortados en concassé y condimentamos con sal, pimienta y orégano.",
+		"Ponemos las albóndigas dentro y terminamos de cocinar unos minutos.",
+		"Servimos."
+	]
+},
+{
+	"idReceta": 57,
+	"categoria": "VERDURAS",
+	"nombre": "Ensalada de berenjena marroquí (Zaalouk)",
+	"ingredientes": [{
+			"alimento": 79,
+			"ingrediente": "2 Berenjenas grandes"
+		},{
+			"alimento": 140,
+			"ingrediente": "7 Tomates"
+		},{
+			"alimento": 72,
+			"ingrediente": "7 dientes de ajo"
+		},{
+			"alimento": 643,
+			"ingrediente": "1 cucharada de pasta de tomate"
+		},{
+			"alimento": 257,
+			"ingrediente": "1 cucharadita de azúcar blanca"
+		},{
+			"alimento": 562,
+			"ingrediente": "1 cucharadita de comino molido"
+		},{
+			"alimento": 550,
+			"ingrediente": "1 cucharadita de pimentón"
+		},{
+			"alimento": 575,
+			"ingrediente": "40 g de cilantro fresco"
+		},{
+			"alimento": 644,
+			"ingrediente": "1 cucharadita de Harissa"
+		},{
+			"alimento": 167,
+			"ingrediente": "4 cucharadas de zumo de limón"
+		},{
+			"alimento": 34,
+			"ingrediente": "Pan"
+		},{
+			"alimento": 272,
+			"ingrediente": "80 g de aceite de girasol"
+		},{
+			"alimento": 547,
+			"ingrediente": "Sal"
+		},{
+			"alimento": 128,
+			"ingrediente": "Pimienta"
+		}],
+	"dieta": "VEGANA",
+	"preparacion":[
+		"En primer lugar, cortamos 2 berenjenas grandes por la mitad. Colocamos las berenjenas en una sartén al fuego, las tapamos con papel de aluminio y cocinamos durante 25 minutos.",
+		"Por otro lado, lavamos, pelamos y troceamos 7 tomates y cortamos en láminas 7 dientes de ajo.",
+		"Sofreímos los 7 tomates con 1 cucharada de pasta de tomate, 1 cucharada de azúcar, 1 cucharadita de comino molido, 1 cucharadita de pimentón, 40 g de cilantro, 1 cucharadita de Harissa, los 7 dientes de ajo y 4 cucharadas de zumo de limón.",
+		"Cuando las berenjenas estén listas, las limpiamos y cortamos en tiras quedándonos sólo con lo de dentro. Troceamos estas tiras.",
+		"Las ponemos por encima del sofrito y añadimos pan en cuadraditos. Incorporamos 80 g de aceite de girasol y salpimentamos."
+	]
+},
+{
+	"idReceta": 58,
+	"categoria": "VERDURAS",
+	"nombre": "Ensalada de aguacate y tomate",
+	"ingredientes": [{
+			"alimento": 140,
+			"ingrediente": "3 Tomates"
+		},{
+			"alimento": 571,
+			"ingrediente": "1 Aguacate"
+		},{
+			"alimento": 547,
+			"ingrediente": "Sal"
+		},{
+			"alimento": 128,
+			"ingrediente": "Pimienta"
+		},{
+			"alimento": 575,
+			"ingrediente": "1 manojo de cilantro fresco picado"
+		},{
+			"alimento": 166,
+			"ingrediente": "3 tiras de cáscara de limón encurtido"
+		},{
+			"alimento": 271,
+			"ingrediente": "Aceite de oliva virgen"
+		},{
+			"alimento": 167,
+			"ingrediente": "1 chorrito de zumo de limón"
+		},{
+			"alimento": 562,
+			"ingrediente": "1 pizca de comino molido"
+		},{
+			"alimento": 163,
+			"ingrediente": "1 cucharada de zumo de granada"
+		}],
+	"dieta": "VEGANA",
+	"preparacion":[
+		"En primer lugar, troceamos 3 tomates pera y picamos 1 manojo de cilantro fresco. ",
+		"En un bol amplio, mezclamos 1 aguacate troceado, sal, pimienta, el cilantro picado excepto 1 cucharada que utilizaremos luego, 3 tiras de cáscara de limón encurtido, aceite de oliva virgen, 1 chorrito de zumo de limón.",
+		"Añadimos los tomates pera troceados y mezclamos.",
+		"Espolvoreamos por encima 1 cucharada de cilantro que habíamos reservado, 1 pizca de comino y aliñamos con aceite de oliva y 1 cucharada de zumo de granada.",
+		"Servimos."
+	]
+}
+
+
+

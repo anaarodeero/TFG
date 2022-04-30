@@ -1,40 +1,44 @@
 {
-	"id": 53,
-	"categoria": "Verduras/Hortalizas",
-	"nombre": "Crema de aguacate",
+	"idReceta": 58,
+	"categoria": "VERDURAS",
+	"nombre": "Ensalada de aguacate y tomate",
 	"ingredientes": [{
+			"alimento": 140,
+			"ingrediente": "3 Tomates"
+		},{
 			"alimento": 571,
-			"ingrediente": "2 Aguacates"
+			"ingrediente": "1 Aguacate"
 		},{
-			"alimento": 244,
-			"ingrediente": "1 Yogur griego"
+			"alimento": 547,
+			"ingrediente": "Sal"
 		},{
-			"alimento": 637,
-			"ingrediente": "2 cucharadas de crema de queso"
-		},{
-			"alimento": 231,
-			"ingrediente": "1 chorrito de nata de cocinar"
-		},{
-			"alimento": 577,
-			"ingrediente": "1 Lima en zumo"
-		},{
-			"alimento": 556,
-			"ingrediente": "Aceite de oliva virgen extra"
+			"alimento": 128,
+			"ingrediente": "Pimienta"
 		},{
 			"alimento": 575,
-			"ingrediente": "Cilantro"
+			"ingrediente": "1 manojo de cilantro fresco picado"
 		},{
-			"alimento": 140,
-			"ingrediente": "1/2 tomate"
+			"alimento": 166,
+			"ingrediente": "3 tiras de cáscara de limón encurtido"
 		},{
-			"alimento": 92,
-			"ingrediente": "1 cebolla"
+			"alimento": 271,
+			"ingrediente": "Aceite de oliva virgen"
+		},{
+			"alimento": 167,
+			"ingrediente": "1 chorrito de zumo de limón"
+		},{
+			"alimento": 562,
+			"ingrediente": "1 pizca de comino molido"
+		},{
+			"alimento": 163,
+			"ingrediente": "1 cucharada de zumo de granada"
 		}],
-	"dieta": "regular",
+	"dieta": "VEGANA",
 	"preparacion":[
-		"Lo primero que tenemos que hacer es lavar y abrir 2 aguacates y les sacamos la carne con ayuda de una cuchara. La reservamos en un bol.",
-		"Agregamos al bol un yogur griego, dos cucharadas de crema de queso, un chorrito de nata de cocinar, el zumo de una lima y aceite de oliva virgen extra al gusto.",
-		"Trituramos todos los ingredientes del bol hasta que consigamos una crema lisa y homogénea.",
-		"Servimos con cilantro al gusto, medio tomate lavado y una cebolla lavada, pelada y picada por encima para decorar."
+		"En primer lugar, troceamos 3 tomates pera y picamos 1 manojo de cilantro fresco. ",
+		"En un bol amplio, mezclamos 1 aguacate troceado, sal, pimienta, el cilantro picado excepto 1 cucharada que utilizaremos luego, 3 tiras de cáscara de limón encurtido, aceite de oliva virgen, 1 chorrito de zumo de limón.",
+		"Añadimos los tomates pera troceados y mezclamos.",
+		"Espolvoreamos por encima 1 cucharada de cilantro que habíamos reservado, 1 pizca de comino y aliñamos con aceite de oliva y 1 cucharada de zumo de granada.",
+		"Servimos."
 	]
 }

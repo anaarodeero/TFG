@@ -4,6 +4,12 @@ export interface Usuario {
     email: string
     password: string
     alergias: string[]
-    dieta: string
+    dieta: Dieta
     _id?: string
+}
+
+export enum Dieta {
+  REGULAR = "REGULAR",
+  VEGETARIANA = "VEGETARIANA",
+  VEGANA = "VEGANA"
 }

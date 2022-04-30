@@ -3,7 +3,7 @@ const { Schema, model } = require('mongoose')
 const DistribucionCategoriaAlimentoSchema = new Schema({
     idCategoria: {type: Number, required: true},
     nombre: {type: String, required: true},
-    frecuencia: {enum: ['SEMANAL', 'DIARIA']},
+    frecuencia: {enum: ['SEMANAL', 'DIARIA', 'OCASIONAL']},
     limiteInferior: {type: Number, required: true},
     limiteSuperior: {type: Number, required: true},
     desayuno: {type: Boolean, required: true},

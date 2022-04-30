@@ -10,9 +10,21 @@
   background-color: #37b97d;
   border-radius: 1rem;
 }
+
 .botonInicio {
-  color: white;
   color: #37b97d;
+  /* background-color: #37b97d; */
   border-radius: 1rem;
   text-decoration: underline;
+}
+
+.greeting {
+  font-size: smaller;
+  color: #37b97d;
+  text-decoration: underline;
+  margin-right: 10px;
+}
+
+.container{
+  display: contents;
 }

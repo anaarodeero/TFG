@@ -12,12 +12,14 @@ export class GlobalGuard implements CanActivate {
   constructor(private router: Router, private usuarioService: UsuarioService) { }
 
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
-      if(!this.usuarioService.isLoggedIn()){
+    console.log("log:", this.usuarioService.isLoggedIn())
+    this.usuarioService.isLoggedIn().subscribe(result => {
+      if(!result){
         console.log("No estoy logeado")
-        if(this.router.url.includes("dashboard")) {
-          this.router.navigateByUrl('/login');
-          return false;
+        if(!this.router.url.includes("home") && !this.router.url.includes("register") && !this.router.url.includes("login")) {
+          this.router.navigateByUrl('/login')
         }
+        return false;
       } else {
         console.log("Estoy logeado")
         if(this.router.url.includes("login") && this.router.url.includes("register")) {
@@ -25,6 +27,9 @@ export class GlobalGuard implements CanActivate {
           return false;
         }
       }
+      return true;
+    })
+
     return true;
   }
 

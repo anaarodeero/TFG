@@ -42,9 +42,7 @@ export class UsuarioService {
 
   isLoggedIn(){
     // console.log("userrr: ", this.getUser())
-    return this.http.post('http://localhost:4000/api/authenticate', {token: this.cookieService.get('CookieSesion')}).subscribe(result => {
-      return result
-    });
+    return this.http.post('http://localhost:4000/api/authenticate', {token: this.cookieService.get('CookieSesion')});
   }
 
   authenticate(token: string){

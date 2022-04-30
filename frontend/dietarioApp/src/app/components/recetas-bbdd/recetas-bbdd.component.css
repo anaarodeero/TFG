@@ -25,6 +25,8 @@
   position: absolute;
   height: 95%;
   width: 100%;
+  flex-direction: row !important;
+  place-content: space-evenly !important;
 }
 
 .titulo {
@@ -32,12 +34,18 @@
   /* margin-top: 2rem; */
   color: #37b97d;
   font-weight: bold;
+  margin: 0;
   /* font-size: xx-large; */
+  /* margin-bottom: 2rem; */
+}
+
+.sub-titulo{
   margin-bottom: 2rem;
+  color: #37b97d;
 }
 
 .card {
-  width: 60%;
+  width: 40%;
   text-align: center;
   border-radius: 1rem;
 }
@@ -135,3 +143,19 @@ tr.example-element-row:not(.example-expanded-row):active {
   margin: -25px 0 0 -15px !important;
 }
 
+.elementos{
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.elemento {
+  display: flex;
+}
+
+.ingrediente {
+  margin: 3px 0 0 5px;
+}
+
+.ingrediente::first-letter {
+  text-transform: uppercase;
+}

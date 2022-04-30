@@ -33,11 +33,32 @@ export class AlimentoService {
     return nun;
   }
 
-  getAlimentoById(id: number){
-    let paramsQuery = new HttpParams().set("id", id);
+  getMultipleAlimentoByIds(ids: Number[]){
+    let paramsQuery = new HttpParams().set("ids", ids.join(','))
+    // let paramsQuery = new HttpParams().append("id", paramsQueryIn);
     console.log("parametros", paramsQuery)
     let alime: Alimento
+    return this.http.get<Alimento[]>('http://localhost:4000/api/alimento/getMultipleAlimento', {
+      params: paramsQuery
+    })
+    // return salida;
+  }
+
+  getAlimentoById(id: number){
+    let paramsQuery = new HttpParams().set("id", id);
+    // console.log("parametros", paramsQuery)
+    let alime: Alimento
     return this.http.get<Alimento>('http://localhost:4000/api/alimento/getAlimento', {
+      params: paramsQuery
+    })
+    // return salida;
+  }
+
+  getAlimentoNombreById(id: number){
+    let paramsQuery = new HttpParams().set("id", id);
+    // console.log("parametros", paramsQuery)
+    let alime: Alimento
+    return this.http.get<String>('http://localhost:4000/api/alimento/getAlimentoNombre', {
       params: paramsQuery
     })
     // return salida;

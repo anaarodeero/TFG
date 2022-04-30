@@ -1,6 +1,6 @@
 export interface Piramide {
   id: Number
-  nombre: String
+  dieta: Dieta
   piramide: DistribucionCategoriaAlimento[]
 }
 
@@ -19,5 +19,12 @@ export interface DistribucionCategoriaAlimento {
 
 export enum Frecuencia {
   SEMANAL = 'SEMANAL',
-  DIARIA = 'DIARIA'
+  DIARIA = 'DIARIA',
+  OCASIONAL = 'OCASIONAL'
+}
+
+export enum Dieta {
+  REGULAR = "REGULAR",
+  VEGETARIANA = "VEGETARIANA",
+  VEGANA = "VEGANA"
 }

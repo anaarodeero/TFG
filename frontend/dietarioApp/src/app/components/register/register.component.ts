@@ -7,7 +7,7 @@ import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { Usuario } from 'src/app/models/usuario';
+import { Dieta, Usuario } from 'src/app/models/usuario';
 import { UsuarioService } from 'src/app/services/usuario.service';
 import { CookieService } from 'ngx-cookie-service';
 import { Router } from '@angular/router';
@@ -39,7 +39,7 @@ export class RegisterComponent implements OnInit {
     email: '',
     password: '',
     alergias: [],
-    dieta: ''
+    dieta: undefined
   };
   alergias = ['gluten', 'sesamo', 'nueces', 'crustaceos', 'huevos', 'pescado', 'mostaza', 'lacteos', 'apio', 'cacahuetes', 'soja', 'marisco', 'altramuces', 'sulfatos'];
   grupo = new FormControl();
@@ -79,20 +79,21 @@ export class RegisterComponent implements OnInit {
     } else {
       this.orientation = 'horizontal'
     }
-
-    if(this.usuarioService.isLoggedIn()){
-      this.editMode = true;
-      if (/register/.test(this.router.url)){
-        this.router.navigate(['/dashboard']);
-      }
-      this.usuarioService.getUser().subscribe(
-        (user) => {
-          this.usuario = user
+    this.usuarioService.isLoggedIn().subscribe(result => {
+      if(result){
+        this.editMode = true;
+        if (/register/.test(this.router.url)){
+          this.router.navigate(['/dashboard']);
         }
-      );
-    } else {
-      this.editMode = false;
-    }
+        this.usuarioService.getUser().subscribe(
+          (user) => {
+            this.usuario = user
+          }
+        );
+      } else {
+        this.editMode = false;
+      }
+    })
 
     this.firstFormGroup = this._formBuilder.group({
       email: ['', Validators.required],

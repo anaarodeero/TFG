@@ -1,15 +1,55 @@
 <div class="container" fxLayout="column" fxLayoutAlign="center center">
     <h1 class="mat-display-2 titulo">Tu pirámide semanal</h1>
-    <div fxLayout="row" fxLayoutAlign="space-evenly center" fxFill>
-        <img src="../../../assets/piramide.png">
-        <mat-card class="card mat-elevation-z8">
-            <mat-grid-list cols="3" rowHeight="50px">
-                <!-- <mat-grid-tile
-                    *ngFor="let celda of celdas"
-                    [colspan]="celda.colums"
-                    [rowspan]="celda.filas">
-                  <p>{{celda.texto}}</p>
-                </mat-grid-tile> -->
+        <mat-card class="card mat-elevation-z8" ngClass.lt-md="card-sm" fxLayoutAlign="space-around center">
+          <div class="imagen">
+            <img ngClass.lt-lg="imagen-sm" src="../../../assets/piramide.png">
+          </div>
+          <div class="elementos">
+            <h3>Consumo diario</h3>
+            <div *ngFor="let alimento of categoriaDiaria">
+              <div class="fila">
+                <div class="elemento">
+                  <mat-icon>chevron_right</mat-icon>
+                  <p class="alimento">{{alimento.nombre}}</p>
+                </div>
+                <div class="cantidad">
+                  <p class="alimento">{{getNumeroRaciones(alimento)}}</p>
+                </div>
+              </div>
+            </div>
+            <h3>Consumo semanal</h3>
+            <div *ngFor="let alimento of categoriaSemanal">
+              <div class="fila">
+                <div class="elemento">
+                  <mat-icon>chevron_right</mat-icon>
+                  <p class="alimento">{{alimento.nombre}}</p>
+                </div>
+                <div class="cantidad">
+                  <p class="alimento">{{getNumeroRaciones(alimento)}}</p>
+                </div>
+              </div>
+            </div>
+            <h3>Consumo ocasional y moderado</h3>
+            <div *ngFor="let alimento of categoriaOcasional">
+              <div class="fila">
+                <div class="elemento">
+                  <mat-icon>chevron_right</mat-icon>
+                  <p class="alimento">{{alimento.nombre}}</p>
+                </div>
+              </div>
+            </div>
+            <ng-container *ngIf="!dietaRegular">
+              <h3>Suplementos</h3>
+              <div class="fila">
+                <div class="elemento">
+                  <mat-icon>chevron_right</mat-icon>
+                  <p class="alimento">Vitamina B12 y otros</p>
+                </div>
+              </div>
+            </ng-container>
+          </div>
+          <!-- <p *ngFor="let alimento of categoriaDiaria">{{alimento.nombre}}</p> -->
+            <!-- <mat-grid-list cols="3" rowHeight="50px">
                 <mat-grid-tile [colspan]="1" [rowspan]="1">
                 </mat-grid-tile>
                 <mat-grid-tile [colspan]="1" [rowspan]="1">
@@ -40,11 +80,7 @@
                     {{getNumeroRaciones(alimento)}}
                   </mat-grid-tile>
                 </ng-container>
-                <!-- <mat-grid-tile [colspan]="1" [rowspan]="1">
-                  <p>{{celda.texto}}</p>
-                </mat-grid-tile> -->
-              </mat-grid-list>
+              </mat-grid-list> -->
 
         </mat-card>
-    </div>
 </div>

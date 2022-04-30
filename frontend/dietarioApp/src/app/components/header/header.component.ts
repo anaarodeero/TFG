@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { CookieService } from 'ngx-cookie-service';
+import { UsuarioService } from 'src/app/services/usuario.service';
 
 @Component({
   selector: 'app-header',
@@ -10,10 +11,20 @@ import { CookieService } from 'ngx-cookie-service';
 export class HeaderComponent implements OnInit {
 
   userLogIn: boolean = false;
+  loginPage: boolean = false;
+  registerPage: boolean = false;
 
-  constructor(private router: Router, private cookieService: CookieService) { }
+  constructor(private router: Router, private usuarioService: UsuarioService) { }
 
   ngOnInit(): void {
+    this.usuarioService.isLoggedIn().subscribe(result => {
+     if(result) this.userLogIn = true
+     if(this.router.url.includes("login")){
+       this.loginPage = true;
+     } else if(this.router.url.includes("register")){
+      this.registerPage = true;
+      }
+    })
   }
 
   registrar(){
@@ -25,7 +36,7 @@ export class HeaderComponent implements OnInit {
   }
 
   cerrarSesion(){
-    this.cookieService.delete('CookieSesion');
+    this.usuarioService.logout();
     this.router.navigateByUrl('/home');
   }
 

@@ -1,0 +1,25 @@
+<div class="container" fxLayout="column" fxLayoutAlign="start center">
+  <h1 class="mat-display-2 titulo">Tu plan diarip</h1>
+      <mat-card class="card mat-elevation-z8" ngClass.lt-md="card-sm" ngClass.lt-sm="card-xs">
+        <div class="tabla">
+            <mat-list fxLayout="column" >
+                <mat-list-item class="item diaSemana">{{dia.diaSemana}}</mat-list-item>
+                <mat-divider [inset]="true"></mat-divider>
+                <mat-list-item class="item sm">Desayuno</mat-list-item>
+                <mat-list-item class="item" *ngFor="let desayuno of dia.desayuno">{{desayuno}}</mat-list-item>
+                <mat-divider [inset]="true"></mat-divider>
+                <mat-list-item class="item sm">Almuerzo</mat-list-item>
+                <mat-list-item class="item">{{dia.almuerzo}}</mat-list-item>
+                <mat-divider [inset]="true"></mat-divider>
+                <mat-list-item class="item sm">Comida</mat-list-item>
+                <mat-list-item class="item" *ngFor="let comida of dia.comida">{{comida}}</mat-list-item>
+                <mat-divider [inset]="true"></mat-divider>
+                <mat-list-item class="item sm">Merienda</mat-list-item>
+                <mat-list-item class="item">{{dia.merienda}}</mat-list-item>
+                <mat-divider [inset]="true"></mat-divider>
+                <mat-list-item class="item sm">Cena</mat-list-item>
+                <mat-list-item class="item" *ngFor="let cena of dia.cena">{{cena}}</mat-list-item>
+            </mat-list>
+        </div>
+      </mat-card>
+</div>

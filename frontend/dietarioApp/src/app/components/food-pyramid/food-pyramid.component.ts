@@ -3,10 +3,12 @@ import { Component, OnInit } from '@angular/core';
 import { CoreModule } from '@angular/flex-layout';
 import { firstValueFrom } from 'rxjs';
 import { Alimento } from 'src/app/models/alimento';
-import { DistribucionCategoriaAlimento, Frecuencia, Piramide } from 'src/app/models/piramide';
+import { Dieta, DistribucionCategoriaAlimento, Frecuencia, Piramide } from 'src/app/models/piramide';
+import { Usuario } from 'src/app/models/usuario';
 import { AlimentoService } from 'src/app/services/alimento.service';
 import { PiramideService } from 'src/app/services/piramide.service';
 import { RecetaService } from 'src/app/services/receta.service';
+import { UsuarioService } from 'src/app/services/usuario.service';
 
 export interface Celda {
   colums: number;
@@ -60,27 +62,32 @@ export class FoodPyramidComponent implements OnInit {
   piramide: Piramide;
   categoriaDiaria: DistribucionCategoriaAlimento[] = [];
   categoriaSemanal: DistribucionCategoriaAlimento[] = [];
+  categoriaOcasional: DistribucionCategoriaAlimento[] = [];
+  dietaRegular: boolean = true;
 
-  constructor(private piramideService: PiramideService, private alimentoService: AlimentoService, private recetaService: RecetaService) { }
+  constructor(private piramideService: PiramideService, private alimentoService: AlimentoService, private recetaService: RecetaService, private usuarioService: UsuarioService) { }
 
   ngOnInit(): void {
-    // this.getPiramide();
-    // this.getAlimento();
-    // let alimento = this.getAlimento();
-    // console.log("numero:", this.getNumeroAlimentos())
-    // this.getRecetas();
-    this.cargarPiramide();
+    this.usuarioService.getUser().subscribe(usr => {
+      let usuario: Usuario = usr
+      console.log("usr", usuario)
+      if(usr.dieta != Dieta.REGULAR) this.dietaRegular = false;
+      this.cargarPiramide(usuario.dieta);
+    })
   }
 
 
-  cargarPiramide(){
-    this.piramideService.getPiramideById(1).subscribe(elemento => {
+  cargarPiramide(dieta: Dieta){
+    this.piramideService.getPiramideByDieta(dieta).subscribe(elemento => {
+      console.log("pir", elemento)
       this.piramide = elemento
       elemento.piramide.forEach(elem => {
         if(elem.frecuencia === Frecuencia.DIARIA){
           this.categoriaDiaria.push(elem)
-        } else {
+        } else if(elem.frecuencia === Frecuencia.SEMANAL){
           this.categoriaSemanal.push(elem)
+        } else {
+          this.categoriaOcasional.push(elem)
         }
       })
     })

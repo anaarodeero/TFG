@@ -26,5 +26,6 @@ app.use("/api", require("./routes/userRoutes.js"));
 app.use("/api/piramide", require("./routes/piramideRoutes.js"));
 app.use("/api/alimento", require("./routes/alimentoRoutes.js"));
 app.use("/api/receta", require("./routes/recetaRoutes.js"));
+app.use("/api/receta/simple", require("./routes/recetaSimpleRoutes.js"));
 
 module.exports = app;

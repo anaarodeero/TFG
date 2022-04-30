@@ -1,8 +1,8 @@
 <mat-toolbar class="toolbar">
   <span>Logo</span>
   <span class="example-spacer"></span>
-  <div>
-    <button mat-button class="botonInicio">Hola Ana</button>
+  <div class="container" *ngIf=userLogIn>
+    <p class="greeting">Hola Ana</p>
     <!-- <button mat-raised-button class="botonRegistro">Registro</button> -->
     <button mat-icon-button [matMenuTriggerFor]="menu">
         <mat-icon class="perfil">account_circle</mat-icon>
@@ -19,10 +19,10 @@
       </mat-menu>
   </div>
   <div *ngIf=!userLogIn>
-    <button mat-button class="botonInicio" (click)="iniciarSesion()">
+    <button mat-button class="botonInicio" *ngIf="!loginPage" (click)="iniciarSesion()">
       Iniciar sesión
     </button>
-    <button mat-raised-button class="botonRegistro" (click)="registrar()">
+    <button mat-raised-button class="botonRegistro" *ngIf="!registerPage" (click)="registrar()">
       Registro
     </button>
   </div>

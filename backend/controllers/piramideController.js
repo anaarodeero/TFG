@@ -17,5 +17,13 @@ piramideCtrl.getPiramideById = async (req, res, next) => {
   else null;
 };
 
+piramideCtrl.getPiramideByDieta = async (req, res, next) => {
+  let dieta = req.query.dieta;
+  console.log("dieta", dieta)
+  const piramide = await Piramide.find({dieta: dieta});
+  if(piramide[0]) res.json(piramide[0]);
+  else null;
+};
+
 
 module.exports = piramideCtrl;
