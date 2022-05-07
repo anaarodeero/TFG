@@ -1,6 +1,6 @@
 db.getCollection('recetas').insert({
 	"idReceta": NumberInt(1),
-	"categoria": "ARROCES",
+	"categoria": "ARROZ INTEGRAL",
 	"nombre": "Arroz seco de puerros, alubias y coliflor",
 	"ingredientes": [{
 			"alimento": NumberInt(1),
@@ -50,7 +50,7 @@ db.getCollection('recetas').insert({
 })
 db.getCollection('recetas').insert({
 	"idReceta": NumberInt(2),
-	"categoria": "ARROCES",
+	"categoria": "ARROZ INTEGRAL",
 	"nombre": "Arroz caldoso de matanza",
 	"ingredientes": [{
 			"alimento": NumberInt(1),
@@ -102,7 +102,7 @@ db.getCollection('recetas').insert({
 })
 db.getCollection('recetas').insert({
 	"idReceta": NumberInt(3),
-	"categoria": "ARROCES",
+	"categoria": "ARROZ INTEGRAL",
 	"nombre": "Arroz a la cubana",
 	"ingredientes": [{
 			"alimento": NumberInt(246),
@@ -163,7 +163,7 @@ db.getCollection('recetas').insert({
 })
 db.getCollection('recetas').insert({
 	"idReceta": NumberInt(4),
-	"categoria": "ARROCES",
+	"categoria": "ARROZ INTEGRAL",
 	"nombre": "Curry de langostinos con pastel de arroz",
 	"ingredientes": [{
 			"alimento": NumberInt(564),
@@ -202,7 +202,7 @@ db.getCollection('recetas').insert({
 })
 db.getCollection('recetas').insert({
 	"idReceta": NumberInt(5),
-	"categoria": "ARROCES",
+	"categoria": "ARROZ INTEGRAL",
 	"nombre": "Risotto con ajetes y albahaca en burrata",
 	"ingredientes": [{
 			"alimento": NumberInt(1),
@@ -254,7 +254,7 @@ db.getCollection('recetas').insert({
 })
 db.getCollection('recetas').insert({
 	"idReceta": NumberInt(6),
-	"categoria": "ARROCES",
+	"categoria": "ARROZ INTEGRAL",
 	"nombre": "Arroz de espárragos y panceta ibérica con salsa de yema",
 	"ingredientes": [{
 			"alimento": NumberInt(1),
@@ -308,7 +308,7 @@ db.getCollection('recetas').insert({
 })
 db.getCollection('recetas').insert({
 	"idReceta": NumberInt(7),
-	"categoria": "ARROCES",
+	"categoria": "ARROZ INTEGRAL",
 	"nombre": "Ensalada de arroz prohibido con aguacate y mango",
 	"ingredientes": [{
 			"alimento": NumberInt(1),
@@ -368,7 +368,7 @@ db.getCollection('recetas').insert({
 })
 db.getCollection('recetas').insert({
 	"idReceta": NumberInt(8),
-	"categoria": "ARROCES",
+	"categoria": "ARROZ INTEGRAL",
 	"nombre": "Risotto de langostinos con curry y leche de coco",
 	"ingredientes": [{
 			"alimento": NumberInt(1),
@@ -412,7 +412,7 @@ db.getCollection('recetas').insert({
 })
 db.getCollection('recetas').insert({
 	"idReceta": NumberInt(9),
-	"categoria": "ARROCES",
+	"categoria": "ARROZ INTEGRAL",
 	"nombre": "Arroz salteado con espinacas",
 	"ingredientes": [{
 			"alimento": NumberInt(1),
@@ -465,7 +465,7 @@ db.getCollection('recetas').insert({
 })
 db.getCollection('recetas').insert({
 	"idReceta": NumberInt(10),
-	"categoria": "ARROCES",
+	"categoria": "ARROZ INTEGRAL",
 	"nombre": "Arroz con frijoles y cebolla morada",
 	"ingredientes": [{
 			"alimento": NumberInt(1),
@@ -500,7 +500,7 @@ db.getCollection('recetas').insert({
 })
 db.getCollection('recetas').insert({
 	"idReceta": NumberInt(11),
-	"categoria": "ARROCES",
+	"categoria": "ARROZ INTEGRAL",
 	"nombre": "Risotto de peras y queso gorgonzola",
 	"ingredientes": [{
 			"alimento": NumberInt(185),
@@ -553,7 +553,7 @@ db.getCollection('recetas').insert({
 })
 db.getCollection('recetas').insert({
 	"idReceta": NumberInt(12),
-	"categoria": "ARROCES",
+	"categoria": "ARROZ INTEGRAL",
 	"nombre": "Arroz con verduras y pollo",
 	"ingredientes": [{
 			"alimento": NumberInt(525),
@@ -613,7 +613,7 @@ db.getCollection('recetas').insert({
 })
 db.getCollection('recetas').insert({
 	"idReceta": NumberInt(13),
-	"categoria": "ARROCES",
+	"categoria": "ARROZ INTEGRAL",
 	"nombre": "Arroz con pato",
 	"ingredientes": [{
 			"alimento": NumberInt(517),
@@ -680,7 +680,7 @@ db.getCollection('recetas').insert({
 })
 db.getCollection('recetas').insert({
 	"idReceta": NumberInt(14),
-	"categoria": "ARROCES",
+	"categoria": "ARROZ INTEGRAL",
 	"nombre": "Risotto de zanahorias, miel y queso roquefort",
 	"ingredientes": [{
 			"alimento": NumberInt(174),
@@ -739,7 +739,7 @@ db.getCollection('recetas').insert({
 })
 db.getCollection('recetas').insert({
 	"idReceta": NumberInt(15),
-	"categoria": "ARROCES",
+	"categoria": "ARROZ INTEGRAL",
 	"nombre": "Arroz basmati al limón (Lemon basmati)",
 	"ingredientes": [{
 			"alimento": NumberInt(585),
@@ -794,7 +794,7 @@ db.getCollection('recetas').insert({
 })
 db.getCollection('recetas').insert({
 	"idReceta": NumberInt(16),
-	"categoria": "CARNE",
+	"categoria": "CARNE ROJA",
 	"nombre": "Perdices con manzana",
 	"ingredientes": [{
 			"alimento": NumberInt(521),
@@ -855,7 +855,7 @@ db.getCollection('recetas').insert({
 })
 db.getCollection('recetas').insert({
 	"idReceta": NumberInt(17),
-	"categoria": "CARNE",
+	"categoria": "CARNE ROJA",
 	"nombre": "Estofado de lengua de ternera con hortalizas",
 	"ingredientes": [{
 			"alimento": NumberInt(452),
@@ -904,7 +904,7 @@ db.getCollection('recetas').insert({
 })
 db.getCollection('recetas').insert({
 	"idReceta": NumberInt(18),
-	"categoria": "CARNE",
+	"categoria": "CARNE ROJA",
 	"nombre": "Terrina de ternera, vino dulce y espárragos",
 	"ingredientes": [{
 			"alimento": NumberInt(492),
@@ -940,7 +940,7 @@ db.getCollection('recetas').insert({
 })
 db.getCollection('recetas').insert({
 	"idReceta": NumberInt(19),
-	"categoria": "CARNE",
+	"categoria": "CARNE BLANCA",
 	"nombre": "Ensalada de pechugas jugosas",
 	"ingredientes": [{
 			"alimento": NumberInt(525),
@@ -986,7 +986,7 @@ db.getCollection('recetas').insert({
 })
 db.getCollection('recetas').insert({
 	"idReceta": NumberInt(20),
-	"categoria": "CARNE",
+	"categoria": "CARNE BLANCA",
 	"nombre": "Guiso de conejo con setas",
 	"ingredientes": [{
 			"alimento": NumberInt(533),
@@ -1037,7 +1037,7 @@ db.getCollection('recetas').insert({
 })
 db.getCollection('recetas').insert({
 	"idReceta": NumberInt(21),
-	"categoria": "CARNE",
+	"categoria": "CARNE BLANCA",
 	"nombre": "Conejo al ajillo",
 	"ingredientes": [{
 			"alimento": NumberInt(533),
@@ -1069,7 +1069,7 @@ db.getCollection('recetas').insert({
 })
 db.getCollection('recetas').insert({
 	"idReceta": NumberInt(22),
-	"categoria": "CARNE",
+	"categoria": "CARNE BLANCA",
 	"nombre": "Pato estofado",
 	"ingredientes": [{
 			"alimento": NumberInt(517),
@@ -1101,7 +1101,7 @@ db.getCollection('recetas').insert({
 })
 db.getCollection('recetas').insert({
 	"idReceta": NumberInt(23),
-	"categoria": "CARNE",
+	"categoria": "CARNE BLANCA",
 	"nombre": "Pechuga de pollo al estilo Hasselback",
 	"ingredientes": [{
 			"alimento": NumberInt(519),
@@ -1147,7 +1147,7 @@ db.getCollection('recetas').insert({
 })
 db.getCollection('recetas').insert({
 	"idReceta": NumberInt(24),
-	"categoria": "CARNE",
+	"categoria": "CARNE ROJA",
 	"nombre": "Pinchos de lomo marinado",
 	"ingredientes": [{
 			"alimento": NumberInt(602),
@@ -1205,7 +1205,7 @@ db.getCollection('recetas').insert({
 })
 db.getCollection('recetas').insert({
 	"idReceta": NumberInt(25),
-	"categoria": "CARNE",
+	"categoria": "CARNE ROJA",
 	"nombre": "Chili con carne",
 	"ingredientes": [{
 			"alimento": NumberInt(72),
@@ -1266,7 +1266,7 @@ db.getCollection('recetas').insert({
 })
 db.getCollection('recetas').insert({
 	"idReceta": NumberInt(26),
-	"categoria": "CARNE",
+	"categoria": "CARNE BLANCA",
 	"nombre": "Pollo mantequilla con coco",
 	"ingredientes": [{
 			"alimento": NumberInt(606),
@@ -1334,7 +1334,7 @@ db.getCollection('recetas').insert({
 })
 db.getCollection('recetas').insert({
 	"idReceta": NumberInt(27),
-	"categoria": "CARNE",
+	"categoria": "CARNE ROJA",
 	"nombre": "Hamburguesas caseras con hierbas aromáticas",
 	"ingredientes": [{
 			"alimento": NumberInt(580),
@@ -1381,7 +1381,7 @@ db.getCollection('recetas').insert({
 })
 db.getCollection('recetas').insert({
 	"idReceta": NumberInt(28),
-	"categoria": "CARNE",
+	"categoria": "CARNE ROJA",
 	"nombre": "Albóndigas tradicionales",
 	"ingredientes": [{
 			"alimento": NumberInt(391),
@@ -1443,7 +1443,7 @@ db.getCollection('recetas').insert({
 })
 db.getCollection('recetas').insert({
 	"idReceta": NumberInt(29),
-	"categoria": "CARNE",
+	"categoria": "CARNE BLANCA",
 	"nombre": "Pollo margarita al horno",
 	"ingredientes": [{
 			"alimento": NumberInt(120),
@@ -1482,7 +1482,7 @@ db.getCollection('recetas').insert({
 })
 db.getCollection('recetas').insert({
 	"idReceta": NumberInt(30),
-	"categoria": "CARNE",
+	"categoria": "CARNE BLANCA",
 	"nombre": "Redondo de pavo con setas en escabeche",
 	"ingredientes": [{
 			"alimento": NumberInt(138),
@@ -1550,7 +1550,7 @@ db.getCollection('recetas').insert({
 })
 db.getCollection('recetas').insert({
 	"idReceta": NumberInt(31),
-	"categoria": "CARNE",
+	"categoria": "CARNE BLANCA",
 	"nombre": "Pollo asado",
 	"ingredientes": [{
 			"alimento": NumberInt(136),
@@ -1597,7 +1597,7 @@ db.getCollection('recetas').insert({
 })
 db.getCollection('recetas').insert({
 	"idReceta": NumberInt(32),
-	"categoria": "PASTA",
+	"categoria": "PASTA INTEGRAL",
 	"nombre": "Lasaña vegetal con bechamel de albahaca",
 	"ingredientes": [{
 			"alimento": NumberInt(612),
@@ -1653,7 +1653,7 @@ db.getCollection('recetas').insert({
 })
 db.getCollection('recetas').insert({
 	"idReceta": NumberInt(33),
-	"categoria": "PASTA",
+	"categoria": "PASTA INTEGRAL",
 	"nombre": "Macarrones con salsa de coco y anacardos",
 	"ingredientes": [{
 			"alimento": NumberInt(28),
@@ -1688,7 +1688,7 @@ db.getCollection('recetas').insert({
 })
 db.getCollection('recetas').insert({
 	"idReceta": NumberInt(34),
-	"categoria": "PASTA",
+	"categoria": "PASTA INTEGRAL",
 	"nombre": "Tallarines con albóndigas y salsa de pimientos, tomates y tomillo",
 	"ingredientes": [{
 			"alimento": NumberInt(26),
@@ -1753,7 +1753,7 @@ db.getCollection('recetas').insert({
 })
 db.getCollection('recetas').insert({
 	"idReceta": NumberInt(35),
-	"categoria": "PASTA",
+	"categoria": "PASTA INTEGRAL",
 	"nombre": "Canelones de carne y foie con setas",
 	"ingredientes": [{
 			"alimento": NumberInt(612),
@@ -1803,8 +1803,8 @@ db.getCollection('recetas').insert({
 })
 db.getCollection('recetas').insert({
 	"idReceta": NumberInt(36),
-	"categoria": "PASTA",
-	"nombre": "PASTA con langostinos, pesto y rosado",
+	"categoria": "PASTA INTEGRAL",
+	"nombre": "PASTA INTEGRAL con langostinos, pesto y rosado",
 	"ingredientes": [{
 			"alimento": NumberInt(332),
 			"ingrediente": "300 g de langostinos crudos"
@@ -1844,7 +1844,7 @@ db.getCollection('recetas').insert({
 })
 db.getCollection('recetas').insert({
 	"idReceta": NumberInt(37),
-	"categoria": "PASTA",
+	"categoria": "PASTA INTEGRAL",
 	"nombre": "Cuscús negro con mejillones",
 	"ingredientes": [{
 			"alimento": NumberInt(618),
@@ -1905,7 +1905,7 @@ db.getCollection('recetas').insert({
 })
 db.getCollection('recetas').insert({
 	"idReceta": NumberInt(38),
-	"categoria": "PASTA",
+	"categoria": "PASTA INTEGRAL",
 	"nombre": "Cuscús de marisco",
 	"ingredientes": [{
 			"alimento": NumberInt(343),
@@ -1949,8 +1949,8 @@ db.getCollection('recetas').insert({
 })
 db.getCollection('recetas').insert({
 	"idReceta": NumberInt(39),
-	"categoria": "PASTA",
-	"nombre": "PASTA con ajo y setas",
+	"categoria": "PASTA INTEGRAL",
+	"nombre": "PASTA INTEGRAL con ajo y setas",
 	"ingredientes": [{
 			"alimento": NumberInt(624),
 			"ingrediente": "150 g de trofie o fusilli"
@@ -1978,7 +1978,7 @@ db.getCollection('recetas').insert({
 })
 db.getCollection('recetas').insert({
 	"idReceta": NumberInt(40),
-	"categoria": "PASTA",
+	"categoria": "PASTA INTEGRAL",
 	"nombre": "Espaguetis con verduras y tomate",
 	"ingredientes": [{
 			"alimento": NumberInt(28),
@@ -2032,8 +2032,8 @@ db.getCollection('recetas').insert({
 })
 db.getCollection('recetas').insert({
 	"idReceta": NumberInt(41),
-	"categoria": "PASTA",
-	"nombre": "PASTA al pesto con verduritas",
+	"categoria": "PASTA INTEGRAL",
+	"nombre": "PASTA INTEGRAL al pesto con verduritas",
 	"ingredientes": [{
 			"alimento": NumberInt(592),
 			"ingrediente": "400 g de pasta fresca"
@@ -2073,7 +2073,7 @@ db.getCollection('recetas').insert({
 })
 db.getCollection('recetas').insert({
 	"idReceta": NumberInt(42),
-	"categoria": "PASTA",
+	"categoria": "PASTA INTEGRAL",
 	"nombre": "Tagliatelle con curry de gambas",
 	"ingredientes": [{
 			"alimento": NumberInt(627),
@@ -2117,7 +2117,7 @@ db.getCollection('recetas').insert({
 })
 db.getCollection('recetas').insert({
 	"idReceta": NumberInt(43),
-	"categoria": "PASTA",
+	"categoria": "PASTA INTEGRAL",
 	"nombre": "Macarrones con queso",
 	"ingredientes": [{
 			"alimento": NumberInt(27),

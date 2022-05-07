@@ -1,22 +1,15 @@
 const { Schema, model } = require('mongoose')
-
+const RecetaSimple = require('./recetaSimple.js');
+const RecetaSchema = require('./receta.js');
 
 
 const PlanDiarioSchema = new Schema({
-    idCategoria: {type: Number, required: true},
-    desayuno: [String],
-    desayuno: [String],
-    desayuno: [String],
-    desayuno: [String],
-    desayuno: [String],
-    frecuencia: {enum: ['SEMANAL', 'DIARIA']},
-    limiteInferior: {type: Number, required: true},
-    limiteSuperior: {type: Number, required: true},
-    desayuno: {type: Boolean, required: true},
-    almuerzo: {type: Boolean, required: true},
-    comida: {type: Boolean, required: true},
-    merienda: {type: Boolean, required: true},
-    cena: {type: Boolean, required: true}
+    id: {type: Number, required: true},
+    desayuno: [{type: Schema.Types.ObjectId, ref: 'RecetaSimple'}],
+    almuerzo: [{type: Schema.Types.ObjectId, ref: 'RecetaSimple'}],
+    comida: [{type: Schema.Types.ObjectId, ref: 'Receta'}],
+    merienda: [{type: Schema.Types.ObjectId, ref: 'RecetaSimple'}],
+    cena: [{type: Schema.Types.ObjectId, ref: 'Receta'}]
 }, {
     timestamps: true,
     versionKey: false
@@ -24,14 +17,15 @@ const PlanDiarioSchema = new Schema({
 
 const PlanSchema = new Schema({
     id: {type: Number, required: true},
-    nombre: {type: String, required: true},
-    piramide: [DistribucionCategoriaAlimentoSchema]
+    dieta: {type: String, enum: ['REGULAR', 'VEGETARIANA', 'VEGANA']},
+    planesDiarios: [PlanDiarioSchema]
 }, {
     timestamps: true,
     versionKey: false
 });
 
 module.exports = model('Plan',PlanSchema);
+module.exports = model('PlanDiario',PlanDiarioSchema);
   
   
   

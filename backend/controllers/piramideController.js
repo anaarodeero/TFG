@@ -21,6 +21,7 @@ piramideCtrl.getPiramideByDieta = async (req, res, next) => {
   let dieta = req.query.dieta;
   console.log("dieta", dieta)
   const piramide = await Piramide.find({dieta: dieta});
+  console.log("pira", piramide)
   if(piramide[0]) res.json(piramide[0]);
   else null;
 };

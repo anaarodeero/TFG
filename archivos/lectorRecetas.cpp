@@ -15,7 +15,7 @@ int main()
     string fichero;
     getline(cin, x);
     string aux = x.erase(0,1);
-    fichero += "{\n\t\"idReceta\": ,\n\t\"categoria\": \"VERDURAS\",\n\t\"nombre\": \"" + aux + "\",\n\t\"ingredientes\": [" ;
+    fichero += "{\n\t\"idReceta\": ,\n\t\"categoria\": \"LEGUMBRES\",\n\t\"nombre\": \"" + aux + "\",\n\t\"ingredientes\": [" ;
     while (getline (cin,x)) {
         if(x == "INGREDIENTES PRINCIPALES") break;
     }
@@ -93,7 +93,7 @@ int main()
         //fichero += "--> " + x + "\n";
     }
     fichero.pop_back();
-    fichero += "],\n\t\"dieta\": \"VEGANA\",\n\t\"preparacion\":[\n";
+    fichero += "],\n\t\"dieta\": \"REGULAR\",\n\t\"preparacion\":[\n";
     getline (cin,x);
     while (getline (cin,x))
     {

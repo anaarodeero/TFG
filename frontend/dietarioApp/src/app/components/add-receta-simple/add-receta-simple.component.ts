@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { map, Observable, startWith } from 'rxjs';
 import { Alimento } from 'src/app/models/alimento';
-import { Dieta, Ingrediente, Receta } from 'src/app/models/receta';
 import { AlimentoService } from 'src/app/services/alimento.service';
 import { RecetaService } from 'src/app/services/receta.service';
 import { AbstractControl, FormBuilder, FormControl, FormGroup, ValidationErrors, Validators } from '@angular/forms';
-import { Categoria, RecetaSimple } from 'src/app/models/recetaSimple';
+import { RecetaSimple } from 'src/app/models/recetaSimple';
+import { Categoria, Dieta } from 'src/app/models/enums';
+import { PlanComidaService } from 'src/app/services/plan-comida.service';
+import { PiramideService } from 'src/app/services/piramide.service';
 
 
 @Component({
@@ -33,12 +35,17 @@ export class AddRecetaSimpleComponent implements OnInit {
 
   addAlimento: boolean = false
 
-  constructor(private _formBuilder: FormBuilder, private alimentoService: AlimentoService, private recetaService: RecetaService) {
+  constructor(private _formBuilder: FormBuilder, private alimentoService: AlimentoService, private recetaService: RecetaService, private planComidaService: PlanComidaService, private piramideService: PiramideService) {
     this.firstFormGroup = this._formBuilder.group({});
     this.addIngredienteFormGroup = this._formBuilder.group({});
   }
 
   ngOnInit(): void {
+    // this.recetaService.getRecetasByCategoria(Categoria.PESCADO).subscribe(response => {
+    //   console.log("recetas pescado: ", response)
+    // })
+    this.planComidaService.createMyPlan(Dieta.REGULAR).subscribe();
+    // this.piramideService.getPiramideByDieta(Dieta.REGULAR).subscribe();
     this.alimentoService.getAll().subscribe(response => {
       this.options = response
       console.log(response)

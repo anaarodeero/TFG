@@ -7,7 +7,7 @@ import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { Dieta, Usuario } from 'src/app/models/usuario';
+import { Usuario } from 'src/app/models/usuario';
 import { UsuarioService } from 'src/app/services/usuario.service';
 import { CookieService } from 'ngx-cookie-service';
 import { Router } from '@angular/router';
@@ -80,6 +80,7 @@ export class RegisterComponent implements OnInit {
       this.orientation = 'horizontal'
     }
     this.usuarioService.isLoggedIn().subscribe(result => {
+
       if(result){
         this.editMode = true;
         if (/register/.test(this.router.url)){
@@ -91,6 +92,7 @@ export class RegisterComponent implements OnInit {
           }
         );
       } else {
+        console.log("no logeadooooo")
         this.editMode = false;
       }
     })

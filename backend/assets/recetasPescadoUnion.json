@@ -1,0 +1,15 @@
+[
+  {
+    "$lookup": {
+      "from": "alimentos",
+      "localField": "ingredientes.alimento",
+      "foreignField": "idAlimento",
+      "as": "vinculados"
+    }
+  },
+  {
+    "$match": {
+        "categoria": "PESCADO"
+    }
+  }
+]

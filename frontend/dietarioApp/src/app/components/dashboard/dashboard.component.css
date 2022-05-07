@@ -1,3 +1,15 @@
-.example-spacer {
-  flex: 1 1 auto;
+.side{
+  border-right: solid 3px #dbf0ca;
+background-color: #eaf7de;
+border-top: solid 3px #dbf0ca;
+
+}
+
+.container {
+  background-image: url(../../../assets/image12.png);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  min-height: 95%;
+  width: 100%;
 }

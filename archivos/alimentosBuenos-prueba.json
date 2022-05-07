@@ -1,7 +1,7 @@
 {
 	"id": 1,
 	"nombre": "Arroz",
-	"estado": "descasac.",
+	"estado": "",
 	"categoria": "CEREALES",
 	"cal": 355,
 	"pr": 8.2,
@@ -610,7 +610,7 @@
 },
 {
 	"id": 62,
-	"nombre": "lentejas secas",
+	"nombre": "lentejas",
 	"estado": "crudas",
 	"categoria": "LEGUMBRES",
 	"cal": 339,
@@ -620,7 +620,7 @@
 },
 {
 	"id": 63,
-	"nombre": "lentejas secas",
+	"nombre": "lentejas",
 	"estado": "cocidas ",
 	"categoria": "LEGUMBRES",
 	"cal": 102,
@@ -2082,7 +2082,7 @@
 	"id": 209,
 	"nombre": "coco",
 	"estado": "fresco",
-	"categoria": "FRUTOS SECOS",
+	"categoria": "FRUTA",
 	"cal": 350,
 	"pr": 3.8,
 	"gr": 34.8,
@@ -2092,7 +2092,7 @@
 	"id": 210,
 	"nombre": "coco",
 	"estado": "leche",
-	"categoria": "FRUTOS SECOS",
+	"categoria": "DERIVADOS LECHE",
 	"cal": 25,
 	"pr": 0.4,
 	"gr": 0.2,
@@ -2112,7 +2112,7 @@
 	"id": 212,
 	"nombre": "datiles",
 	"estado": "secos",
-	"categoria": "FRUTOS SECOS",
+	"categoria": "FRUTA",
 	"cal": 271,
 	"pr": 2.2,
 	"gr": 0.6,
@@ -6516,5 +6516,86 @@
 	"pr": 0.6,
 	"gr": 0.2,
 	"hc": 6.2
+},
+{
+	"id": 653,
+	"alimento": "Jamón Ibérico de Bellota",
+	"estado": "",
+	"categoria": "CARNE",
+	"cal": 101,
+	"pr": 9.96,
+	"gr": 6.61,
+	"hc": 0.16
+},
+{
+	"id": 654,
+	"alimento": "Pulpo",
+	"estado": "",
+	"categoria": "PESCADO",
+	"cal": 82,
+	"pr": 14.91,
+	"gr": 1.04,
+	"hc": 2.2
+},
+{
+	"id": 655,
+	"alimento": "Vino Pedro Ximenez",
+	"estado": "",
+	"categoria": "",
+	"cal": 160,
+	"pr": 0.1,
+	"gr": 0,
+	"hc": 13
+},
+{
+	"id": 656,
+	"alimento": "Paprika",
+	"estado": "",
+	"categoria": "",
+	"cal": 289,
+	"pr": 14.76,
+	"gr": 12.95,
+	"hc": 55.74
+},
+{
+	"id": 657,
+	"alimento": "Pipas de girasol",
+	"estado": "",
+	"categoria": "FRUTOS SECOS",
+	"cal": 602,
+	"pr": 25.8,
+	"gr": 51,
+	"hc": 3.8
+},
+///aquiiii
+{
+	"id": 658,
+	"alimento": "Alubias rojas",
+	"estado": "",
+	"categoria": "LEGUMBRES",
+	"cal": 89,
+	"pr": 6.3,
+	"gr": 0.4,
+	"hc": 11.5
+},
+{
+	"id": 659,
+	"alimento": "Pepinillos en vinagre",
+	"estado": "",
+	"categoria": "VERDURAS",
+	"cal": 11,
+	"pr": 1.3,
+	"gr": 0.1,
+	"hc": 1.1
+},
+{
+	"id": 660,
+	"alimento": "Queso feta",
+	"estado": "",
+	"categoria": "LACTEOS",
+	"cal": 264,
+	"pr": 14.21,
+	"gr": 21.28,
+	"hc": 4.09
 }
 

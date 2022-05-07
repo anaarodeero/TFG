@@ -21,6 +21,10 @@ int main()
     getline(cin, x);
     fichero += x;
     fichero += "\",\n\t\"estado\": \"\",";
+    getline(cin, x);
+    fichero += "\n\t\"categoria\": \"";
+    fichero += x;
+    fichero += "\",";
     while (getline (cin,x)) {
         if(x == "Cals") break;
     }

@@ -1,6 +1,8 @@
+import { CategoriaReceta, Dieta } from "./enums"
+
 export interface Receta {
   idReceta: Number
-  categoria: Categoria
+  categoria: CategoriaReceta
   nombre: String
   ingredientes: Ingrediente[]
   dieta: Dieta
@@ -10,26 +12,4 @@ export interface Receta {
 export interface Ingrediente {
   alimento: Number
   ingrediente: String
-}
-
-// export enum Categoria {
-//   ARROCES, PASTA, PESCADO, CARNE, VERDURAS
-// }
-
-// export enum Dieta {
-//   REGULAR, VEGETARIANA, VEGANA
-// }
-
-export enum Categoria {
-  ARROCES = "ARROCES",
-  PASTA = "PASTA",
-  PESCADO = "PESCADO",
-  CARNE = "CARNE",
-  VERDURAS = "VERDURAS"
-}
-
-export enum Dieta {
-  REGULAR = "REGULAR",
-  VEGETARIANA = "VEGETARIANA",
-  VEGANA = "VEGANA"
 }

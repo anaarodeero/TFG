@@ -1,0 +1,13 @@
+{
+  "$and": [
+    {
+      "nombre": {
+        "$regex": "^(?!ensalada)",
+        "$options": "i"
+      }
+    },
+    {
+      "categoria": "LEGUMBRES"
+    }
+  ]
+}

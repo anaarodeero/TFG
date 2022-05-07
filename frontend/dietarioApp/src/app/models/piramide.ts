@@ -1,3 +1,5 @@
+import { Dieta, Frecuencia } from "./enums"
+
 export interface Piramide {
   id: Number
   dieta: Dieta
@@ -15,16 +17,4 @@ export interface DistribucionCategoriaAlimento {
   comida: Boolean
   merienda: Boolean
   cena: Boolean
-}
-
-export enum Frecuencia {
-  SEMANAL = 'SEMANAL',
-  DIARIA = 'DIARIA',
-  OCASIONAL = 'OCASIONAL'
-}
-
-export enum Dieta {
-  REGULAR = "REGULAR",
-  VEGETARIANA = "VEGETARIANA",
-  VEGANA = "VEGANA"
 }

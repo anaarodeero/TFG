@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { Receta } from '../models/receta';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { RecetaSimple } from '../models/recetaSimple';
+import { Categoria } from '../models/enums';
 
 @Injectable({ providedIn: 'root' })
 export class RecetaService {
@@ -23,6 +24,15 @@ export class RecetaService {
     let paramsQuery = new HttpParams().set("id", id);
     console.log("parametros", paramsQuery)
     return this.http.get<RecetaSimple>('http://localhost:4000/api/receta/simple/getReceta', {
+      params: paramsQuery
+    })
+    // return salida;
+  }
+
+  getRecetasByCategoria(categoria: Categoria){
+    let paramsQuery = new HttpParams().set("categoria", categoria);
+    console.log("parametros", paramsQuery)
+    return this.http.get<RecetaSimple>('http://localhost:4000/api/receta/getRecetasByCategoria', {
       params: paramsQuery
     })
     // return salida;

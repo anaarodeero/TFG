@@ -6,7 +6,8 @@ import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { map, Observable, startWith } from 'rxjs';
 import { Alimento } from 'src/app/models/alimento';
-import { Categoria, Dieta, Ingrediente, Receta } from 'src/app/models/receta';
+import { CategoriaReceta, Dieta } from 'src/app/models/enums';
+import { Ingrediente, Receta } from 'src/app/models/receta';
 import { AlimentoService } from 'src/app/services/alimento.service';
 import { RecetaService } from 'src/app/services/receta.service';
 
@@ -19,7 +20,7 @@ import { RecetaService } from 'src/app/services/receta.service';
 export class AddRecetaComponent implements OnInit {
 
   public Dieta = Dieta
-  public Categoria = Categoria
+  public Categoria = CategoriaReceta
   medidas: string[] = ['unidad','kg', 'gr', 'l', 'ml', 'tbs', 'tbsp', 'taza(s)']
 
   optionSelected: Alimento

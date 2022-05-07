@@ -44,4 +44,12 @@ recetaCtrl.getRecetaById = async (req, res, next) => {
   else null;
 };
 
+recetaCtrl.getRecetasByCategoria = async (req, res, next) => {
+  let categoria = req.query.categoria;
+  const recetas = await Receta.find({ categoria: categoria });
+  if (recetas) res.json(recetas);
+  else null;
+};
+
+
 module.exports = recetaCtrl;

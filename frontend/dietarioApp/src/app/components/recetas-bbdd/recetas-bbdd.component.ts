@@ -8,7 +8,7 @@ import { AlimentoService } from 'src/app/services/alimento.service';
 import { RecetaService } from 'src/app/services/receta.service';
 import {animate, state, style, transition, trigger} from '@angular/animations';
 import { Router } from '@angular/router';
-import { Categoria, RecetaSimple } from 'src/app/models/recetaSimple';
+import { RecetaSimple } from 'src/app/models/recetaSimple';
 import { Alimento } from 'src/app/models/alimento';
 
 @Component({
