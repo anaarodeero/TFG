@@ -1,4 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Dieta } from 'src/app/models/enums';
+import { PlanSemanal } from 'src/app/models/plan';
+import { Usuario } from 'src/app/models/usuario';
+import { PlanComidaService } from 'src/app/services/plan-comida.service';
+import { UsuarioService } from 'src/app/services/usuario.service';
 
 @Component({
   selector: 'app-weekly-plan',
@@ -7,132 +13,45 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WeeklyPlanComponent implements OnInit {
 
-  semana = ELEMENT_DATA;
-  comidas = ['desayuno', 'almuerzo', 'comida', 'merienda', 'cena']
+  dias = ['LUNES', 'MARTES', 'MIERCOLES', 'JUEVES', 'VIERNES', 'SABADO', 'DOMINGO']
+  planSemanal: PlanSemanal = {
+    id: undefined,
+    dieta: undefined,
+    planesDiarios: []
+  };
 
-  constructor() { }
+  constructor(private planComidaService: PlanComidaService, private usuarioService: UsuarioService, private router: Router) { }
 
   ngOnInit(): void {
+    if(this.usuarioService.usuarioActual.planComida){
+      console.log("cogerlo")
+      this.planComidaService.getMyPlan(this.usuarioService.usuarioActual.planComida).subscribe(result => {
+        this.planSemanal = result
+      });
+    } else {
+      console.log("crealo")
+      this.planComidaService.createMyPlan(Dieta.REGULAR, this.usuarioService.usuarioActual._id).subscribe((result:any) => {
+        this.usuarioService.updateUsuarioValue()
+        this.planSemanal = result.data as PlanSemanal
+      })
+    }
   }
+
+  cambiar(){
+    this.planComidaService.createMyPlan(Dieta.REGULAR, this.usuarioService.usuarioActual._id).subscribe((result:any) => {
+      this.usuarioService.updateUsuarioValue()
+      this.planSemanal = result.data as PlanSemanal
+    })
+  }
+
+  infoDia(index: number){
+    console.log("ir a dia " + index)
+    this.router.navigateByUrl('/daily-plan/' + index)
+  }
+
 }
 
-  export interface ArrayComidas {
-    diaSemana: string;
-    desayuno: string[];
-    almuerzo: string;
-    comida: string[];
-    merienda: string;
-    cena: string[];
-  }
 
-  const ELEMENT_DATA: ArrayComidas[] = [
-    {
-      diaSemana: "Lunes",
-      desayuno: [
-        "Zumo de naranja",
-        "Tostada"
-      ],
-      almuerzo: "Yogur",
-      comida: [
-        "Fritura de verduras",
-        "Pollo a la plancha"
-      ],
-      merienda: "Batido de frutas",
-      cena: [
-        "Tortilla francesa"
-      ]
-    }, {
-      diaSemana: "Martes",
-      desayuno: [
-        "Zumo de naranja",
-        "Tostada"
-      ],
-      almuerzo: "Yogur",
-      comida: [
-        "Fritura de verduras",
-        "Pollo a la plancha"
-      ],
-      merienda: "Batido de frutas",
-      cena: [
-        "Tortilla francesa"
-      ]
-    }, {
-      diaSemana: "Miércoles",
-      desayuno: [
-        "Zumo de naranja",
-        "Tostada"
-      ],
-      almuerzo: "Yogur",
-      comida: [
-        "Fritura de verduras",
-        "Pollo a la plancha"
-      ],
-      merienda: "Batido de frutas",
-      cena: [
-        "Tortilla francesa"
-      ]
-    }, {
-      diaSemana: "Jueves",
-      desayuno: [
-        "Zumo de naranja",
-        "Tostada"
-      ],
-      almuerzo: "Yogur",
-      comida: [
-        "Fritura de verduras",
-        "Pollo a la plancha"
-      ],
-      merienda: "Batido de frutas",
-      cena: [
-        "Tortilla francesa"
-      ]
-    }, {
-      diaSemana: "Viernes",
-      desayuno: [
-        "Zumo de naranja",
-        "Tostada"
-      ],
-      almuerzo: "Yogur",
-      comida: [
-        "Fritura de verduras",
-        "Pollo a la plancha"
-      ],
-      merienda: "Batido de frutas",
-      cena: [
-        "Tortilla francesa"
-      ]
-    }, {
-      diaSemana: "Sábado",
-      desayuno: [
-        "Zumo de naranja",
-        "Tostada"
-      ],
-      almuerzo: "Yogur",
-      comida: [
-        "Fritura de verduras",
-        "Pollo a la plancha"
-      ],
-      merienda: "Batido de frutas",
-      cena: [
-        "Tortilla francesa"
-      ]
-    }, {
-      diaSemana: "Domingo",
-      desayuno: [
-        "Zumo de naranja",
-        "Tostada"
-      ],
-      almuerzo: "Yogur",
-      comida: [
-        "Fritura de verduras",
-        "Pollo a la plancha"
-      ],
-      merienda: "Batido de frutas",
-      cena: [
-        "Tortilla francesa"
-      ]
-    }
-  ]
 
 
 

@@ -1,15 +1,13 @@
-<div class="container" fxLayout="column" fxLayoutAlign="center center">
+<div class="container" fxLayout="column" fxLayoutAlign="start center">
+  <button mat-icon-button class="botonVolver" (click)="volver()"><mat-icon>chevron_left</mat-icon> Volver</button>
   <h1 class="mat-display-2 titulo">Añade una receta</h1>
   <mat-card class="card mat-elevation-z8" ngClass.lt-md="card-sm" fxLayout="column">
-    <!-- <button mat-icon-button class="boton" (click)="volver()"><mat-icon>chevron_left</mat-icon> Volver</button> -->
     <form class="form" [formGroup]="firstFormGroup">
-      <!-- <p class="texto" >Escribe tu correo electronico</p> -->
       <mat-form-field class="input-full">
           <mat-label>Titulo</mat-label>
           <input matInput placeholder="Titulo" formControlName="titulo" required>
           <mat-error *ngIf="this.firstFormGroup.get('titulo').hasError('required')">{{getErrorMessage()}}</mat-error>
       </mat-form-field>
-      <!-- <p class="texto">Escribe una contraseña</p> -->
       <mat-form-field class="input" ngClass.lt-md="input-full">
           <mat-label>Dieta</mat-label>
           <mat-select formControlName="dieta">

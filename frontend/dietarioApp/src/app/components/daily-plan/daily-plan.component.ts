@@ -1,4 +1,9 @@
+import { Location } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { PlanDiario } from 'src/app/models/plan';
+import { PlanComidaService } from 'src/app/services/plan-comida.service';
+import { UsuarioService } from 'src/app/services/usuario.service';
 
 @Component({
   selector: 'app-daily-plan',
@@ -7,14 +12,42 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DailyPlanComponent implements OnInit {
 
-  semana = ELEMENT_DATA;
-  comidas = ['desayuno', 'almuerzo', 'comida', 'merienda', 'cena']
-  dia = this.semana[1]
+  dias = ['LUNES', 'MARTES', 'MIERCOLES', 'JUEVES', 'VIERNES', 'SABADO', 'DOMINGO']
+  dia: PlanDiario = {
+    id: undefined,
+    desayuno: undefined,
+    almuerzo: undefined,
+    comida: undefined,
+    merienda: undefined,
+    cena: undefined
+  }
 
-  constructor() { }
+  constructor(private route: ActivatedRoute, private planComidaService: PlanComidaService, private usuarioService: UsuarioService, private router: Router, private location: Location) { }
 
   ngOnInit(): void {
+    let param = this.route.snapshot.paramMap.get('id');
+    let regEx: RegExp = /^[0-9]+$/
+    if(regEx.test(param) && (0 <= Number(param)) && (Number(param) <= 6)){
+      this.planComidaService.getMyPlan(this.usuarioService.usuarioActual.planComida).subscribe(result => {
+        this.dia = result.planesDiarios[Number(param)]
+      });
+    } else {
+      this.router.navigateByUrl('/weekly-plan')
+    }
   }
+
+  getNombreDia(){
+    return this.dias[this.dia.id.valueOf()]
+  }
+
+  masInfoR(id: Number){
+    this.router.navigateByUrl('/receta/' + id)
+  }
+
+  volver(){
+    this.location.back();
+  }
+
 
 }
 

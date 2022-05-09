@@ -1,25 +1,47 @@
 <div class="container" fxLayout="column" fxLayoutAlign="start center">
-  <h1 class="mat-display-2 titulo">Tu plan diarip</h1>
+  <button mat-icon-button class="botonVolver" (click)="volver()"><mat-icon>chevron_left</mat-icon> Volver</button>
+  <h1 class="mat-display-2 titulo">Tu plan diario</h1>
       <mat-card class="card mat-elevation-z8" ngClass.lt-md="card-sm" ngClass.lt-sm="card-xs">
         <div class="tabla">
-            <mat-list fxLayout="column" >
-                <mat-list-item class="item diaSemana">{{dia.diaSemana}}</mat-list-item>
-                <mat-divider [inset]="true"></mat-divider>
-                <mat-list-item class="item sm">Desayuno</mat-list-item>
-                <mat-list-item class="item" *ngFor="let desayuno of dia.desayuno">{{desayuno}}</mat-list-item>
-                <mat-divider [inset]="true"></mat-divider>
-                <mat-list-item class="item sm">Almuerzo</mat-list-item>
-                <mat-list-item class="item">{{dia.almuerzo}}</mat-list-item>
-                <mat-divider [inset]="true"></mat-divider>
-                <mat-list-item class="item sm">Comida</mat-list-item>
-                <mat-list-item class="item" *ngFor="let comida of dia.comida">{{comida}}</mat-list-item>
-                <mat-divider [inset]="true"></mat-divider>
-                <mat-list-item class="item sm">Merienda</mat-list-item>
-                <mat-list-item class="item">{{dia.merienda}}</mat-list-item>
-                <mat-divider [inset]="true"></mat-divider>
-                <mat-list-item class="item sm">Cena</mat-list-item>
-                <mat-list-item class="item" *ngFor="let cena of dia.cena">{{cena}}</mat-list-item>
-            </mat-list>
-        </div>
+          <div class="fila">
+            <div class="subfila top">
+              <p class="item_dia">{{getNombreDia()}}</p>
+            </div>
+          </div>
+          <div class="fila">
+            <div class="subfila">
+              <p class="sm">Desayuno</p>
+              <p class="item">{{dia.desayuno.nombre}}</p>
+            </div>
+          </div>
+          <div class="fila">
+            <div class="subfila" >
+              <p class="sm">Almuerzo</p>
+              <p class="item">{{dia.almuerzo.nombre}}</p>
+            </div>
+          </div>
+          <div class="fila">
+            <div class="subfila" >
+              <p class="sm">Comida</p>
+              <p class="item receta" (click)="masInfoR(dia.comida.primerPlato.idReceta)">{{dia.comida.primerPlato.nombre}}</p>
+              <p class="item receta" (click)="masInfoR(dia.comida.platoPrincipal.plato.idReceta)">{{dia.comida.platoPrincipal.plato.nombre}}</p>
+              <div *ngIf="dia.comida.platoPrincipal.guarnicion" class="fila-guarnicion">
+                <p class="item guarnicion"> - Guarnicion: </p><p class="itemG">{{dia.comida.platoPrincipal.guarnicion}}</p>
+              </div>
+            </div>
+          </div>
+          <div class="fila">
+            <div class="subfila" >
+              <p class="sm">Merienda</p>
+              <p class="item">{{dia.merienda.nombre}}</p>
+            </div>
+          </div>
+          <div class="fila">
+            <div class="subfila" >
+              <p class="sm">Cena</p>
+              <p class="item receta" (click)="masInfoR(dia.cena.idReceta)">{{dia.cena.nombre}}</p>
+            </div>
+          </div>
+      </div>
       </mat-card>
 </div>

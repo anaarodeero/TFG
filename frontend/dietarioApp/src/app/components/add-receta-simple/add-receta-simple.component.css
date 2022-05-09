@@ -68,6 +68,14 @@
   width: max-content;
 }
 
+.botonVolver{
+  color: #37B97D;
+  border-radius: 1rem;
+  align-self: flex-start;
+margin: 50px 50px 0 50px;
+width: fit-content;
+}
+
 .boton_crear{
   align-self: center;
   justify-self: center;
@@ -98,6 +106,7 @@
   font-weight: bold;
   font-size: xx-large;
   margin-bottom: 2rem;
+  margin-top: 2rem;
   /* font-family: "Amatemora"; */
 }
 

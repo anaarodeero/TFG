@@ -7,7 +7,7 @@ const IngredienteSchema = new Schema({
 
 const RecetaSchema = new Schema({
     idReceta: {type: Number, required: true},
-    categoria: {type: String, enum: ['ARROCES', 'PASTA', 'PESCADO', 'CARNE', 'VERDURAS']},
+    categoria: {type: String, enum: ['ARROCES', 'PASTA', 'PESCADO', 'CARNE BLANCA', 'CARNE ROJA', 'VERDURAS', 'LEGUMBRES']},
     nombre: {type: String, required: true},
     ingredientes: {type: [IngredienteSchema], required: true},
     dieta: {type: String, enum: ['REGULAR', 'VEGETARIANA', 'VEGANA']},

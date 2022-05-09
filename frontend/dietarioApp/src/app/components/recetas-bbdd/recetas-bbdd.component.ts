@@ -10,6 +10,7 @@ import {animate, state, style, transition, trigger} from '@angular/animations';
 import { Router } from '@angular/router';
 import { RecetaSimple } from 'src/app/models/recetaSimple';
 import { Alimento } from 'src/app/models/alimento';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-recetas-bbdd',
@@ -51,7 +52,7 @@ export class RecetasBBDDComponent implements OnInit {
   @ViewChild('MatPaginator2', {static: true}) paginatorSimple: MatPaginator;
   @ViewChild('MatSort2') sortSimple: MatSort;
 
-  constructor(public dialog: MatDialog, private recetaService: RecetaService, private router: Router, private alimentoService: AlimentoService) {}
+  constructor(public dialog: MatDialog, private recetaService: RecetaService, private router: Router, private alimentoService: AlimentoService, private location: Location) {}
 
   masInfo(element: any){
     this.router.navigateByUrl('/receta/'+element.idReceta)
@@ -96,6 +97,10 @@ export class RecetasBBDDComponent implements OnInit {
 
 
     })
+  }
+
+  volver(){
+    this.location.back();
   }
 
   // getNombreAlimento(alimentoId: number){

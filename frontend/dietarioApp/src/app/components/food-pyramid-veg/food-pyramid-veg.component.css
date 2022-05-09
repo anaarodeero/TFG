@@ -9,21 +9,21 @@
   width: 100%;
 }
 
+.titulo {
+  margin-top: 2rem;
+  color: #37b97d;
+  font-weight: bold;
+  /* font-size: xx-large; */
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
 .botonVolver{
   color: #37B97D;
   border-radius: 1rem;
   align-self: flex-start;
 margin: 50px 50px 0 50px;
 width: fit-content;
-}
-
-.titulo {
-  margin-top: 0.5rem;
-  color: #37b97d;
-  font-weight: bold;
-  /* font-size: xx-large; */
-  margin-bottom: 2rem;
-  text-align: center;
 }
 
 .card {
@@ -36,8 +36,17 @@ width: fit-content;
   flex-wrap: wrap;
 }
 
+.mat-card{
+  align-items: start !important;
+}
+
 .card-sm{
   width: 85%;
+}
+
+.dieta-title{
+  color: #37b97d;
+  text-decoration: underline;
 }
 
 /* .mat-grid-tile {

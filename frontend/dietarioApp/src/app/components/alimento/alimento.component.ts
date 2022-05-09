@@ -5,38 +5,10 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import {animate, state, style, transition, trigger} from '@angular/animations';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
-import { AddFoodDialogComponent } from '../add-food-dialog/add-food-dialog.component'
+import { AddAlimentoDialogComponent } from '../add-alimento-dialog/add-alimento-dialog.component'
 import { Alimento } from 'src/app/models/alimento';
 import { AlimentoService } from 'src/app/services/alimento.service';
-
-
-// export interface ListadoAlimentos {
-//   nombre: string;
-//   cal: number;
-//   pr: number;
-//   gr: number;
-//   hc: number;
-// }
-
-// const alimentosBBDD: ListadoAlimentos[] = [
-//   {nombre: 'Albahaca', cal: 111, pr: 111, gr: 111, hc: 111},
-//   {nombre: 'Zanahoria', cal: 111, pr: 111, gr: 111, hc: 111},
-//   {nombre: 'Tomate', cal: 111, pr: 111, gr: 111, hc: 111},
-//   {nombre: 'Seta', cal: 111, pr: 111, gr: 111, hc: 111},
-//   {nombre: 'Rúcula', cal: 111, pr: 111, gr: 111, hc: 111},
-//   {nombre: 'Repollo', cal: 111, pr: 111, gr: 111, hc: 111},
-//   {nombre: 'Remolacha', cal: 111, pr: 111, gr: 111, hc: 111},
-//   {nombre: 'Rábano', cal: 111, pr: 111, gr: 111, hc: 111},
-//   {nombre: 'Puré de patata', cal: 111, pr: 111, gr: 111, hc: 111},
-//   {nombre: 'Puerro', cal: 111, pr: 111, gr: 111, hc: 111},
-//   {nombre: 'Pimiento frito', cal: 111, pr: 111, gr: 111, hc: 111},
-//   {nombre: 'Pimiento rojo', cal: 111, pr: 111, gr: 111, hc: 111},
-//   {nombre: 'Pepino', cal: 111, pr: 111, gr: 111, hc: 111},
-//   {nombre: 'Pepinillos en vinagre', cal: 111, pr: 111, gr: 111, hc: 111},
-//   {nombre: 'Patata hervida', cal: 111, pr: 111, gr: 111, hc: 111},
-//   {nombre: 'Patata cruda', cal: 111, pr: 111, gr: 111, hc: 111},
-//   {nombre: 'Patata asada', cal: 111, pr: 111, gr: 111, hc: 111},
-// ];
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-alimento',
@@ -67,11 +39,15 @@ export class AlimentoComponent implements OnInit {
     dialogConfig.autoFocus = true;
     dialogConfig.width = '800px'
 
-    const dialogRef = this.dialog.open(AddFoodDialogComponent, dialogConfig);
+    const dialogRef = this.dialog.open(AddAlimentoDialogComponent, dialogConfig);
 
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);
     });
+  }
+
+  volver(){
+    this.location.back();
   }
 
   applyFilter(event: Event) {
@@ -82,7 +58,7 @@ export class AlimentoComponent implements OnInit {
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
 
-  constructor(public dialog: MatDialog, private alimentoService: AlimentoService) {}
+  constructor(public dialog: MatDialog, private alimentoService: AlimentoService, private location: Location) {}
 
   ngOnInit() {
     this.alimentoService.getAll().subscribe(response => {

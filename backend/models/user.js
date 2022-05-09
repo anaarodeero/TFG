@@ -5,13 +5,7 @@ const UserSchema = new Schema({
     apellidos: {type: String, required: true},
     email: {type: String, required: true},
     password: {type: String, required: true},
-    // fecha_nacimiento: {type: Date, required: true},
-    // sexo: {type: String, enum: ['Mujer', 'Hombre'], required: true},
-    // altura: {type: Number, required: true},
-    // peso: {type: Number, required: true},
-    //objetivo: {type: String, enum: ['Ganar', 'Perder', "Mantener"], required: true},
-    alergias: {type: [String], required: true},
-    dieta: {type: String, required: true}
+    planComida: {type: Number}
 }, {
     timestamps: true,
     versionKey: false

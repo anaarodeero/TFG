@@ -1,4 +1,5 @@
 import { SelectionModel } from '@angular/cdk/collections';
+import { Location } from '@angular/common';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { AbstractControl, FormBuilder, FormControl, FormGroup, ValidationErrors, Validators } from '@angular/forms';
 import { MatPaginator } from '@angular/material/paginator';
@@ -37,7 +38,7 @@ export class AddRecetaComponent implements OnInit {
   addAlimento: boolean = false
   addPaso: boolean = false
 
-  constructor(private _formBuilder: FormBuilder, private alimentoService: AlimentoService, private recetaService: RecetaService) {
+  constructor(private _formBuilder: FormBuilder, private alimentoService: AlimentoService, private recetaService: RecetaService, private location: Location) {
     this.firstFormGroup = this._formBuilder.group({});
     this.addIngredienteFormGroup = this._formBuilder.group({});
     this.addPasoFormGroup = this._formBuilder.group({});
@@ -72,6 +73,10 @@ export class AddRecetaComponent implements OnInit {
 
   displayFn(alimento: Alimento): string {
     return alimento && alimento.nombre ? alimento.nombre.toString() : '';
+  }
+
+  volver(){
+    this.location.back();
   }
 
   private _filter(nombre: string): Alimento[] {

@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges } from '@angular/core';
 import { AbstractControl, FormBuilder, FormControl, FormGroup, ValidationErrors, Validators } from '@angular/forms';
 import { Usuario } from 'src/app/models/usuario';
 import { UsuarioService } from 'src/app/services/usuario.service';
@@ -8,11 +8,12 @@ import { UsuarioService } from 'src/app/services/usuario.service';
   templateUrl: './datos-cuenta.component.html',
   styleUrls: ['./datos-cuenta.component.css']
 })
-export class DatosCuentaComponent implements OnInit {
+export class DatosCuentaComponent implements OnInit, OnChanges {
 
   @Input() firstFormGroup: FormGroup;
   @Input() usuario: Usuario;
   public modoEdicion: boolean;
+  @Input() usrYaExiste: boolean;
 
   @Output() cambioActivado = new EventEmitter<boolean>();
 
@@ -27,17 +28,26 @@ export class DatosCuentaComponent implements OnInit {
     // this.cambioForm = this.formBuilder.group({});
   }
 
-  ngOnInit() {
-    if(this.usuarioService.isLoggedIn()){
-      this.modoEdicion = true;
-      this.usuarioService.getUser().subscribe(
-        (user) => {
-          this.usuario = user
-        }
-      );
-    } else {
-      this.modoEdicion = false;
+  ngOnChanges(changes: SimpleChanges): void {
+    if(changes['usrYaExiste']){
+      console.log(changes)
+      this.firstFormGroup.get('email').setErrors({'usrYaExiste': true})
     }
+  }
+
+  ngOnInit() {
+    this.usuarioService.isLoggedIn().subscribe(result => {
+      if(result){
+        this.modoEdicion = true;
+        this.usuarioService.getUser().subscribe(
+          (user) => {
+            this.usuario = user
+          }
+        );
+      } else {
+        this.modoEdicion = false;
+      }
+    })
 
 
     this.firstFormGroup.addControl('password_repeat', new FormControl('', [Validators.required, this.validatePassword.bind(this)]))
@@ -83,17 +93,6 @@ export class DatosCuentaComponent implements OnInit {
     let regEx = "[A-Za-z0-9._%-]+@[A-Za-z0-9._%-]+\\.[a-z]{2,3}";
     if(!control.value.match(regEx)) return {'errorEmail': true}
     else return null;
-  }
-
-  existeUsuario(){
-    if(this.firstFormGroup.get('email').valid){
-      let email = this.firstFormGroup.get('email').value;
-      this.usuarioService.getUserByEmail(email).subscribe((data: any)=>{
-        if(data && (data[0]._id != this.usuario._id)) {
-          this.firstFormGroup.get('email').setErrors({'usrYaExite': true});
-        }
-      });
-    }
   }
 
   cancelarCambio(){

@@ -8,6 +8,8 @@ import { RecetaSimple } from 'src/app/models/recetaSimple';
 import { Categoria, Dieta } from 'src/app/models/enums';
 import { PlanComidaService } from 'src/app/services/plan-comida.service';
 import { PiramideService } from 'src/app/services/piramide.service';
+import { Location } from '@angular/common';
+
 
 
 @Component({
@@ -35,7 +37,7 @@ export class AddRecetaSimpleComponent implements OnInit {
 
   addAlimento: boolean = false
 
-  constructor(private _formBuilder: FormBuilder, private alimentoService: AlimentoService, private recetaService: RecetaService, private planComidaService: PlanComidaService, private piramideService: PiramideService) {
+  constructor(private _formBuilder: FormBuilder, private location: Location, private alimentoService: AlimentoService, private recetaService: RecetaService, private planComidaService: PlanComidaService, private piramideService: PiramideService) {
     this.firstFormGroup = this._formBuilder.group({});
     this.addIngredienteFormGroup = this._formBuilder.group({});
   }
@@ -44,7 +46,7 @@ export class AddRecetaSimpleComponent implements OnInit {
     // this.recetaService.getRecetasByCategoria(Categoria.PESCADO).subscribe(response => {
     //   console.log("recetas pescado: ", response)
     // })
-    this.planComidaService.createMyPlan(Dieta.REGULAR).subscribe();
+    // this.planComidaService.createMyPlan(Dieta.REGULAR).subscribe();
     // this.piramideService.getPiramideByDieta(Dieta.REGULAR).subscribe();
     this.alimentoService.getAll().subscribe(response => {
       this.options = response
@@ -66,6 +68,10 @@ export class AddRecetaSimpleComponent implements OnInit {
     this.filteredOptions.subscribe(elem => this.optionSelected = elem[0])
 
     console.log("form", this.addIngredienteFormGroup)
+  }
+
+  volver(){
+    this.location.back();
   }
 
   displayFn(alimento: Alimento): string {

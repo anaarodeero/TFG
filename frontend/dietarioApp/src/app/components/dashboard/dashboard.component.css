@@ -2,14 +2,36 @@
   border-right: solid 3px #dbf0ca;
 background-color: #eaf7de;
 border-top: solid 3px #dbf0ca;
+padding: 15px 15px 15px 0;
 
 }
 
-.container {
+.container2 {
+  /* background-image: url(../../../assets/image12.png);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  min-height: 95%;
+  width: 100%; */
+}
+
+.container{
   background-image: url(../../../assets/image12.png);
   background-size: cover;
   background-position: center;
   position: absolute;
   min-height: 95%;
   width: 100%;
+}
+
+.mat-tree{
+  background-color: transparent;
+}
+
+.padding{
+  width: 20px;
+}
+
+.pointer{
+  cursor: pointer;
 }

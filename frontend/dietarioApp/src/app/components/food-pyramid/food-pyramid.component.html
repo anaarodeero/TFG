@@ -1,4 +1,5 @@
-<div class="container" fxLayout="column" fxLayoutAlign="center center">
+<div class="container" fxLayout="column" fxLayoutAlign="start center">
+  <button mat-icon-button class="botonVolver" (click)="volver()"><mat-icon>chevron_left</mat-icon> Volver</button>
     <h1 class="mat-display-2 titulo">Tu pirámide semanal</h1>
         <mat-card class="card mat-elevation-z8" ngClass.lt-md="card-sm" fxLayoutAlign="space-around center">
           <div class="imagen">
@@ -48,39 +49,6 @@
               </div>
             </ng-container>
           </div>
-          <!-- <p *ngFor="let alimento of categoriaDiaria">{{alimento.nombre}}</p> -->
-            <!-- <mat-grid-list cols="3" rowHeight="50px">
-                <mat-grid-tile [colspan]="1" [rowspan]="1">
-                </mat-grid-tile>
-                <mat-grid-tile [colspan]="1" [rowspan]="1">
-                  Alimentos
-                </mat-grid-tile>
-                <mat-grid-tile [colspan]="1" [rowspan]="1">
-                  Cantidad
-                </mat-grid-tile>
-                <mat-grid-tile [colspan]="1" [rowspan]="categoriaDiaria.length">
-                  Alimentos consumo diario
-                </mat-grid-tile>
-                <ng-container *ngFor="let alimento of categoriaDiaria">
-                  <mat-grid-tile [colspan]="1" [rowspan]="1">
-                    {{alimento.nombre}}
-                  </mat-grid-tile>
-                  <mat-grid-tile [colspan]="1" [rowspan]="1">
-                    {{getNumeroRaciones(alimento)}}
-                  </mat-grid-tile>
-                </ng-container>
-                <mat-grid-tile [colspan]="1" [rowspan]="categoriaSemanal.length">
-                  Alimentos consumo semanal
-                </mat-grid-tile>
-                <ng-container *ngFor="let alimento of categoriaSemanal">
-                  <mat-grid-tile [colspan]="1" [rowspan]="1">
-                    {{alimento.nombre}}
-                  </mat-grid-tile>
-                  <mat-grid-tile [colspan]="1" [rowspan]="1">
-                    {{getNumeroRaciones(alimento)}}
-                  </mat-grid-tile>
-                </ng-container>
-              </mat-grid-list> -->
 
         </mat-card>
 </div>

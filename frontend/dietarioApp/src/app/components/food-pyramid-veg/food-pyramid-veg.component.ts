@@ -8,18 +8,23 @@ import { PiramideService } from 'src/app/services/piramide.service';
 import { RecetaService } from 'src/app/services/receta.service';
 import { UsuarioService } from 'src/app/services/usuario.service';
 
+
 @Component({
-  selector: 'app-food-pyramid',
-  templateUrl: './food-pyramid.component.html',
-  styleUrls: ['./food-pyramid.component.css']
+  selector: 'app-food-pyramid-veg',
+  templateUrl: './food-pyramid-veg.component.html',
+  styleUrls: ['./food-pyramid-veg.component.css']
 })
+export class FoodPyramidVegComponent implements OnInit {
 
-export class FoodPyramidComponent implements OnInit {
-
-  piramide: Piramide;
+  piramideVegetariana: Piramide;
+  piramideVegana: Piramide;
   categoriaDiaria: DistribucionCategoriaAlimento[] = [];
   categoriaSemanal: DistribucionCategoriaAlimento[] = [];
   categoriaOcasional: DistribucionCategoriaAlimento[] = [];
+
+  categoriaDiariaVegana: DistribucionCategoriaAlimento[] = [];
+  categoriaSemanalVegana: DistribucionCategoriaAlimento[] = [];
+  categoriaOcasionalVegana: DistribucionCategoriaAlimento[] = [];
   dietaRegular: boolean = true;
 
   constructor(private piramideService: PiramideService, private usuarioService: UsuarioService, private location: Location) { }
@@ -28,7 +33,7 @@ export class FoodPyramidComponent implements OnInit {
     this.usuarioService.getUser().subscribe(usr => {
       let usuario: Usuario = usr
       console.log("usr", usuario)
-      this.cargarPiramide(Dieta.REGULAR);
+      this.cargarPiramides();
     })
   }
 
@@ -37,10 +42,10 @@ export class FoodPyramidComponent implements OnInit {
   }
 
 
-  cargarPiramide(dieta: Dieta){
-    this.piramideService.getPiramideByDieta(dieta).subscribe(elemento => {
+  cargarPiramides(){
+    this.piramideService.getPiramideByDieta(Dieta.VEGETARIANA).subscribe(elemento => {
       console.log("pir", elemento)
-      this.piramide = elemento
+      this.piramideVegetariana = elemento
       elemento.piramide.forEach(elem => {
         if(elem.frecuencia === Frecuencia.DIARIA){
           this.categoriaDiaria.push(elem)
@@ -48,6 +53,20 @@ export class FoodPyramidComponent implements OnInit {
           this.categoriaSemanal.push(elem)
         } else {
           this.categoriaOcasional.push(elem)
+        }
+      })
+    })
+
+    this.piramideService.getPiramideByDieta(Dieta.VEGANA).subscribe(elemento => {
+      console.log("pir", elemento)
+      this.piramideVegana = elemento
+      elemento.piramide.forEach(elem => {
+        if(elem.frecuencia === Frecuencia.DIARIA){
+          this.categoriaDiariaVegana.push(elem)
+        } else if(elem.frecuencia === Frecuencia.SEMANAL){
+          this.categoriaSemanalVegana.push(elem)
+        } else {
+          this.categoriaOcasionalVegana.push(elem)
         }
       })
     })

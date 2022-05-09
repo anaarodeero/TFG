@@ -40,6 +40,12 @@
   margin-bottom: 2rem;
 }
 
+.boton {
+  background-color: #37b97d;
+  border-radius: 1rem;
+  color: white;
+}
+
 .card {
   /* width: 80%; */
   padding: 1rem;
@@ -47,12 +53,46 @@
   border-radius: 1rem;
   margin: 0.5rem;
   margin-bottom: 1rem;
-  display: block ruby;
+}
+
+.fila {
+  display: inline-flex;
+  border-bottom: solid 1px #e0e0e0;
+}
+
+.guarnicion {
+  color: gray;
+  margin: 0 10px 0 15px;
+}
+
+.itemG {
+  margin: 0;
+}
+
+.fila-guarnicion {
+  display: inline-flex;
+  margin-bottom: 10px;
+}
+
+.subfila {
+  width: 200px;
+  text-align: start;
+  padding: 0 15px;
+  border-right: solid 1px #e0e0e0;
+  border-left: solid 1px #e0e0e0;
+}
+
+.top {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .dia {
   border: solid 1px #e0e0e0;
   border-top: none;
+  text-align: start;
+  max-width: 200px;
 }
 
 .card-lg {
@@ -75,17 +115,33 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding: 15px;
 }
 
 .item {
   /* margin: 0.2rem !important; */
 }
-.mat-list-base .mat-list-item{
+
+.material-symbols-outlined {
+  font-size: 40px;
+  height: 40px;
+  margin-left: 15px;
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+
+.item_dia {
+  font-weight: bold;
+}
+
+.mat-list-base .mat-list-item {
   height: fit-content;
   padding: 9px 5px;
 }
 
-.mat-list-base .mat-list-item .mat-list-item-content{
+.mat-list-base .mat-list-item .mat-list-item-content {
   padding: 0;
 }
 

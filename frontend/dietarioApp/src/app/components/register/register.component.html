@@ -5,25 +5,8 @@
     class="stepper mat-elevation-z8" labelPosition="bottom" #stepper>
     <mat-step [stepControl]="firstFormGroup">
       <ng-template matStepLabel>Tu cuenta</ng-template>
-      <app-datos-cuenta [firstFormGroup]="firstFormGroup" [usuario]="usuario" (cambioActivado)="updateDisabled($event)"></app-datos-cuenta>
-      <button mat-button matStepperNext [disabled]="datosCuentaDisabled()" class="boton">Siguiente</button>
-    </mat-step>
-    <mat-step [stepControl]="secondFormGroup">
-      <ng-template matStepLabel>Alergías</ng-template>
-      <app-alergias [secondFormGroup]="secondFormGroup" [usuario]="usuario"></app-alergias>
-      <div>
-        <button mat-button matStepperPrevious class="boton">Anterior</button>
-        <button mat-button matStepperNext class="boton" [disabled]="secondFormGroup.invalid">Siguiente</button>
-      </div>
-    </mat-step>
-    <mat-step [stepControl]="thirdFormGroup">
-      <ng-template matStepLabel>Dieta</ng-template>
-      <app-dieta [thirdFormGroup]="thirdFormGroup" [usuario]="usuario"></app-dieta>
-      <div>
-        <button mat-button matStepperPrevious class="boton">Anterior</button>
-        <button mat-button matStepperNext class="boton" [disabled]="thirdFormGroup.invalid"
-          (click)="registrarUsuario()">Siguiente</button>
-      </div>
+      <app-datos-cuenta [firstFormGroup]="firstFormGroup" [usuario]="usuario" (cambioActivado)="updateDisabled($event)" [usrYaExiste]="usrYaExiste"></app-datos-cuenta>
+      <button mat-button matStepperNext [disabled]="datosCuentaDisabled()" class="boton" (click)="registrarUsuario(stepper)">Registrar</button>
     </mat-step>
     <mat-step>
       <ng-template matStepLabel>Fin.</ng-template>

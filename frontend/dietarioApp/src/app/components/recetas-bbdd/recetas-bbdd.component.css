@@ -6,10 +6,20 @@
   background-color: transparent;
 }
 .boton {
-  background-color: #37b97d;
   border-radius: 1rem;
-  color: white;
+color: #37b97d;
+align-self: flex-start;
+margin: 50px 50px 0 50px;
+width: fit-content;
 }
+
+.botonAdd {
+  border-radius: 1rem;
+background-color: #37b97d;
+color: white;
+}
+
+
 .perfil {
   /* background-color: #37b97d;
     border-radius: 1rem; */
@@ -25,9 +35,10 @@
   position: absolute;
   height: 95%;
   width: 100%;
-  flex-direction: row !important;
-  place-content: space-evenly !important;
+  /* flex-direction: row !important; */
+  /* place-content: space-evenly !important; */
 }
+
 
 .titulo {
   text-align: center;
@@ -48,6 +59,7 @@
   width: 40%;
   text-align: center;
   border-radius: 1rem;
+  margin: 45px 0;
 }
 
 .card-sm {

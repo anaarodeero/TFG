@@ -20,8 +20,20 @@ export class UsuarioService {
     this.usuario = this.usuarioSubject.asObservable();
   }
 
-  public get usuarioValue(): Usuario {
+  public get usuarioValue(): any {
     return this.usuarioSubject.value;
+  }
+
+  public get usuarioActual(): Usuario{
+    return JSON.parse(localStorage.getItem('usuario'))
+  }
+
+  updateUsuarioValue(){
+    this.getUser().subscribe(usuario => {
+      localStorage.setItem('usuario', JSON.stringify(usuario));
+      this.usuarioSubject.next(usuario);
+      return usuario;
+    })
   }
 
   login(email: string, password: string) {
@@ -31,7 +43,7 @@ export class UsuarioService {
         password,
       })
       .pipe(
-        map((usuario) => {
+        map((usuario:any) => {
           // store usuario details and jwt token in local storage to keep usuario logged in between page refreshes
           localStorage.setItem('usuario', JSON.stringify(usuario));
           this.usuarioSubject.next(usuario);
@@ -58,6 +70,7 @@ export class UsuarioService {
   }
 
   register(usuario: Usuario) {
+    console.log("registrar")
     return this.http.post('http://localhost:4000/api/register', usuario);
   }
 

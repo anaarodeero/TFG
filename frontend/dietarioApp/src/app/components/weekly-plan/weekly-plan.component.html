@@ -2,26 +2,49 @@
     <h1 class="mat-display-2 titulo">Tu plan semanal</h1>
         <mat-card class="card mat-elevation-z8" ngClass.lt-lg="card-md" ngClass.lt-md="card-sm" ngClass.lt-sm="card-xs">
           <div class="tabla">
-            <div *ngFor="let dia of semana" class="dia">
-              <mat-list fxLayout="column" >
-                  <mat-list-item class="item diaSemana">{{dia.diaSemana}}</mat-list-item>
-                  <mat-divider [inset]="true"></mat-divider>
-                  <mat-list-item class="item sm">Desayuno</mat-list-item>
-                  <mat-list-item class="item" *ngFor="let desayuno of dia.desayuno">{{desayuno}}</mat-list-item>
-                  <mat-divider [inset]="true"></mat-divider>
-                  <mat-list-item class="item sm">Almuerzo</mat-list-item>
-                  <mat-list-item class="item">{{dia.almuerzo}}</mat-list-item>
-                  <mat-divider [inset]="true"></mat-divider>
-                  <mat-list-item class="item sm">Comida</mat-list-item>
-                  <mat-list-item class="item" *ngFor="let comida of dia.comida">{{comida}}</mat-list-item>
-                  <mat-divider [inset]="true"></mat-divider>
-                  <mat-list-item class="item sm">Merienda</mat-list-item>
-                  <mat-list-item class="item">{{dia.merienda}}</mat-list-item>
-                  <mat-divider [inset]="true"></mat-divider>
-                  <mat-list-item class="item sm">Cena</mat-list-item>
-                  <mat-list-item class="item" *ngFor="let cena of dia.cena">{{cena}}</mat-list-item>
-              </mat-list>
-            </div>
+              <div class="fila">
+                <div class="subfila top" *ngFor="let dia of dias; let i = index">
+                  <p class="item_dia">{{dia}}</p>
+                  <span class="material-symbols-outlined" (click)="infoDia(i)">
+                    read_more
+                    </span>
+                </div>
+              </div>
+              <div class="fila">
+                <div class="subfila" *ngFor="let dia of planSemanal.planesDiarios">
+                  <p class="item sm">Desayuno</p>
+                  <p class="item">{{dia.desayuno.nombre}}</p>
+                </div>
+              </div>
+              <div class="fila">
+                <div class="subfila" *ngFor="let dia of planSemanal.planesDiarios">
+                  <p class="item sm">Almuerzo</p>
+                  <p class="item">{{dia.almuerzo.nombre}}</p>
+                </div>
+              </div>
+              <div class="fila">
+                <div class="subfila" *ngFor="let dia of planSemanal.planesDiarios">
+                  <p class="item sm">Comida</p>
+                  <p class="item">{{dia.comida.primerPlato.nombre}}</p>
+                  <p class="item">{{dia.comida.platoPrincipal.plato.nombre}}</p>
+                  <div *ngIf="dia.comida.platoPrincipal.guarnicion" class="fila-guarnicion">
+                    <p class="item guarnicion"> - Guarnicion: </p><p class="itemG">{{dia.comida.platoPrincipal.guarnicion}}</p>
+                  </div>
+                </div>
+              </div>
+              <div class="fila">
+                <div class="subfila" *ngFor="let dia of planSemanal.planesDiarios">
+                  <p class="item sm">Merienda</p>
+                  <p class="item">{{dia.merienda.nombre}}</p>
+                </div>
+              </div>
+              <div class="fila">
+                <div class="subfila" *ngFor="let dia of planSemanal.planesDiarios">
+                  <p class="item sm">Cena</p>
+                  <p class="item">{{dia.cena.nombre}}</p>
+                </div>
+              </div>
           </div>
+          <button mat-button class="boton" (click)="cambiar()">Cambiar de plan</button>
         </mat-card>
 </div>

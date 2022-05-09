@@ -68,6 +68,14 @@
   width: max-content;
 }
 
+.botonVolver{
+  color: #37B97D;
+  border-radius: 1rem;
+  align-self: flex-start;
+margin: 50px 50px 0 50px;
+width: fit-content;
+}
+
 .boton_crear{
   align-self: center;
   justify-self: center;
@@ -97,7 +105,8 @@
   color: #37b97d;
   font-weight: bold;
   font-size: xx-large;
-  margin: 0
+  margin: 20px;
+  /* margin-top: 50px; */
   /* font-family: "Amatemora"; */
 }
 
@@ -112,6 +121,7 @@
   display: flex;
   border-radius: 1rem;
   padding: 50px;
+  margin-bottom: 2rem;
 }
 
 .card-sm {

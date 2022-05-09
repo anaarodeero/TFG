@@ -1,0 +1,98 @@
+<div class="container" fxLayout="column" fxLayoutAlign="start center">
+  <button mat-icon-button class="botonVolver" (click)="volver()"><mat-icon>chevron_left</mat-icon> Volver</button>
+  <h1 class="mat-display-2 titulo">Otras pirámides alimenticias</h1>
+      <mat-card class="card mat-elevation-z8" ngClass.lt-md="card-sm" fxLayoutAlign="space-around center">
+        <div class="elementos">
+          <h2 class="dieta-title">Dieta vegetariana</h2>
+          <h3>Consumo diario</h3>
+          <div *ngFor="let alimento of categoriaDiaria">
+            <div class="fila">
+              <div class="elemento">
+                <mat-icon>chevron_right</mat-icon>
+                <p class="alimento">{{alimento.nombre}}</p>
+              </div>
+              <div class="cantidad">
+                <p class="alimento">{{getNumeroRaciones(alimento)}}</p>
+              </div>
+            </div>
+          </div>
+          <h3>Consumo semanal</h3>
+          <div *ngFor="let alimento of categoriaSemanal">
+            <div class="fila">
+              <div class="elemento">
+                <mat-icon>chevron_right</mat-icon>
+                <p class="alimento">{{alimento.nombre}}</p>
+              </div>
+              <div class="cantidad">
+                <p class="alimento">{{getNumeroRaciones(alimento)}}</p>
+              </div>
+            </div>
+          </div>
+          <h3>Consumo ocasional y moderado</h3>
+          <div *ngFor="let alimento of categoriaOcasional">
+            <div class="fila">
+              <div class="elemento">
+                <mat-icon>chevron_right</mat-icon>
+                <p class="alimento">{{alimento.nombre}}</p>
+              </div>
+            </div>
+          </div>
+          <ng-container *ngIf="!dietaRegular">
+            <h3>Suplementos</h3>
+            <div class="fila">
+              <div class="elemento">
+                <mat-icon>chevron_right</mat-icon>
+                <p class="alimento">Vitamina B12 y otros</p>
+              </div>
+            </div>
+          </ng-container>
+        </div>
+
+        <div class="elementos">
+          <h2 class="dieta-title">Dieta vegana</h2>
+          <h3>Consumo diario</h3>
+          <div *ngFor="let alimento of categoriaDiariaVegana">
+            <div class="fila">
+              <div class="elemento">
+                <mat-icon>chevron_right</mat-icon>
+                <p class="alimento">{{alimento.nombre}}</p>
+              </div>
+              <div class="cantidad">
+                <p class="alimento">{{getNumeroRaciones(alimento)}}</p>
+              </div>
+            </div>
+          </div>
+          <h3>Consumo semanal</h3>
+          <div *ngFor="let alimento of categoriaSemanalVegana">
+            <div class="fila">
+              <div class="elemento">
+                <mat-icon>chevron_right</mat-icon>
+                <p class="alimento">{{alimento.nombre}}</p>
+              </div>
+              <div class="cantidad">
+                <p class="alimento">{{getNumeroRaciones(alimento)}}</p>
+              </div>
+            </div>
+          </div>
+          <h3>Consumo ocasional y moderado</h3>
+          <div *ngFor="let alimento of categoriaOcasionalVegana">
+            <div class="fila">
+              <div class="elemento">
+                <mat-icon>chevron_right</mat-icon>
+                <p class="alimento">{{alimento.nombre}}</p>
+              </div>
+            </div>
+          </div>
+          <ng-container *ngIf="!dietaRegular">
+            <h3>Suplementos</h3>
+            <div class="fila">
+              <div class="elemento">
+                <mat-icon>chevron_right</mat-icon>
+                <p class="alimento">Vitamina B12 y otros</p>
+              </div>
+            </div>
+          </ng-container>
+        </div>
+
+      </mat-card>
+</div>

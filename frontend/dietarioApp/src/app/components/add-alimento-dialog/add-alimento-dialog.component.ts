@@ -5,17 +5,17 @@ import { Alimento } from 'src/app/models/alimento';
 import { AlimentoService } from 'src/app/services/alimento.service';
 
 @Component({
-  selector: 'app-add-food-dialog',
-  templateUrl: './add-food-dialog.component.html',
-  styleUrls: ['./add-food-dialog.component.css']
+  selector: 'app-add-alimento-dialog',
+  templateUrl: './add-alimento-dialog.component.html',
+  styleUrls: ['./add-alimento-dialog.component.css']
 })
-export class AddFoodDialogComponent implements OnInit {
+export class AddAlimentoDialogComponent implements OnInit {
 
   firstFormGroup: FormGroup;
   hide = true;
   numberPattern = "^[0-9]+([.,][0-9]+)?$"
 
-  constructor(private _formBuilder: FormBuilder, private alimentoService: AlimentoService, public dialogRef: MatDialogRef<AddFoodDialogComponent>) { }
+  constructor(private _formBuilder: FormBuilder, private alimentoService: AlimentoService, public dialogRef: MatDialogRef<AddAlimentoDialogComponent>) { }
 
   getErrorMessage() {
     return 'Este campo es obligatorio';

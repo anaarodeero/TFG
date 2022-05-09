@@ -15,14 +15,7 @@ userCtrl.createUser = async (req, res, next) => {
     nombre: req.body.nombre,
     apellidos: req.body.apellidos,
     email: req.body.email,
-    password: req.body.password,
-    fecha_nacimiento: req.body.fecha_nacimiento,
-    sexo: req.body.sexo,
-    altura: req.body.altura,
-    peso: req.body.peso,
-    //objetivo: req.body.objetivo,
-    alergias: req.body.alergias,
-    dieta: req.body.dieta,
+    password: req.body.password
   });
   //comprobar que el correo que no exista
   const userEncontrado = await User.findOne({email: user.email});
@@ -38,7 +31,6 @@ userCtrl.createUser = async (req, res, next) => {
 };
 
 userCtrl.loginUser = async (req, res, next) => {
-  console.log("logeamos");
   let email = req.body.email;
   let password = req.body.password;
   //comprobar que el correo que no exista
@@ -52,7 +44,7 @@ userCtrl.loginUser = async (req, res, next) => {
   }
 
   const token = jwt.sign({ _id: userEncontrado._id }, "clave_secreta");
-  return res.status(200).json({ token: token, message: "Registro exitoso" });
+  return res.status(200).json({ token: token, message: "Registro exitoso" , usuario: userEncontrado});
 
 };
 
@@ -77,7 +69,7 @@ userCtrl.authenticate = async (req, res, next) => {
 
 userCtrl.getUserByEmail = async (req, res, next) => {
   let email = req.query.email;
-  console.log("email", email)
+  console.log("email2", email)
   const user = await User.find({email: email});
   if(user[0]) res.json(user);
   else null;

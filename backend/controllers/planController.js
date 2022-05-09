@@ -1,18 +1,22 @@
 const Plan = require("../models/plan");
 const PlanDiario = require("../models/plan");
+const Comida = require("../models/plan");
 const Piramide = require("../models/piramide");
 const Receta = require("../models/receta");
+const User = require("../models/user");
 
 var jwt = require("jsonwebtoken");
 const recetaController = require('./recetaController');
 const piramideController = require('./piramideController');
+const userController = require('./userController');
 const RecetaSimple = require("../models/recetaSimple");
 
 const planCtrl = {};
 
 planCtrl.getMyPlan = async (req, res, next) => {
-  let id = req.query.idPlan;
-  const plan = await Plan.find({ idPlan: Number(id) });
+  let id = req.query.id;
+  console.log("id", id)
+  const plan = await Plan.find({ id: Number(id) });
   if (plan[0]) res.json(plan[0]);
   else null;
 };
@@ -24,6 +28,10 @@ planCtrl.createPlanRegular = async (req, res, next) => {
   let mapaIntervalosSemanal = new Map();
   let mapaIntervalosDiario = new Map();
   piramide[0].piramide.forEach(categoria => {
+    let nombre = categoria.nombre;
+    if(nombre.includes('INTEGRAL')){
+      nombre = nombre.split(' ')[0]
+    }
     //Vemos el intervalo de la categoria
     let intervalo;
     if(categoria.limiteInferior == categoria.limiteSuperior){
@@ -32,20 +40,20 @@ planCtrl.createPlanRegular = async (req, res, next) => {
       intervalo = random(categoria.limiteInferior, categoria.limiteSuperior)
     }
     if(categoria.frecuencia == 'SEMANAL'){
-      mapaIntervalosSemanal.set(categoria.nombre, intervalo)
+      mapaIntervalosSemanal.set(nombre, intervalo)
     } else if(categoria.frecuencia == 'DIARIA'){
       let array = new Array(7)
       array.fill(intervalo)
-      mapaIntervalosDiario.set(categoria.nombre, array)
+      mapaIntervalosDiario.set(nombre, array)
     }
   })
-
+  // console.log(mapaIntervalosSemanal, mapaIntervalosDiario)
 
   // comenzamos con las comidas principales, ya que es algo fijo.
   // primeros platos ensaladas, cremas o sopas
   var script = require('../assets/primerPlatoComidaRegular.json')
   let recetas = await Receta.find(script);
-  console.log("recetas: ", recetas.length)
+  //// console.log("recetas: ", recetas.length)
   let primerosPlatos = new Array(7);
   if(recetas.length == 7){
     // Cojo los 7
@@ -67,19 +75,19 @@ planCtrl.createPlanRegular = async (req, res, next) => {
   }
   mapaIntervalosDiario.set('VERDURAS', arrayIntervalos)
 
-  console.log("queda por tomar de ARROZ: ", mapaIntervalosSemanal.get('ARROZ INTEGRAL'))
-  console.log("queda por tomar de PASTA: ", mapaIntervalosSemanal.get('PASTA INTEGRAL'))
+  //// console.log("queda por tomar de ARROCES: ", mapaIntervalosSemanal.get('ARROCES'))
+  //// console.log("queda por tomar de PASTA: ", mapaIntervalosSemanal.get('PASTA'))
 
   // Vemos los platos principales
   let platosPrincipales = new Array(7);
   // Cogemos los 3 platos de comidas fijas, arroz, pasta y legumbres
-  let recetasArroz = await Receta.find({"categoria": "ARROZ INTEGRAL"});
+  let recetasArroz = await Receta.find({"categoria": "ARROCES"});
   // Cogemos una aleatoria
   let recetaArroz = recetasArroz[random(0, recetasArroz.length-1)]
   // Repetimos con la pasta y legumbres
-  let recetasPasta = await Receta.find({"categoria": "PASTA INTEGRAL"});
+  let recetasPasta = await Receta.find({"categoria": "PASTA"});
   let recetaPasta = recetasPasta[random(0, recetasPasta.length-1)]
-  // console.log("pasta: ", recetaPasta)
+  // //// console.log("pasta: ", recetaPasta)
   var script = require('../assets/lemgumbresSinEnsaladas.json')
   let recetasLegumbres = await Receta.find(script);
   let recetaLegumbres = recetasLegumbres[random(0, recetasLegumbres.length-1)]
@@ -117,7 +125,7 @@ planCtrl.createPlanRegular = async (req, res, next) => {
   let recetasCarnePescado = recetasCarne.concat(recetasPescado)
   // desordenamos el array
   recetasCarnePescado = getMultipleRandom(recetasCarnePescado, recetasCarnePescado.length)
-  console.log(recetasCarnePescado)
+  //// console.log(recetasCarnePescado)
 
   // relacionar tabla de receta con alimentos para comprobar las categorias de los alimentos
 
@@ -134,7 +142,7 @@ planCtrl.createPlanRegular = async (req, res, next) => {
 
   // guarniciones extra para los platos de carne y pescado
   // Comprobar para cada una si quedan por asignar o si esa receta no tiene ya esa categoria
-  console.log("queda por tomar: ", mapaIntervalosSemanal)
+  //// console.log("queda por tomar: ", mapaIntervalosSemanal)
   for (let i = 0; i < platosPrincipales.length; i++) {
     let plato = platosPrincipales[i];
     platosPrincipales[i] = {
@@ -145,25 +153,25 @@ planCtrl.createPlanRegular = async (req, res, next) => {
     let guarnicion = "";
     
     // PASTA
-    console.log("queda pasta? " + mapaIntervalosSemanal.get('PASTA INTEGRAL'))
-    if(mapaIntervalosSemanal.get('PASTA INTEGRAL') > 0){
-      // console.log(" aver", platosPrincipales[i])
+    //// console.log("queda pasta? " + mapaIntervalosSemanal.get('PASTA'))
+    if(mapaIntervalosSemanal.get('PASTA') > 0){
+      // //// console.log(" aver", platosPrincipales[i])
       if(!plato.vinculados.find(alimento => alimento.categoria == "PASTA")){
-        guarnicion = "PASTA"
-        mapaIntervalosSemanal.set('PASTA INTEGRAL', mapaIntervalosSemanal.get('PASTA INTEGRAL')-1)
+        guarnicion = "Pasta"
+        mapaIntervalosSemanal.set('PASTA', mapaIntervalosSemanal.get('PASTA')-1)
       } 
     } else {
-        // ARROZ
-        console.log("queda arroz? " + mapaIntervalosSemanal.get('ARROZ INTEGRAL'))
-        if(mapaIntervalosSemanal.get('ARROZ INTEGRAL') > 0){
-          if(!plato.vinculados.find(alimento => alimento.categoria == "ARROZ")){
-            guarnicion = "ARROZ"
-            mapaIntervalosSemanal.set('ARROZ INTEGRAL', mapaIntervalosSemanal.get('ARROZ INTEGRAL')-1)
+        // ARROCES
+        //// console.log("queda arroz? " + mapaIntervalosSemanal.get('ARROCES'))
+        if(mapaIntervalosSemanal.get('ARROCES') > 0){
+          if(!plato.vinculados.find(alimento => alimento.categoria == "ARROCES")){
+            guarnicion = "Arroz"
+            mapaIntervalosSemanal.set('ARROCES', mapaIntervalosSemanal.get('ARROCES')-1)
           } 
         } else {
-            console.log("queda patata? " + mapaIntervalosSemanal.get('PATATAS'))
+            //// console.log("queda patata? " + mapaIntervalosSemanal.get('PATATAS'))
             if(mapaIntervalosSemanal.get('PATATAS') > 0){
-              guarnicion = "PATATA"
+              guarnicion = "Patata"
               mapaIntervalosSemanal.set('PATATAS', mapaIntervalosSemanal.get('PATATAS')-1)
             }
           
@@ -174,10 +182,10 @@ planCtrl.createPlanRegular = async (req, res, next) => {
       plato: plato,
       guarnicion: guarnicion
     }
-    console.log("plato de " + plato.nombre + " / categoria: " + plato.categoria + " / guarnicacion: " + guarnicion)
+    //// console.log("plato de " + plato.nombre + " / categoria: " + plato.categoria + " / guarnicacion: " + guarnicion)
   }
-  console.log("queda por tomar: ", mapaIntervalosSemanal)
-
+  //// console.log("queda por tomar: ", mapaIntervalosSemanal)
+  
 
   // Cenas
   // Hay que cenar verduras pero comprobamos si quedan pescados o carnes blancas por asignar
@@ -187,7 +195,7 @@ planCtrl.createPlanRegular = async (req, res, next) => {
   if(mapaIntervalosSemanal.get('CARNE BLANCA') > 0){
     var script = require('../assets/recetasCarneUnionConVerduras.json')
     let recetasCarne = await Receta.aggregate(script);
-    console.log("id: ", platosPrincipales.map(p => p.plato?.idReceta))
+    //// console.log("id: ", platosPrincipales.map(p => p.plato?.idReceta))
     let recetasCarneNoUsadas = recetasCarne.filter(receta => {
       return platosPrincipales.map(p => p.plato.idReceta).includes(receta.idReceta)
     })
@@ -196,7 +204,7 @@ planCtrl.createPlanRegular = async (req, res, next) => {
   if(mapaIntervalosSemanal.get('PESCADO') > 0){
     var script = require('../assets/recetasPescadoUnionConVerduras.json')
     let recetasPescado = await Receta.aggregate(script);
-    console.log("id: ", platosPrincipales.map(p => p.plato?.idReceta))
+    //// console.log("id: ", platosPrincipales.map(p => p.plato?.idReceta))
     let recetasPescadoNoUsadas = recetasPescado.filter(receta => {
       return platosPrincipales.map(p => p.plato.idReceta).includes(receta.idReceta)
     })
@@ -227,173 +235,131 @@ planCtrl.createPlanRegular = async (req, res, next) => {
   // Desayunos
   let desayunos = new Array(7);
   let recetasSimples = await RecetaSimple.find({});
-  console.log(mapaIntervalosSemanal)
-  console.log(mapaIntervalosDiario)
+  //// console.log(mapaIntervalosSemanal)
+  //// console.log(mapaIntervalosDiario)
   // Elegir aletaoriamente
   desayunos = getMultipleRandom(recetasSimples, 7)
-  console.log("desayunos", desayunos)
-  let arrayIntervalosPan = mapaIntervalosDiario.get('PAN INTEGRAL');
-  let arrayIntervalosLacteos = mapaIntervalosDiario.get('PAN INTEGRAL');
+  //// console.log("desayunos", desayunos)
+  let arrayIntervalosPan = mapaIntervalosDiario.get('PAN');
+  let arrayIntervalosLacteos = mapaIntervalosDiario.get('PAN');
   for (let i = 0; i < desayunos.length; i++) {
-    if(desayunos[i].categoria.includes('PAN INTEGRAL')){
+    if(desayunos[i].categoria.includes('PAN')){
       arrayIntervalosPan[i] = arrayIntervalosPan[i] - 1
-    } else if(desayunos[i].categoria.includes('PAN INTEGRAL')){
+    } else if(desayunos[i].categoria.includes('PAN')){
       arrayIntervalosLacteos[i] = arrayIntervalosLacteos[i] - 1
     }
   }
-  mapaIntervalosDiario.set('PAN INTEGRAL', arrayIntervalosPan);
+  mapaIntervalosDiario.set('PAN', arrayIntervalosPan);
   mapaIntervalosDiario.set('LACTEOS', arrayIntervalosLacteos);
-  console.log(mapaIntervalosDiario)
+  //// console.log(mapaIntervalosDiario)
 
   // Almuerzos y meriendas
-  let recetasSimplesLacteos = await RecetaSimple.find({$and: [{categoria: "LACTEOS"},{categoria: {$ne: "PAN INTEGRAL"}}]});
-  let recetasSimplesPan = await RecetaSimple.find({$and: [{categoria: "PAN INTEGRAL"},{categoria: {$ne: "LACTEOS"}}]});
-  let recetasSimplesAmbos = await RecetaSimple.find({$and: [{categoria: "PAN INTEGRAL"},{categoria: "LACTEOS"}]});
+  let recetasSimplesLacteos = await RecetaSimple.find({$and: [{categoria: "LACTEOS"},{categoria: {$ne: "PAN"}}]});
+  let recetasSimplesPan = await RecetaSimple.find({$and: [{categoria: "PAN"},{categoria: {$ne: "LACTEOS"}}]});
+  let recetasSimplesAmbos = await RecetaSimple.find({$and: [{categoria: "PAN"},{categoria: "LACTEOS"}]});
   let recetasSimplesFruta = await RecetaSimple.find({categoria: "FRUTA"});
   let almuerzos = new Array(7);
   let meriendas = new Array(7);
   for (let i = 0; i < almuerzos.length; i++) {
-    let randomPan = random(0, recetasSimplesPan.length)
-    let randomLacteos = random(0, recetasSimplesLacteos.length)
-    let randomAmbos = random(0, recetasSimplesAmbos.length)
-    let randomFruta = random(0, recetasSimplesFruta.length)
-    console.log("dia " + (i+1))
+    let randomPan = random(0, recetasSimplesPan.length-1)
+    let randomLacteos = random(0, recetasSimplesLacteos.length-1)
+    let randomAmbos = random(0, recetasSimplesAmbos.length-1)
+    let randomFruta = random(0, recetasSimplesFruta.length-1)
+    //// console.log("dia " + (i+1))
     if(arrayIntervalosPan[i] > 0 && recetasSimplesLacteos[i] > 0) {
       almuerzos[i] = recetasSimplesAmbos[randomAmbos]
       arrayIntervalosPan[i]--;
       arrayIntervalosLacteos[i]--;
-      randomAmbos = random(0, recetasSimplesAmbos.length)
+      randomAmbos = random(0, recetasSimplesAmbos.length-1)
     } else if(arrayIntervalosPan[i]){
       almuerzos[i] = recetasSimplesPan[randomPan]
-      randomPan = random(0, recetasSimplesPan.length)
+      randomPan = random(0, recetasSimplesPan.length-1)
       arrayIntervalosPan[i]--
     } else if(arrayIntervalosLacteos[i]){
       almuerzos[i] = recetasSimplesLacteos[randomLacteos]
       arrayIntervalosLacteos[i]--;
-      randomLacteos = random(0, recetasSimplesLacteos.length)
+      randomLacteos = random(0, recetasSimplesLacteos.length-1)
     } else {
       almuerzos[i] = recetasSimplesFruta[randomFruta]
-      randomFruta = random(0, recetasSimplesFruta.length)
+      randomFruta = random(0, recetasSimplesFruta.length-1)
     }
-    console.log("almuerzo: " + almuerzos[i]?.nombre)
+    //// console.log("almuerzo: " + almuerzos[i]?.nombre)
     //merienda
     
     
     if(arrayIntervalosPan[i] > 0 && recetasSimplesLacteos[i] > 0) {
+      while(almuerzos[i].id == recetasSimplesAmbos[randomAmbos].id){
+        randomAmbos = random(0, recetasSimplesAmbos.length-1)
+      }
       meriendas[i] = recetasSimplesAmbos[randomAmbos]
       arrayIntervalosPan[i]--;
       arrayIntervalosLacteos[i]--;
     } else if(arrayIntervalosPan[i]){
+      while(almuerzos[i].id == recetasSimplesPan[randomPan].id){
+        randomPan = random(0, recetasSimplesPan.length-1)
+      }
       meriendas[i] = recetasSimplesPan[randomPan]
       arrayIntervalosPan[i]--
     } else if(arrayIntervalosLacteos[i]){
-      meriendas[i] = recetasSimplesLacteos[randomPan]
+      while(almuerzos[i].id == recetasSimplesLacteos[randomLacteos].id){
+        randomLacteos = random(0, recetasSimplesLacteos.length-1)
+      }
+      meriendas[i] = recetasSimplesLacteos[randomLacteos]
       arrayIntervalosLacteos[i]--;
     } else {
+      while(almuerzos[i].id == recetasSimplesFruta[randomFruta].id){
+        randomFruta = random(0, recetasSimplesFruta.length-1)
+      }
       meriendas[i] = recetasSimplesFruta[randomFruta]
     }
-    console.log("mierda: " + meriendas[i]?.nombre)
+    //// console.log("mierda: " + meriendas[i]?.nombre)
     
   }
+
   
-  
-  // console.log(almuerzos, meriendas)
 
-};
+  // console.log(meriendas)
 
+  let arrayPlanesDiarios = new Array(7)
+  for (let i = 0; i < 7; i++) {
+    const comida = {
+      primerPlato: primerosPlatos[i],
+      platoPrincipal: platosPrincipales[i]
+    }
+    // // console.log("comida", comida)
+    const planDiario = {
+      id: i,
+      desayuno: desayunos[i],
+      almuerzo: almuerzos[i],
+      comida: comida,
+      merienda: meriendas[i],
+      cena: cenas[i]
+    }
+    arrayPlanesDiarios.push(planDiario)
+    // // console.log("dia", planDiario)
+  }
 
-planCtrl.createPlan = async (req, res, next) => {
-  console.log("crear");
   let idPlan = (await Plan.countDocuments()) + 1;
-  console.log("nuevo id: ", idPlan);
 
-  let dieta = req.body.dieta;
-  console.log("dieta: ", dieta)
-  // Obtener mi piramide de las categorias segun mi dieta
-  let piramide = await Piramide.find({ dieta: dieta });
-  // Recorrer primero las categorias complejas (para comidas y cenas)
-  console.log("piramide: ", getCategoriasComplejasDiarias(piramide[0]))
-  getCategoriasComplejasDiarias(piramide[0]).forEach(async (categoria) => {
-    //Vemos el intervalo de la categoria
-    let intervalo;
-    if(categoria.limiteInferior == categoria.limiteSuperior){
-      intervalo = categoria.limiteInferior
-    } else {
-      intervalo = random(categoria.limiteInferior, categoria.limiteSuperior)
-    }
-    // Elijo aleatoriamente (intervalo) recetas de esta categoria
-    let recetas = await Receta.find({ categoria: categoria.nombre });
-    let idsRandom = [];
-    let recetasElegidas = [];
-    for (let i = 0; i < intervalo; i++) {
-      let idRecetaRandom = random(0, recetas.length)
-      if(idsRandom.includes(idRecetaRandom)){
-        i--;
-      } else {
-        idsRandom.push(idRecetaRandom)
-        recetasElegidas.push(recetas[idRecetaRandom])
-      }
-    }
+  const plan = new Plan({
+    id: idPlan,
+    dieta: "REGULAR",
+    planesDiarios: arrayPlanesDiarios
+  })
 
-    // Reparto en que dias de la semana
-    // Elijo un dia al azar de la semana
-    // L 0, M 1, X 2, J 3, V 4, S 5, D 6
-    let dia = random(0, 6)
-    // reparto los demas dejando un hueco
-    let diasElegidos = []
-    // diasElegidos.push(dia)
-    for (let i = 0; i < intervalo; i++) {
-      diasElegidos.push(dia)
-      dia = (dia + 2) % 7;
-    }
+  const planGuardado = await plan.save();
 
-    let planDiarios = []
-    for (let i = 0; i < 7; i++) {
-      let plan = {
-        id: i+1,
-        desayuno: [],
-        almuerzo: [],
-        comida: [],
-        merienda: [],
-        cena: []
-      }
-      planDiarios[i] = plan;
-    }
+  let userId = req.body.usuario;
+  const user = await User.findOneAndUpdate(userId, {$set:{planComida: idPlan}});
 
-    // Colocamos las recetas en esos dias
-    diasElegidos.forEach(dia => {
-      planDiarios[dia].comida = recetasElegidas.pop();
-    });
+  return res
+    .status(200)
+    .json({ data: planGuardado, message: "Plan guardada" });
+  
+  // //// console.log(almuerzos, meriendas)
 
-  });
-
-
-
-  // const planDiario = new PlanDiario({
-  //   idPlan: idPlan,
-  //   categoria: req.body.categoria.value,
-  //   nombre: req.body.nombre,
-  //   ingredientes: req.body.ingredientes,
-  //   dieta: req.body.dieta.value,
-  //   preparacion: req.body.preparacion
-  // });
-
-  // const plan = new Plan({
-  //   idPlan: idPlan,
-  //   categoria: req.body.categoria.value,
-  //   nombre: req.body.nombre,
-  //   ingredientes: req.body.ingredientes,
-  //   dieta: req.body.dieta.value,
-  //   preparacion: req.body.preparacion
-  // });
-  // console.log("plan", plan);
-
-  // const planGuardado = await plan.save();
-
-  // return res
-  //   .status(200)
-  //   .json({ token: planGuardado, message: "Plan guardada" });
 };
+
 
 module.exports = planCtrl;
 
@@ -404,7 +370,7 @@ function random(min, max) { // min y max incluidos
 
 function getCategoriasComplejasDiarias(piramide) {
   let idCategoriasComplejas = [2,3,4,6,8,11,12]
-  // console.log(piramide.piramide)
+  // //// console.log(piramide.piramide)
   return piramide.piramide.filter(categoria => {
     return (idCategoriasComplejas.includes(categoria.idCategoria) && categoria.frecuencia == 'DIARIA') 
   })

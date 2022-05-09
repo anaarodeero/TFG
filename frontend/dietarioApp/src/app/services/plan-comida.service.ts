@@ -13,7 +13,7 @@ import { PlanSemanal } from '../models/plan';
 @Injectable({ providedIn: 'root' })
 export class PlanComidaService {
 
-  constructor(private router: Router, private http: HttpClient) {
+  constructor(private router: Router, private http: HttpClient, private cookieService: CookieService) {
 
   }
 
@@ -25,8 +25,11 @@ export class PlanComidaService {
     });
   }
 
-  createMyPlan(dieta: Dieta) {
-    return this.http.post('http://localhost:4000/api/plan/create', {dieta: dieta});
+  createMyPlan(dieta: Dieta, idUsuario: string) {
+    return this.http.post('http://localhost:4000/api/plan/create', {
+      dieta: dieta,
+      usuario: idUsuario
+    });
   }
 
   // getAll() {

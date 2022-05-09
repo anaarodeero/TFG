@@ -44,6 +44,8 @@ import { RecetaComponent } from './components/receta/receta.component';
 import { AddRecetaComponent } from './components/add-receta/add-receta.component';
 import { DailyPlanComponent } from './components/daily-plan/daily-plan.component';
 import { AddRecetaSimpleComponent } from './components/add-receta-simple/add-receta-simple.component';
+import { MatTreeModule } from '@angular/material/tree';
+import { FoodPyramidVegComponent } from './components/food-pyramid-veg/food-pyramid-veg.component';
 
 
 
@@ -53,7 +55,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent, canActivate: [GlobalGuard] },
   { path: 'login', component: LoginComponent, canActivate: [GlobalGuard] },
   { path: 'register', component: RegisterComponent, canActivate: [GlobalGuard] },
-  { path: 'daily-plan', component: DailyPlanComponent, canActivate: [GlobalGuard] },
+  { path: 'daily-plan/:id', component: DailyPlanComponent, canActivate: [GlobalGuard] },
   { path: 'weekly-plan', component:  WeeklyPlanComponent, canActivate: [GlobalGuard]},
   { path: 'alimento', component:  AlimentoComponent, canActivate: [GlobalGuard]},
   { path: 'receta', component:  RecetasBBDDComponent, canActivate: [GlobalGuard]},
@@ -62,6 +64,7 @@ const routes: Routes = [
   { path: 'receta/:id', component:  RecetaComponent, canActivate: [GlobalGuard]},
   { path: 'dashboard', component:  DashboardComponent, canActivate: [GlobalGuard]},
   { path: 'pyramid', component:  FoodPyramidComponent, canActivate: [GlobalGuard]},
+  { path: 'pyramidveg', component:  FoodPyramidVegComponent, canActivate: [GlobalGuard]},
   { path: 'edit', component:  RegisterComponent, canActivate: [GlobalGuard]},
 ];
 
@@ -95,7 +98,8 @@ const routes: Routes = [
     MatSelectModule,
     CdkStepperModule,
     MatListModule,
-    MatAutocompleteModule],
+    MatAutocompleteModule,
+    MatTreeModule],
   providers: [
     {
       provide: HTTP_INTERCEPTORS,

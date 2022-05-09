@@ -1,9 +1,0 @@
-<form [formGroup]="thirdFormGroup">
-    <ng-template matStepLabel>Dieta</ng-template>
-    <p>¿Eres vegetario o vegano?</p>
-    <mat-radio-group formControlName="dieta" [(ngModel)]="usuario.dieta">
-        <mat-radio-button class="radio-dieta" value="vegetariano">Vegetariano</mat-radio-button>
-        <mat-radio-button class="radio-dieta" value="vegano">Vegano</mat-radio-button>
-        <mat-radio-button class="radio-dieta" value="ninguno">Ninguno</mat-radio-button>
-    </mat-radio-group>
-</form>

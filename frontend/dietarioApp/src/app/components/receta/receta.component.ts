@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Receta } from 'src/app/models/receta';
 import { RecetaService } from 'src/app/services/receta.service';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-receta',
@@ -12,7 +13,7 @@ export class RecetaComponent implements OnInit {
 
   receta: Receta;
 
-  constructor(private route: ActivatedRoute, private recetaService: RecetaService, private router: Router) { }
+  constructor(private route: ActivatedRoute, private recetaService: RecetaService, private router: Router, private location: Location) { }
 
   ngOnInit(): void {
     let param = this.route.snapshot.paramMap.get('id');
@@ -28,6 +29,6 @@ export class RecetaComponent implements OnInit {
   }
 
   volver(){
-    this.router.navigateByUrl('/receta')
+    this.location.back();
   }
 }

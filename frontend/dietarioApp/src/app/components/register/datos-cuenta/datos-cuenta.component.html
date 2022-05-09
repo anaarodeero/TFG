@@ -10,10 +10,10 @@
       <mat-error *ngIf="this.firstFormGroup.get('apellidos').invalid">{{getErrorMessage()}}</mat-error>
     </mat-form-field>
     <mat-form-field class="email">
-      <input matInput placeholder="Email" formControlName="email" required [(ngModel)]="usuario.email" (blur)="existeUsuario()">
+      <input matInput placeholder="Email" formControlName="email" required [(ngModel)]="usuario.email">
       <mat-error *ngIf="this.firstFormGroup.get('email').hasError('required')">{{getErrorMessage()}}</mat-error>
       <mat-error *ngIf="this.firstFormGroup.get('email').hasError('pattern')">{{getErrorFormatoEmail()}}</mat-error>
-      <mat-error *ngIf="this.firstFormGroup.get('email').hasError('usrYaExite')">{{getErrorEmailExistente()}}</mat-error>
+      <mat-error *ngIf="this.firstFormGroup.get('email').hasError('usrYaExiste')">{{getErrorEmailExistente()}}</mat-error>
     </mat-form-field>
     <ng-container *ngIf="!modoEdicion">
       <mat-form-field ngClass.gt-sm="passwd-doble" ngClass.lt-md="passwd-full">
