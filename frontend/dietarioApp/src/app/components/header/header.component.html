@@ -2,7 +2,7 @@
   <span>Logo</span>
   <span class="example-spacer"></span>
   <div class="container" *ngIf=userLogIn>
-    <p class="greeting">Hola Ana</p>
+    <p class="greeting">Hola {{user}}</p>
     <!-- <button mat-raised-button class="botonRegistro">Registro</button> -->
     <button mat-icon-button [matMenuTriggerFor]="menu">
         <mat-icon class="perfil">account_circle</mat-icon>

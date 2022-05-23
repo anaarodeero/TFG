@@ -47,17 +47,14 @@
   </mat-menu>
 
 </mat-toolbar> -->
-
+<!--
 <mat-drawer-container class="container">
   <mat-drawer mode="side" opened class="side">
     <mat-tree [dataSource]="dataSource" [treeControl]="treeControl">
-      <!-- This is the tree node template for leaf nodes -->
       <mat-tree-node *matTreeNodeDef="let node" matTreeNodePadding (click)="abrir(node)" class="pointer">
-        <!-- use a disabled button to provide padding for tree leaf -->
         <button mat-icon-button disabled class="padding"></button>
         {{node.name}}
       </mat-tree-node>
-      <!-- This is the tree node template for expandable nodes -->
       <mat-tree-node *matTreeNodeDef="let node;when: hasChild" matTreeNodePadding>
         <button mat-icon-button matTreeNodeToggle
                 [attr.aria-label]="'Toggle ' + node.name">
@@ -71,4 +68,34 @@
 
   </mat-drawer>
   <mat-drawer-content>Main content</mat-drawer-content>
-</mat-drawer-container>
+</mat-drawer-container> -->
+
+<div class="container" fxLayout="column" fxLayoutAlign="center center">
+  <div fxLayout="row" fxLayoutAlign="center center">
+    <mat-card class="card mat-elevation-z8" ngClass.lt-md="card-sm" fxLayout="column">
+      <h1 class="mat-display-2 titulo capitalize">Base de datos</h1>
+      <img class="imagen" src="../../../assets/recipes.png">
+      <div fxLayout="row" fxLayoutAlign="space-around center">
+        <button mat-button class="boton" (click)="recetas()"><mat-icon>chevron_right</mat-icon> Tus recetas</button>
+        <button mat-button class="boton" (click)="alimentos()"><mat-icon>chevron_right</mat-icon> Tus alimentos</button>
+      </div>
+    </mat-card>
+    <mat-card class="card mat-elevation-z8" ngClass.lt-md="card-sm" fxLayout="column">
+      <h1 class="mat-display-2 titulo capitalize">Tu plan semanal</h1>
+      <img class="imagen" src="../../../assets/planner.png">
+      <button mat-button class="boton"><mat-icon>chevron_right</mat-icon> Tu plan semanal</button>
+    </mat-card>
+  </div>
+  <div fxLayout="row" class="sub-container" fxLayoutAlign="center center">
+    <mat-card class="card card-piramide mat-elevation-z8" ngClass.lt-md="card-sm" fxLayout="column">
+      <h1 class="mat-display-2 titulo capitalize">Pirámides</h1>
+      <div fxLayout="row" fxLayoutAlign="space-around center">
+        <img class="imagen-piramide" src="../../../assets/piramide.png">
+        <div fxLayout="column" fxLayoutAlign="space-around center">
+          <button mat-button class="boton boton-pyr"><mat-icon>chevron_right</mat-icon> Piramide regular</button>
+          <button mat-button class="boton boton-pyr"><mat-icon>chevron_right</mat-icon> Piramides vegetariana y vegana</button>
+        </div>
+      </div>
+    </mat-card>
+  </div>
+</div>

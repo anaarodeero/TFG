@@ -13,12 +13,16 @@ export class HeaderComponent implements OnInit {
   userLogIn: boolean = false;
   loginPage: boolean = false;
   registerPage: boolean = false;
+  user: string = "";
 
   constructor(private router: Router, private usuarioService: UsuarioService) { }
 
   ngOnInit(): void {
     this.usuarioService.isLoggedIn().subscribe(result => {
-     if(result) this.userLogIn = true
+     if(result) {
+       this.userLogIn = true
+       this.user = this.usuarioService.usuarioActual.nombre;
+     }
      if(this.router.url.includes("login")){
        this.loginPage = true;
      } else if(this.router.url.includes("register")){
