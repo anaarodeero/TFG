@@ -3,7 +3,7 @@
   <form [formGroup]="firstFormGroup">
       <p class="texto">Escribe el nombre del alimento</p>
       <mat-form-field class="input" ngClass.lt-md="input-doble-full">
-        <input matInput placeholder="Alimento" formControlName="alimento" required>
+        <input matInput placeholder="Alimento" formControlName="alimento" required >
         <mat-error *ngIf="this.firstFormGroup.get('alimento').invalid">{{getErrorMessage()}}</mat-error>
       </mat-form-field>
       <mat-form-field class="input" ngClass.lt-md="input-doble-full">

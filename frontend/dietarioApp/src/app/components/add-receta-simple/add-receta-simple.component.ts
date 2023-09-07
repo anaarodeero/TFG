@@ -124,7 +124,11 @@ export class AddRecetaSimpleComponent implements OnInit {
     }
 
     console.log("nueva receta", nuevaReceta)
-    this.recetaService.createRecetaSimple(nuevaReceta).subscribe();
+    this.recetaService.createRecetaSimple(nuevaReceta).subscribe(result => {
+      if(result){
+        this.location.back();
+      }
+    });
   }
 
   // seleccionar(){

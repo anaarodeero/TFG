@@ -36,18 +36,12 @@ export class DatosCuentaComponent implements OnInit, OnChanges {
   }
 
   ngOnInit() {
-    this.usuarioService.isLoggedIn().subscribe(result => {
-      if(result){
+    if(this.usuarioService.userLogIn.getValue()) {
         this.modoEdicion = true;
-        this.usuarioService.getUser().subscribe(
-          (user) => {
-            this.usuario = user
-          }
-        );
+        this.usuario = this.usuarioService.usuarioActual
       } else {
         this.modoEdicion = false;
       }
-    })
 
 
     this.firstFormGroup.addControl('password_repeat', new FormControl('', [Validators.required, this.validatePassword.bind(this)]))
@@ -108,6 +102,7 @@ export class DatosCuentaComponent implements OnInit, OnChanges {
       this.usuario.password = nuevaPasswd;
       this.cambioForm.reset();
       this.cambioPassword = false;
+      console.log("nueva pass", this.cambioForm, nuevaPasswd)
       this.cambioActivado.emit(false);
     } else {
       this.cambioForm.markAllAsTouched();

@@ -53,7 +53,7 @@ import { FoodPyramidVegComponent } from './components/food-pyramid-veg/food-pyra
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent, canActivate: [GlobalGuard] },
-  { path: 'login', component: LoginComponent, canActivate: [GlobalGuard] },
+  { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent, canActivate: [GlobalGuard] },
   { path: 'daily-plan/:id', component: DailyPlanComponent, canActivate: [GlobalGuard] },
   { path: 'weekly-plan', component:  WeeklyPlanComponent, canActivate: [GlobalGuard]},
@@ -62,7 +62,7 @@ const routes: Routes = [
   { path: 'add-receta', component:  AddRecetaComponent, canActivate: [GlobalGuard]},
   { path: 'add-receta-simple', component:  AddRecetaSimpleComponent, canActivate: [GlobalGuard]},
   { path: 'receta/:id', component:  RecetaComponent, canActivate: [GlobalGuard]},
-  { path: 'dashboard', component:  DashboardComponent, canActivate: [GlobalGuard]},
+  { path: 'dashboard', component:  DashboardComponent},
   { path: 'pyramid', component:  FoodPyramidComponent, canActivate: [GlobalGuard]},
   { path: 'pyramidveg', component:  FoodPyramidVegComponent, canActivate: [GlobalGuard]},
   { path: 'edit', component:  RegisterComponent, canActivate: [GlobalGuard]},

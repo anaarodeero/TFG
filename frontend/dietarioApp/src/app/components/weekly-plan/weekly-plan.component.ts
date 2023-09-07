@@ -5,6 +5,7 @@ import { PlanSemanal } from 'src/app/models/plan';
 import { Usuario } from 'src/app/models/usuario';
 import { PlanComidaService } from 'src/app/services/plan-comida.service';
 import { UsuarioService } from 'src/app/services/usuario.service';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-weekly-plan',
@@ -20,25 +21,30 @@ export class WeeklyPlanComponent implements OnInit {
     planesDiarios: []
   };
 
-  constructor(private planComidaService: PlanComidaService, private usuarioService: UsuarioService, private router: Router) { }
+  constructor(private planComidaService: PlanComidaService, private usuarioService: UsuarioService, private router: Router, private location: Location) { }
 
   ngOnInit(): void {
-    if(this.usuarioService.usuarioActual.planComida){
+    console.log("usr", this.usuarioService, this.usuarioService.usuarioValue, this.usuarioService.usuarioValue)
+    if(this.usuarioService.usuarioValue.planComida){
       console.log("cogerlo")
-      this.planComidaService.getMyPlan(this.usuarioService.usuarioActual.planComida).subscribe(result => {
+      this.planComidaService.getMyPlan(this.usuarioService.usuarioValue.planComida).subscribe(result => {
         this.planSemanal = result
       });
     } else {
       console.log("crealo")
-      this.planComidaService.createMyPlan(Dieta.REGULAR, this.usuarioService.usuarioActual._id).subscribe((result:any) => {
+      this.planComidaService.createMyPlan(Dieta.REGULAR, this.usuarioService.usuarioValue._id).subscribe((result:any) => {
         this.usuarioService.updateUsuarioValue()
         this.planSemanal = result.data as PlanSemanal
       })
     }
   }
 
+  volver(){
+    this.location.back();
+  }
+
   cambiar(){
-    this.planComidaService.createMyPlan(Dieta.REGULAR, this.usuarioService.usuarioActual._id).subscribe((result:any) => {
+    this.planComidaService.createMyPlan(Dieta.REGULAR, this.usuarioService.usuarioValue._id).subscribe((result:any) => {
       this.usuarioService.updateUsuarioValue()
       this.planSemanal = result.data as PlanSemanal
     })

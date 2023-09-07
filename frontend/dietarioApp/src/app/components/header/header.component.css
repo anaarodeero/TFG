@@ -3,7 +3,9 @@
 }
 .toolbar {
   color: black;
-  background-color: #EAF7DE;
+  background-color: transparent;
+height: 85px;
+margin-top: 20px;
 }
 .botonRegistro {
   color: white;
@@ -18,6 +20,15 @@
   text-decoration: underline;
 }
 
+.icono{
+  margin-right: 20px;
+  color: #37b97d;
+}
+
+.margin{
+  margin-right: 20px;
+}
+
 .greeting {
   font-size: smaller;
   color: #37b97d;
@@ -27,4 +38,9 @@
 
 .container{
   display: contents;
+}
+
+.logo{
+  height: 95%;
+margin-left: 20px;
 }

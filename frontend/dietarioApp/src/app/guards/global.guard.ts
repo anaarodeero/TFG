@@ -12,7 +12,14 @@ export class GlobalGuard implements CanActivate {
   constructor(private router: Router, private usuarioService: UsuarioService) { }
 
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
+    return true;
     console.log("log:", this.usuarioService.isLoggedIn())
+    console.log("aaaa", state.url.includes('home'))
+    if(state.url.includes('home')){
+      this.usuarioService.home.next(true)
+    } else {
+      this.usuarioService.home.next(null)
+    }
     this.usuarioService.isLoggedIn().subscribe(result => {
       if(!result){
         console.log("No estoy logeado")

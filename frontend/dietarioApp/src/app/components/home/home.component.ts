@@ -19,12 +19,12 @@ export class HomeComponent implements OnInit {
     })
 
     // if(this.usuarioService.usuarioValue){
-    //   this.router.navigateByUrl('/dashboard');
+    //   this.router.navigateByUrl('/dashboard')
     // }
   }
 
   registrar(){
-    this.router.navigateByUrl('/dashboard');
+    this.router.navigateByUrl('/register');
   }
 
   iniciarSesion(){

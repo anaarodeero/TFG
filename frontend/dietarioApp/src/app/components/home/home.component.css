@@ -23,6 +23,11 @@
   text-decoration: underline;
 }
 
+.logo{
+  width: 335px;
+  margin-bottom: 20px;
+}
+
 .container {
   height: 90%;
 }
@@ -30,10 +35,12 @@
 .textos {
   width: 30%;
   min-width: 25rem;
+  align-self: start;
+margin-top: 75px;
 }
 
 .imagen {
-  width: 40%;
+  width: 37%;
   margin: 2rem;
   min-width: 30rem;
 }

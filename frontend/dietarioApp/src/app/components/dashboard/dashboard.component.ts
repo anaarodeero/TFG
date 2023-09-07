@@ -31,6 +31,14 @@ export class DashboardComponent implements OnInit {
     this.router.navigateByUrl('weekly-plan')
   }
 
+  pyramid(){
+    this.router.navigateByUrl('pyramid')
+  }
+
+  pyramidveg(){
+    this.router.navigateByUrl('pyramidveg')
+  }
+
   // opened: boolean;
   // public map: Map<string,string>;
 

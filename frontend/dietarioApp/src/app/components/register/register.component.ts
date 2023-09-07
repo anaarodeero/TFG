@@ -22,7 +22,7 @@ import { MatStepper } from '@angular/material/stepper';
 export class RegisterComponent implements OnInit {
 
   orientation: StepperOrientation;
-  editMode: boolean;
+  editMode: boolean = true;
   disabledActivated: boolean = false;
   usrYaExiste: boolean = false;
 
@@ -58,23 +58,26 @@ export class RegisterComponent implements OnInit {
     } else {
       this.orientation = 'horizontal'
     }
-    this.usuarioService.isLoggedIn().subscribe(result => {
+    console.log(this.usuarioService.userLogIn.getValue())
+    if(this.usuarioService.userLogIn.getValue()) {
 
-      if(result){
         this.editMode = true;
         if (/register/.test(this.router.url)){
           this.router.navigate(['/dashboard']);
         }
-        this.usuarioService.getUser().subscribe(
-          (user) => {
-            this.usuario = user
-          }
-        );
+        // this.usuarioService.getUser().subscribe(
+        //   (user) => {
+        //     console.log(user)
+        //     this.usuario = user
+        //   }
+        // );
+        this.usuario = this.usuarioService.usuarioActual
+        console.log(this.usuario)
       } else {
         console.log("no logeadooooo")
         this.editMode = false;
       }
-    })
+
 
     this.firstFormGroup = this._formBuilder.group({
       email: ['', Validators.required],
@@ -86,6 +89,7 @@ export class RegisterComponent implements OnInit {
 
   updateDisabled(update: boolean){
     this.disabledActivated = update;
+
   }
 
   datosCuentaDisabled(){
@@ -93,6 +97,7 @@ export class RegisterComponent implements OnInit {
     if(this.editMode){
       this.firstFormGroup.get('password').setValidators([])
       this.firstFormGroup.get('password_repeat').setValidators([])
+      return false;
     }
     return this.firstFormGroup.invalid
   }
@@ -110,10 +115,20 @@ export class RegisterComponent implements OnInit {
 
   registrarUsuario(stepper: MatStepper){
     if(this.editMode){
+      console.log("editar", this.usuario, this.firstFormGroup)
+      this.usuario.nombre = this.firstFormGroup.get('nombre').value;
+      this.usuario.apellidos = this.firstFormGroup.get('apellidos').value;
+      this.usuario.email = this.firstFormGroup.get('email').value;
+      this.usuario.password = "ee"
       this.usuarioService.update(this.usuario).subscribe((data:any)=>{
         this.cookieService.set('CookieSesion', data.token);
-        this.router.navigateByUrl('/login')
-      });
+        this.router.navigateByUrl('/dashboard')
+      }, (error)=> {
+        this.usrYaExiste = true;
+        console.log("ya existe")
+        stepper.previous();
+      }
+    );
     } else {
       this.usuarioService.register(this.usuario).subscribe((data: any)=>{
 
@@ -130,6 +145,11 @@ export class RegisterComponent implements OnInit {
         }
       );
     }
+  }
+
+  getTexto(){
+    if(this.editMode) return "Editar"
+    else return "Registrar"
   }
 
 

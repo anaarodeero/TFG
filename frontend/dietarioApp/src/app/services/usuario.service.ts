@@ -11,27 +11,33 @@ import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 @Injectable({ providedIn: 'root' })
 export class UsuarioService {
   private usuarioSubject: BehaviorSubject<Usuario>;
+  public userLogIn: BehaviorSubject<boolean>;
   public usuario: Observable<Usuario>;
+  public home: BehaviorSubject<boolean>;
 
   constructor(private router: Router, private http: HttpClient, private cookieService: CookieService) {
     this.usuarioSubject = new BehaviorSubject<Usuario>(
       JSON.parse(localStorage.getItem('usuario'))
     );
     this.usuario = this.usuarioSubject.asObservable();
+    if(this.usuarioValue) this.userLogIn = new BehaviorSubject<boolean>(true)
+    else this.userLogIn = new BehaviorSubject<boolean>(false)
+    this.home = new BehaviorSubject<boolean>(false);
   }
 
   public get usuarioValue(): any {
-    return this.usuarioSubject.value;
+    return this.usuarioSubject.getValue();
   }
 
   public get usuarioActual(): Usuario{
-    return JSON.parse(localStorage.getItem('usuario'))
+    return JSON.parse(localStorage.getItem('usuario')).usuario
   }
 
   updateUsuarioValue(){
     this.getUser().subscribe(usuario => {
       localStorage.setItem('usuario', JSON.stringify(usuario));
       this.usuarioSubject.next(usuario);
+      this.userLogIn.next(true);
       return usuario;
     })
   }
@@ -47,6 +53,7 @@ export class UsuarioService {
           // store usuario details and jwt token in local storage to keep usuario logged in between page refreshes
           localStorage.setItem('usuario', JSON.stringify(usuario));
           this.usuarioSubject.next(usuario);
+          this.userLogIn.next(true);
           return usuario;
         })
       );
@@ -66,6 +73,7 @@ export class UsuarioService {
     this.cookieService.delete('CookieSesion')
     localStorage.removeItem('usuario');
     this.usuarioSubject.next(null);
+    this.userLogIn.next(false);
     this.router.navigate(['/login']);
   }
 

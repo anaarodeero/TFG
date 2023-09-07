@@ -38,6 +38,8 @@ export class RecetasBBDDComponent implements OnInit {
 
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
+
+
     this.dataSource.filter = filterValue.trim().toLowerCase();
   }
 
@@ -65,6 +67,9 @@ export class RecetasBBDDComponent implements OnInit {
       this.dataSource = new MatTableDataSource(this.recetasBBDD);
       this.dataSource.sort = this.sort;
       this.dataSource.paginator = this.paginator;
+      this.dataSource.filterPredicate = (receta: Receta, filterValue) => {
+        return receta.nombre.toLowerCase().includes(filterValue);
+      }
       console.log("todas", response)
     })
     this.recetaService.getAllSimples().subscribe(response => {
@@ -72,6 +77,9 @@ export class RecetasBBDDComponent implements OnInit {
       this.dataSourceSimple = new MatTableDataSource(this.recetasSimplesBBDD);
       this.dataSourceSimple.sort = this.sortSimple;
       this.dataSourceSimple.paginator = this.paginatorSimple;
+      this.dataSourceSimple.filterPredicate = (receta: RecetaSimple, filterValue) => {
+        return receta.nombre.toLowerCase().includes(filterValue);
+      }
       console.log("simples: ", response)
 
       let idsAll = this.recetasSimplesBBDD.map(function(item) { return item.alimentos; }).flat(1);
@@ -97,6 +105,14 @@ export class RecetasBBDDComponent implements OnInit {
 
 
     })
+  }
+
+  addRecetaSimple(){
+    this.router.navigateByUrl('add-receta-simple')
+  }
+
+  addReceta(){
+    this.router.navigateByUrl('add-receta')
   }
 
   volver(){

@@ -5,7 +5,7 @@
   background-size: cover;
   background-position: center;
   position: absolute;
-  min-height: 95%;
+  min-height: 90%;
   width: 100%;
 }
 
@@ -72,7 +72,7 @@
   color: #37B97D;
   border-radius: 1rem;
   align-self: flex-start;
-margin: 50px 50px 0 50px;
+margin: 15px 50px 0 50px;
 width: fit-content;
 }
 

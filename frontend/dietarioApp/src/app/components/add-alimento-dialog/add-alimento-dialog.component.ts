@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms'
 import { MatDialogRef } from '@angular/material/dialog';
 import { Alimento } from 'src/app/models/alimento';
 import { AlimentoService } from 'src/app/services/alimento.service';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-add-alimento-dialog',
@@ -15,7 +16,7 @@ export class AddAlimentoDialogComponent implements OnInit {
   hide = true;
   numberPattern = "^[0-9]+([.,][0-9]+)?$"
 
-  constructor(private _formBuilder: FormBuilder, private alimentoService: AlimentoService, public dialogRef: MatDialogRef<AddAlimentoDialogComponent>) { }
+  constructor(private _formBuilder: FormBuilder, private alimentoService: AlimentoService, public dialogRef: MatDialogRef<AddAlimentoDialogComponent>, private location: Location) { }
 
   getErrorMessage() {
     return 'Este campo es obligatorio';

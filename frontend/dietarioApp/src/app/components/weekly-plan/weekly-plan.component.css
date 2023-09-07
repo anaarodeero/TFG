@@ -28,16 +28,24 @@
   background-size: cover;
   background-position: center;
   position: absolute;
-  min-height: 95%;
+  min-height: 90%;
   width: 100%;
 }
 
 .titulo {
-  margin-top: 3rem;
   color: #37b97d;
-  font-weight: bold;
-  font-size: xx-large;
-  margin-bottom: 2rem;
+font-weight: bold;
+font-size: xx-large;
+margin-bottom: 1rem;
+margin-top: -42px;
+}
+
+.botonVolver {
+  border-radius: 1rem;
+color: #37b97d;
+align-self: flex-start;
+margin: 15px 50px 0 50px;
+width: fit-content;
 }
 
 .boton {

@@ -77,7 +77,7 @@
       </table> -->
         <mat-paginator  #MatPaginator2 [pageSize]="5" [pageSizeOptions]="[5, 10]">
         </mat-paginator>
-        <button mat-raised-button class="botonAdd">
+        <button mat-raised-button class="botonAdd" (click)="addRecetaSimple()">
           <mat-icon>add</mat-icon>
           Añadir receta
         </button>
@@ -118,7 +118,7 @@
       </table>
         <mat-paginator #MatPaginator [pageSize]="5" [pageSizeOptions]="[5, 10]">
         </mat-paginator>
-        <button mat-raised-button class="botonAdd">
+        <button mat-raised-button class="botonAdd" (click)="addReceta()">
           <mat-icon>add</mat-icon>
           Añadir receta
         </button>

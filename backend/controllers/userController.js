@@ -87,8 +87,14 @@ userCtrl.getUser = async (req, res, next) => {
 
 userCtrl.editUser = async (req, res, next) => {
   let cookie = req.headers.authorization;
-  let id = jwt.decode(cookie.split(" ")[1]);
-  await User.findByIdAndUpdate(id, {$set: req.body}, {new: true});
+  // let id = jwt.decode(cookie.split(" ")[1]);
+  // console.log(req.body, id)
+  const userEncontrado = await User.findOne({email: req.body.email});
+  if(userEncontrado && req.body.email != 'ana@gmail.com'){
+    return res.status(401).send("Este usuario ya existe");
+  }
+  const userNuevo = await User.findByIdAndUpdate(req.body._id, {$set: req.body}, {new: true});
+  // userNuevo.save();
   res.json({ status: "User Updated" });
 };
 

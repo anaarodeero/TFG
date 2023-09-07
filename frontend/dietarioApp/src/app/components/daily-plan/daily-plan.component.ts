@@ -28,8 +28,9 @@ export class DailyPlanComponent implements OnInit {
     let param = this.route.snapshot.paramMap.get('id');
     let regEx: RegExp = /^[0-9]+$/
     if(regEx.test(param) && (0 <= Number(param)) && (Number(param) <= 6)){
-      this.planComidaService.getMyPlan(this.usuarioService.usuarioActual.planComida).subscribe(result => {
+      this.planComidaService.getMyPlan(this.usuarioService.usuarioValue.planComida).subscribe(result => {
         this.dia = result.planesDiarios[Number(param)]
+        console.log(result)
       });
     } else {
       this.router.navigateByUrl('/weekly-plan')

@@ -258,6 +258,7 @@ planCtrl.createPlanRegular = async (req, res, next) => {
   let recetasSimplesPan = await RecetaSimple.find({$and: [{categoria: "PAN"},{categoria: {$ne: "LACTEOS"}}]});
   let recetasSimplesAmbos = await RecetaSimple.find({$and: [{categoria: "PAN"},{categoria: "LACTEOS"}]});
   let recetasSimplesFruta = await RecetaSimple.find({categoria: "FRUTA"});
+  console.log("frutas", recetasSimplesFruta)
   let almuerzos = new Array(7);
   let meriendas = new Array(7);
   for (let i = 0; i < almuerzos.length; i++) {
@@ -351,6 +352,10 @@ planCtrl.createPlanRegular = async (req, res, next) => {
 
   let userId = req.body.usuario;
   const user = await User.findOneAndUpdate(userId, {$set:{planComida: idPlan}});
+  user.save();
+  console.log(user)
+
+  
 
   return res
     .status(200)

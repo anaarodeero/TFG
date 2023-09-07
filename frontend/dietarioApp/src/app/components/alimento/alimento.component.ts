@@ -42,6 +42,7 @@ export class AlimentoComponent implements OnInit {
     const dialogRef = this.dialog.open(AddAlimentoDialogComponent, dialogConfig);
 
     dialogRef.afterClosed().subscribe(result => {
+      window.location.reload()
       console.log(`Dialog result: ${result}`);
     });
   }
@@ -66,6 +67,9 @@ export class AlimentoComponent implements OnInit {
       this.dataSource = new MatTableDataSource(this.alimentosBBDD);
       this.dataSource.sort = this.sort;
       this.dataSource.paginator = this.paginator;
+      this.dataSource.filterPredicate = (alimento: Alimento, filter) => {
+        return alimento.nombre.toLowerCase().includes(filter);
+      }
       console.log(response)
     })
   }
